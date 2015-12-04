@@ -29,7 +29,7 @@
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "INSERT INTO tag (name) values(?)";
             $q = $pdo->prepare($sql);
-            $q->execute(array($full_name));
+            $q->execute(array($name));
             Database::disconnect();
             header("Location: index.php");
         }
