@@ -81,7 +81,7 @@
      
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Create a Payment</h3>
+                        <h3>Create your Payment</h3>
                     </div>
              
                     <form class="form-horizontal" action="payment_create.php" method="post">
