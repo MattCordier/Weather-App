@@ -41,7 +41,7 @@
         $q = $pdo->prepare($sql);
         $q->execute(array($id));
         $data = $q->fetch(PDO::FETCH_ASSOC);
-        $full_name = $data['name'];
+        $name = $data['name'];
         
         Database::disconnect(); 
     }
