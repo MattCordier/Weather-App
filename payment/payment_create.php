@@ -132,11 +132,12 @@
                       <div class="control-group <?php echo !empty($expires_yearError)?'error':'';?>">
                         <label class="control-label">Expiration Year</label>
                         <div class="controls">
-                            <input name="expires_year" |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-
-
-?????????????????????/////////////////////////////////////////???????????????????????????????
-
+                            <input name="expires_year" type="text"  placeholder="Exp. Year" value="<?php echo !empty($expires_year)?$expires_year:'';?>">
+                            <?php if (!empty($expires_yearError)): ?>
+                                <span class="help-inline"><?php echo $expires_yearError;?></span>
+                            <?php endif;?>
+                        </div>
+                      </div>
 
 
 
