@@ -34,7 +34,7 @@
                    $pdo = Database::connect();
                    $sql = 'SELECT * FROM payment ORDER BY id DESC';
                    foreach ($pdo->query($sql) as $row) {
-                            echo '<tr>';
+                            
                             echo '<td>'. $row['full_name'] . '</td>';
                             echo '<td>'. $row['card_number'] . '</td>';
                             echo '<td>'. $row['card_security'] . '</td>';
