@@ -106,64 +106,64 @@
                     <form class="form-horizontal" action="payment_update.php?id=<?php echo $id?>" method="post">
 
 
-                      <div class="control-group <?php echo !empty($firstnameError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($full_nameError)?'error':'';?>">
                         <label class="control-label">Full Name</label>
                         <div class="controls">
-                            <input name="firstname" type="text"  placeholder="Name" value="<?php echo !empty($firstname)?$firstname:'';?>">
-                            <?php if (!empty($firstnameError)): ?>
-                                <span class="help-inline"><?php echo $firstnameError;?></span>
+                            <input name="full_name" type="text"  placeholder="Full Name" value="<?php echo !empty($full_name)?$full_name:'';?>">
+                            <?php if (!empty($full_nameError)): ?>
+                                <span class="help-inline"><?php echo $full_nameError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
 
-                      <div class="control-group <?php echo !empty($lastnameError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($car_numebrError)?'error':'';?>">
                         <label class="control-label">Card Number</label>
                         <div class="controls">
-                            <input name="lastname" type="text"  placeholder="Last Name" value="<?php echo !empty($lastname)?$lasstname:'';?>">
-                            <?php if (!empty($lasstnameError)): ?>
-                                <span class="help-inline"><?php echo $lasstnameError;?></span>
+                            <input name="card_number" type="text"  placeholder="Card Number" value="<?php echo !empty($card_number)?$card_number:'';?>">
+                            <?php if (!empty($card_numberError)): ?>
+                                <span class="help-inline"><?php echo $card_numberError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
 
 
-                      <div class="control-group <?php echo !empty($phoneError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($card_securityError)?'error':'';?>">
                         <label class="control-label">Security Code</label>
                         <div class="controls">
-                            <input name="phone" type="text" placeholder="Phone Number" value="<?php echo !empty($phone)?$phone:'';?>">
-                            <?php if (!empty($phoneError)): ?>
-                                <span class="help-inline"><?php echo $phoneError;?></span>
+                            <input name="card_security" type="text" placeholder="Security Code" value="<?php echo !empty($card_security)?$card_security:'';?>">
+                            <?php if (!empty($card_securityError)): ?>
+                                <span class="help-inline"><?php echo $card_securityError;?></span>
                             <?php endif;?>
                         </div>
                       </div>
 
 
-                      <div class="control-group <?php echo !empty($dobError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($expires_monthError)?'error':'';?>">
                         <label class="control-label">Exp. Month</label>
                         <div class="controls">
-                            <input name="dob" type="text"  placeholder="Date of Birth" value="<?php echo !empty($dob)?$dob:'';?>">
-                            <?php if (!empty($dobError)): ?>
-                                <span class="help-inline"><?php echo $dobError;?></span>
+                            <input name="expires_month" type="text"  placeholder="Exp. Month" value="<?php echo !empty($expires_month)?$expires_month:'';?>">
+                            <?php if (!empty($expires_monthError)): ?>
+                                <span class="help-inline"><?php echo $expires_monthError;?></span>
                             <?php endif;?>
                         </div>
                       </div>
 
-                      <div class="control-group <?php echo !empty($usernameError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($expires_yearError)?'error':'';?>">
                         <label class="control-label">Exp. Year</label>
                         <div class="controls">
-                            <input name="username" type="text"  placeholder="Username" value="<?php echo !empty($username)?$username:'';?>">
-                            <?php if (!empty($usernameError)): ?>
-                                <span class="help-inline"><?php echo $usernameError;?></span>
+                            <input name="expires_year" type="text"  placeholder="Exp. Year" value="<?php echo !empty($expires_year)?$expires_year:'';?>">
+                            <?php if (!empty($expires_yearError)): ?>
+                                <span class="help-inline"><?php echo $expires_yearError;?></span>
                             <?php endif;?>
                         </div>
                       </div>
 
-                      <div class="control-group <?php echo !empty($passwordError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($payment_typeError)?'error':'';?>">
                         <label class="control-label">Payment Type</label>
                         <div class="controls">
-                            <input name="password" type="text"  placeholder="Password" value="<?php echo !empty($password)?$password:'';?>">
-                            <?php if (!empty($passwordError)): ?>
-                                <span class="help-inline"><?php echo $passwordError;?></span>
+                            <input name="payment_type" type="text"  placeholder="Payment Type" value="<?php echo !empty($payment_type)?$payment_type:'';?>">
+                            <?php if (!empty($payment_typeError)): ?>
+                                <span class="help-inline"><?php echo $payment_typeError;?></span>
                             <?php endif;?>
                         </div>
                       </div>
