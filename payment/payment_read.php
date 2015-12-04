@@ -64,7 +64,7 @@
                         <label class="control-label">expiration Month</label>
                         <div class="controls">
                             <label class="checkbox">
-                                <?php echo $data['expiration_month'];?>
+                                <?php echo $data['expires_month'];?>
                             </label>
                         </div>
                       </div>
@@ -72,7 +72,7 @@
                         <label class="control-label">expiration Year</label>
                         <div class="controls">
                             <label class="checkbox">
-                                <?php echo $data['expiration_year'];?>
+                                <?php echo $data['expires_year'];?>
                             </label>
                         </div>
                         <div class="control-group">
