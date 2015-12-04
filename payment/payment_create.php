@@ -59,7 +59,7 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO customer (full_name, card_number, card_security, expires_month, expires_year, payment_type) values(?, ?, ?, ?, ?, ?)";
+            $sql = "INSERT INTO payment (full_name, card_number, card_security, expires_month, expires_year, payment_type) values(?, ?, ?, ?, ?, ?)";
             $q = $pdo->prepare($sql);
             $q->execute(array($full_name, $card_number, $card_security, $expires_month, $expires_year, $payment_type));
             Database::disconnect();
