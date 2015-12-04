@@ -15,7 +15,7 @@
         $nameError = null;
          
         // keep track post values
-        $name = $_POST['full_name'];
+        $name = $_POST['name'];
         
         // validate input
         $valid = true;
