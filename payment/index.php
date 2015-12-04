@@ -20,7 +20,6 @@
                   <thead>
                     <tr>
                       <th>Full Name</th>
-                      <th>Card Name</th>
                       <th>Card Number</th>
                       <th>Security Code</th>
                       <th>Expiration Month</th>
@@ -34,7 +33,6 @@
                    $pdo = Database::connect();
                    $sql = 'SELECT * FROM payment ORDER BY id DESC';
                    foreach ($pdo->query($sql) as $row) {
-                            
                             echo '<td>'. $row['full_name'] . '</td>';
                             echo '<td>'. $row['card_number'] . '</td>';
                             echo '<td>'. $row['card_security'] . '</td>';
