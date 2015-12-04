@@ -52,7 +52,7 @@
         }
 
         if (empty($expires_year)) {
-            $usernameError = 'Please enter Expiration Year';
+            $expires_yearError = 'Please enter Expiration Year';
             $valid = false;
         }
 
