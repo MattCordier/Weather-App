@@ -20,6 +20,7 @@
                   <thead>
                     <tr>
                       <th>Tag Name</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
