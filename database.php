@@ -2,9 +2,9 @@
 class Database
 {
     private static $dbName = 'crud_tester' ;
-    private static $dbHost = 'localhost' ;
-    private static $dbUsername = 'root';
-    private static $dbUserPassword = 'MattCordierMYSQL$$';
+    private static $dbHost = '' ;
+    private static $dbUsername = '';
+    private static $dbUserPassword = '';
      
     private static $cont  = null;
      
