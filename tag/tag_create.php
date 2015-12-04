@@ -52,7 +52,7 @@
                         <h3>Create your Tag</h3>
                     </div>
              
-                    <form class="form-horizontal" action="payment_create.php" method="post">
+                    <form class="form-horizontal" action="tag_create.php" method="post">
 
 
                       <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
