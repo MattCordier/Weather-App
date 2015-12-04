@@ -10,7 +10,7 @@
 <body>
     <div class="container">
             <div class="row">
-                <h3>Customer Table</h3>
+                <h3>Customers</h3>
             </div>
             <div class="row">
             	<p>
