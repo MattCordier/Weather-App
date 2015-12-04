@@ -116,7 +116,7 @@
                         </div>
                       </div>
 
-                      <div class="control-group <?php echo !empty($car_numebrError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($card_numebrError)?'error':'';?>">
                         <label class="control-label">Card Number</label>
                         <div class="controls">
                             <input name="card_number" type="text"  placeholder="Card Number" value="<?php echo !empty($card_number)?$card_number:'';?>">
