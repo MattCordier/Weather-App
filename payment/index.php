@@ -39,7 +39,7 @@
                             echo '<td>'. $row['card_number'] . '</td>';
                             echo '<td>'. $row['card_security'] . '</td>';
                             echo '<td>'. $row['expires_month'] . '</td>';
-                            echo '<td>'. $row['expired_year'] . '</td>';
+                            echo '<td>'. $row['expires_year'] . '</td>';
                             echo '<td>'. $row['payment_type'] . '</td>';
                             echo '<td width=250>';
                                 echo '<a class="btn" href="customer_read.php?id='.$row['id'].'">Read</a>';
