@@ -140,14 +140,6 @@
                       </div>
 
 
-
-                            type="text"  placeholder="Username" value="<?php echo !empty($username)?$username:'';?>">
-                            <?php if (!empty($usernameError)): ?>
-                                <span class="help-inline"><?php echo $usernameError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-
                       <div class="control-group <?php echo !empty($passwordError)?'error':'';?>">
                         <label class="control-label">Password</label>
                         <div class="controls">
