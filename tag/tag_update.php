@@ -30,7 +30,7 @@
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "UPDATE tag set name = ? WHERE id = ?";
             $q = $pdo->prepare($sql);
-            $q->execute(array($name));
+            $q->execute(array($name, $id));
             Database::disconnect();
             header("Location: index.php");
         }
