@@ -1,7 +1,7 @@
 <?php
      
-    require '../ecomm_connect.php';
-    echo "WTF!!";
+    // require '../ecomm_connect.php';
+    // echo "WTF!!";
  
     if ( !empty($_POST)) {
         // keep track validation errors
