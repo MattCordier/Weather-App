@@ -88,7 +88,7 @@
 
 
                       <div class="control-group <?php echo !empty($full_nameError)?'error':'';?>">
-                        <label class="control-label">Full Name</label>
+                        <label class="control-label">Name on Card</label>
                         <div class="controls">
                             <input name="full_name" type="text"  placeholder="Full Name" value="<?php echo !empty($full_name)?$full_name:'';?>">
                             <?php if (!empty($full_nameError)): ?>
@@ -140,45 +140,17 @@
                       </div>
 
 
-                      <div class="control-group <?php echo !empty($passwordError)?'error':'';?>">
-                        <label class="control-label">Password</label>
+                      <div class="control-group <?php echo !empty($payment_typeError)?'error':'';?>">
+                        <label class="control-label">Payment Type</label>
                         <div class="controls">
-                            <input name="password" type="text"  placeholder="Password" value="<?php echo !empty($password)?$password:'';?>">
-                            <?php if (!empty($passwordError)): ?>
-                                <span class="help-inline"><?php echo $passwordError;?></span>
+                            <input name="payment_type" type="text"  placeholder="Payment Type" value="<?php echo !empty($payment_type)?$payment_type:'';?>">
+                            <?php if (!empty($payment_typeError)): ?>
+                                <span class="help-inline"><?php echo $payment_typeError;?></span>
                             <?php endif;?>
                         </div>
                       </div>
 
-                      <div class="control-group <?php echo !empty($genderError)?'error':'';?>">
-                        <label class="control-label">Gender</label>
-                        <div class="controls">
-                            <input name="gender" type="text"  placeholder="Gender" value="<?php echo !empty($gender)?$gender:'';?>">
-                            <?php if (!empty($genderError)): ?>
-                                <span class="help-inline"><?php echo $genderError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-
-                      <div class="control-group <?php echo !empty($permissionError)?'error':'';?>">
-                        <label class="control-label">Permission</label>
-                        <div class="controls">
-                            <input name="permission" type="text"  placeholder="Permission" value="<?php echo !empty($permission)?$permission:'';?>">
-                            <?php if (!empty($permissionError)): ?>
-                                <span class="help-inline"><?php echo $permissionError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-
-                      <div class="control-group <?php echo !empty($emailError)?'error':'';?>">
-                        <label class="control-label">Email</label>
-                        <div class="controls">
-                            <input name="email" type="text"  placeholder="Email" value="<?php echo !empty($email)?$email:'';?>">
-                            <?php if (!empty($emailError)): ?>
-                                <span class="help-inline"><?php echo $emailError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
+                     
 
                       
                       <div class="form-actions">
