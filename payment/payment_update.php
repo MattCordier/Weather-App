@@ -67,7 +67,7 @@
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "UPDATE payment set full_name = ?, card_number = ?, card_security = ?, expires_month = ?, expires_year = ?, payment_type = ? WHERE id = ?";
             $q = $pdo->prepare($sql);
-            $q->execute(array($full_name, $card_number, $card_security, $expires_month, $expires_year, $payment_type));
+            $q->execute(array($full_name, $card_number, $card_security, $expires_month, $expires_year, $payment_type, $id));
             Database::disconnect();
             header("Location: index.php");
         }
