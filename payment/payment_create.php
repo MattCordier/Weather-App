@@ -24,53 +24,32 @@
         // validate input
         $valid = true;
         if (empty($full_name)) {
-            $full_nameError = 'Please enter Name';
+            $full_nameError = 'Please enter Full Name on Card';
             $valid = false;
         }
 
-        if (empty($lastname)) {
-            $lastnameError = 'Please enter Last Name';
+        if (empty($card_number)) {
+            $card_numberError = 'Please enter Card Number';
             $valid = false;
         }
          
-        if (empty($phone)) {
-            $phoneError = 'Please enter Phone Number';
+        if (empty($card_security)) {
+            $card_securityError = 'Please enter Security Code';
             $valid = false;
-        } else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
-            $emailError = 'Please enter a valid Email Address';
-            $valid = false;
-        }
+        } 
          
-        if (empty($dob)) {
-            $dobError = 'Please enter Date of Birth';
+        if (empty($expires_month)) {
+            $expires_monthError = 'Please enter Expiration Month';
             $valid = false;
         }
 
-        if (empty($username)) {
-            $usernameError = 'Please enter Username';
+        if (empty($expires_year)) {
+            $usernameError = 'Please enter Expiration Year';
             $valid = false;
         }
 
-        if (empty($password)) {
-            $passwordError = 'Please enter Password';
-            $valid = false;
-        }
-
-        if (empty($gender)) {
-            $genderError = 'Please enter Gender';
-            $valid = false;
-        }
-
-        if (empty($permission)) {
-            $permissionError = 'Please enter permission';
-            $valid = false;
-        }
-
-        if (empty($email)) {
-            $emailError = 'Please enter Email';
-            $valid = false;
-        } else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
-            $emailError = 'Please enter a valid Email Address';
+        if (empty($payment_type)) {
+            $payment_typeError = 'Please enter Payment Type';
             $valid = false;
         }
 
@@ -80,9 +59,9 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO customer (firstname, lastname, phone, dob, username, password, gender, permission, email) values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            $sql = "INSERT INTO customer (full_name, card_number, card_security, expires_month, expires_year, payment_type) values(?, ?, ?, ?, ?, ?)";
             $q = $pdo->prepare($sql);
-            $q->execute(array($firstname, $lastname, $phone, $dob, $username, $password, $gender, $permission, $email));
+            $q->execute(array($full_name, $card_number, $card_security, $expires_month, $expires_year, $payment_type));
             Database::disconnect();
             header("Location: index.php");
         }
@@ -102,58 +81,66 @@
      
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Create a Customer</h3>
+                        <h3>Create a Payment</h3>
                     </div>
              
                     <form class="form-horizontal" action="create_customer.php" method="post">
 
 
-                      <div class="control-group <?php echo !empty($firstnameError)?'error':'';?>">
-                        <label class="control-label">Name</label>
+                      <div class="control-group <?php echo !empty($full_nameError)?'error':'';?>">
+                        <label class="control-label">Full Name</label>
                         <div class="controls">
-                            <input name="firstname" type="text"  placeholder="Name" value="<?php echo !empty($firstname)?$firstname:'';?>">
-                            <?php if (!empty($firstnameError)): ?>
-                                <span class="help-inline"><?php echo $firstnameError;?></span>
+                            <input name="full_name" type="text"  placeholder="Full Name" value="<?php echo !empty($full_name)?$full_name:'';?>">
+                            <?php if (!empty($full_nameError)): ?>
+                                <span class="help-inline"><?php echo $full_nameError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
 
-                      <div class="control-group <?php echo !empty($lastnameError)?'error':'';?>">
-                        <label class="control-label">Name</label>
+                      <div class="control-group <?php echo !empty($card_numberError)?'error':'';?>">
+                        <label class="control-label">Card Number</label>
                         <div class="controls">
-                            <input name="lastname" type="text"  placeholder="Last Name" value="<?php echo !empty($lastname)?$lastname:'';?>">
-                            <?php if (!empty($lastnameError)): ?>
-                                <span class="help-inline"><?php echo $lastnameError;?></span>
+                            <input name="card_number" type="text"  placeholder="Card Number" value="<?php echo !empty($card_number)?$card_number:'';?>">
+                            <?php if (!empty($card_numberError)): ?>
+                                <span class="help-inline"><?php echo $card_numberError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
 
 
-                      <div class="control-group <?php echo !empty($phoneError)?'error':'';?>">
-                        <label class="control-label">Phone</label>
+                      <div class="control-group <?php echo !empty($card_securityError)?'error':'';?>">
+                        <label class="control-label">Security Code</label>
                         <div class="controls">
-                            <input name="phone" type="text" placeholder="Phone Number" value="<?php echo !empty($phone)?$phone:'';?>">
-                            <?php if (!empty($phoneError)): ?>
-                                <span class="help-inline"><?php echo $phoneError;?></span>
+                            <input name="card_security" type="text" placeholder="Security Code" value="<?php echo !empty($card_security)?$card_security:'';?>">
+                            <?php if (!empty($card_securityError)): ?>
+                                <span class="help-inline"><?php echo $card_securityError;?></span>
                             <?php endif;?>
                         </div>
                       </div>
 
 
-                      <div class="control-group <?php echo !empty($dobError)?'error':'';?>">
-                        <label class="control-label">Date of Birth</label>
+                      <div class="control-group <?php echo !empty($expires_monthError)?'error':'';?>">
+                        <label class="control-label">Expiration Month</label>
                         <div class="controls">
-                            <input name="dob" type="text"  placeholder="Date of Birth" value="<?php echo !empty($dob)?$dob:'';?>">
-                            <?php if (!empty($dobError)): ?>
-                                <span class="help-inline"><?php echo $dobError;?></span>
+                            <input name="expires_month" type="text"  placeholder="Exp. Month" value="<?php echo !empty($expires_month)?$expires_month:'';?>">
+                            <?php if (!empty($expires_monthError)): ?>
+                                <span class="help-inline"><?php echo $expires_monthError;?></span>
                             <?php endif;?>
                         </div>
                       </div>
 
-                      <div class="control-group <?php echo !empty($usernameError)?'error':'';?>">
-                        <label class="control-label">Username</label>
+                      <div class="control-group <?php echo !empty($expires_yearError)?'error':'';?>">
+                        <label class="control-label">Expiration Year</label>
                         <div class="controls">
-                            <input name="username" type="text"  placeholder="Username" value="<?php echo !empty($username)?$username:'';?>">
+                            <input name="expires_year" |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+?????????????????????/////////////////////////////////////////???????????????????????????????
+
+
+
+
+                            type="text"  placeholder="Username" value="<?php echo !empty($username)?$username:'';?>">
                             <?php if (!empty($usernameError)): ?>
                                 <span class="help-inline"><?php echo $usernameError;?></span>
                             <?php endif;?>
