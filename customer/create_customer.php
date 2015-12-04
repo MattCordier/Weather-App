@@ -1,4 +1,99 @@
+<?php
+     
+    require '../ecomm_connect.php';
+    
+ 
+    if ( !empty($_POST)) {
+        // keep track validation errors
+        $firstnameError = null;
+        $lastname = null;
+        $phoneError = null;
+        $dobError = null;
+        $usernameError = null;
+        $passwordError = null;
+        $genderError = null;
+        $permissionError = null;
+        $emailError = null;
+      
+         
+        // keep track post values
+        $firstname = $_POST['firstname'];
+        $lastname = $_POST['lastname'];
+        $phone = $_POST['phone'];
+        $dob = $_POST['dob'];
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $gender = $_POST['gender'];
+        $permission = $_POST['permission'];
+        $email = $_POST['email'];
+         
+        // validate input
+        $valid = true;
+        if (empty($firstname)) {
+            $firstnameError = 'Please enter Name';
+            $valid = false;
+        }
 
+        if (empty($lastname)) {
+            $lastnameError = 'Please enter Last Name';
+            $valid = false;
+        }
+         
+        if (empty($phone)) {
+            $phoneError = 'Please enter Phone Number';
+            $valid = false;
+        } else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
+            $emailError = 'Please enter a valid Email Address';
+            $valid = false;
+        }
+         
+        if (empty($dob)) {
+            $dobError = 'Please enter Date of Birth';
+            $valid = false;
+        }
+
+        if (empty($username)) {
+            $usernameError = 'Please enter Username';
+            $valid = false;
+        }
+
+        if (empty($password)) {
+            $passwordError = 'Please enter Password';
+            $valid = false;
+        }
+
+        if (empty($gender)) {
+            $genderError = 'Please enter Gender';
+            $valid = false;
+        }
+
+        if (empty($permission)) {
+            $permissionError = 'Please enter permission';
+            $valid = false;
+        }
+
+        if (empty($email)) {
+            $emailError = 'Please enter Email';
+            $valid = false;
+        } else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
+            $emailError = 'Please enter a valid Email Address';
+            $valid = false;
+        }
+
+       
+         
+        // insert data
+        if ($valid) {
+            $pdo = Database::connect();
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $sql = "INSERT INTO customer (firstname, lastname, phone, dob, username, password, gender, permission, email) values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            $q = $pdo->prepare($sql);
+            $q->execute(array($firstname, $lastname, $phone, $dob, $username, $password, $gender, $permission, $email));
+            Database::disconnect();
+            header("Location: index.php");
+        }
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
