@@ -67,7 +67,7 @@
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "UPDATE payment set full_name = ?, card_number = ?, card_security = ?, expires_month = ?, expires_year = ?, payment_type = ? WHERE id = ?";
             $q = $pdo->prepare($sql);
-            $q->execute(array($firstname, $full_name, $card_number, $card_security, $expires_month, $expires_year, $payment_type));
+            $q->execute(array($full_name, $card_number, $card_security, $expires_month, $expires_year, $payment_type));
             Database::disconnect();
             header("Location: index.php");
         }
@@ -116,7 +116,7 @@
                         </div>
                       </div>
 
-                      <div class="control-group <?php echo !empty($car_numberError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($card_numberError)?'error':'';?>">
                         <label class="control-label">Card Number</label>
                         <div class="controls">
                             <input name="card_number" type="text"  placeholder="Card Number" value="<?php echo !empty($card_number)?$card_number:'';?>">
