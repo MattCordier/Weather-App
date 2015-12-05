@@ -78,13 +78,13 @@
                       <div class="control-group <?php echo !empty($airlineError)?'error':'';?>">
                         <label class="control-label">Airline</label>
                         <div class="controls">
-                            <input name="airline" type="text"  placeholder="airline" value="<?php echo !empty($airline)?$airline:'';?>">
+                            <input name="airline" type="text"  placeholder="Airline" value="<?php echo !empty($airline)?$airline:'';?>">
                             <?php if (!empty($airlineError)): ?>
                                 <span class="help-inline"><?php echo $airlineError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($@@Error)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($departError)?'error':'';?>">
                         <label class="control-label">Depart</label>
                         <div class="controls">
                             <input name="depart" type="text"  placeholder="Depart" value="<?php echo !empty($depart)?$depart:'';?>">
