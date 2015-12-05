@@ -100,6 +100,9 @@
                         </div>
                       </div>
                     </div>
+                    <div class="form-actions">
+                        <a class="btn" href="index.php">Back</a>
+                    </div>
 
                 </div>
                  
