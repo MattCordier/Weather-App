@@ -19,7 +19,7 @@
         // keep track post values
         $name = $_POST['name'];
         $phone = $_POST['phone'];
-        $address_id = $_POST['address_idError'];
+        $address_id = $_POST['address_id'];
         
         // validate input
         $valid = true;
