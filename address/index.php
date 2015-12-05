@@ -25,6 +25,7 @@
                       <th>State</th>
                       <th>City</th>
                       <th>Zipcode</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
