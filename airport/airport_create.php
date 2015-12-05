@@ -64,7 +64,7 @@
                         <h3>Create an Airport</h3>
                     </div>
              
-                    <form class="form-horizontal" action="address_create.php" method="post">
+                    <form class="form-horizontal" action="airport_create.php" method="post">
 
 
                       <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
