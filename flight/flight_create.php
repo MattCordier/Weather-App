@@ -66,7 +66,7 @@
                     </div>
              
                     <form class="form-horizontal" action="flight_create.php" method="post">
-                      <div class="control-group <?php echo !empty($@@Error)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($flight_numberError)?'error':'';?>">
                         <label class="control-label">Flight Number</label>
                         <div class="controls">
                             <input name="flight_number" type="text"  placeholder="Flight Number" value="<?php echo !empty($flight_number)?$flight_number:'';?>">
