@@ -70,7 +70,7 @@
                       <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
                         <label class="control-label">Enter Airport</label>
                         <div class="controls">
-                            <input name="name" type="text"  placeholder="" value="<?php echo !empty($name)?$name:'';?>">
+                            <input name="name" type="text"  placeholder="Airport Name" value="<?php echo !empty($name)?$name:'';?>">
                             <?php if (!empty($nameError)): ?>
                                 <span class="help-inline"><?php echo $nameError;?></span>
                             <?php endif; ?>
@@ -80,7 +80,7 @@
                       <div class="control-group <?php echo !empty($phoneError)?'error':'';?>">
                         <label class="control-label">Enter Airport Phone</label>
                         <div class="controls">
-                            <input name="phone" type="text"  placeholder="" value="<?php echo !empty($phone)?$phone:'';?>">
+                            <input name="phone" type="text"  placeholder="Airport Phone" value="<?php echo !empty($phone)?$phone:'';?>">
                             <?php if (!empty($phoneError)): ?>
                                 <span class="help-inline"><?php echo $phoneError;?></span>
                             <?php endif; ?>
