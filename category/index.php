@@ -14,7 +14,7 @@
             </div>
             <div class="row">
                 <p>
-                    <a href="tag_create.php" class="btn btn-success">Create</a>
+                    <a href="category_create.php" class="btn btn-success">Create</a>
                 </p>
                 <table class="table table-striped table-bordered">
                   <thead>
