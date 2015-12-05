@@ -28,7 +28,7 @@
         }
          
         if (empty($category_id)) {
-            $category_idError = 'Please enter Chategory ID';
+            $category_idError = 'Please enter Category ID';
             $valid = false;
         }
        
@@ -39,7 +39,7 @@
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "UPDATE subcategory  set name = ?, category_id = ? WHERE id = ?";
             $q = $pdo->prepare($sql);
-            $q->execute(array($name, $category_id,$id));
+            $q->execute(array($name, $category_id, $id));
             Database::disconnect();
             header("Location: index.php");
         }
@@ -72,7 +72,7 @@
                     </div>
              
                     <form class="form-horizontal" action="subcategory_update.php?id=<?php echo $id?>" method="post">
-                      <div class="control-group <?php echo !empty($@@Error)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
                         <label class="control-label">Name</label>
                         <div class="controls">
                             <input name="name" type="text"  placeholder="Name" value="<?php echo !empty($name)?$name:'';?>">
