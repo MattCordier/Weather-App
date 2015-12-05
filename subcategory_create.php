@@ -14,12 +14,12 @@
          
         // validate input
         $valid = true;
-        if (empty($)) {
+        if (empty($name)) {
             $nameError = 'Please enter Name';
             $valid = false;
         }
          
-        if (empty($)) {
+        if (empty($category_id)) {
             $category_idError = 'Please enter Category ID';
             $valid = false;
         } 
@@ -51,7 +51,7 @@
      
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Create a </h3>
+                        <h3>Create a Subcategory</h3>
                     </div>
              
                     <form class="form-horizontal" action="subcategory_create.php" method="post">
