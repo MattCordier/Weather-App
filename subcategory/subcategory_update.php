@@ -1,5 +1,5 @@
 <?php
-    require 'database.php';
+    require '../ecomm_connect.php';
  
     $id = null;
     if ( !empty($_GET['id'])) {
