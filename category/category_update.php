@@ -28,7 +28,7 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "UPDATE tag set name = ? WHERE id = ?";
+            $sql = "UPDATE category set name = ? WHERE id = ?";
             $q = $pdo->prepare($sql);
             $q->execute(array($name, $id));
             Database::disconnect();
