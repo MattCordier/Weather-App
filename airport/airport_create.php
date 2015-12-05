@@ -14,7 +14,7 @@
         // keep track post values
         $name = $_POST['name'];
         $phone = $_POST['phone'];
-        $address = $_POST['address'];
+        $address_id = $_POST['address_id'];
        
         // validate input
         $valid = true;
