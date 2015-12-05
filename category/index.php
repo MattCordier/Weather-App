@@ -32,11 +32,11 @@
                             echo '<td>'. $row['name'] . '</td>';
                             
                             echo '<td width=250>';
-                                echo '<a class="btn" href="tag_read.php?id='.$row['id'].'">Read</a>';
+                                echo '<a class="btn" href="category_read.php?id='.$row['id'].'">Read</a>';
                                 echo ' ';
-                                echo '<a class="btn btn-success" href="tag_update.php?id='.$row['id'].'">Update</a>';
+                                echo '<a class="btn btn-success" href="category_update.php?id='.$row['id'].'">Update</a>';
                                 echo ' ';
-                                echo '<a class="btn btn-danger" href="tag_delete.php?id='.$row['id'].'">Delete</a>';
+                                echo '<a class="btn btn-danger" href="category_delete.php?id='.$row['id'].'">Delete</a>';
                                 echo '</td>';
                             echo '</tr>';
                    }
