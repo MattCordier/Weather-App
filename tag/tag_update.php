@@ -59,7 +59,7 @@
      
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Update a Customer</h3>
+                        <h3>Update a Tag</h3>
                     </div>
              
                     <form class="form-horizontal" action="tag_update.php?id=<?php echo $id?>" method="post">
