@@ -32,7 +32,7 @@
             $valid = false;
         }
         if (empty($address_id)) {
-            $addressError = 'Please enter Address ID';
+            $address_idError = 'Please enter Address ID';
             $valid = false;
         }
 
