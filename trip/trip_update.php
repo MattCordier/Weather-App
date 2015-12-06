@@ -12,31 +12,34 @@
      
     if ( !empty($_POST)) {
         // keep track validation errors
-        $@@Error = null;
-        $@@Error = null;
-        $@@Error = null;
+        $nameError = null;
+        $costError = null;
+        $descriptionError = null;
+        $subcategory_idError = null;
          
         // keep track post values
-        $@@ = $_POST['@@'];
-        $@@ = $_POST['@@'];
+        $name = $_POST['name'];
+        $cost = $_POST['cost'];
+        $description = $_POST['description'];
+        $subcategory_id = $_POST['subcategory_id'];
          
         // validate input
         $valid = true;
-        if (empty($@@)) {
-            $nameError = 'Please enter @@';
+        if (empty($name)) {
+            $nameError = 'Please enter Name';
             $valid = false;
         }
          
-        if (empty($@@)) {
-            $nameError = 'Please enter @@';
+        if (empty($cost)) {
+            $costError = 'Please enter Cost';
             $valid = false;
         }
-        if (empty($@@)) {
-            $nameError = 'Please enter @@';
+        if (empty($description)) {
+            $descriptionError = 'Please enter description';
             $valid = false;
         }
-        if (empty($@@)) {
-            $nameError = 'Please enter @@';
+        if (empty($subcategory_id)) {
+            $subcategory_idError = 'Please enter Subcategory ID';
             $valid = false;
         }
          
@@ -44,22 +47,23 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "UPDATE @@  set @@ = ?, @@ = ?, @@ =? WHERE id = ?";
+            $sql = "UPDATE trip  set name = ?, cost = ?, description = ?, subcategory_id = ? WHERE id = ?";
             $q = $pdo->prepare($sql);
-            $q->execute(array($@@,$@@,$@@,$id));
+            $q->execute(array($name,$cost,$description, $subcategory_id, $id));
             Database::disconnect();
             header("Location: index.php");
         }
     } else {
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "SELECT * FROM @@ where id = ?";
+        $sql = "SELECT * FROM trip where id = ?";
         $q = $pdo->prepare($sql);
         $q->execute(array($id));
         $data = $q->fetch(PDO::FETCH_ASSOC);
-        $@@ = $data['@@'];
-        $@@ = $data['@@'];
-        $@@ = $data['@@'];
+        $name = $data['name'];
+        $cost = $data['cost'];
+        $description = $data['description'];
+        $subcategory_id = $data['subcategory_id'];
         Database::disconnect();
     }
 ?>
@@ -76,30 +80,37 @@
      
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Update a Customer</h3>
+                        <h3>Update a Trip</h3>
                     </div>
              
-                    <form class="form-horizontal" action="@@_update.php?id=<?php echo $id?>" method="post">
-                      <div class="control-group <?php echo !empty($@@Error)?'error':'';?>">
-                        <label class="control-label">@@</label>
+                    <form class="form-horizontal" action="trip_update.php?id=<?php echo $id?>" method="post">
+                      <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
+                        <label class="control-label">Name</label>
                         <div class="controls">
-                            <input name="@@" type="text"  placeholder="@@" value="<?php echo !empty($@@)?$@@:'';?>">
-                            <?php if (!empty($@@Error)): ?>
-                                <span class="help-inline"><?php echo $@@Error;?></span>
+                            <input name="name" type="text"  placeholder="Name" value="<?php echo !empty($name)?$name:'';?>">
+                            <?php if (!empty($nameError)): ?>
+                                <span class="help-inline"><?php echo $nameError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
                       <div class="controls">
-                            <input name="@@" type="text"  placeholder="@@" value="<?php echo !empty($@@)?$@@:'';?>">
-                            <?php if (!empty($@@Error)): ?>
-                                <span class="help-inline"><?php echo $@@Error;?></span>
+                            <input name="cost" type="text"  placeholder="Cost" value="<?php echo !empty($cost)?$cost:'';?>">
+                            <?php if (!empty($costError)): ?>
+                                <span class="help-inline"><?php echo $costError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
                       <div class="controls">
-                            <input name="@@" type="text"  placeholder="@@" value="<?php echo !empty($@@)?$@@:'';?>">
+                            <input name="description" type="text"  placeholder="Description" value="<?php echo !empty($description)?$description:'';?>">
+                            <?php if (!empty($descriptionError)): ?>
+                                <span class="help-inline"><?php echo $descriptionError;?></span>
+                            <?php endif; ?>
+                        </div>
+                      </div>
+                      <div class="controls">
+                            <input name="subcategory_id" type="text"  placeholder="subcategory_id" value="<?php echo !empty($subcategory_id)?$subcategory_id:'';?>">
                             <?php if (!empty($@@Error)): ?>
-                                <span class="help-inline"><?php echo $@@Error;?></span>
+                                <span class="help-inline"><?php echo $subcategory_idError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
