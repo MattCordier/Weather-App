@@ -4,29 +4,35 @@
  
     if ( !empty($_POST)) {
         // keep track validation errors
-        $Error = null;
-        $Error = null;
-        $Error = null;
-         
+        $nameError = null;
+        $costError = null;
+        $descriptionError = null;
+        $subcategory_idError = null;
+
         // keep track post values
-        $ = $_POST[''];
-        $ = $_POST[''];
-        $ = $_POST[''];
-         
+        $name = $_POST['name'];
+        $cost = $_POST['cost'];
+        $description = $_POST['description'];
+        $subcategory_id = $_POST['subcategory_id']; 
         // validate input
         $valid = true;
-        if (empty($)) {
-            $Error = 'Please enter ';
+        if (empty($name)) {
+            $nameError = 'Please enter Name';
             $valid = false;
         }
          
-        if (empty($)) {
-            $Error = 'Please enter ';
+        if (empty($cost)) {
+            $costError = 'Please enter Cost';
             $valid = false;
         } 
          
-        if (empty($)) {
-            $Error = 'Please enter ';
+        if (empty($description)) {
+            $descriptionError = 'Please enter Description';
+            $valid = false;
+        }
+
+        if (empty($subcategory_id)) {
+            $subcategoryError = 'Please enter Subcategory ID';
             $valid = false;
         }
          
@@ -34,9 +40,9 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO customers (@@,@@,@@) values(?, ?, ?)";
+            $sql = "INSERT INTO customers (name, cost, description, subcategory_id) values(?, ?, ?, ?)";
             $q = $pdo->prepare($sql);
-            $q->execute(array($,$,$));
+            $q->execute(array($name, $cost, $description, $subcategory_id));
             Database::disconnect();
             header("Location: index.php");
         }
@@ -56,33 +62,42 @@
      
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Create a </h3>
+                        <h3>Create a Trip</h3>
                     </div>
              
-                    <form class="form-horizontal" action="_create.php" method="post">
-                      <div class="control-group <?php echo !empty($@@Error)?'error':'';?>">
-                        <label class="control-label"></label>
+                    <form class="form-horizontal" action="trip_create.php" method="post">
+                      <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
+                        <label class="control-label">Name</label>
                         <div class="controls">
-                            <input name="@@" type="text"  placeholder="@@" value="<?php echo !empty($name)?$name:'';?>">
-                            <?php if (!empty($@@Error)): ?>
-                                <span class="help-inline"><?php echo $@@Error;?></span>
+                            <input name="name" type="text"  placeholder="Name" value="<?php echo !empty($name)?$name:'';?>">
+                            <?php if (!empty($nameError)): ?>
+                                <span class="help-inline"><?php echo $nameError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($@@Error)?'error':'';?>">
-                        <label class="control-label"></label>
+                      <div class="control-group <?php echo !empty($costError)?'error':'';?>">
+                        <label class="control-label">Cost</label>
                         <div class="controls">
-                            <input name="@@" type="text"  placeholder="@@" value="<?php echo !empty($name)?$name:'';?>">
-                            <?php if (!empty($@@Error)): ?>
-                                <span class="help-inline"><?php echo $@@Error;?></span>
+                            <input name="cost" type="text"  placeholder="cost" value="<?php echo !empty($cost)?$cost:'';?>">
+                            <?php if (!empty($costError)): ?>
+                                <span class="help-inline"><?php echo $costError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($@@Error)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($descriptionError)?'error':'';?>">
                         <label class="control-label"></label>
                         <div class="controls">
-                            <input name="@@" type="text"  placeholder="@@" value="<?php echo !empty($name)?$name:'';?>">
-                            <?php if (!empty($@@Error)): ?>
+                            <input name="description" type="text"  placeholder="Description" value="<?php echo !empty($description)?$description:'';?>">
+                            <?php if (!empty($descrptionError)): ?>
+                                <span class="help-inline"><?php echo $descriptionError;?></span>
+                            <?php endif; ?>
+                        </div>
+                      </div>
+                      <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
+                        <label class="control-label"></label>
+                        <div class="controls">
+                            <input name="subcategory_id" type="text"  placeholder="Subcategory ID" value="<?php echo !empty($subcategory_id)?$subcategory_id:'';?>">
+                            <?php if (!empty($subcategory_idError)): ?>
                                 <span class="help-inline"><?php echo $@@Error;?></span>
                             <?php endif; ?>
                         </div>
