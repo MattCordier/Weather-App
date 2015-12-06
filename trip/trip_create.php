@@ -94,6 +94,16 @@
                             <?php endif; ?>
                         </div>
                       </div>
+
+                      <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
+                        <label class="control-label">Subcategory</label>
+                        <div class="controls">
+                            <input name="subcategory_id" type="text"  placeholder="Subcategory ID" value="<?php echo !empty($subcategory_id)?$subcategory_id:'';?>">
+                            <?php if (!empty($subcategory_idError)): ?>
+                                <span class="help-inline"><?php echo $subcategory_idError;?></span>
+                            <?php endif; ?>
+                        </div>
+                      </div>
                       
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Create</button>
