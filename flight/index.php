@@ -32,7 +32,7 @@
                    $pdo = Database::connect();
                    $sql = 'SELECT * FROM flight ORDER BY id DESC';
                    foreach ($pdo->query($sql) as $row) {
-                            echo '<td>'. $row['number'] . '</td>';
+                            echo '<td>'. $row['flight_number'] . '</td>';
                             echo '<td>'. $row['airline'] . '</td>';
                             echo '<td>'. $row['depart'] . '</td>';
                             echo '<td>'. $row['arrive'] . '</td>';
