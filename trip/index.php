@@ -22,6 +22,7 @@
                       <th>Trip Name</th>
                       <th>Cost</th>
                       <th>description</th>
+                      <th>Subcategory ID</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -34,6 +35,7 @@
                             echo '<td>'. $row['name'] . '</td>';
                             echo '<td>'. $row['cost'] . '</td>';
                             echo '<td>'. $row['description'] . '</td>';
+                            echo '<td>'. $row['subcategory_id'] . '</td>';
                             
                             echo '<td width=250>';
                                 echo '<a class="btn" href="trip_read.php?id='.$row['id'].'">Read</a>';
