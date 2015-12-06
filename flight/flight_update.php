@@ -22,6 +22,7 @@
         $airline = $_POST['airline'];
         $depart = $_POST['depart'];
         $arrive = $_POST['arrive'];
+
         // validate input
         $valid = true;
         if (empty($flight_number)) {
@@ -79,41 +80,10 @@
      
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Update a Customer</h3>
+                        <h3>Update a Flight</h3>
                     </div>
              
-                    <form class="form-horizontal" action="flight_update.php?id=<?php echo $id?>" method="post">
-
-                      <div class="control-group <?php echo !empty($flight_numberError)?'error':'';?>">
-                        <label class="control-label">Flight Number</label>
-                        <div class="controls">
-                            <input name="flight_number" type="text"  placeholder="Flight Number" value="<?php echo !empty($flight_number)?$flight_number:'';?>">
-                            <?php if (!empty($flight_numberError)): ?>
-                                <span class="help-inline"><?php echo $flight_numberError;?></span>
-                            <?php endif; ?>
-                        </div>
-                      </div>
-                      <div class="controls">
-                            <input name="airline" type="text"  placeholder="Airline" value="<?php echo !empty($airline)?$airline:'';?>">
-                            <?php if (!empty($airlineError)): ?>
-                                <span class="help-inline"><?php echo $airlineError;?></span>
-                            <?php endif; ?>
-                        </div>
-                      </div>
-                      <div class="controls">
-                            <input name="depart" type="text"  placeholder="Depart" value="<?php echo !empty($depart)?$depart:'';?>">
-                            <?php if (!empty($departError)): ?>
-                                <span class="help-inline"><?php echo $departError;?></span>
-                            <?php endif; ?>
-                        </div>
-                      </div>
-                      <div class="controls">
-                            <input name="arrive" type="text"  placeholder="Arrive" value="<?php echo !empty($arrive)?$arrive:'';?>">
-                            <?php if (!empty($arriveError)): ?>
-                                <span class="help-inline"><?php echo $arriveError;?></span>
-                            <?php endif; ?>
-                        </div>
-                      </div>
+                    
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Update</button>
                           <a class="btn" href="index.php">Back</a>
