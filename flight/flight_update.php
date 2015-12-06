@@ -63,7 +63,7 @@
         $flight_number = $data['flight_number'];
         $airline = $data['airline'];
         $depart = $data['depart'];
-        $arrive = $data['arrive']
+        $arrive = $data['arrive'];
         Database::disconnect();
     }
 ?>
