@@ -93,6 +93,36 @@
                             <?php endif; ?>
                         </div>
                       </div>
+
+                      <div class="control-group <?php echo !empty($costError)?'error':'';?>">
+                        <label class="control-label">cost</label>
+                        <div class="controls">
+                            <input name="cost" type="text"  placeholder="cost" value="<?php echo !empty($cost)?$cost:'';?>">
+                            <?php if (!empty($costError)): ?>
+                                <span class="help-inline"><?php echo $costError;?></span>
+                            <?php endif; ?>
+                        </div>
+                      </div>
+
+                      <div class="control-group <?php echo !empty($descriptionError)?'error':'';?>">
+                        <label class="control-label">description</label>
+                        <div class="controls">
+                            <input name="description" type="text"  placeholder="description" value="<?php echo !empty($description)?$description:'';?>">
+                            <?php if (!empty($descriptionError)): ?>
+                                <span class="help-inline"><?php echo $descriptionError;?></span>
+                            <?php endif; ?>
+                        </div>
+                      </div>
+
+                      <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
+                        <label class="control-label">subcategory_id</label>
+                        <div class="controls">
+                            <input name="subcategory_id" type="text"  placeholder="subcategory_id" value="<?php echo !empty($subcategory_id)?$subcategory_id:'';?>">
+                            <?php if (!empty($subcategory_idError)): ?>
+                                <span class="help-inline"><?php echo $subcategory_idError;?></span>
+                            <?php endif; ?>
+                        </div>
+                      </div>
                       
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Update</button>
