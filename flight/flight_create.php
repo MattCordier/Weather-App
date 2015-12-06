@@ -42,7 +42,7 @@
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "INSERT INTO flight (flight_number, airline, depart, arrive) values(?, ?, ?, ?)";
             $q = $pdo->prepare($sql);
-            $q->execute(array(flight_number, airline, depart, arrive));
+            $q->execute(array($flight_number, $airline, $depart, $arrive));
             Database::disconnect();
             header("Location: index.php");
         }
