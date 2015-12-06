@@ -21,7 +21,7 @@
                     <tr>
                       <th>Trip Name</th>
                       <th>Cost</th>
-                      <th>description</th>
+                      <th>Description</th>
                       <th>Subcategory ID</th>
                       <th>Action</th>
                     </tr>

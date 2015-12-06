@@ -40,7 +40,7 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO customers (name, cost, description, subcategory_id) values(?, ?, ?, ?)";
+            $sql = "INSERT INTO trip (name, cost, description, subcategory_id) values(?, ?, ?, ?)";
             $q = $pdo->prepare($sql);
             $q->execute(array($name, $cost, $description, $subcategory_id));
             Database::disconnect();
