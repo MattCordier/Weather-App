@@ -75,6 +75,24 @@
                             <?php endif; ?>
                         </div>
                       </div>
+                      <div class="control-group <?php echo !empty($costError)?'error':'';?>">
+                        <label class="control-label">Cost</label>
+                        <div class="controls">
+                            <input name="cost" type="text"  placeholder="cost" value="<?php echo !empty($cost)?$cost:'';?>">
+                            <?php if (!empty($costError)): ?>
+                                <span class="help-inline"><?php echo $costError;?></span>
+                            <?php endif; ?>
+                        </div>
+                      </div>
+                      <div class="control-group <?php echo !empty($descriptionError)?'error':'';?>">
+                        <label class="control-label"></label>
+                        <div class="controls">
+                            <input name="description" type="text"  placeholder="Description" value="<?php echo !empty($description)?$description:'';?>">
+                            <?php if (!empty($descrptionError)): ?>
+                                <span class="help-inline"><?php echo $descriptionError;?></span>
+                            <?php endif; ?>
+                        </div>
+                      </div>
                       
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Create</button>
