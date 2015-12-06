@@ -65,7 +65,23 @@
                         <h3>Create a Trip</h3>
                     </div>
              
-                   
+                    <form class="form-horizontal" action="trip_create.php" method="post">
+                      <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
+                        <label class="control-label">Name</label>
+                        <div class="controls">
+                            <input name="name" type="text"  placeholder="Name" value="<?php echo !empty($name)?$name:'';?>">
+                            <?php if (!empty($nameError)): ?>
+                                <span class="help-inline"><?php echo $nameError;?></span>
+                            <?php endif; ?>
+                        </div>
+                      </div>
+                      
+                      <div class="form-actions">
+                          <button type="submit" class="btn btn-success">Create</button>
+                          <a class="btn" href="index.php">Back</a>
+                        </div>
+                    </form>
+                </div>
                  
     </div> <!-- /container -->
   </body>
