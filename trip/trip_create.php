@@ -85,9 +85,10 @@
                         </div>
                       </div>
                       <div class="control-group <?php echo !empty($descriptionError)?'error':'';?>">
-                        <label class="control-label"></label>
+                        <label class="control-label">Description</label>
                         <div class="controls">
-                            <input name="description" type="text"  placeholder="Description" value="<?php echo !empty($description)?$description:'';?>">
+                            <textarea rows="4" cols="50" name="description" type="text"  placeholder="Description" value="<?php echo !empty($description)?$description:'';?>">
+                            </textarea>
                             <?php if (!empty($descrptionError)): ?>
                                 <span class="help-inline"><?php echo $descriptionError;?></span>
                             <?php endif; ?>
