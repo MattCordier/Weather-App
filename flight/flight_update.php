@@ -83,6 +83,7 @@
                     </div>
              
                     <form class="form-horizontal" action="flight_update.php?id=<?php echo $id?>" method="post">
+
                       <div class="control-group <?php echo !empty($flight_numberError)?'error':'';?>">
                         <label class="control-label">Flight Number</label>
                         <div class="controls">
@@ -94,7 +95,7 @@
                       </div>
                       <div class="controls">
                             <input name="airline" type="text"  placeholder="Airline" value="<?php echo !empty($airline)?$airline:'';?>">
-                            <?php if (!empty($@@Error)): ?>
+                            <?php if (!empty($airlineError)): ?>
                                 <span class="help-inline"><?php echo $airlineError;?></span>
                             <?php endif; ?>
                         </div>
