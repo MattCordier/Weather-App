@@ -13,7 +13,7 @@
         // delete data
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "DELETE FROM @@  WHERE id = ?";
+        $sql = "DELETE FROM trip  WHERE id = ?";
         $q = $pdo->prepare($sql);
         $q->execute(array($id));
         Database::disconnect();
@@ -35,10 +35,10 @@
      
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Delete a @@</h3>
+                        <h3>Delete a Trip</h3>
                     </div>
                      
-                    <form class="form-horizontal" action="@@_delete.php" method="post">
+                    <form class="form-horizontal" action="trip_delete.php" method="post">
                       <input type="hidden" name="id" value="<?php echo $id;?>"/>
                       <p class="alert alert-error">Are you sure to delete ?</p>
                       <div class="form-actions">
