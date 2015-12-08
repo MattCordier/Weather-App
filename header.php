@@ -6,7 +6,6 @@
 	    <meta name="author" content="Matt Cordier">
 	    <meta name="description" content="">
 	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	    <link rel="stylesheet" href="assets/css/bootstrap.min.css.map">
 	    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	    <link rel="stylesheet" href="assets/css/normalize.css">
 	    <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
