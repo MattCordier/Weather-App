@@ -28,7 +28,7 @@
                   <?php
                    include '../ecomm_connect.php';
                    $pdo = Database::connect();
-                   $sql = 'SELECT * FROM trip JOIN style ON style_id = style(id) ORDER BY trip(id) DESC';
+                   $sql = 'SELECT * FROM trip JOIN style ON style_id = style.id ORDER BY trip.id DESC';
                    foreach ($pdo->query($sql) as $row) {
                             echo '<td>'. $row['name'] . '</td>'; 
                             echo '<td>'. $row['description'] . '</td>';
