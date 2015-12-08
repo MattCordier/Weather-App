@@ -45,16 +45,14 @@
 .flexslider {
   margin: 0;
   padding: 0;
-  width: 200px;
-  height: 200px;
+  max-height: 500px;
 }
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
   display: block;
 }
 .flexslider .slides:after {
