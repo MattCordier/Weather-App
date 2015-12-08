@@ -22,6 +22,9 @@
         <li><a href="index.php">Home </a></li>
         <li><a href="trips.php">Trips</a></li>
         <li><a href="search.php">Search</a></li>
+      </ul>  
+      <ul class="nav navbar-nav navbar-right">
+  
         <li><a href="settings.php">Settings</a></li>
         <li><a href="cart.php">Cart</a></li>
         <li><a href="login.php">Login</a></li>
