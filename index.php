@@ -26,7 +26,7 @@
 
 	    <h1 class="main-title">Hiking Tours</h1>
 
-	    <div class="row">
+	    <div class="row trip">
 	    	<div class="col-xs-4 trip-card">
 	    		<img class="trip-img" src="assets/img/apex_northwest_trail.jpg" title="#" alt="#">
 	    		<p>suck</p>

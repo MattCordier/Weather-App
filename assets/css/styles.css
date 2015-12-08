@@ -28,6 +28,11 @@ nav.navbar.navbar-default li a:hover {
     color: #E16E28;
 }
 
+.row .trip{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 .trip-card {
 	background-color: #ffed9f; 
 	max-width: 80%;
