@@ -28,10 +28,10 @@
                   <?php
                    include '../ecomm_connect.php';
                    $pdo = Database::connect();
-                   $sql = 'SELECT * FROM trip ORDER BY id DESC';
+                   $sql = 'SELECT * FROM style ORDER BY id DESC';
                    foreach ($pdo->query($sql) as $row) {
                             echo '<td>'. $row['name'] . '</td>';
-                            echo '<td>'. $row['cost'] . '</td>';
+                            
                             echo '<td>'. $row['description'] . '</td>';
                             echo '<td>'. $row['style_id'] . '</td>';
                             echo '<td>'. $row['desitnation_id'] . '</td>';
