@@ -27,3 +27,11 @@ nav.navbar.navbar-default li a {
 nav.navbar.navbar-default li a:hover {
     color: #E16E28;
 }
+
+.trip-card {
+	max-width: 90%;
+}
+
+.trip-img {
+	display: block;
+}

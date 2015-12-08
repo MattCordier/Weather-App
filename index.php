@@ -28,15 +28,15 @@
 
 	    <div class="row">
 	    	<div class="col-xs-4 trip-card">
-	    		<img src="assets/img/apex_northwest_trail.jpg" title="#" alt="#">
+	    		<img class="trip-img" src="assets/img/apex_northwest_trail.jpg" title="#" alt="#">
 	    		<p>suck</p>
 	    	</div>
 	    	<div class="col-xs-4 trip-card">
-	    		<img src="assets/img/apex_orange_mountain.jpg" title="#" alt="#">
+	    		<img class="trip-img" src="assets/img/apex_orange_mountain.jpg" title="#" alt="#">
 	    		<p>a</p>
 	    	</div>
 	    	<div class="col-xs-4 trip-card">
-	    		<img src="assets/img/apex_green_forest.jpg" title="#" alt="#">
+	    		<img class="trip-img" src="assets/img/apex_green_forest.jpg" title="#" alt="#">
 	    		<p>duck</p>
 	    	</div>
 	    </div>
