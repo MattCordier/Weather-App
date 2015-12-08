@@ -40,14 +40,14 @@
                             // echo '<td>'. $row['style_id'] . '</td>';
                             // echo '<td>'. $row['desitnation_id'] . '</td>';
                             
-                            echo '<td width=250>';
-                                echo '<a class="btn" href="trip_read.php?id='.$row['id'].'">Read</a>';
-                                echo ' ';
-                                echo '<a class="btn btn-success" href="trip_update.php?id='.$row['id'].'">Update</a>';
-                                echo ' ';
-                                echo '<a class="btn btn-danger" href="trip_delete.php?id='.$row['id'].'">Delete</a>';
-                                echo '</td>';
-                            echo '</tr>';
+                            // echo '<td width=250>';
+                            //     echo '<a class="btn" href="trip_read.php?id='.$row['id'].'">Read</a>';
+                            //     echo ' ';
+                            //     echo '<a class="btn btn-success" href="trip_update.php?id='.$row['id'].'">Update</a>';
+                            //     echo ' ';
+                            //     echo '<a class="btn btn-danger" href="trip_delete.php?id='.$row['id'].'">Delete</a>';
+                            //     echo '</td>';
+                            // echo '</tr>';
                    }
                    Database::disconnect();
                   ?>
