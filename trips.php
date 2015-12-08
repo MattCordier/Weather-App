@@ -16,7 +16,7 @@
                   <thead>
                     <tr>
                       <th>Trip Name</th>
-                      <th>Cost</th>
+                      
                       <th>Description</th>
                       <th>Style</th>
                       <th>Destination</th>
