@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<?php 
-	require "navigation.php";
-	require "footer.php";
-?>
+<html>
+
+<body>
+<?php require "navigation.php";?>
+
+<?php require "footer.php";?>
+</body>
+
+</html>
