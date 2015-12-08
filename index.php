@@ -9,7 +9,7 @@
 
       <!--Flex Slider Script-->
       
-	<div class="container">
+	<div class="container-fluid">
 	    <div class="flexslider">
 	      <ul class="slides">
 	        <li>
@@ -23,6 +23,8 @@
 	        </li>
 	      </ul>
 	    </div> <!--end flexslider-->
+
+	    <h1></h1>
 	</div><!--end container-->	    
 
 <?php require "footer.php";?>
