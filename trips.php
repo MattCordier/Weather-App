@@ -32,7 +32,7 @@
                    foreach ($pdo->query($sql) as $row) {
                             echo '<td>'. $row['name'] . '</td>'; 
                             echo '<td>'. $row['description'] . '</td>';
-                            echo '<td>'. $row['style.id'] . '</td>';
+                            echo '<td>'. $row['style_id'] . '</td>';
                             echo '<td>'. $row['destination_id'] . '</td>';
                             
                             echo '<td width=250>';
