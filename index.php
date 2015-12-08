@@ -4,16 +4,11 @@
 <body>
 <?php require "navigation.php";?>
 <!--Flex Slider CSS-->
-      <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css">
-<!--Flex Slider jQuery-->
-      <script src="assets/js/jquery.flexslider-min.js"></script>
+      
+      
 
       <!--Flex Slider Script-->
-      <script type="text/javascript" charset="utf-8">
-          $(window).load(function() {
-            $('.flexslider').flexslider();
-          });
-      </script>
+      
 	<div class="container-fluid">
     <div class="flexslider">
       <ul class="slides">
@@ -30,6 +25,14 @@
     </div> <!--end flexslider-->
 
 <?php require "footer.php";?>
+<script src="assets/js/jquery.flexslider-min.js"></script>
+<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css">
+<script type="text/javascript" charset="utf-8">
+          $(window).load(function() {
+            $('.flexslider').flexslider();
+          });
+      </script>
+<!--Flex Slider jQuery-->
 </body>
 
 </html>
