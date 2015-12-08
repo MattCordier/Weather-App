@@ -45,15 +45,14 @@
 .flexslider {
   margin: 0;
   padding: 0;
-  max-height: 400px;
-
+  
 }
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 .flexslider .slides:after {
@@ -97,7 +96,7 @@ html[xmlns] .flexslider .slides {
   height: auto;
 }
 .flex-viewport {
-  max-height: 400px;
+  max-height: 2000px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
