@@ -8,7 +8,7 @@ body {
 
 nav.navbar.navbar-default{
 	position: absolute;
-	display: block;
+	display: inline-block;
 	margin-left: auto !important;
 	margin-right: auto !important;
 	margin-bottom: 0px !important;
