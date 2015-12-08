@@ -9,6 +9,8 @@ body {
 nav.navbar.navbar-default{
 	position: absolute;
 	background-color: rgba(0, 0, 0, .6);
+	border: none;
+	border-radius: none;
 	margin-bottom: 0px !important;
 	z-index: 99;
 }
