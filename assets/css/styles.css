@@ -10,9 +10,12 @@ nav.navbar.navbar-default{
 	position: absolute;
 	width: 100%;
 	background-color: rgba(0, 0, 0, .6);
-	color: #FFFFFF;
 	border: none;
 	border-radius: 0px;
 	margin-bottom: 0px !important;
 	z-index: 99;
+}
+
+.collapse.navbar-collapse{
+	color: #FFFFFF;
 }
