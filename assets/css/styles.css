@@ -13,3 +13,7 @@ nav.navbar.navbar-default{
 	margin-bottom: 0px !important;
 	z-index: 99;
 }
+
+nav.navbar-nav li a {
+    color: #FFFFFF;
+}
