@@ -9,20 +9,21 @@
 
       <!--Flex Slider Script-->
       
-	<div class="container-fluid">
-    <div class="flexslider">
-      <ul class="slides">
-        <li>
-          <img src="assets/img/apex_summit.jpg" title="winter sale event." alt="GoPup Winter Event."/>
-        </li>
-        <li>
-          <img src="assets/img/apex_stream.jpg" title="leash and collars." alt="GoPup Leashes and Collars."/>
-        </li>
-        <li>
-          <img src="assets/img/apex_plank_hiker.jpg" title="GoPup guarantee." alt="GoPup guarantee."/>
-        </li>
-      </ul>
-    </div> <!--end flexslider-->
+	<div class="container">
+	    <div class="flexslider">
+	      <ul class="slides">
+	        <li>
+	          <img src="assets/img/apex_summit.jpg" title="Apex mountain trips." alt="Apex mountain trips."/>
+	        </li>
+	        <li>
+	          <img src="assets/img/apex_stream.jpg" title="Apex woodland trail hikes." alt="Apex woodland trail hikes."/>
+	        </li>
+	        <li>
+	          <img src="assets/img/apex_plank_hiker.jpg" title="Day Hikes." alt="Day Hikes."/>
+	        </li>
+	      </ul>
+	    </div> <!--end flexslider-->
+	</div><!--end container-->	    
 
 <?php require "footer.php";?>
 <script src="assets/js/jquery.flexslider-min.js"></script>
