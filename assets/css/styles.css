@@ -1,5 +1,5 @@
 body {
-	background: #ffed9f;
+	background-color: #ffed9f;
 }
 
 .container {
@@ -29,6 +29,7 @@ nav.navbar.navbar-default li a:hover {
 }
 
 .trip-card {
+	background-color: #ffed9f; 
 	max-width: 20%;
 }
 
