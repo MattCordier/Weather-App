@@ -17,3 +17,7 @@ nav.navbar.navbar-default{
 nav.navbar.navbar-default li a {
     color: #FFFFFF;
 }
+
+nav.navbar.navbar-default li a:hover {
+    color: #E16E28;
+}
