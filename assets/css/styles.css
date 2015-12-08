@@ -8,9 +8,7 @@ body {
 
 nav.navbar.navbar-default{
 	position: absolute;
-	display: inline-block;
-	margin-left: auto !important;
-	margin-right: auto !important;
+	background-color: rgba(0, 0, 0, .6);
 	margin-bottom: 0px !important;
 	z-index: 99;
 }
