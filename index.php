@@ -24,7 +24,7 @@
 	      </ul>
 	    </div> <!--end flexslider-->
 
-	    <h1></h1>
+	    <h1>Hiking Tours</h1>
 	</div><!--end container-->	    
 
 <?php require "footer.php";?>
