@@ -24,7 +24,21 @@
 	      </ul>
 	    </div> <!--end flexslider-->
 
-	    <h1>Hiking Tours</h1>
+	    <h1 class="main-title">Hiking Tours</h1>
+
+	    <div class="row">
+	    	<div class="col-sm-4 col-xs-12">
+	    		<p>suck</p>
+	    	</div>
+	    	<div class="col-sm-4 col-xs-12">
+	    		<p>a</p>
+	    	</div>
+	    	<div class="col-sm-4 col-xs-12">
+	    		<p>duck</p>
+	    	</div>
+	    </div>
+
+
 	</div><!--end container-->	    
 
 <?php require "footer.php";?>
