@@ -20,19 +20,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="index.php">Home </a></li>
-     	<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trips <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="trips.php">Trips</a></li>
-            <li><a href="search.php">Search</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li><a href="Search">Search</a></li>
+        <li><a href="trips.php">Trips</a></li>
+        <li><a href="search.php">Search</a></li>
+        <li><a href="settings.php">Settings</a></li>
+        <li><a href="cart.php">Cart</a></li>
+        <li><a href="login.php">Login</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
