@@ -33,7 +33,7 @@
                             echo '<td>'. $row['name'] . '</td>'; 
                             echo '<td>'. $row['description'] . '</td>';
                             echo '<td>'. $row['style_id'] . '</td>';
-                            echo '<td>'. $row['desitnation_id'] . '</td>';
+                            echo '<td>'. $row['destination_id'] . '</td>';
                             
                             echo '<td width=250>';
                                 echo '<a class="btn" href="trip_read.php?id='.$row['id'].'">Read</a>';
