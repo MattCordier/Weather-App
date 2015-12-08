@@ -20,10 +20,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="Home">Home </a></li>
-        <li><a href="Trips">Trips</a></li>
-        <li><a href="Search">Search</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+     	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trips <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="index.php">Home</a></li>
             <li><a href="trips.php">Trips</a></li>
@@ -34,6 +32,7 @@
             <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
+        <li><a href="Search">Search</a></li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
