@@ -4,9 +4,9 @@
 <body>
 <?php require "navigation.php";?>
 <!--Flex Slider CSS-->
-      <link rel="stylesheet" href="assets/flexslider.css" type="text/css">
+      <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css">
 <!--Flex Slider jQuery-->
-      <script src="assets/jquery.flexslider-min.js"></script>
+      <script src="assets/js/jquery.flexslider-min.js"></script>
 
       <!--Flex Slider Script-->
       <script type="text/javascript" charset="utf-8">
