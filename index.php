@@ -9,7 +9,7 @@
 
       <!--Flex Slider Script-->
       
-	<div class="container">
+	<div class="container main-bg">
 	    <div class="flexslider">
 	      <ul class="slides">
 	        <li>
