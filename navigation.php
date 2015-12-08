@@ -1,9 +1,3 @@
-<?php 
-
-	require('header.php');
-?>
-
-
 <nav class="navbar navbar-default">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
