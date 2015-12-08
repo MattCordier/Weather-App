@@ -130,7 +130,7 @@
 
 
                       <div class="control-group <?php echo !empty($firstnameError)?'error':'';?>">
-                        <label class="control-label">Name</label>
+                        <label class="control-label">First Name</label>
                         <div class="controls">
                             <input name="firstname" type="text"  placeholder="Name" value="<?php echo !empty($firstname)?$firstname:'';?>">
                             <?php if (!empty($firstnameError)): ?>
@@ -140,7 +140,7 @@
                       </div>
 
                       <div class="control-group <?php echo !empty($lastnameError)?'error':'';?>">
-                        <label class="control-label">Name</label>
+                        <label class="control-label">Last Name</label>
                         <div class="controls">
                             <input name="lastname" type="text"  placeholder="Last Name" value="<?php echo !empty($lastname)?$lasstname:'';?>">
                             <?php if (!empty($lasstnameError)): ?>
