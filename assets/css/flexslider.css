@@ -45,13 +45,16 @@
 .flexslider {
   margin: 0;
   padding: 0;
+  width: 200px;
+  height: 200px;
 }
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 100%;
+  width: 200px;
+  height: 200px;
   display: block;
 }
 .flexslider .slides:after {
@@ -92,10 +95,10 @@ html[xmlns] .flexslider .slides {
   zoom: 1;
 }
 .flexslider .slides img {
-  height: 700px;
+  height: auto;
 }
 .flex-viewport {
-  max-height: 700px;
+  max-height: 2000px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
