@@ -1,5 +1,5 @@
-.navbar {
-    position: absolute !important;
+.navbar, .navbar-default {
+    position: fixed !important;
     top: 0px;
     width: 940px;
     margin-left: auto;
