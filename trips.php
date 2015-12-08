@@ -28,12 +28,12 @@
                   <?php
                    include '../ecomm_connect.php';
                    $pdo = Database::connect();
-                   $sql = 'SELECT name, description FROM trip JOIN style ON style_id = style.id ORDER BY trip.id DESC';
+                   $sql = 'SELECT * FROM trip JOIN ORDER BY id DESC';
                    foreach ($pdo->query($sql) as $row) {
-                            echo '<td>'. $row['trip.name'] . '</td>'; 
-                            echo '<td>'. $row['trip.description'] . '</td>';
+                            echo '<td>'. $row['name'] . '</td>'; 
+                            echo '<td>'. $row['description'] . '</td>';
                             echo '<td>'. $row['style.name'] . '</td>';
-                            echo '<td>'. $row['style.description'] . '</td>';
+                            echo '<td>'. $row['destination_id'] . '</td>';
                             
                             echo '<td width=250>';
                                 echo '<a class="btn" href="trip_read.php?id='.$row['id'].'">Read</a>';
