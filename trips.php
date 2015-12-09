@@ -50,7 +50,7 @@
         	<div class="row">
         		<div class="col-xs-12">
 	        		<?php	
-	        			$sql = 'SELECT * FROM trip ORDER BY name';
+	        			$sql = 'SELECT * FROM trip WHERE style_id = 1 AND destination_id = 2 ORDER BY name';
 	        			foreach ($pdo->query($sql) as $row) {
 	        				echo '<div class="col-xs-4">';
 	        				echo '<p>'.$row['name'].'</p>';
