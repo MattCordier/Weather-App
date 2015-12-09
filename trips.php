@@ -15,6 +15,15 @@
                 	<div class="form-group">
 					  	<label for="sel1">Hiker Style:</label>
 					  	<select class="form-control" id="sel1">
+					  		<?php
+                   include '../ecomm_connect.php';
+                   $pdo = Database::connect();
+                   $sql = 'SELECT * FROM trip ORDER BY id DESC';
+                   foreach ($pdo->query($sql) as $row) {
+                            echo '<option>'. $row['name'] . '</option>';
+                   }
+                   Database::disconnect();
+                  ?>
 					    	<option>1</option>
 					    	<option>2</option>
 					    	<option>3</option>
