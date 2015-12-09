@@ -16,14 +16,19 @@
 
             <div class="row">
                 <script>
-                	function yo(value){
+                $(document).ready(function({
+					$("#style").on("change", function(){
                 		alert ("you selected" + this.value); 
-                	}
+
+                	})
+                }))	
+                	
+                	
                 </script>
                 <div class="col-xs-6">
                 	<div class="form-group">
 					  	<label for="sel1">Hiker Style:</label>
-					  	<select class="form-control" value="all" onchange="yo(this.value)">
+					  	<select id="style" class="form-control" value="all">
 					  		<option selected="selected"> All </option>
 					  		<?php
 					  			$hiker = 
