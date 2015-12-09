@@ -70,14 +70,15 @@
 <script>
     $(document).ready(function(){
 		$("#style").on("change", function(){
-    		$.get("get_trip.php", {style_id : "11"}, function(data){
+			cosole.log(this.value);
+    		$.get("get_trip.php", function(data){
     			
-    			$('#trips').html(data + " boy!!!!" + data.style_id  );
+    			$('#trips').html(data);
     		}); 
     	});
     	$("#destination").on("change", function(){
-    		$.get("get_trip.php", {destination_id : this.value}, function(data){
-    			$('#trips').html(data + " girl!!!!" );
+    		$.get("get_trip.php", function(data){
+    			$('#trips').html(data);
     		}); 
     	});
     });            	
