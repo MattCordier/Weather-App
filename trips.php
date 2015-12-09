@@ -70,7 +70,9 @@
 <script>
     $(document).ready(function(){
 		$("#style").on("change", function(){
-    		console.log(this.value); 
+    		$.get("get_trip.php", this.value, function(data){
+    			///do some codez
+    		}); 
     	});
     	$("#destination").on("change", function(){
     		alert ("you selected" + " " + this.value); 
