@@ -13,7 +13,7 @@
                 
                 <div class="col-xs-6">
                 	<div class="form-group">
-					  	<label for="sel1">Select list:</label>
+					  	<label for="sel1">Hiker Style:</label>
 					  	<select class="form-control" id="sel1">
 					    	<option>1</option>
 					    	<option>2</option>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-xs-6">
                 	<div class="form-group">
-  						<label for="sel1">Select list:</label>
+  						<label for="sel1">Destination:</label>
   						<select class="form-control" id="sel1">
 							<option>1</option>
 						    <option>2</option>
