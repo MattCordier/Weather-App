@@ -71,8 +71,8 @@
     $(document).ready(function(){
 		$("#style").on("change", function(){
 			console.log(this.value);
-    		$.get("get_trip.php", function(data){
-    			console.log(this.value + "yo");
+    		$.get("get_trip.php", {style:"1"},function(data){
+    			console.log(data.style + "yo");
     			$('#trips').html(data);
     		}); 
     	});
