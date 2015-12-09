@@ -35,7 +35,7 @@
                 <div class="col-xs-6">
                 	<div class="form-group">
   						<label for="sel1">Destination:</label>
-  						<select class="form-control">
+  						<select id="destination" class="form-control">
   							<option selected="selected"> All </option>
 							<?php
 			                   $sql = 'SELECT * FROM destination ORDER BY name';
@@ -70,6 +70,9 @@
 <script>
     $(document).ready(function(){
 		$("#style").on("change", function(){
+    		alert ("you selected" + " " + this.value); 
+    	});
+    	$("#destination").on("change", function(){
     		alert ("you selected" + " " + this.value); 
     	});
     });            	
