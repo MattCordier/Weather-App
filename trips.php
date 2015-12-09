@@ -71,6 +71,7 @@
     $(document).ready(function(){
 		$("#style").on("change", function(){
     		$.get("get_trip.php", {style_id : this.value}, function(data){
+    			console.log(this.value);
     			$('#trips').html(data + " boy!!!!" + data.style_id  );
     		}); 
     	});
