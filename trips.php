@@ -17,7 +17,7 @@
             <div class="row">
                 <script>
                 	function yo(value){
-                		alert ("you selected" + this.value; 
+                		alert ("you selected" + this.value); 
                 	}
                 </script>
                 <div class="col-xs-6">
