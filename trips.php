@@ -71,12 +71,12 @@
     $(document).ready(function(){
 		$("#style").on("change", function(){
     		$.get("get_trip.php", this.value, function(data){
-    			$('#trips').html(data);
+    			$('#trips').html(data + " " +this.value);
     		}); 
     	});
     	$("#destination").on("change", function(){
     		$.get("get_trip.php", this.value, function(data){
-    			$('#trips').html(data);
+    			$('#trips').html(data + " " +this.value);
     		}); 
     	});
     });            	
