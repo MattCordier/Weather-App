@@ -72,7 +72,7 @@
 		$("#style").on("change", function(){
 			console.log(this.value);
     		$.get("get_trip.php", function(data){
-    			
+    			console.log(this.value + "yo");
     			$('#trips').html(data);
     		}); 
     	});
