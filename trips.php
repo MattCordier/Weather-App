@@ -12,30 +12,26 @@
             <div class="row">
                 
                 <div class="col-xs-6">
-                	<div class="dropdown">
-  						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    						Dropdown
-    					<span class="caret"></span>
-  						</button>
-  						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-						    <li><a href="#">Action</a></li>
-						    <li><a href="#">Another action</a></li>
-						    <li><a href="#">Something else here</a></li>    
-						  </ul>
-						</div>
+                	<div class="form-group">
+					  	<label for="sel1">Select list:</label>
+					  	<select class="form-control" id="sel1">
+					    	<option>1</option>
+					    	<option>2</option>
+					    	<option>3</option>
+					    	<option>4</option>
+					  	</select>
+					</div>
                 </div>
                 <div class="col-xs-6">
-                	<div class="dropdown">
-					    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					    Dropdown
-					    <span class="caret"></span>
-					    </button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					      <li><a href="#">Action</a></li>
-					      <li><a href="#">Another action</a></li>
-					      <li><a href="#">Something else here</a></li> 
-						</ul>
-					</div>
+                	<div class="form-group">
+  						<label for="sel1">Select list:</label>
+  						<select class="form-control" id="sel1">
+							<option>1</option>
+						    <option>2</option>
+						    <option>3</option>
+						    <option>4</option>
+						</select>
+</div>
 				</div>
                   
            
