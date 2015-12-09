@@ -36,6 +36,7 @@
                 	<div class="form-group">
   						<label for="sel1">Destination:</label>
   						<select class="form-control">
+  							<option selected="selected"> All </option>
 							<?php
 			                   $sql = 'SELECT * FROM destination ORDER BY name';
 			                   foreach ($pdo->query($sql) as $row) {
