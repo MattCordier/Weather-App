@@ -19,13 +19,13 @@
                 <div class="col-xs-6">
                 	<div class="form-group">
 					  	<label for="sel1">Hiker Style:</label>
-					  	<select id="style" class="form-control" value="all">
+					  	<select id="style" class="form-control">
 					  		<option selected="selected"> All </option>
 					  		<?php
 					  			 
 			                   	$sql = 'SELECT * FROM style ORDER BY name';
 			                   	foreach ($pdo->query($sql) as $row) {
-			                            echo '<option value="' .$row['id']. '">'. $row['name'] . '</option>';
+			                            echo '<option value=" ' .$row['id']. ' ">'. $row['name'] . '</option>';
 			                   }
 			                ?>
 					    	
@@ -68,15 +68,12 @@
 
 <?php require "footer.php";?>
 <script>
-                $(document).ready(function(){
-					$("#style").on("change", function(){
-                		alert ("you selected" + this.value); 
-
-                	});
-                });
-                	
-                	
-                </script>
+    $(document).ready(function(){
+		$("#style").on("change", function(){
+    		alert ("you selected" + " " + this.value); 
+    	});
+    });            	
+</script>
 </body>
 
 </html>
