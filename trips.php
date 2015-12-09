@@ -71,7 +71,7 @@
     $(document).ready(function(){
 		$("#style").on("change", function(){
     		$.get("get_trip.php", this.value, function(data){
-    			///do some codez
+    			console.log(data);
     		}); 
     	});
     	$("#destination").on("change", function(){
