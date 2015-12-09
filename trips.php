@@ -70,12 +70,12 @@
 <script>
     $(document).ready(function(){
 		$("#style").on("change", function(){
-    		$.get("get_trip.php", {style_id = this.value}, function(data){
+    		$.get("get_trip.php", {style_id : this.value}, function(data){
     			$('#trips').html(data + " boy!!!!" + data.style_id  );
     		}); 
     	});
     	$("#destination").on("change", function(){
-    		$.get("get_trip.php", {destination_id = this.value}, function(data){
+    		$.get("get_trip.php", {destination_id : this.value}, function(data){
     			$('#trips').html(data + " girl!!!!" );
     		}); 
     	});
