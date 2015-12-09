@@ -72,14 +72,15 @@
 		$("#style").on("change", function(){
 			var hiker = this.value;
 			console.log(hiker);
-    		$.get("get_trip.php", {style : this.value}, function(data){
+    		$.get("get_trip.php", {style : hiker}, function(data){
     		
     			$('#trips').html(data);
     		}); 
     	});
     	$("#destination").on("change", function(){
-    		console.log(this.value);
-    		$.get("get_trip.php", {destination : this.value}, function(data){
+    		var dest = this.value;
+			console.log(dest);
+    		$.get("get_trip.php", {destination : dest}, function(data){
     			$('#trips').html(data);
     		}); 
     	});
