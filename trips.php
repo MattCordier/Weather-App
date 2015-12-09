@@ -75,7 +75,9 @@
     		}); 
     	});
     	$("#destination").on("change", function(){
-    		alert ("you selected" + " " + this.value); 
+    		$.get("get_trip.php", this.value, function(data){
+    			$('#trips').html(data);
+    		}); 
     	});
     });            	
 </script>
