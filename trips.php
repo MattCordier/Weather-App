@@ -70,7 +70,7 @@
 <script>
     $(document).ready(function(){
 		$("#style").on("change", function(){
-    		alert ("you selected" + " " + this.value); 
+    		console.log(this.value); 
     	});
     	$("#destination").on("change", function(){
     		alert ("you selected" + " " + this.value); 
