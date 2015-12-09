@@ -15,16 +15,7 @@
             </div>
 
             <div class="row">
-                <script>
-                $(document).ready(function(){
-					$("#style").on("change", function(){
-                		alert ("you selected" + this.value); 
-
-                	});
-                });
-                	
-                	
-                </script>
+                
                 <div class="col-xs-6">
                 	<div class="form-group">
 					  	<label for="sel1">Hiker Style:</label>
@@ -76,6 +67,16 @@
 					  		<?php Database::disconnect(); ?>
 
 <?php require "footer.php";?>
+<script>
+                $(document).ready(function(){
+					$("#style").on("change", function(){
+                		alert ("you selected" + this.value); 
+
+                	});
+                });
+                	
+                	
+                </script>
 </body>
 
 </html>
