@@ -70,7 +70,8 @@
 <script>
     $(document).ready(function(){
 		$("#style").on("change", function(){
-			console.log(this.value);
+			var hiker = this.value;
+			console.log(hiker);
     		$.get("get_trip.php", {style : this.value}, function(data){
     		
     			$('#trips').html(data);
