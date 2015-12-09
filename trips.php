@@ -29,7 +29,7 @@
 					  			$hiker = 
 			                   	$sql = 'SELECT * FROM style ORDER BY name';
 			                   	foreach ($pdo->query($sql) as $row) {
-			                            echo '<option>'. $row['name'] . '</option>';
+			                            echo '<option value="' .$row['id']. '">'. $row['name'] . '</option>';
 			                   }
 			                ?>
 					    	
