@@ -16,12 +16,12 @@
 
             <div class="row">
                 <script>
-                $(document).ready(function({
+                $(document).ready(function(){
 					$("#style").on("change", function(){
                 		alert ("you selected" + this.value); 
 
-                	})
-                }))	
+                	});
+                });
                 	
                 	
                 </script>
@@ -31,7 +31,7 @@
 					  	<select id="style" class="form-control" value="all">
 					  		<option selected="selected"> All </option>
 					  		<?php
-					  			$hiker = 
+					  			 
 			                   	$sql = 'SELECT * FROM style ORDER BY name';
 			                   	foreach ($pdo->query($sql) as $row) {
 			                            echo '<option value="' .$row['id']. '">'. $row['name'] . '</option>';
