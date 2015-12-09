@@ -70,7 +70,7 @@
 <script>
     $(document).ready(function(){
 		$("#style").on("change", function(){
-			cosole.log(this.value);
+			console.log(this.value);
     		$.get("get_trip.php", function(data){
     			
     			$('#trips').html(data);
