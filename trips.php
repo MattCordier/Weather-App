@@ -18,7 +18,7 @@
 					  		<?php
                    include '../ecomm_connect.php';
                    $pdo = Database::connect();
-                   $sql = 'SELECT * FROM style ORDER BY id DESC';
+                   $sql = 'SELECT * FROM style ORDER BY name';
                    foreach ($pdo->query($sql) as $row) {
                             echo '<option>'. $row['name'] . '</option>';
                    }
