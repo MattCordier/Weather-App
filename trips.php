@@ -9,7 +9,7 @@
 	$pdo = Database::connect();
 ?>
 
- <div class="container main-bg">
+ 	<div class="container main-bg">
             <div class="row">
                 <h3>Select a Trip</h3>
             </div>
@@ -43,10 +43,22 @@
 			                ?>
 						</select>
 					</div>
-				</div>
-                  
-           
-        </div>
+				</div>   
+        	</div><!--end row-->
+        	<div class="row">
+        		<div class="col-xs-12">
+	        		<?php	
+	        			$sql = 'SELECT * FROM trip ORDER BY name';
+	        			foreach ($pdo->query($sql) as $row) {
+	        				echo '<div class="col-xs-6">';
+	        				echo '<p>'.$row['name'].'</p>';
+	        				echo '<p>'.$row['description'].'</p>';
+	        				echo '<p>'.$row['cost'].'</p>';
+	        				echo '</div>';
+	        			}
+	        		?>
+        		</div>
+        	</div><!--end row-->
     </div> <!-- /container -->
 
 
