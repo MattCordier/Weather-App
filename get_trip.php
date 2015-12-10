@@ -25,7 +25,7 @@
                    			echo '<div class= col-sm-4>';
                             echo '<p>'. $row['name'] . '</p>';
                             echo '<p>'. $row['description'] . '</p>';
-                            echo '<p>'. $row['cost'] . '</p>';
+                            echo '<p>'. '$'. $row['cost'] . '</p>';
                             echo '</div>';
                            
                    }
