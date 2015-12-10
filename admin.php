@@ -12,8 +12,9 @@
 		$file = $_FILES['image']['tmp_name'];
 
 
-		if(!isset($file))
+		if(!isset($file)){
 			echo "Please Select an Image.";
+		}
 
 
 
