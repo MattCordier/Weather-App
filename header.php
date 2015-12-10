@@ -12,6 +12,6 @@
 	  
 	</head>
 <?php
-	include '../ecomm_connect.php';
+	include 'ecomm_connect.php';
 	$pdo = Database::connect();
 ?>
