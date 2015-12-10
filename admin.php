@@ -14,6 +14,10 @@
 
 		if(!isset($file)){
 			echo "Please Select an Image.";
+		} else {
+			$image = file_get_contents($_FILES['image']['tmp_name']);
+			echo $image;
+
 		}
 
 
