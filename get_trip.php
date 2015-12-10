@@ -19,12 +19,12 @@
 
                    $sql .= " ORDER BY id DESC";
 
-                   echo "<p>" . $sql . "</p>";
-
                    foreach ($pdo->query($sql) as $row) {
+                   			echo '<div class= col-sm-4>';
                             echo '<p>'. $row['name'] . '</p>';
                             echo '<p>'. $row['description'] . '</p>';
                             echo '<p>'. $row['cost'] . '</p>';
+                            echo '</div>';
                            
                    }
                    Database::disconnect();
