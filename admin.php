@@ -10,6 +10,7 @@
 	</form>
 	<?php 
 		$file = $_FILES['image']['tmp_name'];
+		echo $file;
 
 
 		// if(!isset($file)){
