@@ -19,8 +19,15 @@
 			$image_name = $_FILES['image']['name'];
 			$image_size = fileimagesize($_FILES['image']['tmp_name']);
 
-			if ($image_size == FALSE){
+			if ($image_size == FALSE)
 				echo "That's not an image";
+			 else (){
+				if (!$insert = mysql_query("INSERT INTO image VALUES ('','$image_name','$image')"))
+					echo "Problem uploading image.";
+				else{
+					$lastid = mysql_insert_id();
+					echo "Image uploaded.<p />Your Image:<p />IMAGE";
+				}
 			}	
 		}
 
