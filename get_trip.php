@@ -4,8 +4,8 @@
 
                    $style = $_GET['style'];
                    $dest = $_GET['destination'];
-                   $sql = "SELECT * FROM trip WHERE style_id = '$style' AND destination_id ='$dest' ORDER BY id DESC";
-                  
+                   $sql = "SELECT * FROM trip WHERE style_id = * AND destination_id = * ORDER BY id DESC";
+
                    foreach ($pdo->query($sql) as $row) {
                             echo '<p>'. $row['name'] . '</p>';
                             echo '<p>'. $row['description'] . '</p>';
