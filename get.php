@@ -8,5 +8,7 @@
 
 	$image = mysql_fetch_assoc($image);
 
+	$image = $image['image'];
+
 
 ?>
