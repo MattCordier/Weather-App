@@ -4,10 +4,7 @@
 <?php require "ecomm_connect.php";?>
 <body>
 <?php require "navigation.php";?>
-<?php
-	include '../ecomm_connect.php';
-	$pdo = Database::connect();
-?>
+
 
  	<div class="container main-bg">
             <div class="row">
@@ -55,7 +52,7 @@
     </div> <!-- /container -->
 
 
-					  		<?php Database::disconnect(); ?>
+					  		
 
 <?php require "footer.php";?>
 <script>
@@ -66,7 +63,6 @@
     	function search(){
     		var destination = $("#destination").val();
     		var style = $("#style").val();
-    		console.log("retrieving filtered results for " + destination + " & " + style);
     		$.get("get_trip.php?style=" + style + "&destination=" + destination, function(data){
     			if(data !== null && data.length > 5){
     				$('#trips').html(data);
