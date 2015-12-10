@@ -26,7 +26,7 @@
 					echo "Problem uploading image.";
 				else{
 					$lastid = mysql_insert_id();
-					echo "Image uploaded.<p />Your Image:<p />IMAGE";
+					echo "Image uploaded.<p />Your Image:<p /><img src=get.php>";
 				}
 			}	
 		}
