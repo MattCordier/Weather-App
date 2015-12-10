@@ -4,4 +4,3 @@
 	<script src="assets/js/bootstrap.min.js"></script>
 
 </footer>
-<?php Database::disconnect(); ?>
