@@ -12,7 +12,7 @@
 		$file = $_GET['image']['tmp_name'];
 		echo $file;
 		
-		if (!isset($file)) {
+		if (!file_exists($_FILES['image']['tmp_name']) || !is_uploaded_file($_FILES['image']['tmp_name'])) {
 			echo "Please Select an Image.";
 		}
 		else{
