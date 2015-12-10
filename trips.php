@@ -73,16 +73,9 @@
     	$("#destination").on("change", search);
 
     	function search(){
-    		var destination = 1;
-    		// $("#style").on("change", function(){
-    		// 	console.log(this.value);
-    		// 	return this.value;
-    		// });
-    		var style = 1;
-    		// $("#destination").on("change", function(){
-    			// console.log(this.value);
-    			// return this.value;
-    		// });
+    		var destination = $("#style").value;
+    		});
+    		var style = $("#style").value;
     		console.log("retrieving filtered results for " + destination + " & " + style);
     		$.get("get_trip.php?style=" + style + "&destination=" + destination, function(data){
     			$('#trips').html(data);
