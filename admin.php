@@ -9,6 +9,7 @@
 		<input type="submit" value="Upload">
 	</form>
 	<?php 
+		$file = "";
 		$file = $_FILES['image']['tmp_name'];
 	
 		
