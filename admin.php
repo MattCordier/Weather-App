@@ -22,7 +22,7 @@
 			$image_size = fileimagesize($_FILES['image']['tmp_name']);
 			
 
-		}
+		
 		
 		} else {
 
