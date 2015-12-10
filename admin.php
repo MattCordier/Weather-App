@@ -13,16 +13,17 @@
 		echo $file;
 		
 		if (!file_exists($_FILES['image']['tmp_name']) || !is_uploaded_file($_FILES['image']['tmp_name'])) {
-			echo "Please Select an Image.";
+			echo "Please Upload an Image.";
 		}
 		else{
 			echo "yippee!";
+			$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+			$image_name = $_FILES['image']['name'];
+			$image_size = fileimagesize($_FILES['image']['tmp_name']);
+
 		}
 		
 		// } else {
-		// 	$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
-		// 	$image_name = $_FILES['image']['name'];
-		// 	$image_size = fileimagesize($_FILES['image']['tmp_name']);
 
 		// 	if ($image_size == FALSE)
 		// 		echo "That's not an image";
