@@ -15,9 +15,9 @@
 		if(!isset($file)){
 			echo "Please Select an Image.";
 		} else {
-			$image = file_get_contents($_FILES['image']['tmp_name']);
-			echo $image;
-
+			$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+			$image_name = $_FILES['image']['name'];
+			$image_size = fileimagesize($_FILES['image']['tmp_name']);
 		}
 
 
