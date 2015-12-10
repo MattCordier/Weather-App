@@ -12,7 +12,7 @@
 		$file = $_FILES['image']['tmp_name'];
 		echo $file;
 		
-		if ($_FILES["image"]["error"] == 0) {
+		if (!isset($file)) {
 			echo "Please Select an Image.";
 		}
 		
