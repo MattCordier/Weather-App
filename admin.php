@@ -28,7 +28,7 @@
 
 			if ($image_size == FALSE)
 				echo "That's not an image";
-			 else (){
+			 else {
 				if (!$insert = mysql_query("INSERT INTO image VALUES ('','$image','$image')"))
 					echo "Problem uploading image.";
 				else{
