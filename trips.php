@@ -5,7 +5,7 @@
 <body>
 <?php require "navigation.php";?>
 <?php
-	
+	include '../ecomm_connect.php';
 	$pdo = Database::connect();
 ?>
 
