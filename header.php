@@ -16,5 +16,7 @@
 	$pdo = Database::connect();
 	if ('ecomm_connect.php' === true){
 		echo 'YES';
+	} else {
+		echo "NOOO";
 	}
 ?>
