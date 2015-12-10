@@ -8,7 +8,12 @@
 		<input type="file" name="image">
 		<input type="submit" value="Upload">
 	</form>
-		
+	<?php 
+		echo $file = $_FILES['image']['tmp_name'];
+
+
+
+	?>	
 
 <?php require "footer.php";?>
 </body>
