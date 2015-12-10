@@ -24,15 +24,15 @@
 			echo $image_size;
 		}  
 
-		if ($image_size == FALSE){
-			echo "That's not an image";
-		} elseif (!$insert = mysql_query("INSERT INTO image VALUES ('','$image','$image')")){
-				echo "Problem uploading image.";
-		  } else{
-				$lastid = mysql_insert_id();
-				echo "your image rocks";
-				echo "Image uploaded.<p />Your Image:<p /><img src=get.php?id=$lastid>";
-			}
+		// if ($image_size == FALSE){
+		// 	echo "That's not an image";
+		// } elseif (!$insert = mysql_query("INSERT INTO image VALUES ('','$image','$image')")){
+		// 		echo "Problem uploading image.";
+		//   } else{
+		// 		$lastid = mysql_insert_id();
+		// 		echo "your image rocks";
+		// 		echo "Image uploaded.<p />Your Image:<p /><img src=get.php?id=$lastid>";
+		// 	}
 				
 		
 
