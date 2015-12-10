@@ -20,7 +20,7 @@
                 	<div class="form-group">
 					  	<label for="sel1">Hiker Style:</label>
 					  	<select id="style" class="form-control">
-					  		<option selected="selected"> All </option>
+					  		<option value="*" selected="selected"> All </option>
 					  		<?php
 					  			 
 			                   	$sql = 'SELECT * FROM style ORDER BY name';
@@ -36,7 +36,7 @@
                 	<div class="form-group">
   						<label for="sel1">Destination:</label>
   						<select id="destination" class="form-control">
-  							<option selected="selected"> All </option>
+  							<option value="*" selected="selected"> All </option>
 							<?php
 			                   $sql = 'SELECT * FROM destination ORDER BY name';
 			                   foreach ($pdo->query($sql) as $row) {
