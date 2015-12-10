@@ -11,16 +11,16 @@
 	<?php 
 
 		$file = $_FILES['image']['tmp_name'];
-		echo $file;
+		
 		
 		if (!file_exists($file) || !is_uploaded_file($file)) {
-			echo "Please Upload an Image.";
+			echo "Please Select an Image.";
 		
 		} else {
 			
-			$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
-			$image_name = $_FILES['image']['name'];
-			$image_size = fileimagesize($_FILES['image']['tmp_name']);
+			echo $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+			// $image_name = $_FILES['image']['name'];
+			// $image_size = fileimagesize($_FILES['image']['tmp_name']);
 			
 		}  
 
