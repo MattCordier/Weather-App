@@ -17,7 +17,7 @@
 						$sql .= " WHERE destination_id = " . $dest;
 						if($style!=="all"){
 							$sql .= " AND style_id = " . $style;
-
+						}
 
                    	}
 
