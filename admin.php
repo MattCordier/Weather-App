@@ -24,7 +24,8 @@
 
 		
 		
-		} else {
+		} 
+		// else {
 
 			// if ($image_size == FALSE)
 			// 	echo "That's not an image";
@@ -36,7 +37,7 @@
 			// 		echo "Image uploaded.<p />Your Image:<p /><img src=get.php?id=$lastid>";
 			// 	}
 			// }	
-		}
+		// }
 
 
 
