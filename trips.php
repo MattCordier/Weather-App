@@ -69,21 +69,21 @@
 <?php require "footer.php";?>
 <script>
     $(document).ready(function(){
-		$("#style").on("change", function(){
-			var hiker = this.value;
-			console.log(hiker);
-    		$.get("get_trip.php", {style : hiker}, function(data){
-    		
+		$("#style").on("change", search);
+    	$("#destination").on("change", search);
+
+    	function search(){
+    		var destination = $("#style").on("change", function(){
+    			return this.value;
+    		});
+    		var style = $("#destination").on("change", function(){
+    			return this.value;
+    		});
+    		console.log("retrieving filtered results for " + destination + " & " + style);
+    		$.get("get_trip.php?style=" + style + "&destination=" + destination, function(data){
     			$('#trips').html(data);
     		}); 
-    	});
-    	$("#destination").on("change", function(){
-    		var dest = this.value;
-			console.log(dest);
-    		$.get("get_trip.php", {destination : dest}, function(data){
-    			$('#trips').html(data);
-    		}); 
-    	});
+    	}
     });            	
 </script>
 </body>
