@@ -12,8 +12,8 @@
 		$file = $_FILES['image']['tmp_name'];
 		echo $file;
 		
-		if (!isset('image')) {
-			echo "<p>". "Please Select an Image.". "</p>";
+		if (!isset($file)) {
+			echo "Please Select an Image.";
 		}
 		
 		// } else {
