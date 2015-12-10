@@ -19,7 +19,7 @@
 
                     $sql .= " ORDER BY id DESC";
 
-    				echo "<script>console.log('" . $sql . "');</script>";
+    				//echo "<script>console.log('" . $sql . "');</script>";
 
                    foreach ($pdo->query($sql) as $row) {
                    			echo '<div class= col-sm-4>';
