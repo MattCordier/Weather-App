@@ -77,12 +77,12 @@
     		// $("#style").on("change", function(){
     		// 	console.log(this.value);
     		// 	return this.value;
-    		});
+    		// });
     		var style = 1;
     		// $("#destination").on("change", function(){
     			// console.log(this.value);
     			// return this.value;
-    		});
+    		// });
     		console.log("retrieving filtered results for " + destination + " & " + style);
     		$.get("get_trip.php?style=" + style + "&destination=" + destination, function(data){
     			$('#trips').html(data);
