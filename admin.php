@@ -12,7 +12,7 @@
 		$file = $_FILES['image']['tmp_name'];
 	
 		
-		if (!file_exists($_FILES['image']['tmp_name']) || !is_uploaded_file($_FILES['image']['tmp_name'])) {
+		if (!file_exists($file) || !is_uploaded_file($file)) {
 			echo "Please Upload an Image.";
 		}
 		else{
