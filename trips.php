@@ -73,7 +73,7 @@
     	$("#destination").on("change", search);
 
     	function search(){
-    		var destination = $("#style").val();
+    		var destination = $("#destination").val();
     		var style = $("#style").val();
     		console.log("retrieving filtered results for " + destination + " & " + style);
     		$.get("get_trip.php?style=" + style + "&destination=" + destination, function(data){
