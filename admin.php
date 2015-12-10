@@ -15,7 +15,7 @@
 		if (!file_exists($file) || !is_uploaded_file($file)) {
 			echo "Please Upload an Image.";
 		
-		else{
+		} else {
 			
 			$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
 			$image_name = $_FILES['image']['name'];
@@ -25,7 +25,7 @@
 
 		
 		
-		} 
+		 
 		// else {
 
 			// if ($image_size == FALSE)
