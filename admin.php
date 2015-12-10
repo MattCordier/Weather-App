@@ -13,7 +13,8 @@
 
 
 		if(!isset($file))
-			echo "Please Select an Image."
+			echo "Please Select an Image.";
+
 
 
 
