@@ -9,7 +9,11 @@
 		<input type="submit" value="Upload">
 	</form>
 	<?php 
-		echo $file = $_FILES['image']['tmp_name'];
+		$file = $_FILES['image']['tmp_name'];
+
+
+		if(!isset($file))
+			echo "Please Select an Image."
 
 
 
