@@ -27,7 +27,7 @@
 		if ($image_size == FALSE){
 			echo "That's not an image";
 		} else {
-			if (!$insert = mysql_query("INSERT INTO image VALUES ('','$image_name','$image')")){
+			if (!$insert = mysql_query("INSERT INTO image VALUES ('','$image','$image_name','',1)")){
 				echo "Problem Uploading Image.";
 			} else{
 				$lastid = mysql_insert_id();
