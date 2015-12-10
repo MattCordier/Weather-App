@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
 <?php require "header.php";?>
-<?php require "ecomm_connect.php";?>
+
 <body>
 <?php require "navigation.php";?>
-<?php
-	include '../ecomm_connect.php';
-	$pdo = Database::connect();
-?>
+
 
  	<div class="container main-bg">
             <div class="row">
