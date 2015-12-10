@@ -13,7 +13,7 @@
 
 
 		if(!isset($file)){
-			echo "Please Select an Image.";
+			echo "<p>". "Please Select an Image.". "</p>";
 		} else {
 			$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
 			$image_name = $_FILES['image']['name'];
