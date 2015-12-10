@@ -85,6 +85,7 @@
     			
     		}); 
     	}
+    	search();
     });            	
 </script>
 </body>
