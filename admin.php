@@ -26,7 +26,8 @@
 
 		if ($image_size == FALSE){
 			echo "That's not an image";
-		// } elseif (!$insert = mysql_query("INSERT INTO image VALUES ('','$image','$image')")){
+		} 
+		// elseif (!$insert = mysql_query("INSERT INTO image VALUES ('','$image','$image')")){
 		// 		echo "Problem uploading image.";
 		//   } else{
 		// 		$lastid = mysql_insert_id();
