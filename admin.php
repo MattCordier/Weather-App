@@ -20,17 +20,27 @@
 			
 			$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
 			$image_name = $_FILES['image']['name'];
-			print_r ($image_size = getimagesize($_FILES['image']['tmp_name']));
+			$image_size = getimagesize($_FILES['image']['tmp_name']);
 			
 		}  
 
 		if ($image_size == FALSE){
 			echo "That's not an image";
-		} 
-		// elseif (!$insert = mysql_query("INSERT INTO image VALUES ('','$image','$image')")){
+		} else {
+			if (!$insert = mysql_query("INSERT INTO image VALUES ('','$image_name','$image')")){
+				echo "Problem Uploading Image.";
+			} else{
+				$lastid = mysql_insert_id();
+				echo "Image Uploaded. Your Image: IMAGE";
+			}
+		}
+
+
+
+	 // elseif (!$insert = mysql_query("INSERT INTO image VALUES ('','$image','$image')")){
 		// 		echo "Problem uploading image.";
 		//   } else{
-		// 		$lastid = mysql_insert_id();
+		
 		// 		echo "your image rocks";
 		// 		echo "Image uploaded.<p />Your Image:<p /><img src=get.php?id=$lastid>";
 		// 	}
