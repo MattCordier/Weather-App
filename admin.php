@@ -31,23 +31,9 @@
 				echo "Problem Uploading Image.";
 			} else{
 				$lastid = mysql_insert_id();
-				echo "Image Uploaded. Your Image: IMAGE";
+				echo "Image Uploaded. Your Image: <img scr=get.php?=$lastid>";
 			}
 		}
-
-
-
-	 // elseif (!$insert = mysql_query("INSERT INTO image VALUES ('','$image','$image')")){
-		// 		echo "Problem uploading image.";
-		//   } else{
-		
-		// 		echo "your image rocks";
-		// 		echo "Image uploaded.<p />Your Image:<p /><img src=get.php?id=$lastid>";
-		// 	}
-				
-		
-
-
 
 
 	?>	
