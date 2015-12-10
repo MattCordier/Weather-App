@@ -5,16 +5,21 @@
                    $style = $_GET['style'];
                    $dest = $_GET['destination'];
 
-                   if($dest=="all"){
-                   	$dest = "*";
-                   }
-                   if($style=="all"){
-                   	$style = "*";
-                   }
+                   $sql = "SELECT * FROM trip";
 
-                   $sql = "SELECT * FROM trip WHERE style_id = " . $style . " AND destination_id = " . $dest . " ORDER BY id DESC";
 
-                   echo $sql;
+                   	if($style!=="all"){
+                   		$sql .= "WHERE style_id = " . $style;
+                   	    if($dest!=="all"){
+							$sql .= " AND destination_id = " . $dest;
+						}
+                   	} elseif ($dest!=="all") {
+						$sql .= " WHERE destination_id = " . $dest;
+                   	}
+
+                   $sql .= " ORDER BY id DESC";
+
+                   echo "<p>" . $sql . "</p>";
 
                    foreach ($pdo->query($sql) as $row) {
                             echo '<p>'. $row['name'] . '</p>';
