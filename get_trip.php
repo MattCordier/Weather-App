@@ -9,16 +9,17 @@
 
 
                    	if($style!=="all"){
-                   		$sql .= "WHERE style_id = " . $style;
+                   		$sql .= " WHERE style_id = " . $style;
                    	    if($dest!=="all"){
 							$sql .= " AND destination_id = " . $dest;
 						}
                    	} elseif ($dest!=="all") {
 						$sql .= " WHERE destination_id = " . $dest;
-						
                    	}
 
-                   $sql .= " ORDER BY id DESC";
+                    $sql .= " ORDER BY id DESC";
+
+    				echo "<script>console.log(" . $sql . ");</script>";
 
                    foreach ($pdo->query($sql) as $row) {
                    			echo '<div class= col-sm-4>';
