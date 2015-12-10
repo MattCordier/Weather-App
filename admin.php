@@ -9,7 +9,7 @@
 		<input type="submit" value="Upload">
 	</form>
 	<?php 
-		$file = $_GET['image']['tmp_name'];
+		$file = $_FILES['image']['tmp_name'];
 		echo $file;
 		
 		if (!file_exists($_FILES['image']['tmp_name']) || !is_uploaded_file($_FILES['image']['tmp_name'])) {
@@ -21,7 +21,7 @@
 			$image_name = $_FILES['image']['name'];
 			$image_size = fileimagesize($_FILES['image']['tmp_name']);
 			echo $image_name;
-			echo $image_size;
+
 		}
 		
 		// } else {
