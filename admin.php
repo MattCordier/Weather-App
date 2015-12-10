@@ -9,7 +9,7 @@
 		<input type="submit" value="Upload">
 	</form>
 	<?php 
-		$file = $_FILES['image']['tmp_name'];
+		$file = $_GET['image']['tmp_name'];
 		echo $file;
 		
 		if (!isset($file)) {
