@@ -6,5 +6,7 @@
 
 	$image = mysql_query("SELECT * FROM image WHERE id = $id");
 
+	$image = mysql_fetch_assoc($image);
+
 
 ?>
