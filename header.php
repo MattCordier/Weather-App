@@ -11,4 +11,7 @@
 	    <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
 	  
 	</head>
-		
+		<?php
+	include '../ecomm_connect.php';
+	$pdo = Database::connect();
+?>
