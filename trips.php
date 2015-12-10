@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php require "header.php";?>
-<?php require "ecomm_connect.php";?>
+
 <body>
 <?php require "navigation.php";?>
 
