@@ -74,9 +74,11 @@
 
     	function search(){
     		var destination = $("#style").on("change", function(){
+    			console.log(this.value);
     			return this.value;
     		});
     		var style = $("#destination").on("change", function(){
+    			console.log(this.value);
     			return this.value;
     		});
     		console.log("retrieving filtered results for " + destination + " & " + style);
