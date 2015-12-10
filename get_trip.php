@@ -13,9 +13,9 @@
                    	    if($dest!=="all"){
 							$sql .= " AND destination_id = " . $dest;
 						}
-                   	} elseif ($dest=="all") {
+                   	} elseif ($dest!=="all") {
 						$sql .= " WHERE destination_id = " . $dest;
-
+						
                    	}
 
                    $sql .= " ORDER BY id DESC";
