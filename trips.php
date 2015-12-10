@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <?php require "header.php";?>
-
+<?php require "ecomm_connect.php";?>
 <body>
 <?php require "navigation.php";?>
-
+<?php
+	
+	$pdo = Database::connect();
+?>
 
  	<div class="container main-bg">
             <div class="row">
@@ -52,7 +55,7 @@
     </div> <!-- /container -->
 
 
-					  		
+					  		<?php Database::disconnect(); ?>
 
 <?php require "footer.php";?>
 <script>
