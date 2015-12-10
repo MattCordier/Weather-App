@@ -10,7 +10,7 @@
 	</form>
 	<?php 
 		$file = $_FILES['image']['tmp_name'];
-		echo $file;
+		
 		
 		if (!file_exists($_FILES['image']['tmp_name']) || !is_uploaded_file($_FILES['image']['tmp_name'])) {
 			echo "Please Upload an Image.";
