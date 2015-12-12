@@ -11,6 +11,7 @@
 	<?php 
 
 		$file = $_FILES['image']['tmp_name'];
+		echo $file;
 		
 		
 		if (!file_exists($file) || !is_uploaded_file($file)) {
