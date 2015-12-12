@@ -25,6 +25,7 @@
         echo '<h2>'. $row['name'] . '</h2>';
         echo '<p>'. $row['description'] . '</p>';
         echo '<p>'. '$'. $row['cost'] . '</p>';
+        echo '<img src=" '.$row['image']. '"/>';
         echo '</div>';
                
        }
