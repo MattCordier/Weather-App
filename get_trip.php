@@ -5,7 +5,7 @@
     $style = $_GET['style'];
     $dest = $_GET['destination'];
 
-    $sql = "SELECT * FROM trip JOIN image ON (image.trip_id=trip.id)";
+    $sql = "SELECT * FROM trip JOIN image ON (trip_id = trip.id)";
 
      	if($style!=="all"){
      		$sql .= " WHERE style_id = " . $style;
@@ -25,7 +25,7 @@
         echo '<h2>'. $row['trip.name'] . '</h2>';
         echo '<p>'. $row['trip.description'] . '</p>';
         echo '<p>'. '$'. $row['trip.cost'] . '</p>';
-        echo '<img src=" '.$row['image.image']. '"/>';
+        // echo '<img src=" '.$row['image.image']. '"/>';
         echo '</div>';
                
        }
