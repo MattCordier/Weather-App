@@ -23,7 +23,6 @@
 
                    foreach ($pdo->query($sql) as $row) {
                    			echo '<div class= col-sm-4>';
-                            echo '<img src="data:image/jpeg;base64,'.<?php echo base64_encode( $image ); ?>.'" width="100px"/>';
                             echo '<h2>'. $row['name'] . '</h2>';
                             echo '<p>'. $row['description'] . '</p>';
                             echo '<p>'. '$'. $row['cost'] . '</p>';
