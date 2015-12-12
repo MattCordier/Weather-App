@@ -26,18 +26,18 @@
 			
 		}  
 
-		if ($image_size == FALSE){
-			echo "That's not an image";
-		} else {
+		// if ($image_size == FALSE){
+		// 	echo "That's not an image";
+		// } else {
 
-			/////CHECK THIS OUT!!!!!!!!!!!!
-			if (!$insert = mysql_query("INSERT INTO image (name, image)VALUES ($image_name, $image)")){
-				echo "Problem Uploading Image.";
-			} else{
-				$lastid = mysql_insert_id();
-				echo "Image Uploaded. Your Image: <img scr=get.php?=$lastid>";
-			}
-		}
+		// 	/////CHECK THIS OUT!!!!!!!!!!!!
+		// 	if (!$insert = mysql_query("INSERT INTO image (name, image)VALUES ($image_name, $image)")){
+		// 		echo "Problem Uploading Image.";
+		// 	} else{
+		// 		$lastid = mysql_insert_id();
+		// 		echo "Image Uploaded. Your Image: <img scr=get.php?=$lastid>";
+		// 	}
+		// }
 
 
 	?>	
