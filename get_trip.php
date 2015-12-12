@@ -1,11 +1,11 @@
 <?php
 	include 'ecomm_connect.php';
     $pdo = Database::connect();
-
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $style = $_GET['style'];
     $dest = $_GET['destination'];
-
     $sql = "SELECT * FROM trip";
+
 
      	if($style!=="all"){
      		$sql .= " WHERE style_id = " . $style;
@@ -16,7 +16,9 @@
             $sql .= " WHERE destination_id = " . $dest;
      	    }
         $sql .= " ORDER BY id DESC";
-          //echo "<script>console.log('" . $sql . "');</script>";
+          echo "<script>console.log('" . $sql . "');</script>";
+
+
       foreach ($pdo->query($sql) as $row) {
        	echo '<div class= col-sm-4>';
         echo '<h2>'. $row['name'] . '</h2>';
