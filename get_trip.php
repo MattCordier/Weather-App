@@ -23,7 +23,7 @@
 
                    foreach ($pdo->query($sql) as $row) {
                    			echo '<div class= col-sm-4>';
-                            echo '<img>'. '$'. $row['image']; 
+                           
                             echo '<h2>'. $row['name'] . '</h2>';
                             echo '<p>'. $row['description'] . '</p>';
                             echo '<p>'. '$'. $row['cost'] . '</p>';
