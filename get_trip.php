@@ -5,7 +5,7 @@
                    $style = $_GET['style'];
                    $dest = $_GET['destination'];
 
-                   $sql = "SELECT * FROM trip JOIN image ON trip.id = trip_id";
+                   $sql = "SELECT * FROM trip";
 
 
                    	if($style!=="all"){
