@@ -1,6 +1,7 @@
 <?php
 	include 'ecomm_connect.php';
     $pdo = Database::connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $style = $_GET['style'];
     $dest = $_GET['destination'];
     $sql = "SELECT * FROM trip";
