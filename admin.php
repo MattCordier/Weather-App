@@ -22,7 +22,7 @@
 			$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
 			$image_name = $_FILES['image']['name'];
 			$image_size = getimagesize($_FILES['image']['tmp_name']);
-			echo $image_name;
+			echo $image;
 			
 		}  
 
