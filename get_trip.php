@@ -5,7 +5,7 @@
     $style = $_GET['style'];
     $dest = $_GET['destination'];
 
-    $sql = "SELECT * FROM trip JOIN image ON (trip_id=trip.id)";
+    $sql = "SELECT * FROM trip JOIN image ON trip_id=trip.id";
 
      	if($style!=="all"){
      		$sql .= " WHERE style_id = " . $style;
@@ -18,7 +18,7 @@
 
         $sql .= " ORDER BY id DESC";
 
-    				//echo "<script>console.log('" . $sql . "');</script>";
+    				echo "<script>console.log('" . $sql . "');</script>";
 
       foreach ($pdo->query($sql) as $row) {
        	echo '<div class= col-sm-4>';
