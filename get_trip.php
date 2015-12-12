@@ -7,7 +7,6 @@
 
     $sql = "SELECT * FROM trip";
 
-
      	if($style!=="all"){
      		$sql .= " WHERE style_id = " . $style;
      	    if($dest!=="all"){
