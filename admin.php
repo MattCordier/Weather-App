@@ -9,21 +9,15 @@
 		<input type="submit" value="Upload">
 	</form>
 	<?php 
-
 		$file = $_FILES['image']['tmp_name'];
-		
-		
 		
 		if (!file_exists($file) || !is_uploaded_file($file)) {
 			echo "Please Select an Image.";
-		
 		} else {
-			
 			$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
 			$image_name = $_FILES['image']['name'];
 			$image_size = getimagesize($_FILES['image']['tmp_name']);
 			echo $image;
-			
 		}  
 
 		// if ($image_size == FALSE){
