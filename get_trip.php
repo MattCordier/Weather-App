@@ -5,6 +5,7 @@
     $style = $_GET['style'];
     $dest = $_GET['destination'];
 
+
     $sql = "SELECT * FROM image JOIN trip ON (trip.id = trip_id)";
 
      	if($style!=="all"){
@@ -19,7 +20,7 @@
         $sql .= " ORDER BY trip.id DESC";
 
     				echo "<script>console.log('" . $sql . "');</script>";
-
+            header("Content-type: image/jpeg");
       foreach ($pdo->query($sql) as $row) {
        	echo '<div class= col-sm-4>';
         echo '<h2>'. $row['trip.name'] . '</h2>';
