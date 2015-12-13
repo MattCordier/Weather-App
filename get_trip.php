@@ -26,7 +26,7 @@
         echo '<h2>'. $row['trip.name'] . '</h2>';
         echo '<p>'. $row['trip.description'] . '</p>';
         echo '<p>'. '$'. $row['trip.cost'] . '</p>';
-        echo '<img src="data:image/jpeg;base64,'.$row['image.image']. '"/>';
+        echo '<img src="'.data:image/jpeg;base64,$row['image.image']. '"/>';
         echo '</div>';
                
        }
