@@ -4,11 +4,11 @@
 <html>
 <?php require "header.php"; ?>
 <?php
-// session_start();
-// if(isset($_SESSION["manager"])){
-// 	header("location:admin.php");
-// 	exit();
-// }
+session_start();
+if(isset($_SESSION["manager"])){
+	header("location:admin.php");
+	exit();
+}
 
 // if(isset($_POST["username"])&&($_POST["password"]))
 
