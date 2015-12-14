@@ -27,10 +27,7 @@ $existCount = mysql_num_rows($sql);
 		// $_SESSION["password"] = $password;
 		// header("location:admin.php");
 		exit();
-	} else {
-	echo "That information is incorrect, please try again";
-	exit();
-	}
+	} 
 }
 
 ?>
