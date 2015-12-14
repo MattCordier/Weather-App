@@ -11,6 +11,7 @@
 <form id="login" name="login" method="post" action="adminlogin">
 	User Name:<br/>
 		<input name="username" type="text" size="40">
+		<br/>
 	Password:<br/>
 		<input name="password" type="password" size="40">
 	<label>
