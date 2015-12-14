@@ -9,15 +9,15 @@
     $sql = "SELECT * FROM trip JOIN image ON (trip_id = trip.id)";
 
      	if($style!=="all"){
-     		$sql .= " WHERE trip.style_id = " . $style;
+     		$sql .= " WHERE style_id = " . $style;
      	    if($dest!=="all"){
-        $sql .= " AND trip.destination_id = " . $dest;
+        $sql .= " AND destination_id = " . $dest;
       }
      	  } elseif ($dest!=="all") {
-            $sql .= " WHERE trip.destination_id = " . $dest;
+            $sql .= " WHERE destination_id = " . $dest;
      	    }
 
-        $sql .= " ORDER BY trip.id DESC";
+        $sql .= " ORDER BY id DESC";
 
     				echo "<script>console.log('" . $sql . "');</script>";
             header('Content-type: image/jpg');
