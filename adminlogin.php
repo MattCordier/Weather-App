@@ -14,7 +14,7 @@ if(isset($_POST["username"])&&($_POST["password"])){
 
 $sql = mysql_query("SELECT * FROM customer WHERE id ='$managerID' AND username = '$manager' AND password = '$password' LIMIT 1");
 $existCount = mysql_num_rows($sql);
-// if($existCount == 1){
+if($existCount == 1){
 // 	foreach (($pdo->query($sql) as $row)) {
 // 		$id = $row["id"];
 // 		}
@@ -26,7 +26,7 @@ $existCount = mysql_num_rows($sql);
 // 	} else {
 // 	echo "That information is incorrect, please try again<a href="adminlogin.php">Click Here</a>";
 // 	exit();
-// 	}
+	}
 }
 
 ?>
