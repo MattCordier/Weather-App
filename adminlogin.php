@@ -11,8 +11,7 @@ if(isset($_SESSION["manager"])){
 }
 
 if(isset($_POST["username"])&&($_POST["password"]))
-include 'ecomm_connect.php';
-$pdo = Database::connect();
+
 $sql = mysql_query("SELECT * FROM customer WHERE id ='$managerID' AND username = '$manager' AND password = '$password' LIMIT 1");
 $existCount = mysql_num_rows($sql);
 if($existCount == 1){
