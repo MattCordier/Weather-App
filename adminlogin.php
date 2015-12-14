@@ -10,7 +10,7 @@ if(isset($_SESSION["manager"])){
 	exit();
 }
 
-if(isset($_POST["username"])&&($_POST["password"])){
+if(isset($_POST["manager"])&&($_POST["password"])){
 
 $sql = mysql_query("SELECT * FROM customer WHERE username = '$manager' AND password = '$password' LIMIT 1");
 echo $sql;
