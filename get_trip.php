@@ -1,7 +1,7 @@
 <?php
 	include 'ecomm_connect.php';
     $pdo = Database::connect();
-    $pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
+    
     $style = $_GET['style'];
     $dest = $_GET['destination'];
 
