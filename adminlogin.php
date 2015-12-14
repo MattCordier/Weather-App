@@ -20,23 +20,22 @@ if(isset($_POST["manager"])&&($_POST["password"])){
     $pdo = Database::connect();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$sql = "SELECT * FROM customer WHERE username = ? AND password = ? LIMIT 1";
-    echo "<script>console.log('".$sql."');</script>";
     $q = $pdo->prepare($sql);
     $q->execute(array($manager, $password));
     
 
 
-	$existCount = mysql_num_rows($sql);
-	if($existCount == 1){
-		echo "WHOO!";
-		foreach ($pdo->query($sql) as $row) {
-			$id = $row["id"];
-		}
-		$_SESSION["id"] = $id;
-		$_SESSION["manager"] = $manager;
-		$_SESSION["password"] = $password;
-		header("location:admin.php");
-	} 
+	// $existCount = mysql_num_rows($sql);
+	// if($existCount == 1){
+	// 	echo "WHOO!";
+	// 	foreach ($pdo->query($sql) as $row) {
+	// 		$id = $row["id"];
+	// 	}
+	// 	$_SESSION["id"] = $id;
+	// 	$_SESSION["manager"] = $manager;
+	// 	$_SESSION["password"] = $password;
+	// 	header("location:admin.php");
+	// } 
 
 	Database::disconnect();
 }
@@ -54,7 +53,7 @@ if(isset($_POST["manager"])&&($_POST["password"])){
 		<br/>
 	Password:<br/>
 		<input name="password" type="password" size="40">
-	
+		<br/>
 		<input name="button" id="button" type="submit" value="Log In" size="40">
 	
 </form>
