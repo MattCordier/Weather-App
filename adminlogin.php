@@ -15,6 +15,7 @@ if(isset($_POST["username"])&&($_POST["password"])){
 $sql = mysql_query("SELECT * FROM customer WHERE id ='$managerID' AND username = '$manager' AND password = '$password' LIMIT 1");
 $existCount = mysql_num_rows($sql);
 if($existCount == 1){
+	echo "SUPER!";
 // 	foreach (($pdo->query($sql) as $row)) {
 // 		$id = $row["id"];
 // 		}
