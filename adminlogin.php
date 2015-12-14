@@ -22,7 +22,8 @@ if(isset($_POST["manager"])&&($_POST["password"])){
 	$sql = "SELECT * FROM customer WHERE username = ? AND password = ? LIMIT 1";
     $q = $pdo->prepare($sql);
     $q->execute(array($manager, $password));
-    
+    $data = $q->fetch(PDO::FETCH_ASSOC);
+    Database::disconnect();
 
 
 	// $existCount = mysql_num_rows($sql);
