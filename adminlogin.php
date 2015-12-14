@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php
-include '../ecomm_connect.php';
-	$pdo = Database::connect();
-?>
+<?php require "header.php"; ?>
 <body>
 <?php require "navigation.php";?>
 
