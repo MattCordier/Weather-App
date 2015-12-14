@@ -13,13 +13,14 @@ if(isset($_SESSION["manager"])){
 if(isset($_POST["manager"])&&($_POST["password"])){
 	$manager = preg_replace('#[^A-Za-z0-9]#i','', $_POST["manager"]);
     $password = preg_replace('#[^A-Za-z0-9]#i','', $_POST["password"]);
-    echo "<script>console.log('wh00t!');</script>";
+    
     include 'ecomm_connect.php';
 
 
     $pdo = Database::connect();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$sql = "SELECT * FROM customer WHERE username = ? AND password = ? LIMIT 1";
+    echo "<script>console.log('".$sql."');</script>";
     $q = $pdo->prepare($sql);
     $q->execute(array($manager, $password));
     Database::disconnect();
