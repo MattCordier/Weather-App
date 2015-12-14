@@ -4,6 +4,25 @@ if(isset($_SESSION["manager"])){
 	header("location:admin.php");
 	exit();
 }
+
+if(isset($_POST["username"])&&($_POST["password"]))
+include 'ecomm_connect.php';
+$pdo = Database::connect();
+$sql = mysql_query("SELECT * FROM customer WHERE id ='$managerID' AND username = '$manager' AND password = '$password' LIMIT 1");
+$existCount = mysql_num_rows($sql);
+if($existCount == 1){
+	foreach (($pdo->query($sql) as $row)) {
+		$id = $row["id"];
+	}
+	$_SESSION["id"] = $id;
+	$_SESSION["manager"] = $manager;
+	$_SESSION["password"] = $password;
+	header("location:admin.php");
+	exit();
+} else {
+	echo "That information is incorrect, please try again<a href="adminlogin.php">Click Here</a>
+	exit();
+}
 ?>
 
 <!DOCTYPE html>
