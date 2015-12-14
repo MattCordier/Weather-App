@@ -10,23 +10,23 @@ if(isset($_SESSION["manager"])){
 	exit();
 }
 
-if(isset($_POST["username"])&&($_POST["password"]))
+// if(isset($_POST["username"])&&($_POST["password"]))
 
-$sql = mysql_query("SELECT * FROM customer WHERE id ='$managerID' AND username = '$manager' AND password = '$password' LIMIT 1");
-$existCount = mysql_num_rows($sql);
-if($existCount == 1){
-	foreach (($pdo->query($sql) as $row)) {
-		$id = $row["id"];
-	}
-	$_SESSION["id"] = $id;
-	$_SESSION["manager"] = $manager;
-	$_SESSION["password"] = $password;
-	header("location:admin.php");
-	exit();
-} else {
-	echo "That information is incorrect, please try again<a href="adminlogin.php">Click Here</a>";
-	exit();
-}
+// $sql = mysql_query("SELECT * FROM customer WHERE id ='$managerID' AND username = '$manager' AND password = '$password' LIMIT 1");
+// $existCount = mysql_num_rows($sql);
+// if($existCount == 1){
+// 	foreach (($pdo->query($sql) as $row)) {
+// 		$id = $row["id"];
+// 	}
+// 	$_SESSION["id"] = $id;
+// 	$_SESSION["manager"] = $manager;
+// 	$_SESSION["password"] = $password;
+// 	header("location:admin.php");
+// 	exit();
+// } else {
+// 	echo "That information is incorrect, please try again<a href="adminlogin.php">Click Here</a>";
+// 	exit();
+// }
 
 ?>
 <body>
