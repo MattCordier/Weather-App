@@ -14,7 +14,7 @@ if(isset($_POST["manager"])&&($_POST["password"])){
 	$manager = preg_replace('#[^A-Za-z0-9]#i', '', $_POST["manager"]);
     $password = preg_replace('#[^A-Za-z0-9]#i', '', $_POST["password"]);
 
-$sql = mysql_query("SELECT * FROM customer WHERE username = '$manager' AND password = '$password' LIMIT 1");
+$sql = mysql_query("SELECT id FROM customer WHERE username = '$manager' AND password = '$password' LIMIT 1");
 
 $existCount = mysql_num_rows($sql);
 	if($existCount == 1){
