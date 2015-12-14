@@ -24,10 +24,10 @@
 
       foreach ($pdo->query($sql) as $row) {
        	echo '<div class= col-sm-4>';
-        echo '<h2>'. $row['trip.name'] . '</h2>';
-        echo '<p>'. $row['trip.description'] . '</p>';
-        echo '<p>'. '$'. $row['trip.cost'] . '</p>';
-        echo '<img src=" '.$row['image.image']. '"/>';
+        echo '<h2>'. $row['name'] . '</h2>';
+        echo '<p>'. $row['description'] . '</p>';
+        echo '<p>'. '$'. $row['cost'] . '</p>';
+        echo '<img src=" '.$row['image']. '"/>';
         echo '</div>';
                
        }
