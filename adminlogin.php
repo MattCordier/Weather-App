@@ -20,9 +20,10 @@ if($existCount == 1){
 	header("location:admin.php");
 	exit();
 } else {
-	echo "That information is incorrect, please try again<a href="adminlogin.php">Click Here</a>
+	echo "That information is incorrect, please try again<a href="adminlogin.php">Click Here</a>";
 	exit();
 }
+
 ?>
 
 <!DOCTYPE html>
