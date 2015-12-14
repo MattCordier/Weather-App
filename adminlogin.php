@@ -23,20 +23,22 @@ if(isset($_POST["manager"])&&($_POST["password"])){
     echo "<script>console.log('".$sql."');</script>";
     $q = $pdo->prepare($sql);
     $q->execute(array($manager, $password));
-    Database::disconnect();
+    
 
 
-	// $existCount = mysql_num_rows($sql);
-	// if($existCount == 1){
-	// 	echo "WHOO!";
-	// 	// foreach ($pdo->query($sql) as $row) {
-	// 	// 	$id = $row["id"];
-	// 	// }
-	// 	// $_SESSION["id"] = $id;
-	// 	// $_SESSION["manager"] = $manager;
-	// 	// $_SESSION["password"] = $password;
-	// 	// header("location:admin.php");
-	// } 
+	$existCount = mysql_num_rows($sql);
+	if($existCount == 1){
+		echo "WHOO!";
+		foreach ($pdo->query($sql) as $row) {
+			$id = $row["id"];
+		}
+		$_SESSION["id"] = $id;
+		$_SESSION["manager"] = $manager;
+		$_SESSION["password"] = $password;
+		header("location:admin.php");
+	} 
+
+	Database::disconnect();
 }
 
 
