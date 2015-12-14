@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?phpinclude 'var/www/html/ecomm_connect.php';
+<?phpinclude 'ecomm_connect.php';
 	$pdo = Database::connect();
 ?>
 <body>
