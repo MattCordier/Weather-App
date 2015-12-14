@@ -26,6 +26,7 @@ if(isset($_POST["manager"])&&($_POST["password"])){
 
 	$existCount = mysql_num_rows($sql);
 	if($existCount == 1){
+		echo "woo!";
 		foreach ($pdo->query($sql) as $row) {
 			$id = $row["id"];
 		}
