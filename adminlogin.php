@@ -13,7 +13,7 @@ if(isset($_SESSION["manager"])){
 if(isset($_POST["manager"])&&($_POST["password"])){
 
 $sql = mysql_query("SELECT * FROM customer WHERE username = '$manager' AND password = '$password' LIMIT 1");
-echo $sql;
+echo "WHOO!";
 // $existCount = mysql_num_rows($sql);
 // 	if($existCount == 1){
 // 		foreach ($pdo->query($sql) as $row) {
