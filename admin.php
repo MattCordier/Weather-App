@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if(!isset($_SESSION["manager"])){
+	header("location:adminlogin.php");
+	exit();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <?php require "header.php";?>
