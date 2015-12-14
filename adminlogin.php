@@ -8,7 +8,15 @@
 
 <?php require "navigation.php";?>
 
-<h1>YOU NEED TO LOGIN!!!</h1>
+<form id="login" name="login" method="post" action="adminlogin">
+	User Name:<br/>
+		<input name="username" type="text" size="40">
+	Password:<br/>
+		<input name="password" type="password" size="40">
+	<label>
+		<input name="button" id="button" type="submit" value="Log In" size="40">
+	</label>
+</form>
 
 <?php require "footer.php";?>
 </body>
