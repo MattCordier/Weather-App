@@ -8,7 +8,7 @@
 
 <?php require "navigation.php";?>
 
-<form id="login" name="login" method="post" action="adminlogin">
+<form id="login" name="login" method="post" action="adminlogin.php">
 	User Name:<br/>
 		<input name="username" type="text" size="40">
 		<br/>
