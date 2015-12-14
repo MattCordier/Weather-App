@@ -10,7 +10,7 @@ if(isset($_SESSION["manager"])){
 	exit();
 }
 
-// if(isset($_POST["username"])&&($_POST["password"]))
+if(isset($_POST["username"])&&($_POST["password"])){
 
 // $sql = mysql_query("SELECT * FROM customer WHERE id ='$managerID' AND username = '$manager' AND password = '$password' LIMIT 1");
 // $existCount = mysql_num_rows($sql);
@@ -27,6 +27,7 @@ if(isset($_SESSION["manager"])){
 // 	echo "That information is incorrect, please try again<a href="adminlogin.php">Click Here</a>";
 // 	exit();
 // }
+}
 
 ?>
 <body>
