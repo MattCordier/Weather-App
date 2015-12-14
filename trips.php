@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <?php require "header.php";?>
-
+<?php include 'ecomm_connect.php';
+    $pdo = Database::connect();
+?>
 <body>
 <?php require "navigation.php";?>
  	<div class="container main-bg">

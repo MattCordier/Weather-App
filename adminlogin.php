@@ -15,8 +15,6 @@ if(isset($_POST["manager"])&&($_POST["password"])){
     $password = preg_replace('#[^A-Za-z0-9]#i','', $_POST["password"]);
     
     include 'ecomm_connect.php';
-
-
     $pdo = Database::connect();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$sql = "SELECT * FROM customer WHERE username = ? AND password = ? LIMIT 1";
