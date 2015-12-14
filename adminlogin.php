@@ -15,9 +15,9 @@ if(isset($_POST["manager"])&&($_POST["password"])){
     $password = preg_replace('#[^A-Za-z0-9]#i', '', $_POST["password"]);
 
 $sql = mysql_query("SELECT id FROM customer WHERE username = '$manager' AND password = '$password' LIMIT 1");
+echo "<script>console.log('" . $sql . "');</script>";
 
 $existCount = mysql_num_rows($sql);
-echo $existCount;
 	// if($existCount == 1){
 	// 	echo "WHOO!";
 	// 	// foreach ($pdo->query($sql) as $row) {
