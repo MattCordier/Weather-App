@@ -21,12 +21,11 @@ if(isset($_POST["manager"])&&($_POST["password"])){
     $q = $pdo->prepare($sql);
     $q->execute(array($manager, $password));
    
-    Database::disconnect();
+    
 
 
 	$existCount = mysql_num_rows($sql);
 	if($existCount == 1){
-		echo "WHOO!";
 		foreach ($pdo->query($sql) as $row) {
 			$id = $row["id"];
 		}
