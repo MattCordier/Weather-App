@@ -6,7 +6,7 @@
 <?php
 session_start();
 if(isset($_SESSION["manager"])){
-	header("location:adminlogin.php");
+	header("location:admin.php");
 	exit();
 }
 
@@ -21,7 +21,7 @@ if($existCount == 1){
 		$_SESSION["id"] = $id;
 		$_SESSION["manager"] = $manager;
 		$_SESSION["password"] = $password;
-		header("location:adminlogin.php");
+		header("location:admin.php");
 		exit();
 // 	} else {
 // 	echo "That information is incorrect, please try again<a href="adminlogin.php">Click Here</a>";
