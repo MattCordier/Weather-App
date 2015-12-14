@@ -6,7 +6,7 @@
 <?php
 session_start();
 if(isset($_SESSION["manager"])){
-	header("location:admin.php");
+	header("location:adminlogin.php");
 	exit();
 }
 
