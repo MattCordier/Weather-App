@@ -4,20 +4,28 @@
 <html>
 <?php require "header.php"; ?>
 <?php
+
 session_start();
 if(isset($_SESSION["manager"])){
-	header("location:admin.php");
-	exit();
+	header("location:admin.php");	
 }
 
 if(isset($_POST["manager"])&&($_POST["password"])){
 	$manager = preg_replace('#[^A-Za-z0-9]#i','', $_POST["manager"]);
     $password = preg_replace('#[^A-Za-z0-9]#i','', $_POST["password"]);
     echo "<script>console.log('wh00t!');</script>";
-	$sql = mysql_query("SELECT * FROM customer WHERE username = '$manager' AND password = '$password' LIMIT 1");
-	
+    include 'ecomm_connect.php';
 
-$existCount = mysql_num_rows($sql);
+
+    $pdo = Database::connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$sql = "SELECT * FROM customer WHERE username = ? AND password = ? LIMIT 1";
+    $q = $pdo->prepare($sql);
+    $q->execute(array($manager, $password));
+    Database::disconnect();
+
+
+	// $existCount = mysql_num_rows($sql);
 	// if($existCount == 1){
 	// 	echo "WHOO!";
 	// 	// foreach ($pdo->query($sql) as $row) {
@@ -27,9 +35,9 @@ $existCount = mysql_num_rows($sql);
 	// 	// $_SESSION["manager"] = $manager;
 	// 	// $_SESSION["password"] = $password;
 	// 	// header("location:admin.php");
-	// 	exit();
 	// } 
 }
+
 
 ?>
 <body>
