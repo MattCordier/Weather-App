@@ -28,7 +28,7 @@ echo $sql;
 // 	echo "That information is incorrect, please try again";
 // 	exit();
 // 	}
-// }
+}
 
 ?>
 <body>
