@@ -21,26 +21,29 @@
             $('#srch-term').keyup(function(){
             var searchField = $('#srch-term').val();
             console.log(searchField);
-        })
 
 
-            // if (searchField != -1){
-            //     posts = [];
-            //     var regex = new RegExp(searchField, "i");
 
-            //     $.getJSON('assets/js/entries.json', function(data){
-            //         $(data.entries).each(function(index, value){
-            //             if ((value.date.search(regex) != -1) || (value.title.search(regex) != -1) || (value.text.search(regex) != -1)){
-            //                 var p = '<small class="date">' + value.date + '</small> ';
-            //                 p += '<h3 class="blog-title">' + value.title + '</h3>';
-            //                 p += '<div class="blog-div">' +'<p class="blog-p">' + value.text + '</p>' + '</div>' + '<hr class="blog-hr">';
+            if (searchField != -1){
+                posts = [];
+                var regex = new RegExp(searchField, "i");
+
+                $.getJSON('assets/js/entries.json', function(data){
+                    $(data.entries).each(function(index, value){
+                        if ((value.date.search(regex) != -1) || (value.title.search(regex) != -1) || (value.text.search(regex) != -1)){
+                            var p = '<small class="date">' + value.date + '</small> ';
+                            p += '<h3 class="blog-title">' + value.title + '</h3>';
+                            p += '<div class="blog-div">' +'<p class="blog-p">' + value.text + '</p>' + '</div>' + '<hr class="blog-hr">';
                  
-            //                 posts.push(p);
-            //             }//if statement
-            //             request_page(posts, 1);
-            //         });//each function
-            //     });//getJSON
-            // }
-         
+                            posts.push(p);
+                        }//if statement
+                        request_page(posts, 1);
+                    });//each function
+                });//getJSON
+            }
+        }
+
+
+    }); 
 
 
