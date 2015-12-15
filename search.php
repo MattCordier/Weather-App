@@ -7,18 +7,15 @@
      
                 
 
-    $sql = "SELECT * FROM trip name =".$searchField;
-     	
-
-    		echo "<script>console.log('" . $sql . "');</script>";
-            header('Content-type: image/jpg');
-
-      // foreach ($pdo->query($sql) as $row) {
-      //  	echo '<div class= col-sm-4>';
-      //   echo '<h2>'. $row['name'] . '</h2>';
-      //   echo '<p>'. $row['description'] . '</p>';
-      //   echo '<p>'. '$'. $row['cost'] . '</p>';
-      //   echo '</div>';
+    $sql = "SELECT * FROM trip name=".$searchField;
+    	echo "<script>console.log('" . $sql . "');</script>";
+    	
+      foreach ($pdo->query($sql) as $row) {
+       	echo '<div class= col-sm-4>';
+        echo '<h2>'. $row['name'] . '</h2>';
+        echo '<p>'. $row['description'] . '</p>';
+        echo '<p>'. '$'. $row['cost'] . '</p>';
+        echo '</div>';
                
       //  }
        Database::disconnect();
