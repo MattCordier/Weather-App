@@ -32,6 +32,9 @@
         $('#srch-term').on("keyup", webSearch);
 
         function webSearch(){
+            if (webSearch == ""){
+                show('#trips');
+            }
             var searchField = $('#srch-term').val();
            
                 console.log(searchField);
