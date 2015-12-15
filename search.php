@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<?php require "header.php";?>
-<body>
-<?php require "navigation.php";?>
+<?php include 'ecomm_connect.php'; ?>
 
-<?php require "footer.php";?>
+<body>
+
+
+
 </body>
 
 </html>

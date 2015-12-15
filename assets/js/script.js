@@ -34,6 +34,14 @@
         function webSearch(){
             var searchField = $('#srch-term').val();
             console.log(searchField);
+            $.get("get_trip.php?style=" + searchField, function(data){
+                if(data !== null){
+                    $('#trips').html(data);
+                } else {
+                    $('#trips').html("We don't have any trips like that available at this time.");
+                }
+                
+            });
         }
 
         webSearch();
