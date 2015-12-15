@@ -29,7 +29,7 @@
         //     delay(function(){
         //     console.log('Time elapsed!');
         //     }, 1000 );
-        $('#srch-term').on("change", webSearch);
+        $('#srch-term').on("keyup", webSearch);
 
         function webSearch(){
             var searchField = $('#srch-term').val();
