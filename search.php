@@ -7,7 +7,7 @@
      
                 
 
-    $sql = "SELECT * FROM trip WHERE name=". $searchField. "%";
+    $sql = "SELECT * FROM trip WHERE name= ". $searchField;
     	echo "<script>console.log('" . $sql . "');</script>";
 
       foreach ($pdo->query($sql) as $row) {
