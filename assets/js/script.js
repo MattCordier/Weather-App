@@ -18,6 +18,9 @@
     	hikeSearch();
 
         $('#srch-term').keyup(function(){
+            delay(function(){
+            alert('Time elapsed!');
+            }, 1000 );
             var searchField = $('#srch-term').val();
             console.log(searchField);
         })
