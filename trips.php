@@ -52,7 +52,7 @@
 <?php Database::disconnect(); ?>
 
 <?php require "footer.php";?>
-<script src="asset/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
