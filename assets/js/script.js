@@ -33,7 +33,7 @@
 
         function webSearch(){
            if(webSearch == ""){
-            $('#trip').show();
+            $('#trips').show();
            }
             var searchField = $('#srch-term').val();
            
