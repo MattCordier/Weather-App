@@ -37,7 +37,7 @@
            
                 console.log(searchField);
             
-                $.get("search.php?style=" + searchField, function(data){
+                $.get("search.php?searchField=" + searchField, function(data){
                     if(data !== null){
                         $('#trips').html(data);
                     } else {
