@@ -7,8 +7,10 @@
      
                 
 
-    $sql = "SELECT * FROM trip WHERE name= ". $searchField;
-    
+    $sql = "SELECT * FROM trip WHERE name= ?";
+    	$q = $pdo->prepare($sql);
+        $q->execute(array($searchField));
+        $data = $q->fetch(PDO::FETCH_ASSOC);
     	echo "<script>console.log('" . $sql . "');</script>";
 
       // foreach ($pdo->query($sql) as $row) {
