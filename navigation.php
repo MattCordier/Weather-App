@@ -24,7 +24,7 @@
         <li><a href="cart.php">Cart</a></li>
         <li><a href="login.php">Login</a></li>
       </ul>
-         <form class="navbar-form" role="search">
+         <form class="navbar-form navbar-right" role="search">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
             <div class="input-group-btn">
