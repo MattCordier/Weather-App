@@ -1,4 +1,4 @@
-<script>
+
     $(document).ready(function(){
 		$("#style").on("change", search);
     	$("#destination").on("change", search);
@@ -16,5 +16,4 @@
     		}); 
     	}
     	search();
-    });            	
-</script>
+    });            
