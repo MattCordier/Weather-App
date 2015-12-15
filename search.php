@@ -8,6 +8,9 @@
                 
 
     $sql = "SELECT * FROM trip WHERE name= ". $searchField;
+    $q = $pdo->prepare($sql);
+    $q->execute(array($id));
+    $data = $q->fetch(PDO::FETCH_ASSOC);
     	echo "<script>console.log('" . $sql . "');</script>";
 
       foreach ($pdo->query($sql) as $row) {
