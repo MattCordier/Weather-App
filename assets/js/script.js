@@ -30,11 +30,13 @@
         //     console.log('Time elapsed!');
         //     }, 1000 );
         $('#srch-term').on("change", webSearch);
-        
+
         function webSearch(){
             var searchField = $('#srch-term').val();
             console.log(searchField);
         }
+
+        webSearch();
 
         
 
