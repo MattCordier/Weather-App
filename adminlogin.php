@@ -20,20 +20,20 @@ if(isset($_POST["manager"])&&($_POST["password"])){
 	$sql = "SELECT * FROM customer WHERE username = ? AND password = ? LIMIT 1";
     $q = $pdo->prepare($sql);
     $q->execute(array($manager, $password));
-   
+   	header("location:admin.php");
     
 
 
-	$existCount = mysql_num_rows($sql);
-	if($existCount == 1){
-		echo "woo!";
+	// $existCount = mysql_num_rows($sql);
+	// if($existCount == 1){
+	// 	echo "woo!";
 		// $pdo->query($sql)$row;
 		// 	$id = $row["id"];
 		
 		// $_SESSION["id"] = $id;
 		// $_SESSION["manager"] = $manager;
 		// $_SESSION["password"] = $password;
-		header("location:admin.php");
+		// header("location:admin.php");
 	} 
 
 	Database::disconnect();
