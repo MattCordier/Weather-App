@@ -16,7 +16,13 @@
     		}); 
     	}
     	hikeSearch();
-
+        var delay = (function(){
+        var timer = 0;
+        return function(callback, ms){
+        clearTimeout (timer);
+        timer = setTimeout(callback, ms);
+        };
+        })();
         $('#srch-term').keyup(function(){
             delay(function(){
             alert('Time elapsed!');
