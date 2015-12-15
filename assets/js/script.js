@@ -32,18 +32,16 @@
         $('#srch-term').on("keyup", webSearch);
 
         function webSearch(){
-           if(webSearch == ""){
-            $('#trips').show();
-           }
+           
             var searchField = $('#srch-term').val();
            
                 console.log(searchField);
             
                 $.get("search.php?style=" + searchField, function(data){
                     if(data !== null){
-                        $('#trip-field').html(data);
+                        $('#trips').html(data);
                     } else {
-                        $('#trip-field').html("We don't have any trips like that available at this time.");
+                        $('#trips').html("We don't have any trips like that available at this time.");
                     }
                 
                 });
