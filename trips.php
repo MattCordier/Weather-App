@@ -42,14 +42,14 @@
 			</div>   
         </div><!--end row-->
         <div class="row">
-        	<div id="trips" class="col-xs-12">
-	        		
+        	<div id="trips" class="col-xs-12">	
+
         	</div>
         </div><!--end row-->
     </div> <!-- /container -->
 
 
-					  		<?php Database::disconnect(); ?>
+<?php Database::disconnect(); ?>
 
 <?php require "footer.php";?>
 <script>

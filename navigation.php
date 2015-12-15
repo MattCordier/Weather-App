@@ -23,6 +23,14 @@
         <li><a href="settings.php">Settings</a></li>
         <li><a href="cart.php">Cart</a></li>
         <li><a href="login.php">Login</a></li>
+         <form class="navbar-form" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
       </ul>
     </div><!-- /.navbar-collapse -->
   </nav>

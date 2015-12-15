@@ -34,7 +34,7 @@
                    foreach ($pdo->query($sql) as $row) {
                             echo '<tr>';
                             echo '<td>'. $row['firstname'] . '</td>';
-			    echo '<td>'. $row['lastname'] . '</td>';
+			                      echo '<td>'. $row['lastname'] . '</td>';
                             echo '<td>'. $row['phone'] . '</td>';
                             echo '<td>'. $row['dob'] . '</td>';
                             echo '<td width=250>';
