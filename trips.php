@@ -6,7 +6,7 @@
 ?>
 <body>
 <?php require "navigation.php";?>
- 	<div class="container main-bg">
+ 	<div id="trip-field" class="container main-bg">
         <div class="row">
             <h3>Select a Trip</h3>
         </div>
