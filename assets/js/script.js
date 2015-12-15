@@ -33,6 +33,7 @@
 
         function webSearch(){
             var searchField = $('#srch-term').val();
+           
                 console.log(searchField);
             
                 $.get("search.php?style=" + searchField, function(data){
@@ -43,7 +44,7 @@
                     }
                 
                 });
-            }
+            
         }
 
         webSearch();
