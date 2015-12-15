@@ -16,7 +16,6 @@
       <ul class="nav navbar-nav">
         <li><a href="index.php">Home </a></li>
         <li><a href="trips.php">Trips</a></li>
-        <li><a href="search.php">Search</a></li>
       </ul>  
       <form class="navbar-form navbar-right" role="search">
         <div class="input-group">
