@@ -11,7 +11,8 @@
     	$q = $pdo->prepare($sql);
         $q->execute(array($search));
         $data = $q->fetch(PDO::FETCH_ASSOC);
-    	echo "<script>console.log('" . $sql . "');</script>";
+    	// echo "<script>console.log('" . $sql . "');</script>";
+    	print_r($data);
 
       // foreach ($pdo->query($sql) as $row) {
       //  	echo '<div class= col-sm-4>';
