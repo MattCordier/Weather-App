@@ -14,7 +14,7 @@
     	// echo "<script>console.log('" . $sql . "');</script>";
     	
         $test = '';
-      foreach ($data as $row) {
+      // foreach ($data as $row) {
 
       	$test .= ($data['name']);
       //  	echo '<div class= col-sm-4>';
@@ -23,7 +23,7 @@
       //   echo '<p>'. '$'. $row['cost'] . '</p>';
       //   echo '</div>';
                
-       }
+       // }
        Database::disconnect();
 
 
