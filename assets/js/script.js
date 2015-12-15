@@ -16,6 +16,10 @@
     		}); 
     	}
     	hikeSearch();
-
+        $('#search').keyup(function(){
+            var searchField = $('#srch-term').val();
+            console.log(searchField);
+        }
+        webSearch();
 
     });            
