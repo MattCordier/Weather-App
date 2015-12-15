@@ -21,6 +21,9 @@
             $('#srch-term').keyup(function(){
             var searchField = $('#srch-term').val();
             console.log(searchField);
+            });
+        }
+
 
 
 
@@ -41,9 +44,9 @@
             //         });//each function
             //     });//getJSON
             // }
-        }
+    //     }
 
 
-    }); 
+    // }); 
 
 
