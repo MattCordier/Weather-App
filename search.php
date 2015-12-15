@@ -17,7 +17,7 @@
         echo '<p>'. '$'. $row['cost'] . '</p>';
         echo '</div>';
                
-      //  }
+       }
        Database::disconnect();
 
 
