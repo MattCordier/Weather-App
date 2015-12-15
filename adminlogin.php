@@ -34,7 +34,7 @@ if(isset($_POST["manager"])&&($_POST["password"])){
 		// $_SESSION["manager"] = $manager;
 		// $_SESSION["password"] = $password;
 		// header("location:admin.php");
-	} 
+	// } 
 
 	Database::disconnect();
 }
