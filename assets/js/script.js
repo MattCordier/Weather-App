@@ -33,7 +33,10 @@
 
         function webSearch(){
             var searchField = $('#srch-term').val();
-            console.log(searchField);
+            if (searchField != -1){
+                var regex = new RegExp(searchField, "i");
+                console.log(searchField);
+            }
             $.get("search.php?style=" + searchField, function(data){
                 if(data !== null){
                     $('#').html(data);
