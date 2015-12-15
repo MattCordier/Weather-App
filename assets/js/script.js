@@ -15,7 +15,7 @@
     			
     		}); 
     	}
-    	// hikeSearch();
+    	hikeSearch();
 
         // var delay = (function(){
         //     var timer = 0;
