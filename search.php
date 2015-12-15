@@ -10,18 +10,20 @@
     $sql = "SELECT * FROM trip WHERE name= ?";
     	$q = $pdo->prepare($sql);
         $q->execute(array($search));
-        $data = $q->fetch(PDO::FETCH_ASSOC);
+        $data = $q->fetchAll();
     	// echo "<script>console.log('" . $sql . "');</script>";
-    	print_r($data);
+    	
+        $test = '';
+      foreach ($data as $row) {
 
-      // foreach ($pdo->query($sql) as $row) {
+      	$test .= ($data['name']);
       //  	echo '<div class= col-sm-4>';
       //   echo '<h2>'. $row['name'] . '</h2>';
       //   echo '<p>'. $row['description'] . '</p>';
       //   echo '<p>'. '$'. $row['cost'] . '</p>';
       //   echo '</div>';
                
-      //  }
+       }
        Database::disconnect();
 
 
