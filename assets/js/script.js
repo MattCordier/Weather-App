@@ -36,15 +36,16 @@
             if (searchField != -1){
                 var regex = new RegExp(searchField, "i");
                 console.log(searchField);
-            }
-            $.get("search.php?style=" + searchField, function(data){
-                if(data !== null){
-                    $('#').html(data);
-                } else {
-                    $('#').html("We don't have any trips like that available at this time.");
-                }
+            
+                $.get("search.php?style=" + searchField, function(data){
+                    if(data !== null){
+                        $('#').html(data);
+                    } else {
+                        $('#').html("We don't have any trips like that available at this time.");
+                    }
                 
-            });
+                });
+            }
         }
 
         webSearch();
