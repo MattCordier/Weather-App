@@ -54,7 +54,7 @@ if($existCount == 0){
 
 
 	?>	
-
+<?php Database::disconnect(); ?>
 <?php require "footer.php";?>
 </body>
 
