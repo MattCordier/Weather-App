@@ -6,7 +6,7 @@
 ?>
 <body>
 <?php require "navigation.php";?>
- 	<div id="trip-field" class="container main-bg">
+ 	<div id="pallet" class="container main-bg">
         <div class="row">
             <h3>Select a Trip</h3>
         </div>
@@ -41,6 +41,7 @@
 				</div>
 			</div>   
         </div><!--end row-->
+
         <div class="row">
         	<div id="trips" class="col-xs-12">	
 

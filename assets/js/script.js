@@ -34,6 +34,13 @@
         function webSearch(){
            
             var searchField = $('#srch-term').val();
+            if(searchField === "") {
+                $('#pallet').show();
+                $('#productSearch').hide();
+
+            } else {
+                $('#pallet').hide();
+                $('#productSearch').show();
            
                 console.log(searchField);
             
@@ -45,6 +52,7 @@
                     }
                 
                 });
+            }
             
         }
 
