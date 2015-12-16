@@ -17,7 +17,7 @@
     $q->execute(array($searchField));
     $data = $q->fetchAll();
     $test = '';
-    if ($test === true){
+    if ($test > 1){
       foreach ($data as $row) {
 
         $test .= ($data['name']);
@@ -29,7 +29,7 @@
                
        }
       
-    }elseif ($test == '') {
+    }else{
       echo "no result";
     }
     	
