@@ -34,7 +34,7 @@
         function webSearch(){
            
             var searchField = $('#srch-term').val();
-            if(searchField === "") {
+            if(searchField.length === 0) {
                 $('#pallet').show();
                 $('#trips').hide();
 
