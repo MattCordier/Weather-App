@@ -28,14 +28,6 @@
         <li><a href="cart.php">Cart</a></li>
         <li><a href="#">Login</a></li>
       </ul>
-      <form class="navbar-form navbar-right">        
-          <input type="text" value="" name="myinput" id="myinput"/>
-          <input type="text" value="" name="myinput" id="myinput"/>
-          <input type="submit"  name="submit" value="submit"/>
-      </form>
-      
-         
-      
     </div><!-- /.navbar-collapse -->
   </nav>
 </div><!-- /.container -->
