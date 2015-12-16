@@ -16,7 +16,7 @@
     $q = $pdo->prepare($sql);
     $q->execute(array($searchField));
     $data = $q->fetchAll();
-    	echo "<script>console.log('" . $sql . "');</script>";
+    	
     	
       $test = '';
       foreach ($data as $row) {
