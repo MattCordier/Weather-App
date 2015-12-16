@@ -16,13 +16,13 @@
     $q = $pdo->prepare($sql);
     $q->execute(array($searchField));
     $data = $q->fetchAll();
-
-    if ($data === null){
+    $test = '';
+    if ($test === null){
       echo "no result";
     }else{
     	
     	
-      $test = '';
+      
       foreach ($data as $row) {
 
       	$test .= ($data['name']);
