@@ -9,7 +9,7 @@
 
       <!--Flex Slider Script-->
       
-	<div class="container main-bg">
+	<div id="pallet" class="container main-bg">
 	    <div class="flexslider">
 	      <ul class="slides">
 	        <li>
@@ -40,6 +40,12 @@
 	    		<p>duck</p>
 	    	</div>
 	    </div>
+
+	    <div class="row">
+        	<div id="trips" class="col-xs-12">	
+
+        	</div>
+        </div><!--end row-->
 
 
 	</div><!--end container-->	    
