@@ -1,7 +1,6 @@
 <?php 
 session_start();
-$confirmation = "logged in as". $manager;
-echo $confirmation;
+
 // session_start();
 // if(!isset($_SESSION["manager"])){
 // 	header("location:adminlogin.php");
