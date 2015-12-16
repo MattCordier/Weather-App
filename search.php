@@ -16,6 +16,10 @@
     $q = $pdo->prepare($sql);
     $q->execute(array($searchField));
     $data = $q->fetchAll();
+
+    if ($data === 0){
+      echo "no result";
+    }else{
     	
     	
       $test = '';
@@ -29,6 +33,7 @@
         echo '</div>';
                
        }
+    }   
        Database::disconnect();
 
 
