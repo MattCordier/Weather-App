@@ -41,14 +41,14 @@
 	    	</div>
 	    </div>
 
-	    <div class="row">
+	    </div> <!-- /container -->
+    <div class="container main-bg">
+        <div class="row">
         	<div id="trips" class="col-xs-12">	
 
         	</div>
         </div><!--end row-->
-
-
-	</div><!--end container-->	    
+    </div>	    
 
 <?php require "footer.php";?>
 <script src="assets/js/jquery.flexslider-min.js"></script>
