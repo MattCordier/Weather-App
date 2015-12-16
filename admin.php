@@ -13,7 +13,7 @@
 // $sql = mysql_query("SELECT * FROM customer WHERE id ='$managerID' AND username = '$manager' AND password = '$password' LIMIT 1");
 // $existCount = mysql_num_rows($sql);
 // if($existCount == 0){
-// 	header("location:admin.php");
+// 	header("location:index.php");
 // 	exit();
 
 ?>
