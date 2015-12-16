@@ -17,22 +17,25 @@
     $q->execute(array($searchField));
     $data = $q->fetchAll();
     $test = '';
-    if ($test === ''){
-      echo "no result";
-    }else{
-    	
-    	
-      
+    if ($test == true){
       foreach ($data as $row) {
 
-      	$test .= ($data['name']);
-       	echo '<div class= col-sm-4>';
+        $test .= ($data['name']);
+        echo '<div class= col-sm-4>';
         echo '<h2>'. $row['name'] . '</h2>';
         echo '<p>'. $row['description'] . '</p>';
         echo '<p>'. '$'. $row['cost'] . '</p>';
         echo '</div>';
                
        }
+      
+    }elseif ($test == '') {
+      echo "no result";
+    }
+    	
+    	
+      
+      
     }   
        Database::disconnect();
 
