@@ -26,13 +26,14 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="settings.php">Settings</a></li>
         <li><a href="cart.php">Cart</a></li>
-        <li><a href="login.php">Login</a></li>
-      </ul>
-      <form>        
+        <li><a href="">Login</a></li>
+        <li><form>        
           <input type="text" value="" name="myinput" id="myinput"/>
           <input type="text" value="" name="myinput" id="myinput"/>
           <input type="submit"  name="submit" value="submit"/>
-      </form>
+      </form></li>
+      </ul>
+      
          
       
     </div><!-- /.navbar-collapse -->
