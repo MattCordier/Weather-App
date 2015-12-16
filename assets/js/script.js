@@ -36,11 +36,11 @@
             var searchField = $('#srch-term').val();
             if(searchField.length === 0) {
                 $('#pallet').show();
-                $('#trips').hide();
+                $('#tripsearch').hide();
 
             } else {
                 $('#pallet').hide();
-                $('#trips').show();
+                $('#tripsearch').show();
            
                 console.log(searchField);
             
