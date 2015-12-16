@@ -1,20 +1,20 @@
 <?php 
-session_start();
-if(!isset($_SESSION["manager"])){
-	header("location:adminlogin.php");
-	exit();
-}
+// session_start();
+// if(!isset($_SESSION["manager"])){
+// 	header("location:adminlogin.php");
+// 	exit();
+// }
 
 
-$managerID = preg_replace('#[^0-9]#i', '', $_SESSION["id"]);
-$manager = preg_replace('#[^A-Za-z0-9]#i', '', $_SESSION["manager"]);
-$password = preg_replace('#[^A-Za-z0-9]#i', '', $_SESSION["password"]);
-include 'ecomm_connect.php';
-$sql = mysql_query("SELECT * FROM customer WHERE id ='$managerID' AND username = '$manager' AND password = '$password' LIMIT 1");
-$existCount = mysql_num_rows($sql);
-if($existCount == 0){
-	header("location:admin.php");
-	exit();
+// $managerID = preg_replace('#[^0-9]#i', '', $_SESSION["id"]);
+// $manager = preg_replace('#[^A-Za-z0-9]#i', '', $_SESSION["manager"]);
+// $password = preg_replace('#[^A-Za-z0-9]#i', '', $_SESSION["password"]);
+// include 'ecomm_connect.php';
+// $sql = mysql_query("SELECT * FROM customer WHERE id ='$managerID' AND username = '$manager' AND password = '$password' LIMIT 1");
+// $existCount = mysql_num_rows($sql);
+// if($existCount == 0){
+// 	header("location:admin.php");
+// 	exit();
 
 ?>
 <!DOCTYPE html>
