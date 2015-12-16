@@ -17,7 +17,7 @@
     $q->execute(array($searchField));
     $data = $q->fetchAll();
 
-    if ($data === 0){
+    if ($data === null){
       echo "no result";
     }else{
     	
