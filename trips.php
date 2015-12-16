@@ -41,8 +41,16 @@
 				</div>
 			</div>   
         </div><!--end row-->
+        
+        <div class="row">
+            <div id="trips" class="col-xs-12">    
+
+            </div>
+        </div><!--end row-->
+    
         </div> <!-- /container -->
-    <div id="trips" class="container main-bg">
+
+    <div id="tripsearch" class="container main-bg">
         <div class="row">
         	<div  class="col-xs-12">	
 

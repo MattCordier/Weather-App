@@ -42,7 +42,7 @@
 	    </div>
 
 	</div> <!-- /container -->
-    <div id="trips" class="container main-bg">
+    <div id="tripsearch" class="container main-bg">
         <div class="row">
         	<div  class="col-xs-12">	
 
