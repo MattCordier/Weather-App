@@ -41,10 +41,10 @@
 	    	</div>
 	    </div>
 
-	    </div> <!-- /container -->
-    <div class="container main-bg">
+	</div> <!-- /container -->
+    <div id="trips" class="container main-bg">
         <div class="row">
-        	<div id="trips" class="col-xs-12">	
+        	<div  class="col-xs-12">	
 
         	</div>
         </div><!--end row-->
