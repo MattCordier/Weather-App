@@ -21,7 +21,7 @@ if(isset($_POST["manager"])&&($_POST["password"])){
     $q = $pdo->prepare($sql);
     $q->execute(array($manager, $password));
     $data = $q->fetch(PDO::FETCH_ASSOC);
-    echo "welcome ". $manager;
+    echo "welcome ". $manager. " " .$password;
    	// header("location:admin.php");
     
 
