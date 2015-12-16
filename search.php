@@ -19,7 +19,7 @@
     $test = '';
     
       foreach ($data as $row) {
-        if ($test > 0){
+        if ($test > 1){
           $test .= ($data['name']);
           echo '<div class= col-sm-4>';
           echo '<h2>'. $row['name'] . '</h2>';
