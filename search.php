@@ -17,21 +17,22 @@
     $q->execute(array($searchField));
     $data = $q->fetchAll();
     $test = '';
-    if ($test > 0){
+    
       foreach ($data as $row) {
-
-        $test .= ($data['name']);
-        echo '<div class= col-sm-4>';
-        echo '<h2>'. $row['name'] . '</h2>';
-        echo '<p>'. $row['description'] . '</p>';
-        echo '<p>'. '$'. $row['cost'] . '</p>';
-        echo '</div>';
-               
-       }
-      
-    }elseif ($test == '') {
+        if ($test > 0){
+          $test .= ($data['name']);
+          echo '<div class= col-sm-4>';
+          echo '<h2>'. $row['name'] . '</h2>';
+          echo '<p>'. $row['description'] . '</p>';
+          echo '<p>'. '$'. $row['cost'] . '</p>';
+          echo '</div>';
+          }elseif ($test == '') {
       echo "no result";
     }
+                 
+       }
+      
+    
     	
     	
       
