@@ -12,7 +12,7 @@
     
      
           
-    $sql = "SELECT * FROM trip WHERE name LIKE '%".$searchField."%' OR description LIKE '%".$searchField."%' OR cost LIKE '%%".$searchField."%'";
+    $sql = "SELECT * FROM trip WHERE name LIKE '%".$searchField."%' OR description LIKE '%".$searchField."%' OR cost LIKE '%".$searchField."%'";
     $q = $pdo->prepare($sql);
     $q->execute(array($searchField));
     $data = $q->fetchAll();
