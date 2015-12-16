@@ -46,9 +46,9 @@
             
                 $.get("search.php?searchField=" + searchField, function(data){
                     if(data !== null){
-                        $('#trips').html(data);
+                        $('#tripsearch').html(data);
                     } else {
-                        $('#trips').html("We don't have any trips like that available at this time.");
+                        $('#tripsearch').html("We don't have any trips like that available at this time.");
                     }
                 
                 });
