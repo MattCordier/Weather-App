@@ -17,7 +17,7 @@
     $q->execute(array($searchField));
     $data = $q->fetchAll();
     
-    if ($data > 10){
+    if ($data === 10){
       $test = '';
       foreach ($data as $row) {
 
