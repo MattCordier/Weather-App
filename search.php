@@ -3,17 +3,22 @@
 
 	include 'ecomm_connect.php';
     $pdo = Database::connect();
-    $searchField = $_GET['searchField'];
-    $search = "%" .$searchField. "%";
-                
 
-    $sql = "SELECT * FROM trip WHERE name= ?";
-    	$q = $pdo->prepare($sql);
-        $q->execute(array($search));
-        $data = $q->fetchAll();
+
+    if (!empty($_GET['searchField'])){
+      $searchField = $_GET['searchField'];
+
+    }
+    
+     
+          
+    $sql = "SELECT * FROM trip WHERE name LIKE '%".$searchField."%'";
+    $q = $pdo->prepare($sql);
+    $q->execute(array($searchField));
+    $data = $q->fetchAll();
     	// echo "<script>console.log('" . $sql . "');</script>";
     	
-        $test = '';
+      $test = '';
       foreach ($data as $row) {
 
       	$test .= ($data['name']);
