@@ -68,8 +68,11 @@
         function authorizeUser(){
             var username = $("#username").val();
             var password = $("#password").val();
-            console.log("whoot!");
-            console.log("hello " + username + "," + "your password is " + password);
+            if (username !== "" && password !== ""){
+            $.get("authorize.php?un=" + username + "&pw=" + password, )
+        } else {
+            console.log("fill out yo stuff");
+        }
         }
 
         
