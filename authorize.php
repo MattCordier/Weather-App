@@ -24,7 +24,7 @@
     session_start();
 
     $_SESSION['userid'] = $id;
-    $_SESSION['firstname'] = $fisrtname;
+    $_SESSION['firstname'] = $firstname;
     $_SESSION['lastname'] = $lastname;
     $_SESSION['phone'] = $phone;
     $_SESSION['dob'] = $dob;
@@ -35,7 +35,7 @@
     $_SESSION['email'] = $email;
     
     header('Location: index.php');
-    
+
 
 
         
