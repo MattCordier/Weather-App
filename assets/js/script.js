@@ -66,7 +66,10 @@
         $('#logbtn').on('click', authorizeUser);
 
         function authorizeUser(){
+            var username = $("#username").val();
+            var password = $("#password").val();
             console.log("whoot!");
+            console.log("hello " + username + "," + "your password is " + password);
         }
 
         

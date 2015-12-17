@@ -11,9 +11,9 @@
 
 	<form id="login" action="authorize.php" method="POST" enctype="multipart/form-data">
 		User Name:
-		<input type="text" name="fn">
+		<input id="username" type="text" name="username">
 		Password:
-		<input type="text" name="ln">
+		<input id="password" type="text" name="password">
 		<input id="logbtn" class="btn" type="button" value="Log In">
 	</form>
 	
