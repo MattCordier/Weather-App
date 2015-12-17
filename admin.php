@@ -13,7 +13,7 @@
 		User Name:
 		<input id="username" type="text" name="username">
 		Password:
-		<input id="password" type="text" name="password">
+		<input id="password" type="password" name="password">
 		<input id="logbtn" class="btn" type="button" value="Log In">
 	</form>
 	<div id="confirmlog"></div>
