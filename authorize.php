@@ -10,7 +10,7 @@ $sql = "SELECT * FROM customer where username =". $username;
         $data = $q->fetch(PDO::FETCH_ASSOC);
         Database::disconnect();
 
-        echo $data['firstname'];
+        echo $row['firstname'];
 
 
 ?>
