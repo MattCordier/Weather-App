@@ -9,7 +9,7 @@ session_start(); ?>
 <?php require "header.php";?>	
 <body>
 <?php require "navigation.php";
-if(isset($_SESSION['id'])){
+if(isset($_SESSION['userid'])){
 	echo "Hello". $firstname;
 }
 ?>
