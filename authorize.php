@@ -8,7 +8,7 @@ $sql = "SELECT * FROM customer where username =". $username;
         $q = $pdo->prepare($sql);
         $q->execute(array($id));
         $data = $q->fetch(PDO::FETCH_ASSOC);
-        return $data['id'];
+        echo $data['id'];
         Database::disconnect();
 
         
