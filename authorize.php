@@ -3,7 +3,7 @@
     $pdo = Database::connect();
 	$username = $_POST['username'];
 	$password = $_POST['password'];
-	echo "hi". $username . " " .$password;
+	echo "hi". " ". $username . " " .$password;
 
 
     Database::disconnect();
