@@ -9,9 +9,7 @@ session_start(); ?>
 <?php require "header.php";?>	
 <body>
 <?php require "navigation.php";
-if(isset($_SESSION['userid'])){
-	echo "Hello, ". $_SESSION['firstname'];
-}
+
 ?>
 <!--Flex Slider CSS-->
       
