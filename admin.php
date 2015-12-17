@@ -11,7 +11,7 @@
 		<input type="text" name="fn">
 		Password:
 		<input type="text" name="ln">
-		<input id="logbtn" class="btn" value="Log In">
+		<input id="logbtn" class="btn" type="button" value="Log In">
 	</form>
 	
 
