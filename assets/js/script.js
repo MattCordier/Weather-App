@@ -1,5 +1,6 @@
 
     $(document).ready(function(){
+        //TRIP SELECTORS
 		$("#style").on("change", hikeSearch);
     	$("#destination").on("change", hikeSearch);
 
@@ -10,7 +11,7 @@
     			if(data !== null && data.length > 5){
     				$('#trips').html(data);
     			} else {
-                    
+
 					$('#trips').html("We don't have any trips like that available at this time.");
     			}
     			
@@ -30,6 +31,9 @@
         //     delay(function(){
         //     console.log('Time elapsed!');
         //     }, 1000 );
+
+
+    //SEARCH FUNCTION
         $('#srch-term').on("keyup", webSearch);
 
         function webSearch(){
@@ -58,6 +62,12 @@
         }
 
         webSearch();
+
+        $('#logbtn').on('click', authorizeUser);
+
+        function authorizeUser(){
+            console.log("whoot!");
+        }
 
         
 
