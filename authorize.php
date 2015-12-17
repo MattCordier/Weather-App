@@ -4,8 +4,13 @@
 
 $username = $_GET['un'];
 $password = $_GET['pw'];
+$sql = "SELECT * FROM customer where id = ?";
+        $q = $pdo->prepare($sql);
+        $q->execute(array($id));
+        $data = $q->fetch(PDO::FETCH_ASSOC);
+        Database::disconnect();
 
-echo '<h1>Hello '. $username. '</h1>'; 
+        echo $data['firstname'];
 
 
 ?>
