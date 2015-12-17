@@ -3,7 +3,7 @@
     $pdo = Database::connect();
 	$username = $_GET['un'];
 	$password = $_GET['pw'];
-	$sql = "SELECT * FROM customer where username =". $username;
+	$sql = "SELECT * FROM customer where id = ?";
 
         $q = $pdo->prepare($sql);
         $q->execute(array($id));
