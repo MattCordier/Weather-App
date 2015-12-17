@@ -8,7 +8,11 @@ session_start(); ?>
 <html>
 <?php require "header.php";?>	
 <body>
-<?php require "navigation.php";?>
+<?php require "navigation.php";
+if(isset($_SESSION['id'])){
+	echo "Hello". $firstname;
+}
+?>
 <!--Flex Slider CSS-->
       
       

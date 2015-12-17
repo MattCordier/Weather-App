@@ -20,7 +20,7 @@
     $email = $data['email'];
 
     Database::disconnect();
-    
+
     session_start();
 
     $_SESSION['userid'] = $id;
@@ -35,7 +35,7 @@
     $_SESSION['email'] = $email;
     
     header('Location: index.php');
-
+    
 
 
         

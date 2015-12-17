@@ -5,7 +5,7 @@
 <?php require "header.php"; ?>
 <?php
 
-
+session_start();
 if(isset($_SESSION["manager"])){
 	header("location:admin.php");	
 }
@@ -21,8 +21,8 @@ if(isset($_POST["manager"])&&($_POST["password"])){
     $q = $pdo->prepare($sql);
     $q->execute(array($manager, $password));
     $data = $q->fetch(PDO::FETCH_ASSOC);
-
-   	header("location:admin.php");
+    echo "welcome ". $manager. " " .$password;
+   	// header("location:admin.php");
     
 
 
