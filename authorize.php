@@ -18,7 +18,7 @@
     $gender = $data['gender'];
     $permission = $data['permission'];
     $email = $data['email'];
-    header('Location: index.php')
+    header('Location: index.php');
     Database::disconnect();
     session_start();
 
