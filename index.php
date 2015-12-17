@@ -58,7 +58,7 @@
             $('.flexslider').flexslider();
           });
       </script>
-<script src="assets/js/script.js"></script>
+
 <!--Flex Slider jQuery-->
 </body>
 
