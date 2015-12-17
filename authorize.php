@@ -5,11 +5,14 @@
 $username = $_GET['un'];
 $password = $_GET['pw'];
 $sql = "SELECT * FROM customer where username =". $username;
-	echo $sql;
-        $q = $pdo->prepare($sql);
-        $q->execute(array($id));
-        $data = $q->fetch(PDO::FETCH_ASSOC);
-        echo $data['id'];
+foreach ($pdo->query($sql) as $row) {
+       	echo '<div class= col-sm-4>';
+        echo '<h2>'. $row['id'] . '</h2>';
+        echo '<p>'. $row['password'] . '</p>';
+        echo '<p>'. '$'. $row['username'] . '</p>';
+        echo '</div>';
+               
+       }
         Database::disconnect();
 
         
