@@ -23,7 +23,7 @@
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><?php echo "Hello ". $firstname. " ". $lastname; ?>
+        <li><?php echo "Hello ". $firstname. " ". $lastname; ?></li>
         <li><a href="settings.php">Settings</a></li>
         <li><a href="cart.php">Cart</a></li>
         <li><a href="login.php">Login</a></li>
