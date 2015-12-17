@@ -70,7 +70,7 @@
             var password = $("#password").val();
             if (username !== "" && password !== ""){
                 $.get("authorize.php?un=" + username + "&pw=" + password, function(data){
-
+                    $('#confirmlog').html(data);
                 });
         } else {
             alert("please fill out yo stuff");
