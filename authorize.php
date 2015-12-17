@@ -20,6 +20,7 @@
     $email = $data['email'];
 
     Database::disconnect();
+    
     session_start();
 
     $_SESSION['userid'] = $id;
