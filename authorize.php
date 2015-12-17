@@ -8,8 +8,7 @@ $sql = "SELECT * FROM customer where username =". $username;
 foreach ($pdo->query($sql) as $row) {
        	echo '<div class= col-sm-4>';
         echo '<h2>'. $row['id'] . '</h2>';
-        echo '<p>'. $row['password'] . '</p>';
-        echo '<p>'. '$'. $row['username'] . '</p>';
+        
         echo '</div>';
                
        }
