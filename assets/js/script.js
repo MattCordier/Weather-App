@@ -73,7 +73,7 @@
 
                 });
         } else {
-            console.log("fill out yo stuff");
+            alert("please fill out yo stuff");
         }
         }
 
