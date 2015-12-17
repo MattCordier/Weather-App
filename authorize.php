@@ -33,8 +33,8 @@
     $_SESSION['permission'] = $permission;
     $_SESSION['email'] = $email;
     
-    echo "Hello ". $firstname. " ". $lastname;
-   
+    header('Location: index.php');
+
 
 
         
