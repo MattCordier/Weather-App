@@ -18,11 +18,22 @@
     $gender = $data['gender'];
     $permission = $data['permission'];
     $email = $data['email'];
-    header('index.php');
+    header('Location: index.php')
     Database::disconnect();
     session_start();
 
-    //$_SESSION['userid'] = $id;
+    $_SESSION['userid'] = $id;
+    $_SESSION['firstname'] = $fisrtname;
+    $_SESSION['lastname'] = $lastname;
+    $_SESSION['userid'] = $id;
+    $_SESSION['userid'] = $id;
+    $_SESSION['userid'] = $id;
+    $_SESSION['userid'] = $id;
+    $_SESSION['userid'] = $id;
+    $_SESSION['userid'] = $id;
+    $_SESSION['userid'] = $id;
+    $_SESSION['userid'] = $id;
+    $_SESSION['userid'] = $id;
 
         
 
