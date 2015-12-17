@@ -25,7 +25,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="settings.php">Settings</a></li>
         <li><a href="cart.php">Cart</a></li>
-        <li><a href="admin.php">Login</a></li>
+        <li><a href="login.php">Login</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </nav>
