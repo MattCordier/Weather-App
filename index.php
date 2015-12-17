@@ -10,7 +10,7 @@ session_start(); ?>
 <body>
 <?php require "navigation.php";
 if(isset($_SESSION['userid'])){
-	echo "Hello". $_SESSION['firstname'];
+	echo "Hello, ". $_SESSION['firstname'];
 }
 ?>
 <!--Flex Slider CSS-->
