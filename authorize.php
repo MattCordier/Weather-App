@@ -3,10 +3,26 @@
     $pdo = Database::connect();
 	$username = $_POST['username'];
 	$password = $_POST['password'];
-	header('Location: index.php');
-
-
+	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$sql = "SELECT * FROM customer WHERE username = ? AND password = ? LIMIT 1";
+    $q = $pdo->prepare($sql);
+    $q->execute(array($username, $password));
+    $data = $q->fetch(PDO::FETCH_ASSOC);
+    $id = $data['id'];
+    $firstname = $data['firstname'];
+    $lastname = $data['lastname'];
+    $phone = $data['phone'];
+    $dob = $data['dob'];
+    $username = $data['username'];
+    $password = $data['password'];
+    $gender = $data['gender'];
+    $permission = $data['permission'];
+    $email = $data['email'];
+    header(index.php);
     Database::disconnect();
+    session_start();
+
+    //$_SESSION['userid'] = $id;
 
         
 
