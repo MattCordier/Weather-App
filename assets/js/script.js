@@ -10,8 +10,8 @@
     			if(data !== null && data.length > 5){
     				$('#trips').html(data);
     			} else {
-                    data = "We don't have any trips like that available at this time.";
-					$('#trips').html(data);
+                    
+					$('#trips').html("We don't have any trips like that available at this time.");
     			}
     			
     		}); 
