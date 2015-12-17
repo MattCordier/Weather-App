@@ -69,7 +69,9 @@
             var username = $("#username").val();
             var password = $("#password").val();
             if (username !== "" && password !== ""){
-            $.get("authorize.php?un=" + username + "&pw=" + password, )
+                $.get("authorize.php?un=" + username + "&pw=" + password, function(data)){
+                    
+                }
         } else {
             console.log("fill out yo stuff");
         }
