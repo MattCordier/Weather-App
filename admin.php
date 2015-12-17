@@ -16,7 +16,8 @@
 		<input id="password" type="text" name="password">
 		<input id="logbtn" class="btn" type="button" value="Log In">
 	</form>
-	
+	<div id="confirmlog"></div>
+
 
 	
 
