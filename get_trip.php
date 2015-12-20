@@ -18,7 +18,7 @@
 
     				echo "<script>console.log('" . $sql . "');</script>";
             header('Content-type: image/jpg');
-    if (data == true){
+ 
       foreach ($pdo->query($sql) as $row) {
        	echo '<div class= col-sm-4>';
         echo '<h2>'. $row['name'] . '</h2>';
@@ -26,9 +26,7 @@
         echo '<p>'. '$'. $row['cost'] . '</p>';
         echo '</div>';
       } 
-    } else if (data == ""){
-        echo "no result";
-      }
+   
        Database::disconnect();
 
 ?>
