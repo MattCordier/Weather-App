@@ -31,7 +31,7 @@
     $_SESSION['username'] = $username;
     $_SESSION['password'] = $password;
     $_SESSION['gender'] = $gender;
-    $_SESSION['permission']$permission
+    $_SESSION['permission'] = $permission
     $_SESSION['email'] = $email;
 
     if ($permission === 1){
