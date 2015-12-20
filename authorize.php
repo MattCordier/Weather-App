@@ -38,9 +38,10 @@
         $_SESSION['permission'] = 'Manager';
     } 
 
-    // elseif ($_SESSION['permission' == 2){
-    //     $_SESSION['permission'] = 'Guide';
-    //   } else{
+    elseif ($_SESSION['permission' == 2){
+        $_SESSION['permission'] = 'Guide';
+      } 
+    // else{
     //      $_SESSION['permission'] = 'Customer';
     //     }
     
