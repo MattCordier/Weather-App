@@ -5,6 +5,7 @@
     $pdo = Database::connect();
 ?>
 <body>
+<?php session_start();?>
 <?php require "navigation.php";?>
  	<div id="pallet" class="container main-bg">
         <div class="row">
