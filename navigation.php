@@ -24,7 +24,7 @@
         <li><a href="cart.php">Cart</a></li>
         <li><a href="login.php">Login</a></li>
         <li><?php if(isset($_SESSION['userid'])){
-                      echo "Hello, ". $_SESSION['firstname']. "<br/>". ". You are logged in as a ". $_SESSION['permission'];
+                      echo "Hello ". $_SESSION['firstname']. ",". "<br/>". "You are logged in as a ". $_SESSION['permission'];
                     } ?></li>
         <li><form class="navbar-form navbar-right" role="search">
         <div class="input-group">
