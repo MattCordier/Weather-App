@@ -34,13 +34,13 @@
     $_SESSION['permission'] = $permission
     $_SESSION['email'] = $email;
 
-    if ($_SESSION['permission'] === 1){
+    if ($_SESSION['permission'] == 1) {
         $_SESSION['permission'] = 'Manager';
-    } elseif ($_SESSION['permission' === 2){
+    } elseif ($_SESSION['permission' == 2){
         $_SESSION['permission'] = 'Guide';
-    } else{
-        $_SESSION['permission'] = 'Customer';
-    }
+      } else{
+         $_SESSION['permission'] = 'Customer';
+        }
     
     header('Location: index.php');
 
