@@ -41,7 +41,7 @@
                             echo '<td>'. $row['destination_id'] . '</td>';
                             
                             echo '<td width=250>';
-                                echo '<a class="btn" href="../trip_read.php?id='.$row['id'].'">Read</a>';
+                                echo '<a class="btn" href="CRUD/trip/trip_read.php?id='.$row['id'].'">Read</a>';
                                 echo ' ';
                                 echo '<a class="btn btn-success" href="trip_update.php?id='.$row['id'].'">Update</a>';
                                 echo ' ';
