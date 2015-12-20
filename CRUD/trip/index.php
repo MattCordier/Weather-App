@@ -10,7 +10,7 @@
 <body>
     <div class="container">
             <div class="row">
-                <h3>Trip</h3>
+                <h3>Manage Trips</h3>
             </div>
             <div class="row">
                 <p>
