@@ -23,6 +23,8 @@
         <li><?php if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Manager"){echo '<a href="settings.php">Settings</a>'; } ?></li>
         <li><?php if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Customer"){echo '<a href="cart.php">Cart</a>'; } ?></li>
         <li><a href="login.php">Login</a></li>
+        <li><?php if(isset($_SESSION['userid'])){echo '<a href="logout.php">Logout</a>'; } ?></li>
+
         <li><?php if(isset($_SESSION['userid'])){
                       echo "Hello ". $_SESSION['firstname']. ",". "<br/>". "You are logged in as a ". $_SESSION['permission'];
                     } ?></li>
