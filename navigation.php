@@ -21,7 +21,7 @@
       <ul class="nav navbar-nav navbar-right">
         
         <li><?php if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Manager"){echo '<a href="settings.php">Settings</a>'; } ?></li>
-        <li><a href="cart.php">Cart</a></li>
+        <li><?php if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Customer"){echo '<a href="cart.php">Cart</a>'; } ?></li>
         <li><a href="login.php">Login</a></li>
         <li><?php if(isset($_SESSION['userid'])){
                       echo "Hello ". $_SESSION['firstname']. ",". "<br/>". "You are logged in as a ". $_SESSION['permission'];
