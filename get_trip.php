@@ -26,7 +26,7 @@
         echo '<p>'. '$'. $row['cost'] . '</p>';
         echo '</div>';
       } 
-    } else {
+    } else if (data == ""){
         echo "no result";
       }
        Database::disconnect();
