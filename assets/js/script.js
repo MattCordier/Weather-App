@@ -12,7 +12,7 @@
     				$('#trips').html(data);
     			} else {
 
-					$('#trips').html("We don't have any trips like that available at this time.");
+					$('#trips').html(data + "We don't have any trips like that available at this time.");
     			}
     			
     		}); 
