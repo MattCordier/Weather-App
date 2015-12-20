@@ -31,8 +31,16 @@
     $_SESSION['username'] = $username;
     $_SESSION['password'] = $password;
     $_SESSION['gender'] = $gender;
-    $_SESSION['permission'] = $permission;
+    $_SESSION['permission']$permission
     $_SESSION['email'] = $email;
+
+    if ($permission === 1){
+        $_SESSION['permission'] = 'Manager';
+    } elseif ($permission === 2){
+        $_SESSION['permission'] = 'Guide';
+    } else{
+        $_SESSION['permission'] = 'Customer';
+    }
     
     header('Location: index.php');
 
