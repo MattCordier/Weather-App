@@ -36,11 +36,13 @@
 
     if ($_SESSION['permission'] == 1) {
         $_SESSION['permission'] = 'Manager';
-    } elseif ($_SESSION['permission' == 2){
-        $_SESSION['permission'] = 'Guide';
-      } else{
-         $_SESSION['permission'] = 'Customer';
-        }
+    } 
+
+    // elseif ($_SESSION['permission' == 2){
+    //     $_SESSION['permission'] = 'Guide';
+    //   } else{
+    //      $_SESSION['permission'] = 'Customer';
+    //     }
     
     header('Location: index.php');
 
