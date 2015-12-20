@@ -41,9 +41,9 @@
     elseif ($_SESSION['permission'] == 2){
         $_SESSION['permission'] = 'Guide';
       } 
-    // else{
-    //      $_SESSION['permission'] = 'Customer';
-    //     }
+    else{
+         $_SESSION['permission'] = 'Customer';
+        }
     
     header('Location: index.php');
 
