@@ -20,7 +20,7 @@
       
       <ul class="nav navbar-nav navbar-right">
         
-        <li><?php if(isset($_SESSION['userid'])){echo '<a href="settings.php">Settings</a>' } ?></li>
+        <li><?php if(isset($_SESSION['userid'])){echo '<a href="settings.php">Settings</a>'; } ?></li>
         <li><a href="cart.php">Cart</a></li>
         <li><a href="login.php">Login</a></li>
         <li><?php if(isset($_SESSION['userid'])){
