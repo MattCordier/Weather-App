@@ -19,12 +19,13 @@
       </ul>  
       
       <ul class="nav navbar-nav navbar-right">
-        <li><?php if(isset($_SESSION['userid'])){
-  echo "Hello, ". $_SESSION['firstname'];
-} ?></li>
+        
         <li><a href="settings.php">Settings</a></li>
         <li><a href="cart.php">Cart</a></li>
         <li><a href="login.php">Login</a></li>
+        <li><?php if(isset($_SESSION['userid'])){
+                      echo "Hello, ". $_SESSION['firstname'];
+                    } ?></li>
         <li><form class="navbar-form navbar-right" role="search">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search&hellip;" name="srch-term" id="srch-term">
