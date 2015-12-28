@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">Apex Trail Adventures</a>
+      <a class="navbar-brand" href="index.php"><img src="assests/img/apex_logo.png"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
