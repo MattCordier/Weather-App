@@ -8,14 +8,7 @@
 
 <body>
 <?php require "navigation.php";
-include "CRUD/customer/create_customer.php";
-	
-
-
-	
-
-
-	
+require "CRUD/customer/create_customer.php";
 Database::disconnect(); ?>
 <?php require "footer.php";?>
 </body>
