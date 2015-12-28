@@ -11,16 +11,19 @@
 <?php 
 
 if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Manager"){
-	echo '<div class="container">
+	echo '<div class="container main-bg">
 <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">Trips</a></li>
-  <li role="presentation"><a href="#">Customers</a></li>
-  <li role="presentation"><a href="#">Transaction</a></li>
+  <li role="presentation" class="active"><a id="trip-man" href="">Trips</a></li>
+  <li role="presentation"><a id="customer-man" href="">Customers</a></li>
+  <li role="presentation"><a id="transaction-man" href="">Transaction</a></li>
 </ul>
 </div>';
 
 
 }
+
+<div id="manager" class="container main-bg">
+</div>
 
 
 ?>
