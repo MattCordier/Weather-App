@@ -1,6 +1,6 @@
 <?php
      
-    require '../ecomm_connect.php';
+    require 'ecomm_connect.php';
     
  
     if ( !empty($_POST)) {
