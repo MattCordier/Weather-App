@@ -9,6 +9,8 @@
 
 
 <?php 
+include "CRUD/customer/index.php";
+include "CRUD/trip/index.php";
 if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Manager"){
 	echo '<div class="container">
 <ul class="nav nav-tabs">
@@ -20,8 +22,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Manager"){
 
 
 }
-include "CRUD/customer/index.php";
-include "CRUD/trip/index.php";
+
 
 ?>
 
