@@ -4,30 +4,14 @@
 <body>
 <?php session_start()?>	
 <?php require "navigation.php";?>
-
-
-
-
-<?php 
+<?php require "CRUD/trip/index.php";
 
 if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Manager"){
-	echo '<div class="container main-bg">
-<ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a id="trip-man" href="">Trips</a></li>
-  <li role="presentation"><a id="customer-man" href="">Customers</a></li>
-  <li role="presentation"><a id="transaction-man" href="">Transaction</a></li>
-</ul>
-</div>';
-
-
+require "CRUD/customer/index.php";
 }
 
 
-
-
 ?>
-<div id="manager" class="container main-bg">
-</div>
 
 <?php require "footer.php";?>
 </body>
