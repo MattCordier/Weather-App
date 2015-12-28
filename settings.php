@@ -9,8 +9,7 @@
 
 
 <?php 
-require "CRUD/customer/index.php";
-require "CRUD/trip/index.php";
+
 if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Manager"){
 	echo '<div class="container">
 <ul class="nav nav-tabs">
