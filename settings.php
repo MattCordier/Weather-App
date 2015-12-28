@@ -5,9 +5,9 @@
 <?php session_start()?>	
 <?php require "navigation.php";?>
 <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
+  <li role="presentation" class="active"><a href="#">Trips</a></li>
+  <li role="presentation"><a href="#">Customers</a></li>
+  <li role="presentation"><a href="#">Other Stuff</a></li>
 </ul>
 
 
