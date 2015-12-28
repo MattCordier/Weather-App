@@ -17,11 +17,11 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Manager"){
   <li role="presentation"><a href="#">Transaction</a></li>
 </ul>
 </div>';
-include "CRUD/customer/index.php";
-include "CRUD/trip/index.php";
+
 
 }
-
+include "CRUD/customer/index.php";
+include "CRUD/trip/index.php";
 
 ?>
 
