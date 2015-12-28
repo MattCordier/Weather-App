@@ -18,7 +18,7 @@
 
     				echo "<script>console.log('" . $sql . "');</script>";
             header('Content-type: image/jpg');
- 
+      
       foreach ($pdo->query($sql) as $row) {
        	echo '<div class= col-sm-4>';
         echo '<h2>'. $row['name'] . '</h2>';
