@@ -8,7 +8,7 @@
 
 <body>
 <?php require "navigation.php";
-require "CRUD/customer/create_customer.php";
+include "CRUD/customer/create_customer.php";
 	
 
 
