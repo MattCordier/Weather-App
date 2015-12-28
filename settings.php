@@ -22,11 +22,12 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Manager"){
 
 }
 
-<div id="manager" class="container main-bg">
-</div>
+
 
 
 ?>
+<div id="manager" class="container main-bg">
+</div>
 
 <?php require "footer.php";?>
 </body>
