@@ -7,6 +7,6 @@ session_unset();
 
 
 Database::disconnect();
-header('Location: index.php');
+header('Location: login.php');
 
 ?>
