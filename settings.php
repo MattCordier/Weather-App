@@ -22,7 +22,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Manager"){
   <li role="presentation"><a href="#">Customers</a></li>
   <li role="presentation"><a href="#">Transaction</a></li>
 </ul>
-</div>'
+</div>';
 require "CRUD/customer/index.php";
 }
 
