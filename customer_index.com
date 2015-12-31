@@ -17,8 +17,7 @@
                   </thead>
                   <tbody>
                   <?php
-                
-                   $pdo = Database::connect();
+                 
                    $sql = 'SELECT * FROM customer ORDER BY id DESC';
                    foreach ($pdo->query($sql) as $row) {
                             echo '<tr>';
