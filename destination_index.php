@@ -8,7 +8,7 @@
                 <table class="table table-striped table-bordered">
                   <thead>
                     <tr>
-                      <th>Category Name</th>
+                      <th>Destination Name</th>
                       <th>Action</th>
                     </tr>
                   </thead>
