@@ -1,4 +1,7 @@
 <?php
+ include 'ecomm_connect.php';
+    $pdo = Database::connect();
+
      
     if ( !empty($_POST)) {
         // keep track validation errors
@@ -65,9 +68,7 @@
 <!DOCTYPE html>
 <html>
 <?php require "header.php";?>
-<?php include 'ecomm_connect.php';
-    $pdo = Database::connect();
-?>
+
 
 <body>
 <?php require "navigation.php"; ?>
@@ -75,7 +76,7 @@
      
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Create a Customer</h3>
+                        <h3>Create an Account</h3>
                     </div>
              
                     <form class="form-horizontal" action="signup.php" method="post">
