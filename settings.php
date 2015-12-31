@@ -26,12 +26,10 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
 	require 'ecomm_connect.php';
 	echo $_SESSION['userid'];
 	echo'<div class="row">';
-    echo            '<h3>Manage Customer</h3>';
+    echo            '<h3>Update Your Settings</h3>';
      echo       '</div>';
          echo   '<div class="row">';
-            echo	'<p>';
-                echo    '<a href="create_customer.php" class="btn btn-success">Create</a>';
-               echo '</p>';
+            
                 echo'<table class="table table-striped table-bordered">';
                 echo  '<thead>';
                  echo   '<tr>';
