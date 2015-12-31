@@ -78,7 +78,7 @@
                         <h3>Create a Customer</h3>
                     </div>
              
-                    <form class="form-horizontal" action="CRUD/customer/create_customer.php" method="post">
+                    <form class="form-horizontal" action="signup.php" method="post">
 
 
                       <div class="control-group <?php echo !empty($firstnameError)?'error':'';?>">
