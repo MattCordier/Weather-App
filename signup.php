@@ -60,7 +60,7 @@
             $q = $pdo->prepare($sql);
             $q->execute(array($firstname, $lastname, $username, $password, $email));
             Database::disconnect();
-            header("Location: authorize.php");
+            header("Location: login.php");
         }
     }
 ?>
