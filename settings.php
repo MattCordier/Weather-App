@@ -23,7 +23,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
 	require "customer_index.php";
 	
 } elseif(isset($_SESSION['userid']) && $_SESSION['permission'] === "Customer"){
-	echo "Hello"; 
+	echo $_SESSION['userid']; 
 }
 
 
