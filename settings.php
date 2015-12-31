@@ -42,7 +42,8 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
                   </thead>
                   <tbody>
                   <?php
-                 
+                 	include '../ecomm_connect.php';
+                   $pdo = Database::connect();
                    $sql = 'SELECT * FROM customer WHERE id = $_SESSION["userid"]';
                    foreach ($pdo->query($sql) as $row) {
                             echo '<tr>';
@@ -59,7 +60,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
                                 echo '</td>';
                             echo '</tr>';
                    }
-             
+             		Database::disconnect();
                   ?>
                   </tbody>
             </table>
