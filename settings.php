@@ -10,7 +10,6 @@
    		<li role="presentation"><a href="#">Profile</a></li>
    		<li role="presentation"><a href="#">Messages</a></li>
  	</ul>
-</div> 	
 
 <?php 
 if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
@@ -24,7 +23,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
 
 
 ?>
-
+</div><!--end container-->
 
 <?php require "footer.php";?>
 </body>
