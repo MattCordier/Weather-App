@@ -15,7 +15,7 @@
                   </thead>
                   <tbody>
                   <?php
-                   include 'ecomm_connect.php';
+                
                    
                    $sql = 'SELECT * FROM destination ORDER BY id DESC';
                    foreach ($pdo->query($sql) as $row) {
