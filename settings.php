@@ -49,6 +49,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
                    $q = $pdo->prepare($sql);
         $q->execute(array($id));
         $data = $q->fetch(PDO::FETCH_ASSOC);
+        Database::disconnect();
                  			echo 'poop';
                             echo '<tr>';
                             echo '<td>'. $data['firstname'] . '</td>';
@@ -64,7 +65,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
                             echo '</td>';
                             echo '</tr>';
                    
-             		Database::disconnect();
+             		
                  
                 echo  '</tbody>
             </table>
