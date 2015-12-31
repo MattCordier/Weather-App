@@ -18,9 +18,9 @@
                   <tbody>
                   <?php
                    include 'ecomm_connect.php';
-                   $pdo = Database::connect();
-                   $sql = 'SELECT * FROM customer ORDER BY id DESC';
-                   foreach ($pdo->query($sql) as $row) {
+                   $pdo1 = Database::connect();
+                   $sql1 = 'SELECT * FROM customer ORDER BY id DESC';
+                   foreach ($pdo1->query($sql1) as $row) {
                             echo '<tr>';
                             echo '<td>'. $row['firstname'] . '</td>';
 			                      echo '<td>'. $row['lastname'] . '</td>';
