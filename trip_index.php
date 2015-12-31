@@ -1,4 +1,4 @@
-<div class="container">
+
             <div class="row">
                 <h3>Manage Trips</h3>
             </div>
@@ -44,4 +44,4 @@
                   </tbody>
             </table>
         </div>
-    </div> <!-- /container -->
+    
