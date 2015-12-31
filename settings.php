@@ -18,7 +18,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
 } elseif(isset($_SESSION['userid']) && $_SESSION['permission'] === "Manager"){
 	require "trip_index.php";
 	require "destination_index.php";	
-	// require "CRUD/customer/index.php";
+	require "CRUD/customer/index.php";
 } elseif(isset($_SESSION['userid']) && $_SESSION['permission'] === "Customer"){
 	echo "Hello"; 
 }
