@@ -44,7 +44,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
                  
                  	include 'ecomm_connect.php';
                    $pdo = Database::connect();
-                   $sql = 'SELECT * FROM customer WHERE id = '$_SESSION["userid"]'';
+                   $sql = 'SELECT * FROM customer WHERE id = $_SESSION["userid"]';
                    foreach ($pdo->query($sql) as $row) {
                             echo '<tr>';
                             echo '<td>'. $row['firstname'] . '</td>';
