@@ -9,6 +9,7 @@
                   <thead>
                     <tr>
                       <th>Destination Name</th>
+                      <th>Description</th>
                       <th>Action</th>
                     </tr>
                   </thead>
