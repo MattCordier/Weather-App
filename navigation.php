@@ -1,6 +1,6 @@
 <div class="container">
 
-  <nav class="navbar navbar-right">
+  <nav class="navbar navbar-default navbar-right">
       <li><?php if(isset($_SESSION['userid'])){
                       echo "Hello ". $_SESSION['firstname']. ",". "<br/>". "You are logged in as a ". $_SESSION['permission'];
                     } ?></li>
