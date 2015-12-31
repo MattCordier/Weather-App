@@ -24,7 +24,6 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
 	
 } elseif(isset($_SESSION['userid']) && $_SESSION['permission'] === "Customer"){
 	require 'ecomm_connect.php';
-	echo $_SESSION['userid'];
 	echo'<div class="row">';
     echo            '<h3>Update Your Settings</h3>';
      echo       '</div>';
