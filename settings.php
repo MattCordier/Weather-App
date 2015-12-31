@@ -23,6 +23,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
 	require "customer_index.php";
 	
 } elseif(isset($_SESSION['userid']) && $_SESSION['permission'] === "Customer"){
+	var $id = $_SESSION['userid'];
 	echo '<div class="data">
                 <h3>Manage Customer</h3>
             </div>
@@ -44,7 +45,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
                  
                  	include 'ecomm_connect.php';
                    $pdo = Database::connect();
-                   $sql = 'SELECT * FROM customer WHERE id =" $_SESSION["userid"] "';
+                   $sql = 'SELECT * FROM customer WHERE id = $id';
                    $q = $pdo->prepare($sql);
         $q->execute(array($id));
         $data = $q->fetch(PDO::FETCH_ASSOC);
