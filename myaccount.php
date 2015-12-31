@@ -1,4 +1,4 @@
-
+<?php 
 require 'ecomm_connect.php';
 	echo'<div class="row">';
     echo            '<h3>Update Your Settings</h3>';
@@ -36,3 +36,4 @@ require 'ecomm_connect.php';
 		echo '<a class="btn btn-danger" href="customer_delete.php?id='.$data['id'].'">Delete</a>';
 		echo '</td>';
 		echo '</tr>';
+?>        
