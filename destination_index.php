@@ -16,7 +16,7 @@
                   <?php
                    include 'ecomm_connect.php';
                    $pdo = Database::connect();
-                   $sql = 'SELECT * FROM trip ORDER BY id DESC';
+                   $sql = 'SELECT * FROM destination ORDER BY id DESC';
                    foreach ($pdo->query($sql) as $row) {
                             echo '<td>'. $row['name'] . '</td>';
                             
