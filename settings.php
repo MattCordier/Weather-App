@@ -25,6 +25,24 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
 } elseif(isset($_SESSION['userid']) && $_SESSION['permission'] === "Customer"){
 	require 'ecomm_connect.php';
 	echo $_SESSION['userid'];
+	echo'<div class="row">';
+    echo            '<h3>Manage Customer</h3>';
+     echo       '</div>';
+         echo   '<div class="row">';
+            echo	'<p>';
+                echo    '<a href="create_customer.php" class="btn btn-success">Create</a>';
+               echo '</p>';
+                echo'<table class="table table-striped table-bordered">';
+                echo  '<thead>';
+                 echo   '<tr>';
+                     echo '<th>First Name</th>';
+		                 echo '<th>Last Name</th>';
+                    echo  '<th>Phone</th>';
+                    echo  '<th>Date of Birth</th>';
+                    echo  '<th>Action</th>';
+                   echo '</tr>';
+                 echo '</thead>';
+                 echo '<tbody>';
 	$pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "SELECT * FROM customer where id = ?";
