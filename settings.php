@@ -32,7 +32,19 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
         $q->execute(array($_SESSION['userid']));
         $data = $q->fetch(PDO::FETCH_ASSOC); 
 
-        echo $data['firstname'];
+		echo '<tr>';
+        echo '<td>'. $data['firstname'] . '</td>';
+      	echo '<td>'. $data['lastname'] . '</td>';
+		echo '<td>'. $data['phone'] . '</td>';
+		echo '<td>'. $data['dob'] . '</td>';
+		echo '<td width=250>';
+		echo '<a class="btn" href="customer_read.php?id='.$data['id'].'">Read</a>';
+		echo ' ';
+		echo '<a class="btn btn-success" href="customer_update.php?id='.$data['id'].'">Update</a>';
+		echo ' ';
+		echo '<a class="btn btn-danger" href="customer_delete.php?id='.$data['id'].'">Delete</a>';
+		echo '</td>';
+		echo '</tr>';
 }
 
 
