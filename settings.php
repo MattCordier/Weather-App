@@ -23,6 +23,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
 	require "customer_index.php";
 	
 } elseif(isset($_SESSION['userid']) && $_SESSION['permission'] === "Customer"){
+	require 'ecomm_connect.php';
 	echo $_SESSION['userid'];
 	$pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
