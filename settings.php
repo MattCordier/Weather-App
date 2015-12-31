@@ -48,7 +48,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
                    $q = $pdo->prepare($sql);
         $q->execute(array($id));
         $data = $q->fetch(PDO::FETCH_ASSOC);
-                 
+                 			echo $id;
                             echo '<tr>';
                             echo '<td>'. $data['firstname'] . '</td>';
 			                echo '<td>'. $data['lastname'] . '</td>';
