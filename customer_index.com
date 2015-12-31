@@ -34,7 +34,7 @@
                                 echo '</td>';
                             echo '</tr>';
                    }
-                   Database::disconnect();
+             
                   ?>
                   </tbody>
             </table>
