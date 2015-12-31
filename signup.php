@@ -102,27 +102,6 @@
                       </div>
 
 
-                      <div class="control-group <?php echo !empty($phoneError)?'error':'';?>">
-                        <label class="control-label">Phone</label>
-                        <div class="controls">
-                            <input name="phone" type="text" placeholder="Phone Number" value="<?php echo !empty($phone)?$phone:'';?>">
-                            <?php if (!empty($phoneError)): ?>
-                                <span class="help-inline"><?php echo $phoneError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-
-
-                      <div class="control-group <?php echo !empty($dobError)?'error':'';?>">
-                        <label class="control-label">Date of Birth</label>
-                        <div class="controls">
-                            <input name="dob" type="text"  placeholder="Date of Birth" value="<?php echo !empty($dob)?$dob:'';?>">
-                            <?php if (!empty($dobError)): ?>
-                                <span class="help-inline"><?php echo $dobError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-
                       <div class="control-group <?php echo !empty($usernameError)?'error':'';?>">
                         <label class="control-label">Username</label>
                         <div class="controls">
@@ -143,26 +122,8 @@
                         </div>
                       </div>
 
-                      <div class="control-group <?php echo !empty($genderError)?'error':'';?>">
-                        <label class="control-label">Gender</label>
-                        <div class="controls">
-                            <input name="gender" type="text"  placeholder="Gender" value="<?php echo !empty($gender)?$gender:'';?>">
-                            <?php if (!empty($genderError)): ?>
-                                <span class="help-inline"><?php echo $genderError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-
-                      <div class="control-group <?php echo !empty($permissionError)?'error':'';?>">
-                        <label class="control-label">Permission</label>
-                        <div class="controls">
-                            <input name="permission" type="text"  placeholder="Permission" value="<?php echo !empty($permission)?$permission:'';?>">
-                            <?php if (!empty($permissionError)): ?>
-                                <span class="help-inline"><?php echo $permissionError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-
+                  
+                     
                       <div class="control-group <?php echo !empty($emailError)?'error':'';?>">
                         <label class="control-label">Email</label>
                         <div class="controls">
