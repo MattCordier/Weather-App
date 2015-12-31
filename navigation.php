@@ -20,7 +20,7 @@
       
       <ul class="nav navbar-nav navbar-right">
         
-        <li><?php if(isset($_SESSION['userid']) && ($_SESSION['permission'] === "Manager" || $_SESSION['permission'] === "Guide")){echo '<a href="settings.php">Settings</a>'; } ?></li>
+        <li><?php if(isset($_SESSION['userid'])){echo '<a href="settings.php">Settings</a>'; } ?></li>
         <li><?php if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Customer"){echo '<a href="cart.php">Cart</a>'; } ?></li>
         <li><?php if(!isset($_SESSION['userid'])){echo '<a href="login.php">Login</a>'; } ?></li>
         <li><?php if(!isset($_SESSION['userid'])){echo '<a href="signup.php">Create Account</a>'; } ?></li>
