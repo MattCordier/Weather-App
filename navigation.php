@@ -1,9 +1,5 @@
 <div class="container">
-
-  <nav class="navbar navbar-default navbar-right">
-      <li><?php if(isset($_SESSION['userid'])){
-                      echo "Hello ". $_SESSION['firstname']. ",". "<br/>". "You are logged in as a ". $_SESSION['permission'];
-                    } ?></li>
+  <nav class="navbar navbar-default">
       <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -30,7 +26,9 @@
         <li><?php if(!isset($_SESSION['userid'])){echo '<a href="signup.php">Create Account</a>'; } ?></li>
         <li><?php if(isset($_SESSION['userid'])){echo '<a href="logout.php">Logout</a>'; } ?></li>
 
-      
+        <li><?php if(isset($_SESSION['userid'])){
+                      echo "Hello ". $_SESSION['firstname']. ",". "<br/>". "You are logged in as a ". $_SESSION['permission'];
+                    } ?></li>
         <li><form class="navbar-form navbar-right" role="search">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search&hellip;" name="srch-term" id="srch-term">
