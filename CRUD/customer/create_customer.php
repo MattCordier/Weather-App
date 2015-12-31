@@ -87,7 +87,7 @@
             $q = $pdo->prepare($sql);
             $q->execute(array($firstname, $lastname, $phone, $dob, $username, $password, $gender, $permission, $email));
             Database::disconnect();
-            header("Location: ../../../index.php");
+            header("Location: index.php");
         }
     }
 ?>
