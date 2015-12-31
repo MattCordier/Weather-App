@@ -1,5 +1,5 @@
 <div class="row">
-                <h3>Category</h3>
+                <h3>Destination</h3>
             </div>
             <div class="row">
                 <p>
@@ -16,7 +16,7 @@
                   <?php
                    include 'ecomm_connect.php';
                    $pdo = Database::connect();
-                   $sql = 'SELECT * FROM category ORDER BY id DESC';
+                   $sql = 'SELECT * FROM destination ORDER BY id DESC';
                    foreach ($pdo->query($sql) as $row) {
                             echo '<td>'. $row['name'] . '</td>';
                             
