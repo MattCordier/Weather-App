@@ -40,7 +40,7 @@ if(isset($_SESSION['userid']) && $_SESSION['permission'] === "Guide"){
                       <th>Action</th>
                     </tr>
                   </thead>
-                  <tbody>'
+                  <tbody>';
                  
                  	
 }
