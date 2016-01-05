@@ -17,7 +17,9 @@
 	<form id="login" action="authorize.php" method="POST" enctype="multipart/form-data">
 		<div class="control-group">
 			<label class="control-label">User Name</label>
+			<div class="controls">
 			<input id="username" type="text" name="username">
+		</div>
 	    </div>
 	    <div class="control-group">
 		<label class="control-label">Password</label>
