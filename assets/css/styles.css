@@ -27,7 +27,7 @@ nav.navbar.navbar-default li  {
 }
 nav.navbar.navbar-default li a {
     color: #FFFFFF;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 nav.navbar.navbar-default li a:hover {
@@ -40,11 +40,11 @@ nav.navbar.navbar-default li a:hover {
 
 .status {
 	font-size: 12px;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 .search {
-	margin-top: 30px;
+	margin-top: 40px;
 	margin-right: 20px;
 	
 }
