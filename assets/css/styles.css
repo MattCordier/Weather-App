@@ -87,3 +87,7 @@ nav.navbar.navbar-default li a:hover {
 	height: auto;
 	display: block;
 }
+
+#login {
+	margin-top: 40px;
+}
