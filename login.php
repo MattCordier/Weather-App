@@ -15,7 +15,7 @@
         </div>
 
 	<form id="login" action="authorize.php" method="POST" enctype="multipart/form-data">
-		User Name:
+		<label class="control-label">User Name</label>
 		<input id="username" type="text" name="username">
 		Password:
 		<input id="password" type="password" name="password">
