@@ -7,6 +7,7 @@
 ?>
 
 <body>
+	<div class="container main-bg">
 <?php require "navigation.php";?>
 
 	<form id="login" action="authorize.php" method="POST" enctype="multipart/form-data">
@@ -17,6 +18,8 @@
 		<input id="logbtn" class="btn" type="submit" value="Log In">
 	</form>
 	<div id="confirmlog"></div>
+
+</div>
 
 
 	
