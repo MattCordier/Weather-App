@@ -30,6 +30,10 @@ nav.navbar.navbar-default li a:hover {
     color: #E16E28;
 }
 
+.search {
+	margin-right: 20px;
+}
+
 .logo {
 	max-height: 50px;
 }

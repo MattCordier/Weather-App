@@ -29,7 +29,7 @@
         <li><?php if(isset($_SESSION['userid'])){
                       echo "Hello ". $_SESSION['firstname']. ",". "<br/>". "You are logged in as a ". $_SESSION['permission'];
                     } ?></li>
-        <li><form class="navbar-form navbar-right" role="search">
+        <li><form class="navbar-form navbar-right search" role="search">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search&hellip;" name="srch-term" id="srch-term">
         </div>
