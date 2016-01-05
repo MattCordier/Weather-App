@@ -31,6 +31,10 @@ nav.navbar.navbar-default li a:hover {
     color: #E16E28;
 }
 
+.main-title {
+	font-size: 2em;
+}
+
 .search {
 	margin-right: 20px;
 }
