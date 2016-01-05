@@ -18,12 +18,14 @@
 		<div class="control-group">
 			<label class="control-label">User Name</label>
 			<div class="controls">
-			<input id="username" type="text" name="username">
-		</div>
+				<input id="username" type="text" name="username">
+			</div>
 	    </div>
 	    <div class="control-group">
 		<label class="control-label">Password</label>
+		<div class="controls">
 		<input id="password" type="password" name="password">
+	</div>
 	</div>
 		<input id="logbtn" class="btn" type="submit" value="Log In">
 	</form>
