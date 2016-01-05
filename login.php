@@ -8,6 +8,9 @@
 
 <body>
 	<div class="container main-bg">
+		<div class="row">
+          <h3>Log In</h3>
+        </div>
 <?php require "navigation.php";?>
 
 	<form id="login" action="authorize.php" method="POST" enctype="multipart/form-data">
