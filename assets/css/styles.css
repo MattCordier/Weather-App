@@ -54,6 +54,7 @@ nav.navbar.navbar-default li a:hover {
 
 .form-control:focus {
 	border: 1px solid #E16E28;
+	box-shadow: 10px 10px 10px #E16E28;
 }
 
 .logo {
