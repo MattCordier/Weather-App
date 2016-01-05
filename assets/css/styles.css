@@ -52,6 +52,10 @@ nav.navbar.navbar-default li a:hover {
 	color: #FFFFFF;
 }
 
+.form-control:focus {
+	border: 1px solid green;
+}
+
 .logo {
 	max-height: 70px;
 	margin-left: 20px;
