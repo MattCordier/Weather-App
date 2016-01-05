@@ -46,7 +46,7 @@ nav.navbar.navbar-default li a:hover {
 }
 
 .trip-card {
-	background-color: #ffed9f; 
+	background-color: rgb(240, 205, 55); 
 	margin: 20px 10px;
 	margin-left: auto;
 	margin-right: auto;
