@@ -19,8 +19,10 @@
 			<label class="control-label">User Name</label>
 			<input id="username" type="text" name="username">
 	    </div>
+	    <div class="control-group">
 		<label class="control-label">Password</label>
 		<input id="password" type="password" name="password">
+	</div>
 		<input id="logbtn" class="btn" type="submit" value="Log In">
 	</form>
 	<div id="confirmlog"></div>
