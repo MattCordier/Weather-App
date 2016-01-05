@@ -8,13 +8,13 @@ body {
 }
 
 .main-bg {
+	min-height: 900px;
 	background-color: rgb(144, 110, 85);
 	color: #3d3d3d;
 	text-align: center;
 }
 
 nav.navbar.navbar-default{
-	position: relative;
 	background-color: #3d3d3d;
 	border: none;
 	border-radius: 0px;
