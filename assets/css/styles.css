@@ -24,6 +24,7 @@ nav.navbar.navbar-default{
 }
 nav.navbar.navbar-default li  {
     color: #FFFFFF;
+    margin-top: 20px;
 }
 nav.navbar.navbar-default li a {
     color: #FFFFFF;
