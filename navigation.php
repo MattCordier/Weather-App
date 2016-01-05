@@ -26,15 +26,14 @@
         <li><?php if(!isset($_SESSION['userid'])){echo '<a href="signup.php">Sign Up</a>'; } ?></li>
         <li><?php if(isset($_SESSION['userid'])){echo '<a href="logout.php">Logout</a>'; } ?></li>
 
-        
+        <li class="status"><?php if(isset($_SESSION['userid'])){
+                      echo "Hello ". $_SESSION['firstname']. ",". "<br/>". "You are logged in as a ". $_SESSION['permission'];
+                    } ?></li>
         <li><form class="navbar-form navbar-right search" role="search">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search&hellip;" name="srch-term" id="srch-term">
         </div>
       </form></li>
-      <li class="status"><?php if(isset($_SESSION['userid'])){
-                      echo "Hello ". $_SESSION['firstname']. ",". "<br/>". "You are logged in as a ". $_SESSION['permission'];
-                    } ?></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </nav>
