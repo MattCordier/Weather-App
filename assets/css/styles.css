@@ -20,7 +20,7 @@ nav.navbar.navbar-default{
 	border-radius: 0px;
 	margin-bottom: 0px !important;
 	z-index: 99;
-	height:150px;
+	height:140px;
 }
 nav.navbar.navbar-default li  {
     color: #FFFFFF;
@@ -61,7 +61,7 @@ nav.navbar.navbar-default li a:hover {
 
 .logo {
 
-	max-height: 140px;
+	max-height: 125px;
 	margin-top: -10px;
 	margin-left: 20px;
 }
