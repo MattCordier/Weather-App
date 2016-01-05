@@ -101,7 +101,7 @@
 </head>
  
 <body>
-    <div class="container main-bg">
+    <div class="container">
      
                 <div class="span10 offset1">
                     <div class="row">
