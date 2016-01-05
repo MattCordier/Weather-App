@@ -34,7 +34,7 @@
 
       </form></li>
       </ul>
-      <li class="status"><?php if(isset($_SESSION['userid'])){
+      <li class="status navbar-right"><?php if(isset($_SESSION['userid'])){
                       echo "Hello ". $_SESSION['firstname']. ",". "<br/>". "You are logged in as a ". $_SESSION['permission'];
                     } ?></li>
     </div><!-- /.navbar-collapse -->
