@@ -26,7 +26,7 @@
         <li><?php if(!isset($_SESSION['userid'])){echo '<a href="signup.php">Sign Up</a>'; } ?></li>
         <li><?php if(isset($_SESSION['userid'])){echo '<a href="logout.php">Logout</a>'; } ?></li>
 
-        <li><?php if(isset($_SESSION['userid'])){
+        <li class="status"><?php if(isset($_SESSION['userid'])){
                       echo "Hello ". $_SESSION['firstname']. ",". "<br/>". "You are logged in as a ". $_SESSION['permission'];
                     } ?></li>
         <li><form class="navbar-form navbar-right search" role="search">
