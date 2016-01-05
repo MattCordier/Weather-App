@@ -37,6 +37,10 @@ nav.navbar.navbar-default li a:hover {
 	font-size: 3em;
 }
 
+.status {
+	font-size: 12px;
+}
+
 .search {
 	margin-right: 20px;
 }
