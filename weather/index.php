@@ -30,7 +30,7 @@ if (login_check($mysqli) == true) {
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row header">
                 <div class="col-xs-4">
                     <p>hi</p>
                 </div>
