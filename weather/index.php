@@ -14,8 +14,17 @@ if (login_check($mysqli) == true) {
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Secure Login: Log In</title>
-        <link rel="stylesheet" href="styles/main.css" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Matt Cordier">
+        <meta name="description" content="A smart weather app for planning your travels.">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/png" href="assets/img/favicon.ico">
         <script type="text/JavaScript" src="js/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script> 
     </head>
