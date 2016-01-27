@@ -27,15 +27,6 @@ if (login_check($mysqli) == true) {
         <link rel="icon" type="image/png" href="assets/img/favicon.ico">
         <script type="text/JavaScript" src="js/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script> 
-        <style>
-     
-      #map {
-        height: 50%;
-        width: 50%;
-        margin-right: auto;
-        margin-left: auto;
-      }
-    </style>
     </head>
     <body>
         <div class="container-fluid">
@@ -54,10 +45,8 @@ if (login_check($mysqli) == true) {
                     <button type="button" class="btn btn-default">Calendar</button>
                 </div>
             </div>
-        </div>   
-         <div class="container-fluid"> 
-            <div class="row weather-map" style="height:100%; width:100%;">
-                <div class="col-xs-12">
+            <div class="row weather-map" >
+                <div class="col-xs-12" style="height:100%; width:100%;">
                     <div id="map">
                     </div>
                 </div>
@@ -103,6 +92,6 @@ if (login_check($mysqli) == true) {
 ?>  
 
 
-       </div> 
+    </div>    
     </body>
 </html>
