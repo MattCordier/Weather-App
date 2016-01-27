@@ -59,7 +59,7 @@ if (login_check($mysqli) == true) {
             echo '<p class="error">Error Logging In!</p>';
         }
         ?> 
-        <div id="login-modal" style="margin-top:50px;">
+        <div id="login-modal">
             <form action="includes/process_login.php" method="post" name="login_form">                      
                 Email: <input type="text" name="email" />
                 <br/>
@@ -79,7 +79,7 @@ if (login_check($mysqli) == true) {
             echo '<p>Do you want to change user? <a href="includes/logout.php">Log out</a>.</p>';
         } else {
                         echo '<p>Currently logged ' . $logged . '.</p>';
-                        echo "<p>If you don't have a login, please <a href='register.php'>register</a></p>";
+                        echo "<p>Don't have an account? <a href='register.php'>Register here</a></p>";
                 }
 ?>  
 
