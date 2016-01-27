@@ -6,10 +6,12 @@ html {
 
 body {
   margin: 0; 	
-  background-color: white;
+  background-color: #FEF6EB;
   font-size: 14px;
   line-height: 1.6;
   font-family: "Roboto Slab", sans-serif;
-  color: #666;
+  color: #74828F;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+  /*#525564 #74828F #96C0CE #BEB9B5 #C25B56 #FEF6EB*/
