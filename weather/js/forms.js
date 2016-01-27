@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#login-mofdal').hide();
+    $('#login-modal').hide();
 
 
 });
