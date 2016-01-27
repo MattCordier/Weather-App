@@ -45,20 +45,23 @@ if (login_check($mysqli) == true) {
                     <button type="button" class="btn btn-default">Calendar</button>
                 </div>
             </div>
+
         <?php
         if (isset($_GET['error'])) {
             echo '<p class="error">Error Logging In!</p>';
         }
         ?> 
-        <form action="includes/process_login.php" method="post" name="login_form">                      
-            Email: <input type="text" name="email" />
-            Password: <input type="password" 
-                             name="password" 
-                             id="password"/>
-            <input type="button" 
-                   value="Login" 
-                   onclick="formhash(this.form, this.form.password);" /> 
-        </form>
+        <div id="login-modal" style="margin-top:50px;">
+            <form action="includes/process_login.php" method="post" name="login_form">                      
+                Email: <input type="text" name="email" />
+                Password: <input type="password" 
+                                 name="password" 
+                                 id="password"/>
+                <input type="button" 
+                       value="Login" 
+                       onclick="formhash(this.form, this.form.password);" /> 
+            </form>
+        </div>    
  
 <?php
         if (login_check($mysqli) == true) {
@@ -70,6 +73,8 @@ if (login_check($mysqli) == true) {
                         echo "<p>If you don't have a login, please <a href='register.php'>register</a></p>";
                 }
 ?>  
+
+
     </div>    
     </body>
 </html>
