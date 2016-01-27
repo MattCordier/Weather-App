@@ -34,7 +34,7 @@ body {
 }
 
 input::-webkit-input-placeholder {
-   color: rgba(0,5,143,.5);
+   color: rgba(0,0,0,.2);
 }
 
 #login-modal {
