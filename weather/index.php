@@ -20,6 +20,7 @@ if (login_check($mysqli) == true) {
         <script type="text/JavaScript" src="js/forms.js"></script> 
     </head>
     <body>
+        <h1> Helllllllllo!</h1>
         <?php
         if (isset($_GET['error'])) {
             echo '<p class="error">Error Logging In!</p>';
