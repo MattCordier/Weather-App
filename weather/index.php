@@ -66,7 +66,7 @@ if (login_check($mysqli) == true) {
                 </div>
                 <div class="col-xs-4">
                     <form>
-                        <input class="location-search" type="text" name="#"  onfocus="if(this.value == 'Select a Location') { this.value = ''; }" value="Select a Location">
+                        <input class="location-search" type="text" name="#"  onkeyup="if(this.value == 'Select a Location') { this.value = ''; }" value="Select a Location">
                     </form>
                     
                 </div>
