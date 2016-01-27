@@ -45,7 +45,12 @@ if (login_check($mysqli) == true) {
                     <button type="button" class="btn btn-default">Calendar</button>
                 </div>
             </div>
+            <div class="row weather-map">
+                <div class="col-xs-12">
+                    <div id="map"></div>
+                </div>
              <div id="map"></div>
+            </div> 
     <script>
       var map;
       function initMap() {
