@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('#login-modal').hide();
+    $('#login').on('click', show('#login-modal');
 
 
 });
