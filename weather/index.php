@@ -37,7 +37,7 @@ if (login_check($mysqli) == true) {
                 </div>
                 <div class="col-xs-4">
                     <form>
-                        <input type="text" name="#" value="Select a Location">
+                        <input class="location-search" type="text" name="#" value="Select a Location">
                     </form>
                     
                 </div>
