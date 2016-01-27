@@ -22,7 +22,7 @@ if (login_check($mysqli) == true) {
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/styles" href="weather/assets/css/styles.css">
+        <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/png" href="assets/img/favicon.ico">
         <script type="text/JavaScript" src="js/sha512.js"></script> 
