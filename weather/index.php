@@ -51,13 +51,13 @@ if (login_check($mysqli) == true) {
                 </div>
             </div> 
     
-
+        <div id="login-modal">    
         <?php
         if (isset($_GET['error'])) {
             echo '<p class="error">Error Logging In!</p>';
         }
         ?> 
-        <div id="login-modal">
+        
             <form action="includes/process_login.php" method="post" name="login_form">                      
                 Email: <input type="text" name="email" />
                 <br/>
