@@ -28,7 +28,8 @@ body {
 }	
 
 #map {
-    height: 50%;
+	margin-top: 100px;
+    height: 600px;
     width: 50%;
     margin-right: auto;
     margin-left: auto;
