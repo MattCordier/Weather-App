@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#login-modal').hide();
     $('#login').on('click', function(){
         $('#login-modal').show();
-        )}
+    });
 
 
 });
