@@ -48,7 +48,6 @@ if (login_check($mysqli) == true) {
             <div class="row weather-map">
                 <div class="col-xs-12">
                     <div id="map">
-                        <p>here</p>
                     </div>
                 </div>
             </div> 
@@ -61,7 +60,7 @@ if (login_check($mysqli) == true) {
         });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&sensor=false&callback=initMap"></script>
 
         <?php
         if (isset($_GET['error'])) {
