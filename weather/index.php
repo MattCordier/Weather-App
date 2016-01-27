@@ -42,7 +42,7 @@ if (login_check($mysqli) == true) {
                     
                 </div>
                 <div class="col-xs-4">
-                    <p>buddy</p>
+                    <button type="button" class="btn btn-default">Calendar</button>
                 </div>
             </div>
         <?php
