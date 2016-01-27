@@ -54,6 +54,7 @@ if (login_check($mysqli) == true) {
         <div id="login-modal" style="margin-top:50px;">
             <form action="includes/process_login.php" method="post" name="login_form">                      
                 Email: <input type="text" name="email" />
+                <br/>
                 Password: <input type="password" 
                                  name="password" 
                                  id="password"/>
