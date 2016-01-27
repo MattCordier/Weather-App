@@ -18,6 +18,7 @@ body {
 
 .header {
 	background-color: rgb(250, 238, 138);
-	text-align: center; 
+	text-align: center;
+	border-bottom: 2px solid rgba(250, 205, 250, .5) 
 
 }
