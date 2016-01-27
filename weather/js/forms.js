@@ -1,7 +1,8 @@
 $(document).ready(function() {
     $('#login-mofdal').hide();
 
-}
+
+});
 
 
 function formhash(form, password) {
