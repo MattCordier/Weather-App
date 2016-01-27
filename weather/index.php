@@ -32,26 +32,7 @@ if (login_check($mysqli) == true) {
             <div class="row header">
                 <div class="col-xs-4">
                     <button id="login" type="button" class="btn btn-default">LogIn</button>
-
-                </div>
-                <div class="col-xs-4">
-                    <form>
-                        <input class="location-search" type="text" name="#" value="Select a Location">
-                    </form>
-                    
-                </div>
-                <div class="col-xs-4">
-                    <button type="button" class="btn btn-default">Calendar</button>
-                </div>
-            </div>
-            <div class="row weather-map" style="height:100%; width:100%;" >
-                <div class="col-xs-12" style="height:100%; width:100%;">
-                    <div id="map">
-                    </div>
-                </div>
-            </div> 
-    
-        <div id="login-modal">    
+                    <div id="login-modal">    
         <?php
         if (isset($_GET['error'])) {
             echo '<p class="error">Error Logging In!</p>';
@@ -81,6 +62,26 @@ if (login_check($mysqli) == true) {
                 }
 ?>  
         </div> 
+
+                </div>
+                <div class="col-xs-4">
+                    <form>
+                        <input class="location-search" type="text" name="#" value="Select a Location">
+                    </form>
+                    
+                </div>
+                <div class="col-xs-4">
+                    <button type="button" class="btn btn-default">Calendar</button>
+                </div>
+            </div>
+            <div class="row weather-map" style="height:100%; width:100%;" >
+                <div class="col-xs-12" style="height:100%; width:100%;">
+                    <div id="map">
+                    </div>
+                </div>
+            </div> 
+    
+        
         <script src="js/maps.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/JavaScript" src="js/sha512.js"></script> 
