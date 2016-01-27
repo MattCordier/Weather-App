@@ -45,7 +45,7 @@ if (login_check($mysqli) == true) {
                     <button type="button" class="btn btn-default">Calendar</button>
                 </div>
             </div>
-            <div class="row weather-map" >
+            <div class="row weather-map" style="height:100%; width:100%;" >
                 <div class="col-xs-12" style="height:100%; width:100%;">
                     <div id="map">
                     </div>
