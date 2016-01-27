@@ -29,7 +29,18 @@ if (login_check($mysqli) == true) {
         <script type="text/JavaScript" src="js/forms.js"></script> 
     </head>
     <body>
-        <h1> Helllooooo!</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <p>hi</p>
+                </div>
+                <div class="col-xs-4">
+                    <p>there</p>
+                </div>
+                <div class="col-xs-4">
+                    <p>buddy</p>
+                </div>
+            </div>
         <?php
         if (isset($_GET['error'])) {
             echo '<p class="error">Error Logging In!</p>';
@@ -54,6 +65,7 @@ if (login_check($mysqli) == true) {
                         echo '<p>Currently logged ' . $logged . '.</p>';
                         echo "<p>If you don't have a login, please <a href='register.php'>register</a></p>";
                 }
-?>      
+?>  
+    </div>    
     </body>
 </html>
