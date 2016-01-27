@@ -18,6 +18,7 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 .header {
+	position: relative;
 	background-color: rgb(250, 238, 138);
 	padding: 15px 0px;
 	text-align: center;
@@ -34,8 +35,10 @@ body {
 
 #login-modal {
 	display: block;
+	position:absolute;
 	text-align: center;
 	border: 1px solid white;
+	z-index: 9;
 }	
 
 #map {
