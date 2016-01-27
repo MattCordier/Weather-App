@@ -47,7 +47,9 @@ if (login_check($mysqli) == true) {
             </div>
             <div class="row weather-map">
                 <div class="col-xs-12">
-                    <div id="map"></div>
+                    <div id="map">
+                        <p>here</p>
+                    </div>
                 </div>
             </div> 
     <script>
