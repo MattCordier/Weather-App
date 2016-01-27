@@ -27,6 +27,15 @@ if (login_check($mysqli) == true) {
         <link rel="icon" type="image/png" href="assets/img/favicon.ico">
         <script type="text/JavaScript" src="js/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script> 
+        <style>
+     
+      #map {
+        height: 50%;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    </style>
     </head>
     <body>
         <div class="container-fluid">
