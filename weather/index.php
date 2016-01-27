@@ -49,7 +49,6 @@ if (login_check($mysqli) == true) {
                 <div class="col-xs-12">
                     <div id="map"></div>
                 </div>
-             <div id="map"></div>
             </div> 
     <script>
       var map;
