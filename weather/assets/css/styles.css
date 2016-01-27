@@ -28,6 +28,7 @@ body {
 }
 
 #login-modal {
+	display: block;
 	text-align: center;
 	border: 1px solid white;
 }	
