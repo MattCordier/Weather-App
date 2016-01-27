@@ -32,7 +32,8 @@ if (login_check($mysqli) == true) {
         <div class="container-fluid">
             <div class="row header">
                 <div class="col-xs-4">
-                    <p>hi</p>
+                    <button type="button" class="btn btn-default">LogIn</button>
+
                 </div>
                 <div class="col-xs-4">
                     <form>
