@@ -48,19 +48,11 @@ if (login_check($mysqli) == true) {
             <div class="row weather-map">
                 <div class="col-xs-12">
                     <div id="map">
+                        <h1>YO!</h1>
                     </div>
                 </div>
             </div> 
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&sensor=false&callback=initMap"></script>
+   
 
         <?php
         if (isset($_GET['error'])) {
