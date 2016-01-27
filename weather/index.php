@@ -25,8 +25,7 @@ if (login_check($mysqli) == true) {
         <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/png" href="assets/img/favicon.ico">
-        <script type="text/JavaScript" src="js/sha512.js"></script> 
-        <script type="text/JavaScript" src="js/forms.js"></script> 
+        
     </head>
     <body>
         <div class="container-fluid">
@@ -51,7 +50,7 @@ if (login_check($mysqli) == true) {
                     </div>
                 </div>
             </div> 
-    <script src="js/maps.js"></script>
+    
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&sensor=false&callback=initMap"></script>
 
         <?php
@@ -83,7 +82,10 @@ if (login_check($mysqli) == true) {
                 }
 ?>  
 
-
+        <script src="js/maps.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/JavaScript" src="js/sha512.js"></script> 
+        <script type="text/JavaScript" src="js/forms.js"></script> 
     </div>    
     </body>
 </html>
