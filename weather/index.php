@@ -68,7 +68,7 @@ if (login_check($mysqli) == true) {
                        value="Login" 
                        onclick="formhash(this.form, this.form.password);" /> 
             </form>
-        </div>    
+           
  
 <?php
         if (login_check($mysqli) == true) {
@@ -80,7 +80,7 @@ if (login_check($mysqli) == true) {
                         echo "<p>Don't have an account? <a href='register.php'>Register here</a></p>";
                 }
 ?>  
-
+        </div> 
         <script src="js/maps.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/JavaScript" src="js/sha512.js"></script> 
