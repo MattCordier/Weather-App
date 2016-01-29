@@ -80,7 +80,7 @@ if (login_check($mysqli) == true) {
                         <h1>33 degrees</h1>
                     </div>
                 </div>
-                <div class="col-xs-6" style="height:100%; width:100%;">
+                <div class="col-xs-6" >
                     <div id="map">
                     </div>
                 </div>
