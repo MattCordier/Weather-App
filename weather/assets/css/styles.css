@@ -48,16 +48,22 @@ input::-webkit-input-placeholder {
 
 #map {
 	margin-top: 40px;
-    height: 300px;
-    max-width: 300px;
-    margin-right: auto;
-    margin-left: auto;
-    border: 2px solid white;
-    background-color: gray;
+  height: 300px;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid white;
+   
+}
+.map-window {
+  min-height: 500px;
+  background-color: black;
+}
+.weather-window {
+  background-color: gray;
 }
 
 #weather {
-  min-height: 500px;
-  background-color: black;
+  
 }
 
