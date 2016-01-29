@@ -56,11 +56,12 @@ input::-webkit-input-placeholder {
    
 }
 .map-window {
-  min-height: 500px;
-  background-color: black;
+  
+  background-color: gray;
 }
 .weather-window {
-  background-color: gray;
+  min-height: 500px;
+  background-color: black;
 }
 
 #weather {
