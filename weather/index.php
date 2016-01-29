@@ -75,12 +75,12 @@ if (login_check($mysqli) == true) {
                 </div>
             </div>
             <div class="row weather-map" style="height:100%; width:100%;" >
-                <div class="col-sm-6" class="weather-window">
-                    <div id="weather" >
+                <div class="col-sm-6 weather-window" >
+                    <div id="weather">
                         <h1>33 degrees</h1>
                     </div>
                 </div>
-                <div class="col-sm-6" class="map-window">
+                <div class="col-sm-6 map-window" >
                     <div id="map">
                     </div>
                 </div>
