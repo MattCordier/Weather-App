@@ -74,14 +74,14 @@ if (login_check($mysqli) == true) {
                     <button type="button" class="btn btn-default">Calendar</button>
                 </div>
             </div>
-            <div class="row weather-map" style="height:100%; width:100%;" >
+            <div class="row weather-map"  >
                 <div class="col-sm-6 weather-window" >
                     <div id="weather">
                         <h1>33 degrees</h1>
                     </div>
                 </div>
-                <div class="col-sm-6 map-window" >
-                    <div id="map">
+                <div class="col-sm-6 map-window"  >
+                    <div id="map" style="height:100%; width:100%;">
                     </div>
                 </div>
             </div> 
