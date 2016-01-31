@@ -11,10 +11,9 @@
 var map;
   function initMap() {
     geocoder = new google.maps.Geocoder();
-    var latlang = new google.maps.LatLng(42, -84);
+    var latlang = new google.maps.LatLng(43.0500, -87.950);
     var myOptions = {
-        center: latlang, zoom: 5, mapTypeId: google.maps.MapTypeId.SATELLITE,
-        navigationControlOptions: {
+        center: latlang, zoom: 5, navigationControlOptions: {
             style: google.maps.NavigationControlStyle.SMALL
         }
     };
