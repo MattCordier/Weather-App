@@ -67,6 +67,7 @@ if (login_check($mysqli) == true) {
                 <div class="col-xs-4">
                     <form>
                         <input id="address" class="location-search" type="text" name="#"  placeholder="Search" >
+                        <input id="submit" type="button" value="Geocode">
                     </form>
                     
                 </div>
