@@ -18,12 +18,12 @@ var map;
             style: google.maps.NavigationControlStyle.SMALL
         }
     };
-    map = new google.maps.Map(document.getElementById("map_canvas"),
+    map = new google.maps.Map(document.getElementById("map"),
         myOptions);
   }
 
   function codeAddress() { 
-    var sAddress = document.getElementById("newLocation").value;
+    var sAddress = document.getElementById("search").value;
     geocoder.geocode( { 'address': sAddress}, function(results, status) { 
             if (status == google.maps.GeocoderStatus.OK) {
                 map.setCenter(results[0].geometry.location);
