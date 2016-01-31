@@ -81,7 +81,7 @@ if (login_check($mysqli) == true) {
                     </div>
                 </div>
                 <div class="col-sm-6 map-window">
-                    <div id="map" >
+                    <div id="map">
                     </div>
                 </div>
             </div> 

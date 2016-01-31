@@ -7,7 +7,7 @@
 //       }
 
 
- var geocoder;
+	var geocoder;
 var map;
   function initMap() {
     geocoder = new google.maps.Geocoder();
@@ -23,6 +23,7 @@ var map;
 
   function codeAddress() { 
     var sAddress = document.getElementById("search").value;
+    console.log(sAddress);
     geocoder.geocode( { 'address': sAddress}, function(results, status) { 
             if (status == google.maps.GeocoderStatus.OK) {
                 map.setCenter(results[0].geometry.location);
