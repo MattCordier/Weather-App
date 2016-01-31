@@ -25,7 +25,7 @@ var map;
 $("#search").on("submit", codeAddress());
   function codeAddress() { 
     var sAddress = $("#search").val();
-    console.log('poop');
+    console.log('sAddress');
     geocoder.geocode( { 'address': sAddress}, function(results, status) { 
             if (status == google.maps.GeocoderStatus.OK) {
                 map.setCenter(results[0].geometry.location);
