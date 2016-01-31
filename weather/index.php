@@ -66,7 +66,7 @@ if (login_check($mysqli) == true) {
                 </div>
                 <div class="col-xs-4">
                     <form>
-                        <input id="search" class="location-search" type="text" name="#"  placeholder="Search" >
+                        <input id="address" class="location-search" type="text" name="#"  placeholder="Search" >
                     </form>
                     
                 </div>
