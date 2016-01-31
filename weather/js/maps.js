@@ -6,8 +6,7 @@
 //         });
 //       }
 
-
-	var geocoder;
+var geocoder;
 var map;
   function initMap() {
     geocoder = new google.maps.Geocoder();
@@ -19,9 +18,8 @@ var map;
     };
     map = new google.maps.Map(document.getElementById("map"),
         myOptions);
-    return geocoder;
   }
-
+console.log(geocoder);
 
 $("#search").on("keyup", codeAddress());
   function codeAddress() { 
