@@ -5,7 +5,7 @@
 //           zoom: 8
 //         });
 //       }
-
+"use strict";
 var geocoder;
 var map;
   function initMap() {
