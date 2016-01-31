@@ -18,6 +18,7 @@ var map;
     };
     map = new google.maps.Map(document.getElementById("map"),
         myOptions);
+    console.log(geocoder);
   }
 console.log(geocoder);
 
