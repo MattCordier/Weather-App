@@ -23,7 +23,7 @@ var map;
 
   function codeAddress() { 
     var sAddress = $("#search").val();
-    console.log(sAddress);
+    console.log('poop');
     geocoder.geocode( { 'address': sAddress}, function(results, status) { 
             if (status == google.maps.GeocoderStatus.OK) {
                 map.setCenter(results[0].geometry.location);
