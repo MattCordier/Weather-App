@@ -6,6 +6,7 @@
 //         });
 //       }
 "use strict";
+var latlng = [];
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 8,
@@ -23,17 +24,27 @@ function geocodeAddress(geocoder, resultsMap) {
   geocoder.geocode({'address': address}, function(results, status) {
     if (status === google.maps.GeocoderStatus.OK) {
       resultsMap.setCenter(results[0].geometry.location);
-      console.log(results[0].geometry.location.lat()); 
-      console.log(results[0].geometry.location.lng());
+      latlng.push(results[0].geometry.location.lat()); 
+      latlng.push(results[0].geometry.location.lng());
       var marker = new google.maps.Marker({
         map: resultsMap,
         position: results[0].geometry.location
       });
+      getLatLng();
     } else {
       alert('Geocode was not successful for the following reason: ' + status);
     }
   });
 }
+
+function getLatLng(){
+	console.log(latlng[0]);
+	console.log(latlng[1]);
+
+}
+
+
+
 
 
 // $("#search").on("keyup", codeAddress());
