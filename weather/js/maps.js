@@ -21,6 +21,8 @@ var map;
         myOptions);
   }
 
+
+$("#search").on("submit", codeAddress());
   function codeAddress() { 
     var sAddress = $("#search").val();
     console.log('poop');
