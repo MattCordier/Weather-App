@@ -9,7 +9,7 @@
 
  var geocoder;
 var map;
-  function initialize() {
+  function initMap() {
     geocoder = new google.maps.Geocoder();
     var latlang = new google.maps.LatLng(42, -84);
     var myOptions = {
