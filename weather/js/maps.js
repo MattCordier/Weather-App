@@ -22,7 +22,7 @@ var map;
   }
 
 
-$("#search").on("submit", codeAddress());
+$("#search").on("keyup", codeAddress());
   function codeAddress() { 
     var sAddress = $("#search").val();
     console.log(sAddress);
