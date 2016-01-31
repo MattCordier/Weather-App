@@ -22,7 +22,7 @@ var map;
   }
 
   function codeAddress() { 
-    var sAddress = document.getElementById("search").value;
+    var sAddress = $("#search").val();
     console.log(sAddress);
     geocoder.geocode( { 'address': sAddress}, function(results, status) { 
             if (status == google.maps.GeocoderStatus.OK) {
