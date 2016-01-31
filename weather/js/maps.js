@@ -9,6 +9,7 @@
 var geocoder;
 var map;
   function initMap() {
+  	console.log("I've run.");
     geocoder = new google.maps.Geocoder();
     var latlang = new google.maps.LatLng(43.0500, -87.950);
     var myOptions = {
@@ -18,7 +19,7 @@ var map;
     };
     map = new google.maps.Map(document.getElementById("map"),
         myOptions);
-    console.log(geocoder);
+    
   }
 console.log(geocoder);
 
