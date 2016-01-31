@@ -13,7 +13,7 @@ function initMap() {
   });
   var geocoder = new google.maps.Geocoder();
 
-  document.getElementById('submit').addEventListener('click', function() {
+  document.getElementById('address').addEventListener('click', function() {
     geocodeAddress(geocoder, map);
   });
 }
