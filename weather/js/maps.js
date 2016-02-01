@@ -17,7 +17,7 @@ function geocodeAddress(geocoder, resultsMap) {
   var address = document.getElementById('address').value;
   var date = document.getElementById('datepicker').value;
   console.log(date);
-	  if (date === undefined){
+	  if (date === ""){
 		  geocoder.geocode({'address': address}, function(results, status) {
 		    if (status === google.maps.GeocoderStatus.OK) {
 		      resultsMap.setCenter(results[0].geometry.location);
