@@ -35,7 +35,7 @@ function geocodeAddress(geocoder, resultsMap) {
 	    if (date === ""){	
 			getWeather();  
 		} else if (date !== ""){
-			console.log(date);
+			predictWeather();
 		}
 
   	});
@@ -54,8 +54,20 @@ function getWeather(){
             $('#weather').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
         });
 
-	
+}
 
+function predictWeather(){
+	var apiKey = '8951bee95458c4ab8a6121ec2452207a';
+    var url = 'https://api.forecast.io/forecast/';
+    var lati = latlng[0];
+    var longi = latlng[1];
+    console.log('the date is: '+ date);
+    var data;
+
+    $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
+              console.log(data);
+            $('#weather').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
+        });
 }
  $(function() {
     $( "#datepicker" ).datepicker();
