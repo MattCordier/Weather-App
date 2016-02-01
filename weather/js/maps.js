@@ -17,8 +17,6 @@ function geocodeAddress(geocoder, resultsMap) {
 	latlng = [];	
   var address = document.getElementById('address').value;
   date = document.getElementById('datepicker').value;
-  
-	  
 	geocoder.geocode({'address': address}, function(results, status) {
 	    if (status === google.maps.GeocoderStatus.OK) {
 	      resultsMap.setCenter(results[0].geometry.location);
@@ -62,7 +60,8 @@ function predictWeather(){
     var url = 'https://api.forecast.io/forecast/';
     var lati = latlng[0];
     var longi = latlng[1];
-    console.log('the date is: '+ date);
+    var selectedDate = new Date(date);
+    console.log('the date is: '+ selectedDate);
     var data;
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
@@ -70,6 +69,8 @@ function predictWeather(){
             $('#weather').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
         });
 }
+
+
  $(function() {
     $( "#datepicker" ).datepicker();
   });  
