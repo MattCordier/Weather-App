@@ -44,12 +44,8 @@ if (login_check($mysqli) == true) {
             <form action="includes/process_login.php" method="post" name="login_form">                      
                 Email: <input type="text" class="form-control" name="email" />
                 <br/>
-                Password: <input type="password" 
-                                 name="password" 
-                                 id="password"/>
-                <input type="button" class="form-control"
-                       value="Login" 
-                       onclick="formhash(this.form, this.form.password);" /> 
+                Password: <input type="password" class="form-control" name="password" id="password"/>
+                <input type="button" value="Login" onclick="formhash(this.form, this.form.password);" /> 
             </form>
         </div>
            
