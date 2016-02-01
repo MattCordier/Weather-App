@@ -61,6 +61,7 @@ function predictWeather(){
     var url = 'https://api.forecast.io/forecast/';
     var lati = latlng[0];
     var longi = latlng[1];
+    var date = date;
     console.log('the date is: '+ date);
     var data;
 
