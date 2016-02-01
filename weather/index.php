@@ -74,7 +74,7 @@ if (login_check($mysqli) == true) {
                     
                 </div>
                 <div class="col-xs-4">
-                    <button type="button" class="btn btn-default">Calendar</button>
+                    
                     <p>Date: <input type="text" id="datepicker"></p>
 
                 </div>
