@@ -257,7 +257,7 @@ function geocodeAddress(geocoder, resultsMap) {
 	      resultsMap.setCenter(results[0].geometry.location);
 	      resultsMap.setZoom(8);
 	      latlng.push(results[0].geometry.location.lat());
-	      latlng.push(results[0].geometry.location.lng()):
+	      latlng.push(results[0].geometry.location.lng());
 	      var marker = new google.maps.Marker({
 	        map: resultsMap, 
 	        position: results[0].geometry.location
