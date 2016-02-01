@@ -48,6 +48,10 @@ input::-webkit-input-placeholder {
 	z-index: 9;
 }	
 
+.login-input {
+  border-radius: 5px;
+}
+
 .login-btn {
   margin-top: 5px; 
 }
