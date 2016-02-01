@@ -3,6 +3,10 @@ $('#register').on('click', function(e){
 	var url = this.href;
 	console.log(this.href);
 
-	$('#login-modal').remove();
-	$('#login-modal').load(url).hide().fadeIn('slow'); 
+	
+	$.ajax({
+  url: url
+}).done(function(data) { // data what is sent back by the php page
+  $('#login-modal').html(data); // display data
+}); 
 });
