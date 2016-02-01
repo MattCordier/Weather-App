@@ -9,5 +9,7 @@ $('#register').on('click', function(e){
 	}).done(function(data) { // data what is sent back by the php page
   		$('#login-modal').html(data).show(); // display data
 	});
-	 
+	$('#login').on('click', function(){
+        $('#login-modal').toggle("slow");
+    }); 
 });
