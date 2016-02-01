@@ -20,6 +20,7 @@ function initMap() {
 }
 
 function geocodeAddress(geocoder, resultsMap) {
+	latlng = [];	
   var address = document.getElementById('address').value;
   geocoder.geocode({'address': address}, function(results, status) {
     if (status === google.maps.GeocoderStatus.OK) {
