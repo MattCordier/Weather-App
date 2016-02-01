@@ -1,5 +1,6 @@
 "use strict";
 var latlng;
+var date;
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 2,
@@ -15,7 +16,7 @@ function initMap() {
 function geocodeAddress(geocoder, resultsMap) {
 	latlng = [];	
   var address = document.getElementById('address').value;
-  var date = document.getElementById('datepicker').value;
+  date = document.getElementById('datepicker').value;
   
 	  
 	geocoder.geocode({'address': address}, function(results, status) {
@@ -61,7 +62,6 @@ function predictWeather(){
     var url = 'https://api.forecast.io/forecast/';
     var lati = latlng[0];
     var longi = latlng[1];
-    var date = date;
     console.log('the date is: '+ date);
     var data;
 
