@@ -66,7 +66,7 @@ function predictWeather(){
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + selectedDate + "?callback=?", function(data) {
               console.log(data);
-            $('#weather').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
+            $('#weather').html(data.daily.icon +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
         });
 }
 
