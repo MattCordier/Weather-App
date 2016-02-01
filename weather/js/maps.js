@@ -17,21 +17,26 @@ function geocodeAddress(geocoder, resultsMap) {
   var address = document.getElementById('address').value;
   var date = document.getElementById('datepicker').value;
   console.log(date);
-  geocoder.geocode({'address': address}, function(results, status) {
-    if (status === google.maps.GeocoderStatus.OK) {
-      resultsMap.setCenter(results[0].geometry.location);
-      resultsMap.setZoom(8);
-      latlng.push(results[0].geometry.location.lat());
-      latlng.push(results[0].geometry.location.lng());
-      var marker = new google.maps.Marker({
-        map: resultsMap, 
-        position: results[0].geometry.location
-      });
-      getWeather();
-    } else {
-      alert('Geocode was not successful for the following reason: ' + status);
-    }
-  });
+	  if (date === undefined){
+		  geocoder.geocode({'address': address}, function(results, status) {
+		    if (status === google.maps.GeocoderStatus.OK) {
+		      resultsMap.setCenter(results[0].geometry.location);
+		      resultsMap.setZoom(8);
+		      latlng.push(results[0].geometry.location.lat());
+		      latlng.push(results[0].geometry.location.lng());
+		      var marker = new google.maps.Marker({
+		        map: resultsMap, 
+		        position: results[0].geometry.location
+		      });
+		      getWeather();
+		    } else {
+		      alert('Geocode was not successful for the following reason: ' + status);
+		    }
+
+	  	});
+	} else {
+		console.log('poop');
+	}
 }
 
 function getWeather(){
