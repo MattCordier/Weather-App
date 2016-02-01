@@ -55,8 +55,9 @@ input::-webkit-input-placeholder {
 }
 
 #map {
-  height: 500px;
+  /*height: 500px;*/
   max-width: 100%;
+  width: 100%; height: 100%; position: relative;
 }
 .map-window {
   min-height: 500px;
