@@ -236,7 +236,7 @@ function initMap() {
     zoom: 2,
     zoomControl: false,
     center: {lat: 43, lng: -20},
-    mayTypeControl: false,
+    mapTypeControl: false,
     mapTypeControlOptions: {
     	mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
 	}
