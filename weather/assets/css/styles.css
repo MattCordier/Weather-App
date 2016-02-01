@@ -73,8 +73,12 @@ input::-webkit-input-placeholder {
 }
 
 #datepicker {
-
   max-width: 300px;
-  margin: 7px auto 0px auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#ui-datepicker-div{
+  margin-top: 7px;
 }
 
