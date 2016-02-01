@@ -11,6 +11,3 @@ $('#register').on('click', function(e){
 	});
 
 });
-$('#login').on('click', function(){
-        $('#login-modal').toggle("slow");
-    });
