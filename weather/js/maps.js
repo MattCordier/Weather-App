@@ -38,13 +38,13 @@ function geocodeAddress(geocoder, resultsMap) {
   });
 }
 
-function getLatLng(){
+function getWeather(){
 	var apiKey = '8951bee95458c4ab8a6121ec2452207a';
     var url = 'https://api.forecast.io/forecast/';
     var lati = latlng[0];
     var longi = latlng[1];
     var data;
-    
+
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
             $('#weather').html('and the temperature is: ' + data.currently.temperature);
