@@ -16,7 +16,7 @@ function geocodeAddress(geocoder, resultsMap) {
 	latlng = [];	
   var address = document.getElementById('address').value;
   var date = document.getElementById('datepicker').value;
-  console.log(date);
+  
 	  if (date === ""){
 		  geocoder.geocode({'address': address}, function(results, status) {
 		    if (status === google.maps.GeocoderStatus.OK) {
@@ -34,8 +34,8 @@ function geocodeAddress(geocoder, resultsMap) {
 		    }
 
 	  	});
-	} else {
-		console.log('poop');
+	} else if (date !== ""){
+		console.log(date);
 	}
 }
 
