@@ -40,13 +40,14 @@ if (login_check($mysqli) == true) {
             echo '<p class="error">Error Logging In!</p>';
         }
         ?> 
-            <div class="input-group" action="includes/process_login.php" method="post" name="login_form">                      
+            <div class="input-group"> 
+                <form action="includes/process_login.php" method="post" name="login_form">                      
                 Email: <input type="text" class="form-control" name="email" />
                 <br/>
                 Password: <input type="password" class="form-control" name="password" id="password"/>
                 <br/>
                 <input class="btn btn-default" type="button" value="Login" onclick="formhash(this.form, this.form.password);" /> 
-                
+                </form>
             </div>
            
  
