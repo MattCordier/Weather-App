@@ -7,7 +7,7 @@ var mapStylesArray = [
         "elementType": "labels",
         "stylers": [
             {
-                "visibility": "off"
+                "visibility": "on"
             }
         ]
     },
