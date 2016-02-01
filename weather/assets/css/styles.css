@@ -48,6 +48,10 @@ input::-webkit-input-placeholder {
 	z-index: 9;
 }	
 
+.login-btn {
+  margin-top: 5px; 
+}
+
 #map {
   height: 500px;
   max-width: 100%;
