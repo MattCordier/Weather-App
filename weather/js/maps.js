@@ -41,36 +41,36 @@ function geocodeAddress(geocoder, resultsMap) {
 	
 }
 
-function getWeather(){
-	var apiKey = '8951bee95458c4ab8a6121ec2452207a';
-    var url = 'https://api.forecast.io/forecast/';
-    var lati = latlng[0];
-    var longi = latlng[1];
-    var data;
+// function getWeather(){
+// 	var apiKey = '8951bee95458c4ab8a6121ec2452207a';
+//     var url = 'https://api.forecast.io/forecast/';
+//     var lati = latlng[0];
+//     var longi = latlng[1];
+//     var data;
 
-    $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
-              console.log(data);
-            $('#weather').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
-        });
+//     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
+//               console.log(data);
+//             $('#weather').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
+//         });
 
-}
+// }
 
-function predictWeather(){
-	var apiKey = '8951bee95458c4ab8a6121ec2452207a';
-    var url = 'https://api.forecast.io/forecast/';
-    var lati = latlng[0];
-    var longi = latlng[1];
-    var selectedDate = new Date(date);
-    var time = selectedDate.getTime()/1000;
-    console.log(time);
-    console.log('the date is: '+ selectedDate);
-    var data;
+// function predictWeather(){
+// 	var apiKey = '8951bee95458c4ab8a6121ec2452207a';
+//     var url = 'https://api.forecast.io/forecast/';
+//     var lati = latlng[0];
+//     var longi = latlng[1];
+//     var selectedDate = new Date(date);
+//     var time = selectedDate.getTime()/1000;
+//     console.log(time);
+//     console.log('the date is: '+ selectedDate);
+//     var data;
 
-    $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
-              console.log(data);
-            $('#weather').html(data.daily.icon +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
-        });
-}
+//     $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
+//               console.log(data);
+//             $('#weather').html(data.daily.icon +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
+//         });
+// }
 
 
  $(function() {
