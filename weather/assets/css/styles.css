@@ -64,7 +64,6 @@ input::-webkit-input-placeholder {
 }
 
 #datepicker {
-  max-width: 200px;
-  margin: 0px;
+  max-width: 300px;
 }
 
