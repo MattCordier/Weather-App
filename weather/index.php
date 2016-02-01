@@ -77,7 +77,7 @@ if (login_check($mysqli) == true) {
                 </div>
                 <div class="col-xs-4">
                     
-                    <p>Date: <input type="text" id="datepicker" placeholder="When are you going?"></p>
+                    <p>Date: <input type="text" id="datepicker" class="form-control" placeholder="When are you going?"></p>
 
                 </div>
             </div>
