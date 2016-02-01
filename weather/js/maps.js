@@ -1,10 +1,3 @@
-// var map;
-//       function initMap() {
-//         map = new google.maps.Map(document.getElementById('map'), {
-//           center: {lat: 43.0500, lng: -87.950},
-//           zoom: 8
-//         });
-//       }
 "use strict";
 var latlng;
 function initMap() {
@@ -54,25 +47,6 @@ function getWeather(){
 	
 
 }
-
-
-
-
-
-// $("#search").on("keyup", codeAddress());
-//   function codeAddress() { 
-//     var sAddress = $("#search").val();
-//     console.log(sAddress);
-//     geocoder.geocode( { 'address': sAddress}, function(results, status) { 
-//             if (status == google.maps.GeocoderStatus.OK) {
-//                 map.setCenter(results[0].geometry.location);
-//                 var marker = new google.maps.Marker({
-//                 map: map,
-//                 position: results[0].geometry.location
-//                 });
-//             }
-//             else{
-//             alert("Geocode was not successful for the following reason: " + status);
-//             }
-//         });
-//   }     
+ $(function() {
+    $( "#datepicker" ).datepicker();
+  });  

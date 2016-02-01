@@ -22,6 +22,8 @@ if (login_check($mysqli) == true) {
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui.theme.css">
+
         <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/png" href="assets/img/favicon.ico">
@@ -73,6 +75,8 @@ if (login_check($mysqli) == true) {
                 </div>
                 <div class="col-xs-4">
                     <button type="button" class="btn btn-default">Calendar</button>
+                    <p>Date: <input type="text" id="datepicker"></p>
+
                 </div>
             </div>
             <div class="row weather-map"  >
@@ -91,6 +95,8 @@ if (login_check($mysqli) == true) {
         
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+
         <script src="js/maps.js"></script>
         <script type="text/JavaScript" src="js/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script> 
