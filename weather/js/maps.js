@@ -32,13 +32,14 @@ function geocodeAddress(geocoder, resultsMap) {
 	    } else {
 	      alert('Geocode was not successful for the following reason: ' + status);
 	    }
+	    if (date === ""){	
+			getWeather();  
+		} else if (date !== ""){
+			console.log(date);
+		}
 
   	});
-	if (date === ""){	
-		getWeather();  
-	} else if (date !== ""){
-		console.log(date);
-	}
+	
 }
 
 function getWeather(){
