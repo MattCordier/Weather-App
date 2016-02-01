@@ -61,10 +61,12 @@ function predictWeather(){
     var lati = latlng[0];
     var longi = latlng[1];
     var selectedDate = new Date(date);
+    var time = selectedDate.getTime()/1000;
+    console.log(time);
     console.log('the date is: '+ selectedDate);
     var data;
 
-    $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + selectedDate + "?callback=?", function(data) {
+    $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
               console.log(data);
             $('#weather').html(data.daily.icon +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
         });
