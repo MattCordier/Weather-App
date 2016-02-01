@@ -199,7 +199,7 @@ var mapStylesArray = [
                 "visibility": "on"
             },
             {
-                "color": "#e3e3e3"
+                "color": "#9a9a9a"
             }
         ]
     },
