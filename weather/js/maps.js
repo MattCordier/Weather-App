@@ -47,7 +47,7 @@ function getWeather(){
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
-            $('#weather').html('and the temperature is: ' + data.currently.temperature);
+            $('#weather').html('<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
         });
 
 	

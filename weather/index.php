@@ -78,7 +78,7 @@ if (login_check($mysqli) == true) {
             <div class="row weather-map"  >
                 <div class="col-sm-6 weather-window">
                     <div id="weather">
-                        <h1>33&deg;</h1>
+                        
                     </div>
                 </div>
                 <div class="col-sm-6 map-window">
