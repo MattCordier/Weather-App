@@ -25,11 +25,11 @@ function geocodeAddress(geocoder, resultsMap) {
   geocoder.geocode({'address': address}, function(results, status) {
     if (status === google.maps.GeocoderStatus.OK) {
       resultsMap.setCenter(results[0].geometry.location);
-      latlng.push(results[0].geometry.location.lat()); 
+      resultsMap.setZoom(zoom:8);
+      latlng.push(results[0].geometry.location.lat());
       latlng.push(results[0].geometry.location.lng());
       var marker = new google.maps.Marker({
         map: resultsMap, 
-        zoom: 8,
         position: results[0].geometry.location
       });
       getWeather();
