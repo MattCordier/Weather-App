@@ -4,5 +4,5 @@ $('#register').on('click', function(e){
 	console.log(this.href);
 
 	$('#login-modal').remove();
-	$('#login-modal').load(url + ' html').hide().fadeIn('slow'); 
+	$('#login-modal').load(url).hide().fadeIn('slow'); 
 });
