@@ -234,7 +234,7 @@ function initMap() {
   var customMapTypeId = 'custom_style';
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 2,
-    zoomControl: false,
+    streetViewControl: false,
     center: {lat: 43, lng: -20},
     mapTypeControl: false,
     mapTypeControlOptions: {
@@ -258,7 +258,6 @@ function geocodeAddress(geocoder, resultsMap) {
 	    if (status === google.maps.GeocoderStatus.OK) {
 	      resultsMap.setCenter(results[0].geometry.location);
 	      resultsMap.setZoom(12);
-	      resultsMap.zoomControl(true);
 	      latlng.push(results[0].geometry.location.lat());
 	      latlng.push(results[0].geometry.location.lng());
 	      var marker = new google.maps.Marker({
