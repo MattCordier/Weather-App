@@ -67,10 +67,12 @@ if (login_check($mysqli) == true) {
 
                 </div>
                 <div class="col-xs-4">
-                    <form>
+                    <div class="input-group">
                         <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
-                        <input id="submit" type="button" value="GO!">
-                    </form>
+                        <span class="input-group-btn">
+                            <button id="submit" class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
                     
                 </div>
                 <div class="col-xs-4">
