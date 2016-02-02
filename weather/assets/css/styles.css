@@ -67,7 +67,11 @@ input::-webkit-input-placeholder {
   max-width: 100%;
   width: 100%;  
   position: relative;
-  padding-right: 5px;
+
+}
+
+.weather-map {
+  margin: 0px;
 }
 .map-window {
   min-height: 500px;
