@@ -27,6 +27,7 @@ body {
 
 .header {
 	position: relative;
+  margin: 0px;
 	background-color: rgb(175, 187, 165);
 	padding: 25px 0px;
 	text-align: center;
