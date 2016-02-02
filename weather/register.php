@@ -39,14 +39,14 @@ include_once 'includes/functions.php';
         <form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" 
                 method="post" 
                 name="registration_form">
-            Username: <input type='text' 
+            Username: <input class="form-control" type='text' 
                 name='username' 
                 id='username' /><br>
-            Email: <input type="text" name="email" id="email" /><br>
-            Password: <input type="password"
+            Email: <input class="form-control" type="text" name="email" id="email" /><br>
+            Password: <input class="form-control" type="password"
                              name="password" 
                              id="password"/><br>
-            Confirm password: <input type="password" 
+            Confirm password: <input class="form-control" type="password" 
                                      name="confirmpwd" 
                                      id="confirmpwd" /><br>
             <input type="button" 
