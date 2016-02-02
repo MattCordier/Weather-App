@@ -82,7 +82,7 @@ if (login_check($mysqli) == true) {
             <div class="row weather-map" ng-controller="MainCtrl" >
                 <div class="col-sm-6 weather-window">
                     <div id="weather">
-                        {{1+2}}
+                        
                         <h2>Get the current weather for anywhere in the world!</h2>
                         <p>Enter a location in the search bar above, then tap GO!<p>
                     </div>
