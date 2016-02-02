@@ -32,7 +32,7 @@ if (login_check($mysqli) == true) {
     <body >
         <div class="container-fluid">
             <div class="row header">
-                <div class="col-xs-4">
+                <div class="col-sm-4 col-xs-12">
                     <button id="login" type="button" class="btn btn-default">LogIn</button>
                     <div id="login-modal">    
         <?php
@@ -64,7 +64,7 @@ if (login_check($mysqli) == true) {
         </div> 
 
                 </div>
-                <div class="col-xs-4">
+                <div class="col-sm-4 col-xs-12">
                     <div class="input-group">
                         <input id="address" class="form-control location-search" type="text" name="#"  placeholder="Where are you going?" >
                         <span class="input-group-btn">
@@ -73,7 +73,7 @@ if (login_check($mysqli) == true) {
                     </div>
                     
                 </div>
-                <div class="col-xs-4">
+                <div class="col-sm-4 col-xs-12">
                     
                     <input type="text" id="datepicker" class="form-control" placeholder="When are you going?">
 
