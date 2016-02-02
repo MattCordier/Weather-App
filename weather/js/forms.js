@@ -15,11 +15,13 @@ $(document).ready(function() {
         });
     });
 
+    $(function() {
+        $( "#datepicker" ).datepicker();
+    });
+
 });
 
-$(function() {
-    $( "#datepicker" ).datepicker();
-});
+
 
 
 function formhash(form, password) {
