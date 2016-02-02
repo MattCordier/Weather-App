@@ -236,6 +236,7 @@ function initMap() {
     zoom: 2,
     streetViewControl: false,
     center: {lat: 43, lng: -20},
+    scrollwheel: false,
     mapTypeControl: false,
     mapTypeControlOptions: {
     	mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
@@ -258,7 +259,6 @@ function geocodeAddress(geocoder, resultsMap) {
 	    if (status === google.maps.GeocoderStatus.OK) {
 	      resultsMap.setCenter(results[0].geometry.location);
 	      resultsMap.setZoom(12);
-	      map.disableScrollWheelZoom();
 	      latlng.push(results[0].geometry.location.lat());
 	      latlng.push(results[0].geometry.location.lng());
 	      var marker = new google.maps.Marker({
