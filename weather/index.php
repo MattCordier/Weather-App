@@ -29,7 +29,7 @@ if (login_check($mysqli) == true) {
         <link rel="icon" type="image/png" href="assets/img/favicon.ico">
         
     </head>
-    <body ng-app="weatherApp">
+    <body ng-app>
         <div class="container-fluid">
             <div class="row header">
                 <div class="col-xs-4">
@@ -82,7 +82,8 @@ if (login_check($mysqli) == true) {
             <div class="row weather-map" >
                 <div class="col-sm-6 weather-window">
                     <div id="weather">
-
+<input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <h1>Hello, {{ yourName }}!</h1>
                         <h2>Get the current weather for anywhere in the world!</h2>
                         <p>Enter a location in the search bar above, then tap GO!<p>
                     </div>
