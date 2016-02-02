@@ -71,6 +71,7 @@ input::-webkit-input-placeholder {
 .map-window {
   min-height: 500px;
   background-color: #9a9a9a;
+  padding: 0px;
 }
 .weather-window {
   min-height: 500px;
