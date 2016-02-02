@@ -230,53 +230,54 @@ var mapStylesArray = [
 ];
 
 function initMap() {
-  var customMapType = new google.maps.StyledMapType(mapStylesArray,{name: 'Custom Style'});
-  var customMapTypeId = 'custom_style';
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 2,
-    streetViewControl: false,
-    center: {lat: 43, lng: -20},
-    scrollwheel: false,
-    mapTypeControl: false,
-    mapTypeControlOptions: {
-    	mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
-	}
-  });
-  map.mapTypes.set(customMapTypeId, customMapType);
-  map.setMapTypeId(customMapTypeId)
-  var geocoder = new google.maps.Geocoder();
+    var customMapType = new google.maps.StyledMapType(mapStylesArray,{name: 'Custom Style'});
+    var customMapTypeId = 'custom_style';
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 2,
+        streetViewControl: false,
+        center: {lat: 43, lng: -20},
+        scrollwheel: false,
+        mapTypeControl: false,
+        mapTypeControlOptions: {
+    	   mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+	    }
+    });
+    map.mapTypes.set(customMapTypeId, customMapType);
+    map.setMapTypeId(customMapTypeId)
+    var geocoder = new google.maps.Geocoder();
 
-  document.getElementById('submit').addEventListener('click', function() {
-    geocodeAddress(geocoder, map);
-  });
+    document.getElementById('submit').addEventListener('click', function() {
+        geocodeAddress(geocoder, map);
+    });
 }
 
 function geocodeAddress(geocoder, resultsMap) {
 	latlng = [];	
-  var address = document.getElementById('address').value;
-  date = document.getElementById('datepicker').value;
-	geocoder.geocode({'address': address}, function(results, status) {
+    var address = document.getElementById('address').value;
+    date = document.getElementById('datepicker').value;
+	
+    geocoder.geocode({'address': address}, function(results, status) {
 	    if (status === google.maps.GeocoderStatus.OK) {
-	      resultsMap.setCenter(results[0].geometry.location);
-	      resultsMap.setZoom(12);
-	      latlng.push(results[0].geometry.location.lat());
-	      latlng.push(results[0].geometry.location.lng());
-	      var marker = new google.maps.Marker({
-	        map: resultsMap, 
-	        position: results[0].geometry.location
-	      });
+	        resultsMap.setCenter(results[0].geometry.location);
+	        resultsMap.setZoom(12);
+	        latlng.push(results[0].geometry.location.lat());
+	        latlng.push(results[0].geometry.location.lng());
+	        
+            var marker = new google.maps.Marker({
+	           map: resultsMap, 
+	           position: results[0].geometry.location
+	        });
 	      
 	    } else {
-	      alert('Geocode was not successful for the following reason: ' + status);
-	    }
+	           alert('Geocode was not successful for the following reason: ' + status);
+	      }
+
 	    if (date === ""){	
 			getWeather();  
 		} else if (date !== ""){
 			predictWeather();
 		}
-
-  	});
-	
+    });
 }
 
 function getWeather(){
@@ -289,8 +290,7 @@ function getWeather(){
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
             $('#weather').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
-        });
-
+    });
 }
 
 function predictWeather(){
@@ -307,13 +307,11 @@ function predictWeather(){
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
               console.log(data);
             $('#weather').html(data.daily.icon +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
-        });
+    });
 }
 
 
- $(function() {
-    $( "#datepicker" ).datepicker();
-  });  
+  
 
 
  

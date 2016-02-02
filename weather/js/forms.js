@@ -20,6 +20,10 @@ $(document).ready(function() {
 
 });
 
+$(function() {
+    $( "#datepicker" ).datepicker();
+});
+
 
 function formhash(form, password) {
     // Create a new element input, this will be our hashed password field. 
