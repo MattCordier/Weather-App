@@ -5,7 +5,7 @@ $(document).ready(function() {
     });
 
     $('#register').on('click', function(e){
-        // e.preventDefault();
+        e.preventDefault();
         var url = this.href;
         console.log(this.href);
 
