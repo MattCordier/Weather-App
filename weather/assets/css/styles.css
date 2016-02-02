@@ -67,6 +67,7 @@ input::-webkit-input-placeholder {
   max-width: 100%;
   width: 100%;  
   position: relative;
+  padding-right: 5px;
 }
 .map-window {
   min-height: 500px;
