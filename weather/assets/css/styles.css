@@ -79,7 +79,7 @@ input::-webkit-input-placeholder {
 }
 
 #weather {
-  
+  padding: 40px;
 }
 
 #datepicker {
