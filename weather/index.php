@@ -12,7 +12,7 @@ if (login_check($mysqli) == true) {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html ng-app="weatherApp">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -100,7 +100,7 @@ if (login_check($mysqli) == true) {
         <script src="js/jquery-ui.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 
-        <script src="js/main.js"></script>
+        <script src="js/app.js"></script>
         <script src="js/maps.js"></script>
         <script type="text/JavaScript" src="js/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script> 
