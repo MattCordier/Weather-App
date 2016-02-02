@@ -49,7 +49,7 @@ include_once 'includes/functions.php';
             Confirm password: <input class="form-control" type="password" 
                                      name="confirmpwd" 
                                      id="confirmpwd" /><br>
-            <input type="button" 
+            <input class="btn btn-default" type="button" 
                    value="Register" 
                    onclick="return regformhash(this.form,
                                    this.form.username,
