@@ -228,6 +228,7 @@ var mapStylesArray = [
         ]
     }
 ];
+var weatherJSON;
 
 function initMap() {
     var customMapType = new google.maps.StyledMapType(mapStylesArray,{name: 'Custom Style'});
@@ -287,9 +288,10 @@ function getWeather(){
     var longi = latlng[1];
     var data;
 
-    $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
+    weatherJSON = $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
-            $('#weather').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
+              return data;
+            // $('#weather').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
     });
 }
 
@@ -304,9 +306,10 @@ function predictWeather(){
     console.log('the date is: '+ selectedDate);
     var data;
 
-    $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
+    weatherJSON = $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
               console.log(data);
-            $('#weather').html(data.daily.icon +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
+              return data;
+            // $('#weather').html(data.daily.icon +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
     });
 }
 
