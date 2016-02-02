@@ -29,7 +29,7 @@ if (login_check($mysqli) == true) {
         <link rel="icon" type="image/png" href="assets/img/favicon.ico">
         
     </head>
-    <body ng-app="weatherApp" >
+    <body ng-app="weatherApp" ng-controller="MainCtrl" >
         <div class="container-fluid">
             <div class="row header">
                 <div class="col-xs-4">
@@ -79,7 +79,7 @@ if (login_check($mysqli) == true) {
 
                 </div>
             </div>
-            <div class="row weather-map" ng-controller="MainCtrl" >
+            <div class="row weather-map" >
                 <div class="col-sm-6 weather-window">
                     <div id="weather">
                         
