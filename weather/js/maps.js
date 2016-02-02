@@ -234,9 +234,6 @@ function initMap() {
   var customMapTypeId = 'custom_style';
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 2,
-    zoomControlOptions: {
-        position: google.maps.ControlPosition.LEFT_CENTER
-    },
     streetViewControl: false,
     center: {lat: 43, lng: -20},
     scrollwheel: false,
