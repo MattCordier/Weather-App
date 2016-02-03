@@ -28,6 +28,7 @@
         <div id="weather">
             <h2>Get the current weather for anywhere in the world!</h2>
             <input id="address" class="form-control location-search" type="text" name="#"  placeholder="Where are you going?" >
+            <button id="submit" class="btn btn-default" type="button">Go!</button>
             <input type="text" id="datepicker" class="form-control" placeholder="When are you going?">
         </div>
         </div>
