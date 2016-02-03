@@ -16,6 +16,7 @@
     </head>
     <body>
         <div class="overlay">
+            <h1>love</h1>
             <div id="map">
             </div>
         </div>
