@@ -65,7 +65,7 @@ input::-webkit-input-placeholder {
 
 
 #map {
-  width: 100%;
+  width: 1400px;
   height: 100%;
   position: absolute; 
   top: 0; 
