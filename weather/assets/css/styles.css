@@ -86,6 +86,7 @@ input::-webkit-input-placeholder {
   color: white;
 }
 #weather {
+display: flex;  
 position: absolute;
 left: 50%;
 top: 50%;
