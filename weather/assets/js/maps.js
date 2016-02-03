@@ -39,10 +39,7 @@ function geocodeAddress(geocoder, resultsMap) {
 	        latlng.push(results[0].geometry.location.lat());
 	        latlng.push(results[0].geometry.location.lng());
 	        
-            var marker = new google.maps.Marker({
-	           map: resultsMap, 
-	           position: results[0].geometry.location
-	        });
+           
 	      
 	    } else {
 	           alert('Geocode was not successful for the following reason: ' + status);
