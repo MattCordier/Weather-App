@@ -82,6 +82,7 @@ input::-webkit-input-placeholder {
   position: relative;
   height: 100%;
 
+
 }
 #weather {
 position: absolute;
@@ -91,6 +92,7 @@ top: 50%;
 z-index: 1;
 width: 50%;
 height:50%;
+text-align: center;
 background: rgba(0,0,0,.5);
 
 }
