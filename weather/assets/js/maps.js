@@ -1,4 +1,4 @@
-"use strict";
+q"use strict";
 var latlng;
 var date;
 var mapStylesArray = [
@@ -228,10 +228,10 @@ var mapStylesArray = [
         ]
     }
 ];
-var weatherJSON;
+
 
 function initMap() {
-    var customMapType = new google.maps.StyledMapType(mapStylesArray,{name: 'Custom Style'});
+    var customMapType = new google.maps.StyledMapType(mapStylesArray, {name: 'Custom Style'});
     var customMapTypeId = 'custom_style';
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 2,
@@ -288,7 +288,7 @@ function getWeather(){
     var longi = latlng[1];
     var data;
 
-    weatherJSON = $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
+    $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
               // return data;
             $('#weather').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
@@ -306,7 +306,7 @@ function predictWeather(){
     console.log('the date is: '+ selectedDate);
     var data;
 
-    weatherJSON = $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
+    $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
               console.log(data);
               // return data;
             $('#weather').html(data.daily.icon +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
