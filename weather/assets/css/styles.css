@@ -105,6 +105,8 @@ text-align: center;
 background: rgba(0,0,0,.6);
 border-radius: 15px;
 border: 2px solid rgba(0,0,0,.9);
+box-shadow:  inset 0 0 0.5em 0.5em indigo,
+0 0 0.5em 0.5em indigo;
 
 }
 
