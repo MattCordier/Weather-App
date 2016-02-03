@@ -233,7 +233,7 @@ var mapStylesArray = [
 function initMap() {
     
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12,
+        zoom: 2,
         streetViewControl: false,
         center: {lat: 43, lng: -20},
         scrollwheel: false,
