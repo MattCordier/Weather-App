@@ -106,9 +106,9 @@ background: rgba(0,0,0,.6);
 border-radius: 15px;
 border: 1px solid rgba(37,37,37,.4);
 box-shadow:  
-0 0 1.5em 3em rgba(37,37,37,.2),
-0 0 1.4em 2em rgba(37,37,37,.25),
-0 0 1.3em 1em rgba(37,37,37,.3)
+0 0 1.5em 3em rgba(10,10,10,.2),
+0 0 1.4em 2em rgba(10,10,10,.25),
+0 0 1.3em 1em rgba(10,10,10,.3)
 ;
 
 }
