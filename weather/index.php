@@ -27,7 +27,6 @@
         <h1 id="app-title">Weather App</h1>      
         <div id="weather">
             <h2>Get the current weather for anywhere in the world!</h2>
-            <h2>sebfksbfkwbfkwbefkb jksfbljhbjhbwjfbwljhfbjw jhbfljhb we jlbflj ljbfljhbasljhfbwe ljhbslvkbs lkgrifhgrfuhierufhwef wfkherfb jrgiuhdvb fkhwerf</h2>
         </div>
         </div>
            
