@@ -25,10 +25,11 @@ function initMap() {
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
     });
+    
     $("#address").keypress(function(event) {
     if (event.which == 13) {
         event.preventDefault();
-        $("#address").submit();
+        geocodeAddress(geocoder, map);
     }
 })
 }
