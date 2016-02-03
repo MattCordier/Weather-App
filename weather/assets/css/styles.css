@@ -80,7 +80,7 @@ input::-webkit-input-placeholder {
 
 #weather {
 position: relative;
-display: block;
+display: inline-block;
 z-index: 1;
 /*width: 600px;*/
 background: rgba(0,0,0,.5);
