@@ -17,8 +17,8 @@
     <body>
         <div class="overlay">
             <h1>love</h1>
-            <!-- <div id="map">
-            </div> -->
+            <div id="map">
+            </div>
         </div>
         <div id="weather">
             <h2>Get the current weather for anywhere in the world!</h2>
