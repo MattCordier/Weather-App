@@ -39,7 +39,7 @@
                 <div id="weather-data4" style="background-color:tan;">
                 <h2>Get the current weather for anywhere in the world!</h2>
                 </div>
-                <div id="weather-data5" style="background-color:honeydew;">
+                <div id="weather-data5" style="background-color:silver;">
                 <h2>Get the current weather for anywhere in the world!</h2>
                 </div>
 
