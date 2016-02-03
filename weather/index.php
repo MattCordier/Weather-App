@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html >
     <head>
@@ -13,8 +12,7 @@
         <link rel="stylesheet" href="assets/css/jquery-ui.structure.css">
         <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->
-        
+        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body>
     
@@ -23,47 +21,17 @@
 
 
             
-                <div class="col-xs-4">
-                    <div class="input-group">
-                        <input id="address" class="form-control location-search" type="text" name="#"  placeholder="Where are you going?" >
-                        <span class="input-group-btn">
-                            <button id="submit" class="btn btn-default" type="button">Go!</button>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="col-xs-4">
-                    
-                    <input type="text" id="datepicker" class="form-control" placeholder="When are you going?">
-
-                </div>
-            </div>
-            <div class="row weather-map" >
-                <div class="col-sm-6 weather-window">
-                    <div id="weather" ng-controller="CurrentWeatherCntrl">
-                        {{weather.temp}}
-                        <h2>Get the current weather for anywhere in the world!</h2>
-                        <p>Enter a location in the search bar above, then tap GO!<p>
-                    </div>
-                </div>
-                <div class="col-sm-6 map-window">
-                    <div id="map">
-                    </div>
-                </div>
-            </div> 
+             
     
         
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="assets/js/jquery-ui.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-
         <script src="assets/js/app.js"></script>
         <script src="assets/js/maps.js"></script>
         <script type="text/JavaScript" src="assets/js/sha512.js"></script> 
         <script type="text/JavaScript" src="assets/js/forms.js"></script> 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&callback=initMap"></script>
-
-    </div>    
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&callback=initMap"></script>   
     </body>
 </html>
