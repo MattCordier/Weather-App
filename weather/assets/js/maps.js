@@ -1,4 +1,4 @@
-q"use strict";
+"use strict";
 var latlng;
 var date;
 var mapStylesArray = [
