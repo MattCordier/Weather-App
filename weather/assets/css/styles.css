@@ -80,6 +80,7 @@ input::-webkit-input-placeholder {
 
 .wrapper {
   position: relative;
+  height: 100%;
 }
 #weather {
 position: absolute;
