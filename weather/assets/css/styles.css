@@ -1,16 +1,13 @@
 html {
   height: 100%;
-  margin: 0px;
-  padding: 0px;
-
 
 }
 
 body {
-  
+  margin: 0;
+  padding: 0;
   height: 100%; 
-  margin: 0px;
-  padding: 0px;	
+  width: 100%;	
   font-size: 14px;
   line-height: 1.6;
   font-family: "Roboto Slab", sans-serif;
@@ -20,7 +17,7 @@ body {
 
  
 
-/*.header {
+.header {
 	position: relative;
   margin: 0px;
 	background-color: rgb(175, 187, 165);
@@ -51,7 +48,7 @@ input::-webkit-input-placeholder {
 }
 
 .login-btn {
-}*/
+}
 
 .map-overlay {
   width: 100%;
@@ -59,24 +56,21 @@ input::-webkit-input-placeholder {
   position: absolute;
   top: 0px; 
   left: 0px;
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, .2);
   z-index: 1;
 }
 
-
 #map {
-  width: 1400px;
   height: 100%;
-  position: absolute; 
-  top: 0; 
-  bottom: -200px; 
-  left: 0; 
-  right: 0; 
-  z-index: 0;
+  width: 100%;  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0px;
 
 }
 
-/*.weather-map {
+.weather-map {
   margin: 0px;
 }
 
@@ -96,5 +90,5 @@ input::-webkit-input-placeholder {
 
 #ui-datepicker-div{
   margin-top: 7px;
-}*/
+}
 
