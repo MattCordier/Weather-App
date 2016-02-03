@@ -91,7 +91,7 @@ input::-webkit-input-placeholder {
   z-index: 1;
   width: 300px;
   background: white;
-  margin-top: 50% auto;
+  margin:0px auto;
 }
 
 #datepicker {
