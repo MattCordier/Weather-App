@@ -15,7 +15,7 @@
         <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body>
-
+            <div id="wrapper"></div>
             <div id="map">
             </div>
             <div class="map-overlay">
