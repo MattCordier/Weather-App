@@ -238,8 +238,10 @@ function initMap() {
         center: {lat: 43, lng: -20},
         scrollwheel: false,
         mapTypeControl: false,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
        
     });
+    
     var geocoder = new google.maps.Geocoder();
 
     document.getElementById('submit').addEventListener('click', function() {
