@@ -63,8 +63,7 @@ input::-webkit-input-placeholder {
 }
 #wrapper {
    height:100%; 
-   width: 960px; 
-   background-color: #FFF; 
+   width: 960px;  
    position:absolute; 
    left: 50%;
     margin-left: -480px; 
