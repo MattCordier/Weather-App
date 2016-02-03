@@ -86,7 +86,7 @@ input::-webkit-input-placeholder {
 }
 
 #app-title {
-  display: block;
+  display: inline-block;
   z-index: 3;
 }
 #weather {
