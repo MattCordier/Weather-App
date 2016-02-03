@@ -4,7 +4,8 @@ var date;
 
 
 function initMap() {
-
+    var customMapType = new google.maps.StyledMapType(mapStylesArray, {name: 'Custom Style'});
+    var customMapTypeId = 'custom_style';
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 2,
         streetViewControl: false,
