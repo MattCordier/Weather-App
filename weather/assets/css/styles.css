@@ -105,6 +105,14 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 
 }
 
+#main-ui {
+  display:flex; 
+  background-color:orange;
+  flex-flow: row;
+  justify-content: center;
+
+}
+
 #datepicker {
   max-width: 300px;
   margin-right: auto;
