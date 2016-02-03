@@ -15,17 +15,17 @@
         <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body>
-
+        <div id="wrapper">
             <div id="map">
             </div>
+
             <div class="map-overlay">
-            
             </div>
        
-        <div id="weather">
+            <div id="weather">
             <h2>Get the current weather for anywhere in the world!</h2>
+            </div>
         </div>
-    
            
  
 
