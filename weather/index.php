@@ -27,6 +27,7 @@
         <h1 id="app-title">Weather App</h1>      
         <div id="weather">
             <h2>Get the current weather for anywhere in the world!</h2>
+            <input id="address" class="form-control location-search" type="text" name="#"  placeholder="Where are you going?" >
         </div>
         </div>
            
