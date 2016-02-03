@@ -82,7 +82,7 @@ input::-webkit-input-placeholder {
 position: relative;
 display: block;
 z-index: 1;
-width: 600px;
+/*width: 600px;*/
 background: rgba(0,0,0,.5);
 margin:0px auto;
 }
