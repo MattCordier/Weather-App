@@ -30,6 +30,18 @@
                 <div id="weather-data" style="background-color:pink;">
                 <h2>Get the current weather for anywhere in the world!</h2>
                 </div>
+                <div id="weather-data2" style="background-color:green;">
+                <h2>Get the current weather for anywhere in the world!</h2>
+                </div>
+                <div id="weather-data3" style="background-color:aqua;">
+                <h2>Get the current weather for anywhere in the world!</h2>
+                </div>
+                <div id="weather-data4" style="background-color:peach;">
+                <h2>Get the current weather for anywhere in the world!</h2>
+                </div>
+                <div id="weather-data5" style="background-color:honeydew;">
+                <h2>Get the current weather for anywhere in the world!</h2>
+                </div>
 
                 <div style="background-color:teal;">
                 <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
