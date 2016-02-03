@@ -61,6 +61,15 @@ input::-webkit-input-placeholder {
   background-color: rgba(0, 0, 0, .3);
   z-index: 1;
 }
+#wrapper {
+   height:100%; 
+   width: 960px; 
+   background-color: #FFF; 
+   position:absolute; 
+   left: 50%;
+    margin-left: -480px; 
+   z-index:1;
+}
 
 #map {
   height: 100%;
