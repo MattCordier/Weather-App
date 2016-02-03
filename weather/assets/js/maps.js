@@ -233,9 +233,9 @@ var mapStylesArray = [
 function initMap() {
     
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 8,
+        zoom: 12,
         streetViewControl: false,
-        center: {lat: 43, lng: -87},
+        center: {lat: 43, lng: -89},
         scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
