@@ -17,10 +17,9 @@
     <body>
 
             <div id="map">
-                <div class="overlay">
-
-            <h1>love</h1>
-             </div>
+            </div>
+            <div class="map-overlay">
+            
             </div>
        
         <!-- <div id="weather">
