@@ -107,7 +107,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 
 #main-ui {
   display:flex; 
-  background-color: rbga(255,255,255, .5);
+  background-color: rbga(255,255,255, .8);
   flex-flow: row;
   justify-content: center;
 
