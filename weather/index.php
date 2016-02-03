@@ -15,7 +15,9 @@
         <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body>
-        <div id="map">
+        <div class="overlay">
+            <div id="map">
+            </div>
         </div>
         <div id="weather">
             <h2>Get the current weather for anywhere in the world!</h2>
