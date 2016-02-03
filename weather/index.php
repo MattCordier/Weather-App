@@ -26,7 +26,7 @@
         <div class="wrapper"> 
         <h1 id="app-title">Weather App</h1>      
         <div id="weather">
-            <div style="background-color:orange; height:100%;">
+            <div style="position:relative; background-color:orange; height:100%;">
                 <div style="background-color:pink;">
                 <h2>Get the current weather for anywhere in the world!</h2>
                 </div>
