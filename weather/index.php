@@ -17,6 +17,9 @@
     <body>
         <div id="map">
         </div>
+        <div id="weather">
+            <h2>Get the current weather for anywhere in the world!</h2>
+        </div>
     
            
  
