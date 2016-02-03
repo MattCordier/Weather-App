@@ -235,7 +235,7 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 12,
         streetViewControl: false,
-        center: {lat: 43, lng: -89},
+        center: {lat: 43, lng: -88},
         scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
