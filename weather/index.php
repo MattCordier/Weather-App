@@ -27,11 +27,11 @@
         <h1 id="app-title">Weather App</h1>      
         <div id="weather">
             <!-- <div style="background-color:orange; height:auto;"> -->
-                <div id="weather-data" style="background-color:pink;  height: 300px;width:300px;margin: auto;">
+                <div id="weather-data" style="background-color:pink;  height: 60%;width:100%;margin: auto;">
                 <h2>Get the current weather for anywhere in the world!</h2>
                 </div>
 
-                <div style="background-color:teal; height: 300px;width:300px;margin: auto;">
+                <div style="background-color:teal; height: 30%;width:100%;margin: auto;">
                 <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
                 <button id="submit" class="btn btn-default" type="button">Go!</button>
                 <input type="text" id="datepicker" class="" placeholder="When are you going?">
