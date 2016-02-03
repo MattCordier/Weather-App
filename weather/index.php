@@ -22,9 +22,9 @@
             
             </div>
        
-        <!-- <div id="weather">
+        <div id="weather">
             <h2>Get the current weather for anywhere in the world!</h2>
-        </div> -->
+        </div>
     
            
  
