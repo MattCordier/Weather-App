@@ -81,14 +81,12 @@ input::-webkit-input-placeholder {
 .wrapper {
   position: relative;
   height: 100%;
-
+  text-align: center;
 
 }
 
 #app-title {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   z-index: 3;
 }
 #weather {
