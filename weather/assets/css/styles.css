@@ -79,6 +79,7 @@ input::-webkit-input-placeholder {
 }
 
 #weather {
+  position: relative;
   display: inline-block;
   z-index: 2;
   width: 300px;
