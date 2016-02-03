@@ -231,20 +231,15 @@ var mapStylesArray = [
 
 
 function initMap() {
-    var customMapType = new google.maps.StyledMapType(mapStylesArray, {name: 'Custom Style'});
-    var customMapTypeId = 'custom_style';
+    
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 12,
         streetViewControl: false,
         center: {lat: 43, lng: -20},
         scrollwheel: false,
         mapTypeControl: false,
-        mapTypeControlOptions: {
-    	   mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
-	    }
+       
     });
-    map.mapTypes.set(customMapTypeId, customMapType);
-    map.setMapTypeId(customMapTypeId)
     var geocoder = new google.maps.Geocoder();
 
     document.getElementById('submit').addEventListener('click', function() {
