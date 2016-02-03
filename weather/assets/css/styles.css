@@ -78,12 +78,17 @@ input::-webkit-input-placeholder {
   margin: 0px;
 }
 
+.wrapper {
+  position: relative;
+}
 #weather {
-position: relative;
+position: absolute;
+left: 50%;
+top: 50%;
 z-index: 1;
-min-width: 200px;
+max-width: 400px;
 background: rgba(0,0,0,.5);
-margin:0px auto;
+
 }
 
 #datepicker {
