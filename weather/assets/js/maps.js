@@ -25,7 +25,7 @@ function initMap() {
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
     });
-    
+
     $("#address").keypress(function(event) {
     if (event.which == 13) {
         event.preventDefault();
@@ -70,7 +70,7 @@ function getWeather(){
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
               // return data;
-            $('#weather').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
+            $('#weather-data').html(data.daily.icon +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
     });
 }
 
@@ -88,7 +88,7 @@ function predictWeather(){
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
               console.log(data);
               // return data;
-            $('#weather').html(data.daily.icon +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
+            $('#weather-data').html(data.daily.icon +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
     });
 }
 
