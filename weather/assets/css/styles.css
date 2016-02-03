@@ -87,8 +87,11 @@ input::-webkit-input-placeholder {
 }
 
 #weather {
-  padding: 40px;
+  position: relative;
   z-index: 1;
+  width: 300px;
+  background: white;
+  
 }
 
 #datepicker {
