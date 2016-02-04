@@ -89,6 +89,10 @@ input{
 
 }
 
+.container {
+  position: relative;
+}
+
 #app-title {
   display: inline-block;
   color: white;
@@ -115,6 +119,10 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 }
 .weather-footer{
   height: 60px;
+position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 .weather-current {
   font-size: 7rem;
