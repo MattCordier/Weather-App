@@ -11,8 +11,7 @@
         <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css">
         <link rel="stylesheet" href="assets/css/jquery-ui.structure.css">
         <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body>
 
