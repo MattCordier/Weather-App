@@ -39,7 +39,7 @@
                 
                 </div>
 
-                <div style="background-color:teal;">
+                <div>
                 <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
                 <button id="submit" class="btn btn-default" type="button">Go!</button>
                 <input type="text" id="datepicker" class="" placeholder="When are you going?">
