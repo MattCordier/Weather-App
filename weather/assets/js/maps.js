@@ -66,7 +66,7 @@ function getWeather(){
     var lati = latlng[0];
     var longi = latlng[1];
     var hourlyContent;
-    var dailyContent;
+    var dailyContent = "poopycake";
     var data;
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
