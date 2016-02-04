@@ -80,7 +80,7 @@ function getWeather(){
                 };
             $('#weather-hourly').html(hourlyContent);
 
-                for (var i = 1; i < data.daily.data.length; i++) {
+                for (var i = 0; i < data.daily.data.length; i++) {
                     dailyContent += '<span>' + data.daily.data[i].icon + '</span>';
                 }
             $('#weather-outlook').html(dailyContent);
