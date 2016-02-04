@@ -73,14 +73,14 @@ function getWeather(){
               console.log(data);
               // return data;
             $('#weather-current').html(data.daily.data[0].ozone +'<h1>Current Temp: ' + Math.round(data.currently.temperature) + '&deg;</h1>');
-                for (var i = 0; i < data.hourly.data.length; i++) {
+                for (var i = 0; i < data.hourly.data.length  - (data.hourly.data.length/2); i++) {
                     hourlyContent += '<h2>Temp: </h2>';
                     hourlyContent += '<span>' + Math.round(data.hourly.data[i].temperature) + '</span>';
                     hourlyContent += '<br/>';
                 };
             $('#weather-hourly').html(hourlyContent);
 
-                for (var i = 0; i < data.daily.data.length - (data.daily.data.length/2); i++) {
+                for (var i = 0; i < data.daily.data.length; i++) {
                      dailyContent = dailyContent + '<span>' + data.daily.data[i].icon + '</span>';
                 }
             $('#weather-outlook').html(dailyContent);
