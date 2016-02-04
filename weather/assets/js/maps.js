@@ -81,7 +81,7 @@ function getWeather(){
             $('#weather-hourly').html(hourlyContent);
 
                 for (var i = 0; i < data.daily.data.length; i++) {
-                     var dailyContent = dailyContent + '<span>' + data.daily.data[i].icon + '</span>';
+                     var dailyContent = '<span>' + data.daily.data[i].icon + '</span>';
                 }
             $('#weather-outlook').html(dailyContent);
             
