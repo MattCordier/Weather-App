@@ -120,7 +120,7 @@ function predictWeather(){
               currentContent += '<div class="six columns">';
               currentContent += '<h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1></div>';
 
-              currentContent += '<div class="six columns"><h3>' + selectedDate.toDateString() +'</h3>';
+              currentContent += '<div class="six columns"><h5>' + selectedDate.toDateString() +'</h5>';
               
               currentContent += '<p> High: ' + data.daily.data[0].temperatureMax + '&deg;</p>';
               currentContent += '<p> Low: ' + data.daily.data[0].temperatureMin + '&deg;</p>';
