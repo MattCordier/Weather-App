@@ -107,6 +107,9 @@ function predictWeather(){
     var longi = latlng[1];
     var selectedDate = new Date(date);
     var time = selectedDate.getTime()/1000;
+    var currentContent = "";
+    var hourlyContent = "";
+    var dailyContent = "";
     console.log(time);
     console.log('the date is: '+ selectedDate);
     var data;
