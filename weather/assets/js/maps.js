@@ -119,7 +119,9 @@ function predictWeather(){
               // return data;
               currentContent += '<div class="six columns">';
               currentContent += '<h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1></div>';
+
               currentContent += '<div class="six columns"><p> High: ' + data.daily.data[0].temperatureMax + '&deg;</p>';
+              currentContent += '<p>' + selectedDate + '</p>';
               currentContent += '<p> Low: ' + data.daily.data[0].temperatureMin + '&deg;</p>';
               currentContent += '<p> Percipitation: ' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</p></div>';
             $('#weather-current').html(currentContent);
