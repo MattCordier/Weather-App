@@ -75,9 +75,9 @@ function getWeather(){
               console.log(data);
               currentContent += '<div class="six columns">';
               currentContent += '<h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1></div>';
-              currentContent += '<div class="six columns"><h2> High: ' + data.daily.data[0].temperatureMax + '&deg;</h2>';
-              currentContent += '<h2> Low: ' + data.daily.data[0].temperatureMin + '&deg;</h2>';
-              currentContent += '<h3> Percipitation: ' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</h3></div>';
+              currentContent += '<div class="six columns"><h4> High: ' + data.daily.data[0].temperatureMax + '&deg;</h4>';
+              currentContent += '<h4> Low: ' + data.daily.data[0].temperatureMin + '&deg;</h4>';
+              currentContent += '<h4> Percipitation: ' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</h4></div>';
             $('#weather-current').html(currentContent);
                 
 
