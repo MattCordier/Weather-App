@@ -22,39 +22,31 @@
 
 
         <div class="wrapper"> 
-        <h1 id="app-title">Weather App</h1>      
-        <div id="weather" class="container">
+            <h1 id="app-title">Weather App</h1>      
+            <div id="weather" class="container">
           
-            <div id="weather-current" class="row">
+                <div id="weather-current" class="row">
             
-            </div>
-            <!-- <div id="weather-hourly" >
-          
-            </div>
-            <div id="weather-outlook" >
-            
-            </div> -->
-            
-            
-            <div class="row">
-                <div class="twelve columns">
-                    <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
-                    <button id="submit" class="btn btn-default" type="button">Go!</button>
-                    <input type="text" id="datepicker" class="" placeholder="When are you going?">
                 </div>
-            </div>
+                <!-- <div id="weather-hourly" >
+          
+                </div>
+                <div id="weather-outlook" >
             
-        </div>
+                </div> -->
+            
+            
+                <div class="row">
+                    <div class="twelve columns">
+                        <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
+                        <button id="submit" class="btn btn-default" type="button">Go!</button>
+                        <input type="text" id="datepicker"  placeholder="When are you going?">
+                    </div>
+                </div>
+            
+            </div>
         </div>
            
- 
-
-
-            
-             
-    
-        
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="assets/js/jquery-ui.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
