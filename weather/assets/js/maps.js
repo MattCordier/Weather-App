@@ -66,7 +66,7 @@ function getWeather(){
     var lati = latlng[0];
     var longi = latlng[1];
     var hourlyContent;
-    var dailyContent = "poopycake";
+    var dailyContent;
     var data;
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
@@ -81,7 +81,7 @@ function getWeather(){
             $('#weather-hourly').html(hourlyContent);
 
                 for (var i = 0; i < data.daily.data.length; i++) {
-                    dailyContent += '<span>' + data.daily.data[i].icon + '</span>';
+                     dailyContent = dailyContent + '<span>' + data.daily.data[i].icon + '</span>';
                 }
             $('#weather-outlook').html(dailyContent);
             
