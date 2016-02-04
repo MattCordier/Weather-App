@@ -27,13 +27,13 @@
         <h1 id="app-title">Weather App</h1>      
         <div id="weather">
             <div id="main-ui">
-                <div id="weather-current" style="background-color:pink;">
+                <div id="weather-current" >
                 <h2>Get the current weather for anywhere in the world!</h2>
                 </div>
-                <div id="weather-hourly" style="background-color:green;">
+                <div id="weather-hourly" >
                 <h2>Get the current weather for anywhere in the world!</h2>
                 </div>
-                <div id="weather-outlook" style="background-color:aqua;">
+                <div id="weather-outlook" >
                 <h2>Get the current weather for anywhere in the world!</h2>
                 </div>
                 
