@@ -74,7 +74,7 @@ function getWeather(){
               console.log(data);
               currentContent += '<h1>Current Temp: ' + Math.round(data.currently.temperature) + '&deg;</h1>';
               currentContent += '<h2> High: ';
-            $('#weather-current').html(data.daily.data[0].ozone +);
+            $('#weather-current').html(currentContent);
                 
 
 
