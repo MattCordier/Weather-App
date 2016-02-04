@@ -42,7 +42,7 @@
             
                 <div class="row weather-footer">
                     <div class="twelve columns">  
-<i class="wi wi-solar-eclipse wi-big"></i> 
+
                         <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
                         <button id="submit" class="btn btn-default" type="button">Go!</button>
                         <input type="text" id="datepicker"  placeholder="When are you going?">

@@ -118,7 +118,7 @@ function predictWeather(){
               console.log(data);
               // return data;
               currentContent += '<div class="six columns blah">';
-              currentContent += '<h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1></div>';
+              currentContent += '<i class="wi wi-solar-eclipse wi-big"></i> <h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1></div>';
 
               currentContent += '<div class="six columns"><h5>' + selectedDate.toDateString() +'</h5>';
               
