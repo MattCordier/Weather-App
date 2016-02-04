@@ -70,7 +70,7 @@ function getWeather(){
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
               // return data;
-            $('#weather-current').html(data.daily.data[0].ozone +'<h1>Current Temp: ' + Math.floor(data.currently.temperature) + '&deg;</h1>');
+            $('#weather-current').html(data.daily.data[0].ozone +'<h1>Current Temp: ' + Math.round(data.currently.temperature) + '&deg;</h1>');
             $('#weather-hourly').html(data.daily.data[0].ozone +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
             $('#weather-outlook').html(data.daily.data[0].ozone +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
             
