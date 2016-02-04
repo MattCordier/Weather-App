@@ -72,8 +72,8 @@ function getWeather(){
               console.log(data);
               // return data;
             $('#weather-current').html(data.daily.data[0].ozone +'<h1>Current Temp: ' + Math.round(data.currently.temperature) + '&deg;</h1>');
-                for (var x in data) {
-                    hourlyContent += '<span>' + data.hourly.data[].temperature + '</span>';
+                for (var i = 0; i < data.hourly.data.length; i++) {
+                    hourlyContent += '<span>' + data.hourly.data[i].temperature + '</span>';
                 };
             $('#weather-hourly').html(
                     hourlyContent
