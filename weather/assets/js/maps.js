@@ -76,7 +76,7 @@ function getWeather(){
                     hourlyContent += '<span>' + data.hourly.data + '</span>'
                 };
             $('#weather-hourly').html(
-
+                    hourlyContent;
 
                 );
             $('#weather-outlook').html(data.daily.data[0].ozone +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
