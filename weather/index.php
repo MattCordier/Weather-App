@@ -35,12 +35,13 @@
             
             </div>
             
-            </div>
-
-            <div>
-                <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
-                <button id="submit" class="btn btn-default" type="button">Go!</button>
-                <input type="text" id="datepicker" class="" placeholder="When are you going?">
+            
+            <div class="row">
+                <div class="column">
+                    <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
+                    <button id="submit" class="btn btn-default" type="button">Go!</button>
+                    <input type="text" id="datepicker" class="" placeholder="When are you going?">
+                </div>
             </div>
             
         </div>
