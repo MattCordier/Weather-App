@@ -65,23 +65,27 @@ function getWeather(){
     var url = 'https://api.forecast.io/forecast/';
     var lati = latlng[0];
     var longi = latlng[1];
-  
+    var hourlyContent;
+    var dailyContent
     var data;
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
               // return data;
             $('#weather-current').html(data.daily.data[0].ozone +'<h1>Current Temp: ' + Math.round(data.currently.temperature) + '&deg;</h1>');
-                for (var i = 0; i < data.hourly.data.length - 40; i++) {
+                
+
+
+                for (var i = 0; i < data.hourly.data.length; i++) {
                     console.log(i);
-                    var hourlyContent = '<h2>Temp: </h2>';
+                    hourlyContent = '<h2>Temp: </h2>';
                     hourlyContent += '<span>' + Math.round(data.hourly.data[i].temperature) + '</span>';
                     hourlyContent += '<br/>';
                 };
             $('#weather-hourly').html(hourlyContent);
 
                 for (var i = 0; i < data.daily.data.length; i++) {
-                     var dailyContent = '<span>' + data.daily.data[i].icon + '</span>';
+                     dailyContent += '<span>' + data.daily.data[i].icon + '</span>';
                 }
             $('#weather-outlook').html(dailyContent);
             
