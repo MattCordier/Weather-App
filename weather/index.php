@@ -26,7 +26,7 @@
             <div id="weather" class="container">
           
                 <div id="weather-current" class="row">
-            
+            <i class="wi wi-night-sleet">
                 </div>
                 <!-- <div id="weather-hourly" >
           
