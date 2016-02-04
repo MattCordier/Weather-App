@@ -36,7 +36,7 @@
                 </div> -->
             
             
-                <div class="row">
+                <div class="row weather-footer">
                     <div class="twelve columns">
                         <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
                         <button id="submit" class="btn btn-default" type="button">Go!</button>
