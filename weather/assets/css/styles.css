@@ -3,6 +3,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 body {
@@ -105,7 +106,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 
 }
 .weather-current {
-  font-size: 15rem;
+  font-size: 10rem;
 }
 
 
