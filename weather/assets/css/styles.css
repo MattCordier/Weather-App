@@ -74,6 +74,10 @@ input::-webkit-input-placeholder {
 
 }
 
+input{
+  color: #3d3d3d;
+}
+
 .wrapper {
   position: relative;
   height: 100%;
