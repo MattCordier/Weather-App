@@ -88,7 +88,7 @@ function predictWeather(){
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
               console.log(data);
               // return data;
-            $('#weather-data').html(data.daily.icon +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
+            $('#weather-data').html(data.daily[0] +'<h1>Predicted: ' + data.currently.temperature + '&deg;</h1>');
     });
 }
 
