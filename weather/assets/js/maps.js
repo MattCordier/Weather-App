@@ -72,6 +72,7 @@ function getWeather(){
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
+              currentContent += GeocoderResult.formatted_address;
               currentContent += '<h1>Current Temp: ' + Math.round(data.currently.temperature) + '&deg;</h1>';
               currentContent += '<h2> High: ' + data.daily.data[0].temperatureMax + '&deg;</h2>';
               currentContent += '<h2> Low: ' + data.daily.data[0].temperatureMin + '&deg;</h2>';
