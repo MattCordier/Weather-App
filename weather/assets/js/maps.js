@@ -73,7 +73,7 @@ function getWeather(){
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
               currentContent += '<h1>Current Temp: ' + Math.round(data.currently.temperature) + '&deg;</h1>';
-              currentContent += '<h2> High: ';
+              currentContent += '<h2> High: ' + data.daily.data[0].temperatureMax;
             $('#weather-current').html(currentContent);
                 
 
