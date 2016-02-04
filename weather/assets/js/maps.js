@@ -74,8 +74,8 @@ function getWeather(){
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
               currentContent += '<div class="six column">';
-              currentContent += '<h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1>';
-              currentContent += '<div class="six column"><h2> High: ' + data.daily.data[0].temperatureMax + '&deg;</h2></div>';
+              currentContent += '<h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1></div>';
+              currentContent += '<div class="six column"><h2> High: ' + data.daily.data[0].temperatureMax + '&deg;</h2>';
               currentContent += '<h2> Low: ' + data.daily.data[0].temperatureMin + '&deg;</h2>';
               currentContent += '<h3> Percipitation: ' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</h3></div>';
             $('#weather-current').html(currentContent);
