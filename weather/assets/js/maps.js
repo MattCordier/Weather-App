@@ -66,6 +66,7 @@ function getWeather(){
     var lati = latlng[0];
     var longi = latlng[1];
     var hourlyContent;
+    var dailyContent;
     var data;
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
@@ -77,11 +78,12 @@ function getWeather(){
                     hourlyContent += '<span>' + Math.round(data.hourly.data[i].temperature) + '</span>';
                     hourlyContent += '<br/>';
                 };
-            $('#weather-hourly').html(
-                    hourlyContent
+            $('#weather-hourly').html(hourlyContent);
 
-                );
-            $('#weather-outlook').html(data.daily.data[0].ozone +'<h1>Current Temp: ' + data.currently.temperature + '&deg;</h1>');
+                for (var i = 0; i < data.daily.data.length; i++) {
+                    dailyContent += '<span>' + data.daily.data[i].icon + '</span>';
+                }
+            $('#weather-outlook').html(dailyContent);
             
 
     });
