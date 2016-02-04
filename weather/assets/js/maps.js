@@ -3,7 +3,7 @@ var latlng;
 var date;
 
 function initMap() {
-    
+    // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         zoomControl: false,
@@ -14,6 +14,7 @@ function initMap() {
         mapTypeId: google.maps.MapTypeId.SATELLITE
        
     });
+    // Keep Map Centered on resize
     google.maps.event.addDomListener(window, "resize", function() {
         var center = map.getCenter();
         google.maps.event.trigger(map, "resize");
@@ -72,7 +73,7 @@ function getWeather(){
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
-              currentContent += '<h1>' + geocoder.GeocoderResult.formatted_address; + '</h1>'
+              // currentContent += '<h1>' +  + '</h1>'
               currentContent += '<h1>Current Temp: ' + Math.round(data.currently.temperature) + '&deg;</h1>';
               currentContent += '<h2> High: ' + data.daily.data[0].temperatureMax + '&deg;</h2>';
               currentContent += '<h2> Low: ' + data.daily.data[0].temperatureMin + '&deg;</h2>';
