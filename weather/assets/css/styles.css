@@ -94,6 +94,8 @@ input{
 }
 
 #app-title {
+  margin-top: -72px;
+  
   display: inline-block;
   color: white;
 }

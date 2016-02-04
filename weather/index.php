@@ -22,9 +22,9 @@
 
 
         <div class="wrapper"> 
-            <h1 id="app-title">Weather App</h1>      
+                
             <div id="weather" class="container">
-          
+                <h1 id="app-title">Weather App</h1>  
                 <div id="weather-current" class="row">
             
                 </div>
