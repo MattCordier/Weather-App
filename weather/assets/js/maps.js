@@ -65,8 +65,8 @@ function getWeather(){
     var url = 'https://api.forecast.io/forecast/';
     var lati = latlng[0];
     var longi = latlng[1];
-    var hourlyContent = '<h2>Temp: </h2>';;
-    var dailyContent;
+    var hourlyContent = "";
+    var dailyContent = "";
     var data;
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
@@ -76,9 +76,9 @@ function getWeather(){
                 
 
 
-                for (var i = 0; i < data.hourly.data.length -40; i++) {
+                for (var i = 0; i < data.hourly.data.length; i++) {
                     console.log(i);
-                    
+                    hourlyContent += '<h2>Temp: </h2>';
                     hourlyContent += '<span>' + Math.round(data.hourly.data[i].temperature) + '</span>';
                     hourlyContent += '<br/>';
                 };
