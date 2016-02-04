@@ -128,7 +128,9 @@ position: absolute;
   font-size: 7rem;
 }
 
-
+.blah {
+  border: 1px solid white;
+}
 
 #datepicker {
   max-width: 300px;
