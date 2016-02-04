@@ -75,7 +75,7 @@ function getWeather(){
               currentContent += '<h1>Current Temp: ' + Math.round(data.currently.temperature) + '&deg;</h1>';
               currentContent += '<h2> High: ' + data.daily.data[0].temperatureMax + '&deg;</h2>';
               currentContent += '<h2> Low: ' + data.daily.data[0].temperatureMin + '&deg;</h2>';
-              currentContent += '<h3> Percipitation: ' + data.daily.data[0].precipProbability + '</h3>';
+              currentContent += '<h3> Percipitation: ' + (data.daily.data[0].precipProbability * 100) + '&#37;</h3>';
             $('#weather-current').html(currentContent);
                 
 
