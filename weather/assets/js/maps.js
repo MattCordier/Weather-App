@@ -65,7 +65,7 @@ function getWeather(){
     var url = 'https://api.forecast.io/forecast/';
     var lati = latlng[0];
     var longi = latlng[1];
-    var hourlyContent;
+    var hourlyContent = '<h2>Temp: </h2>';;
     var dailyContent;
     var data;
 
@@ -76,16 +76,16 @@ function getWeather(){
                 
 
 
-                for (var i = 0; i < data.hourly.data.length; i++) {
+                for (var i = 0; i < data.hourly.data.length -40; i++) {
                     console.log(i);
-                    hourlyContent = '<h2>Temp: </h2>';
+                    
                     hourlyContent += '<span>' + Math.round(data.hourly.data[i].temperature) + '</span>';
                     hourlyContent += '<br/>';
                 };
             $('#weather-hourly').html(hourlyContent);
 
                 for (var i = 0; i < data.daily.data.length; i++) {
-                    console.log("test" + dailyContent);
+                    console.log("test " + dailyContent);
                      dailyContent += '<span>' + data.daily.data[i].icon + '</span>';
                 }
             $('#weather-outlook').html(dailyContent);
