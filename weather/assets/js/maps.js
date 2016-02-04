@@ -65,29 +65,31 @@ function getWeather(){
     var url = 'https://api.forecast.io/forecast/';
     var lati = latlng[0];
     var longi = latlng[1];
+    var currentContent = "";
     var hourlyContent = "";
     var dailyContent = "";
     var data;
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
               console.log(data);
-              // return data;
-            $('#weather-current').html(data.daily.data[0].ozone +'<h1>Current Temp: ' + Math.round(data.currently.temperature) + '&deg;</h1>');
+              currentContent += '<h1>Current Temp: ' + Math.round(data.currently.temperature) + '&deg;</h1>';
+              currentContent += '<h2> High: ';
+            $('#weather-current').html(data.daily.data[0].ozone +);
                 
 
 
-                for (var i = 0; i < data.hourly.data.length; i++) {
-                    console.log(i);
-                    hourlyContent += '<h2>Temp: </h2>';
-                    hourlyContent += '<span>' + Math.round(data.hourly.data[i].temperature) + '</span>';
-                    hourlyContent += '<br/>';
-                };
+                // for (var i = 0; i < data.hourly.data.length; i++) {
+                //     console.log(i);
+                //     hourlyContent += '<h2>Temp: </h2>';
+                //     hourlyContent += '<span>' + Math.round(data.hourly.data[i].temperature) + '</span>';
+                //     hourlyContent += '<br/>';
+                // };
             $('#weather-hourly').html(hourlyContent);
 
-                for (var i = 0; i < data.daily.data.length; i++) {
-                    console.log("test " + dailyContent);
-                     dailyContent += '<span>' + data.daily.data[i].icon + '</span>';
-                }
+                // for (var i = 0; i < data.daily.data.length; i++) {
+                //     console.log("test " + dailyContent);
+                //      dailyContent += '<span>' + data.daily.data[i].icon + '</span>';
+                // }
             $('#weather-outlook').html(dailyContent);
             
 
