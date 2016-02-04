@@ -27,7 +27,7 @@
         <div id="weather">
             <div id="main-ui">
                 <div id="weather-current" >
-                <h2>Get the current weather for anywhere in the world!</h2>
+                
                 </div>
                 <div id="weather-hourly" >
               
