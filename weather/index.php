@@ -6,8 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Matt Cordier">
         <meta name="description" content="A smart weather app for planning your travels.">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/skeleton.css">
         <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css">
         <link rel="stylesheet" href="assets/css/jquery-ui.structure.css">
         <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
@@ -24,26 +23,26 @@
 
         <div class="wrapper"> 
         <h1 id="app-title">Weather App</h1>      
-        <div id="weather">
-            <div id="main-ui">
-                <div id="weather-current" >
-                
-                </div>
-                <div id="weather-hourly" >
-              
-                </div>
-                <div id="weather-outlook" >
-                
-                </div>
-                
-                </div>
+        <div id="weather" class="container">
+          
+            <div id="weather-current" class="row">
+            
+            </div>
+            <div id="weather-hourly" >
+          
+            </div>
+            <div id="weather-outlook" >
+            
+            </div>
+            
+            </div>
 
-                <div>
+            <div>
                 <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
                 <button id="submit" class="btn btn-default" type="button">Go!</button>
                 <input type="text" id="datepicker" class="" placeholder="When are you going?">
-                </div>
             </div>
+            
         </div>
         </div>
            
