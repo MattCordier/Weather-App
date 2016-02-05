@@ -6,12 +6,13 @@ var date;
 
 
 function initMap() {
+    latlng = [];
     if (navigator.geolocation) {
-  console.log('Geolocation is supported!');
-}
-else {
-  console.log('Geolocation is not supported for this Browser/OS version yet.');
-}
+        console.log('Geolocation is supported!');
+    }
+    else {
+        console.log('Geolocation is not supported for this Browser/OS version yet.');
+    }
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
@@ -32,6 +33,8 @@ else {
     
     var geocoder = new google.maps.Geocoder();
     //run after user's location is determined
+    latlng.push(map.center.lat());
+    latlng.push(map.center.lng());
     predictWeather();
 
     //run if user taps submit
