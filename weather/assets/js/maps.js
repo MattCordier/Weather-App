@@ -1,13 +1,13 @@
 "use strict";
 
-var latlng = [];
+var latlng;
 var date; 
 
 
 
 
 function initMap() {
-    // latlng = [];
+    latlng = [];
 
     date = "";
     if (navigator.geolocation) {
