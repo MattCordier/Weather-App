@@ -43,8 +43,8 @@ function successFunction(position) {
     var geocoder = new google.maps.Geocoder();
 
     //run after user's location is determined
-    latlng.push(map.center.lat);
-    latlng.push(map.center.lng);
+    latlng.push(map.center.lat());
+    latlng.push(map.center.lng());
     
     predictWeather();
 
