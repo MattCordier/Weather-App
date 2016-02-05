@@ -123,9 +123,9 @@ function predictWeather(){
 
               currentContent += '<div class="six columns"><h5>' + selectedDate.toDateString() +'</h5>';
               
-              currentContent += 'High: ' + data.daily.data[0].temperatureMax + '&deg;';
-              currentContent += 'Low: ' + data.daily.data[0].temperatureMin + '&deg;';
-              currentContent += 'Percipitation: ' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</div>';
+              currentContent += '<div>High: ' + data.daily.data[0].temperatureMax + '&deg;</div>';
+              currentContent += '<div>Low: ' + data.daily.data[0].temperatureMin + '&deg;</div>';
+              currentContent += '<div>Percipitation: ' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</div></div>';
             $('#weather-current').html(currentContent);
     });
 }
