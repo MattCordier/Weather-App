@@ -5,7 +5,7 @@ var date;
 
 function initMap() {
     if (navigator.geolocation) {
-   
+        console.log('yes');
         var startPos;
         var geoSuccess = function(position) {
             startPos = position;
