@@ -206,23 +206,23 @@ input.weather-selector {
 }
 
 input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255,.5);
+  color: rgba(255, 255, 255,.3);
   text-transform: uppercase;
 }
 input::-moz-placeholder {
-  color: rgba(255, 255, 255,.5);
+  color: rgba(255, 255, 255,.3);
   text-transform: uppercase;
 }
 input:-moz-placeholder {   /* Older versions of Firefox */
-  color: rgba(255, 255, 255,.5);
+  color: rgba(255, 255, 255,.3);
   text-transform: uppercase;
 }
 input:-ms-input-placeholder { 
-  color: rgba(255, 255, 255,.5);
+  color: rgba(255, 255, 255,.3);
   text-transform: uppercase;
 }
 button.weather-selector {
-  color: white;
+  color: rgba(255, 255, 255,.3);
   padding: 0px 10px;
 }
 
