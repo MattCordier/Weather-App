@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     // $("#dp").datepicker({
     //     onSelect: function(dateText, inst) {
-    //         alert(dateText);
+            
     //     },
     // });
 
