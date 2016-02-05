@@ -111,11 +111,13 @@ function predictWeather(){
 
         if (date !== ""){
             var selectedDate = new Date(date); 
+            var time = selectedDate.getTime()/1000;
             
         } else if (date === "") {
-            var selectedDate = Date.now();
+            var time = Date.now();
+
         }
-        var time = selectedDate.getTime()/1000;
+        
     
     
     //convert selectedDate to Unix code
