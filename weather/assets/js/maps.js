@@ -18,7 +18,7 @@ function initMap() {
         mapTypeId: google.maps.MapTypeId.SATELLITE
        
     };
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
@@ -29,6 +29,7 @@ function initMap() {
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
     }
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
     // Set up basic map view
     
     var geocoder = new google.maps.Geocoder();
