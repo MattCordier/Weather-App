@@ -27,6 +27,9 @@ body {
     margin-right: 10px;
     line-height: 5rem;
  }
+ .weather-deets {
+  text-align: left;
+ }
 
  h1 {
   display: inline-block;
