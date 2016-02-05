@@ -19,6 +19,10 @@ $(document).ready(function() {
         $( "#datepicker" ).datepicker();
     });
 
+    $('#datepicker').click(function(){
+      $('#datepicker').datepicker('show');
+    });
+
 });
 
 
