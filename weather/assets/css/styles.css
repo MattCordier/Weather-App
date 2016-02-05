@@ -225,7 +225,7 @@ button.weather-selector {
 
 button.weather-selector:hover {
   background-color: rgba(255, 255, 255, .3);
-  
+  color: white;
 }
 
 #ui-datepicker-div{
