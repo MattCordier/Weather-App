@@ -11,10 +11,10 @@ function initMap() {
 
     date = "";
     if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) ){
+    navigator.geolocation.getCurrentPosition(function(position){
     latlng.push(position.coords.latitude);
     latlng.push(position.coords.longitude);
-    };
+    });
     
     console.log('Your latitude is :'+latlng[0]+' and longitude is '+latlng[1]);
 } else {
