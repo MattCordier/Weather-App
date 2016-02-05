@@ -12,7 +12,7 @@ function initMap() {
         zoom: 13,
         zoomControl: false,
         streetViewControl: false,
-        // center: {lat: 43.0500, lng: -87.9500},
+        center: {lat: 43.0500, lng: -87.9500},
         scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
@@ -20,18 +20,17 @@ function initMap() {
     };
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition();
-        console.log('MY TEST' + getCurrentPosition());
-        mapOptions.center = {};
-        mapOptions.center.lat = 20;
-        mapOptions.center.lng = 90;
-        console.log(mapOptions);
+    // if (navigator.geolocation) {
+    //     navigator.geolocation.getCurrentPosition();
+    //     mapOptions.center = {};
+    //     mapOptions.center.lat = 20;
+    //     mapOptions.center.lng = 90;
+    //     console.log(mapOptions);
         
-    }
-    else {
-        console.log('Geolocation is not supported for this Browser/OS version yet.');
-    }
+    // }
+    // else {
+    //     console.log('Geolocation is not supported for this Browser/OS version yet.');
+    // }
     // Set up basic map view
     
     var geocoder = new google.maps.Geocoder();
