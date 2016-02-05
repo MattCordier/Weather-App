@@ -22,6 +22,8 @@ function initMap() {
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
+        latlng.push(position.coords.latitude);
+        latlng.push(position.coords.longitude);
     }
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
@@ -31,8 +33,7 @@ function initMap() {
     var geocoder = new google.maps.Geocoder();
 
     //run after user's location is determined
-    latlng.push(initialLocation.lat());
-    latlng.push(initialLocation.lng());
+    
     
     predictWeather();
 
