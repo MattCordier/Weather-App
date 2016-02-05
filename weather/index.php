@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css">
         <link rel="stylesheet" href="assets/css/jquery-ui.structure.css">
         <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/styles" href="assets/css/weather-icons.min.css">
         <link rel="stylesheet" type="text/styles" href="assets/css/weather-icons-wind.min.css">
 
