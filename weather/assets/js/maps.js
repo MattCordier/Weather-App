@@ -108,6 +108,7 @@ function predictWeather(){
     var lati = latlng[0];
     var longi = latlng[1];
     var selectedDate = new Date(date);
+    console.log(selectedDate);
     var time = selectedDate.getTime()/1000;
     var weatherHeader = "";
     var currentContent = "";
