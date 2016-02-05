@@ -27,7 +27,7 @@ function initMap() {
         navigator.geolocation.getCurrentPosition(function(position) {
             initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
             map.setCenter(initialLocation);
-        }
+        });
     }
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
