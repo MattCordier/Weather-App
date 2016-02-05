@@ -5,7 +5,7 @@ $(document).ready(function(){
     } else{
         alert('derp!');
     }
-}
+});
 var latlng;
 var date;
 
