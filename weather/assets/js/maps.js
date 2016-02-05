@@ -24,11 +24,12 @@ function initMap() {
 
     if (navigator.geolocation) {
         browserSupportFlag = true;
-        console.log('test' + position);
+
         navigator.geolocation.getCurrentPosition(function(position) {
             initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
             console.log(initialLocation);
             map.setCenter(initialLocation);
+            console.log('test' + position);
         });
     }
     else {
