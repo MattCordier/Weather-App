@@ -136,7 +136,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 }
 .weather-header-col {
   text-align: center;
-  margin: -10px 0px 30px 0px;
+  margin: -10px 0px 15px 0px;
 }
 .weather-footer{
   height: 60px;
@@ -191,5 +191,14 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 
 #ui-datepicker-div{
   margin-top: 7px;
+}
+
+#main-footer {
+  background-color: blue;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
