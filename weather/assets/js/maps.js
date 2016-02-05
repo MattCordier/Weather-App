@@ -12,7 +12,7 @@ function initMap() {
         zoom: 13,
         zoomControl: false,
         streetViewControl: false,
-        center: {lat: NULL, lng: NULL},
+        center: {},
         scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
