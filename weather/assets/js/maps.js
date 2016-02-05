@@ -23,8 +23,8 @@ function initMap() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
             console.log(position.coords.latitude);
-                mapOptions.center.lat = position.coords.latitude; 
-            mapOptions.center.lng = position.coords.longitude;
+                map.mapOptions.center.lat = position.coords.latitude; 
+            map.mapOptions.center.lng = position.coords.longitude;
         });
     }
     else {
