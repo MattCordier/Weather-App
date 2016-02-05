@@ -119,7 +119,7 @@ top: 50%;
 -ms-transform: translate(-50%, -50%);
 -o-transform: translate(-50%, -50%);
 z-index: 1;
-min-width: 70%;
+max-width: 680px;
 min-height:70%;
 margin-bottom: -60px;
 padding: 20px;
@@ -159,7 +159,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 .weather-deets {
   text-align: left;
   font-size: 1.5rem;
-  line-height: 1rem;
+  line-height: 1.75rem;
 }
 
 .wi-big{
