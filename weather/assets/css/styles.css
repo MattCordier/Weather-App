@@ -12,7 +12,7 @@ body {
   height: 100%; 
   width: 100%;	
   font-family: "Lato", sans-serif;
-  line-height: 5rem;
+
   color: rgb(255, 255, 255);
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -25,10 +25,12 @@ body {
  .wi {
     font-size: 4rem;
     margin-right: 10px;
+    line-height: 5rem;
  }
 
  h1 {
   display: inline-block;
+  line-height: 5rem;
 
  }
 
