@@ -3,31 +3,23 @@
 var latlng;
 var date; 
 
-if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position){
-    latlng.push(position.coords.latitude);
-    latlng.push(position.coords.longitude);
-    console.log('TESTER1' +latlng);
-    });
-    
-} else {
-    alert('It seems like Geolocation, which is required for this page, is not enabled in your browser. Please use a browser which supports it.');
-}
 
 
 function initMap() {
     latlng = [];
-
     date = "";
-    
-
-console.log('TESTER2' +latlng);
+    if (navigator.geolocation) {
+        console.log('Geolocation is supported!');
+    }
+    else {
+        console.log('Geolocation is not supported for this Browser/OS version yet.');
+    }
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         zoomControl: false,
         streetViewControl: false,
-        center: {lat:latlng[0],lng:latlng[1]},
+        center: {lat: 43.0500, lng: -87.9500},
         scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
@@ -43,8 +35,8 @@ console.log('TESTER2' +latlng);
     var geocoder = new google.maps.Geocoder();
 
     //run after user's location is determined
-    // latlng.push(map.center.lat());
-    // latlng.push(map.center.lng());
+    latlng.push(map.center.lat());
+    latlng.push(map.center.lng());
     
     predictWeather();
 
