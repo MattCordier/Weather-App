@@ -55,7 +55,7 @@
             </div>
         </div>
         <footer id="main-footer">
-            <p>Weather App developed by <a href="http://mattcordier.github.io">Matt Cordier.</a> Powered by <a href="http://forecast.io">Forecast API.</a></p>
+            <p class="foot-deets">Weather App developed by <a href="http://mattcordier.github.io">Matt Cordier.</a> Powered by <a href="http://forecast.io">Forecast API.</a></p>
         </footer>
            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
