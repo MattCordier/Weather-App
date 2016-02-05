@@ -15,8 +15,8 @@ $(document).ready(function() {
         });
     });
 
-    $(function() {
-        $( "#datepicker" ).datepicker();
+    $("#datepicker").click(function() {
+        $("#dp").datepicker("show");
     });
 
 });
