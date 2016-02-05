@@ -107,6 +107,7 @@ function predictWeather(){
     var longi = latlng[1];
     var selectedDate = new Date(date);
     var time = selectedDate.getTime()/1000;
+    var weatherHeader = "";
     var currentContent = "";
     var hourlyContent = "";
     var dailyContent = "";
@@ -116,13 +117,15 @@ function predictWeather(){
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
               console.log(data);
+              weatherHeader += '<div class="six columns weather-deets"><h5>' + selectedDate.toDateString() +'</h5>';
               // return data;
               currentContent += '<div class="six columns blah">';
               currentContent += ' <h1 class="weather-current"><i class="wi wi-forecast-io-' + data.currently.icon + '"></i>' + Math.round(data.currently.temperature) + '&deg;</h1></div>';
-              currentContent += '<div class="six columns weather-deets"><h5>' + selectedDate.toDateString() +'</h5>';
+              currentContent += '<div class="six columns weather-deets">';
               currentContent += '<p> High: ' + Math.round(data.daily.data[0].temperatureMax) + '&deg;</p>';
               currentContent += '<p> Low: ' + Math.round(data.daily.data[0].temperatureMin) + '&deg;</p>';
               currentContent += '<p> Percipitation: ' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</p></div>';
+            $('#weather-header').html(weatherHeader);
             $('#weather-current').html(currentContent);
     });
 }
