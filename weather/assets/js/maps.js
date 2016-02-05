@@ -21,8 +21,8 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
     if (navigator.geolocation) {
-        var b = navigator.geolocation.getCurrentPosition();
-        console.log('MY TEST' + b);
+        navigator.geolocation.getCurrentPosition();
+        console.log('MY TEST' + getCurrentPosition());
         mapOptions.center = {};
         mapOptions.center.lat = 20;
         mapOptions.center.lng = 90;
