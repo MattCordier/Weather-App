@@ -8,29 +8,28 @@ var date;
 function initMap() {
     latlng = [];
     date = "";
+    var mapOptions = {
+        zoom: 13,
+        zoomControl: false,
+        streetViewControl: false,
+        center: {lat: NULL, lng: NULL},
+        scrollwheel: false,
+        mapTypeControl: false,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
+       
+    };
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
     if (navigator.geolocation) {
-        console.log('Geolocation is supported!');
+        navigator.geolocation.getCurrentPosition(function (position) {
+                mapOptions.center.lat = position.coords.latitude; 
+            mapOptions.center.lng = position.coords.longitude;
+        });
     }
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
     }
     // Set up basic map view
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
-        zoomControl: false,
-        streetViewControl: false,
-        center: {lat: 43.0500, lng: -87.9500},
-        scrollwheel: false,
-        mapTypeControl: false,
-        mapTypeId: google.maps.MapTypeId.SATELLITE
-       
-    });
-    // Keep Map centered on resize
-    google.maps.event.addDomListener(window, "resize", function() {
-        var center = map.getCenter();
-        google.maps.event.trigger(map, "resize");
-        map.setCenter(center); 
-    });
     
     var geocoder = new google.maps.Geocoder();
 
@@ -40,6 +39,13 @@ function initMap() {
     
     predictWeather();
 
+    // Keep Map centered on resize
+    google.maps.event.addDomListener(window, "resize", function() {
+        var center = map.getCenter();
+        google.maps.event.trigger(map, "resize");
+        map.setCenter(center); 
+    });
+    
     //run if user taps submit
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
@@ -52,6 +58,8 @@ function initMap() {
     }
 })
 }
+
+
 
 
 function geocodeAddress(geocoder, resultsMap) {
