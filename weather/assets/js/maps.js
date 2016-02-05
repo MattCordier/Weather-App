@@ -39,6 +39,7 @@ function geocodeAddress(geocoder, resultsMap) {
 	latlng = [];	
     var address = document.getElementById('address').value;
     date = document.getElementById('dp').value;
+    console.log(date);
 	
     geocoder.geocode({'address': address}, function(results, status) {
 	    if (status === google.maps.GeocoderStatus.OK) {
@@ -53,7 +54,8 @@ function geocodeAddress(geocoder, resultsMap) {
 	           alert('Geocode was not successful for the following reason: ' + status);
 	      }
 
-	    if (date === ""){	
+	    if (date === ""){
+            date = 	
 			getWeather();  
 		} else if (date !== ""){
 			predictWeather();
