@@ -130,9 +130,9 @@ function predictWeather(){
 
 
               currentContent += '<div class="six columns weather-deets">';
-              currentContent += '<p> High: ' + Math.round(data.daily.data[0].temperatureMax) + '&deg;</p>';
-              currentContent += '<p> Low: ' + Math.round(data.daily.data[0].temperatureMin) + '&deg;</p>';
-              currentContent += '<p> Percipitation: ' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</p></div>';
+              currentContent += '<p><span class="label">High: </span>' + Math.round(data.daily.data[0].temperatureMax) + '&deg;</p>';
+              currentContent += '<p><span class="label">Low: </span>' + Math.round(data.daily.data[0].temperatureMin) + '&deg;</p>';
+              currentContent += '<p><span class="label">Percipitation: </span>' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</p></div>';
             $('#weather-header').html(weatherHeader);
             $('#weather-current').html(currentContent);
     });

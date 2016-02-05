@@ -133,7 +133,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 
 .weather-header-col {
   text-align: center;
-  margin: -20px 0px 10px 0px;
+  margin: -10px 0px 50px 0px;
 }
 .weather-footer{
   height: 60px;
@@ -158,8 +158,13 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 
 .weather-deets {
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.75rem;
+}
+
+.label {
+  font-weight: 400;
+  font-style: bold;
 }
 
 .wi-big{
