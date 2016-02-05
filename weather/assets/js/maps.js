@@ -3,6 +3,17 @@
 var latlng;
 var date;
 
+window.onload = function() {
+  var startPos;
+  var geoSuccess = function(position) {
+    startPos = position;
+   
+    console.log(startPos.coords.latitude);
+  console.log(startPos.coords.longitude);
+  };
+  navigator.geolocation.getCurrentPosition(geoSuccess);
+
+
 function initMap() {
     if (navigator.geolocation) {
   console.log('Geolocation is supported!');
@@ -41,16 +52,8 @@ else {
     }
 })
 }
-window.onload = function() {
-  var startPos;
-  var geoSuccess = function(position) {
-    startPos = position;
-   
-    console.log(startPos.coords.latitude);
-  console.log(startPos.coords.longitude);
-  };
-  navigator.geolocation.getCurrentPosition(geoSuccess);
 };
+
 
 function geocodeAddress(geocoder, resultsMap) {
 	latlng = [];	
