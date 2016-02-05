@@ -16,9 +16,7 @@ $(document).ready(function() {
     });
 
     $(function() {
-        $( "#datepicker" ).datepicker({
-            showOn: "both"
-        });
+        $( "#datepicker" ).datepicker();
     });
 
 });
