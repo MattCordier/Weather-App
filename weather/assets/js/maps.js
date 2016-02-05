@@ -8,8 +8,6 @@ var date;
 function initMap() {
     latlng = [];
     date = "";
-    var initialLocation;
-    var browserSupportFlag =  new Boolean();
     var mapOptions = {
         zoom: 13,
         zoomControl: false,
@@ -23,14 +21,7 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
     if (navigator.geolocation) {
-        browserSupportFlag = true;
-
-        navigator.geolocation.getCurrentPosition(function(position) {
-            initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-            console.log(initialLocation);
-            map.setCenter(initialLocation);
-            console.log('test' + position);
-        });
+        navigator.geolocation.getCurrentPosition(showPosition);
     }
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
@@ -63,6 +54,11 @@ function initMap() {
         geocodeAddress(geocoder, map);
     }
 })
+}
+
+function showPosition(position) {
+    console.log("Latitude: " + position.coords.latitude + 
+    " Longitude: " + position.coords.longitude); 
 }
 
 
