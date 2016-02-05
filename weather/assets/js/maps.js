@@ -8,7 +8,7 @@ var date;
 
 function initMap() {
     // latlng = [];
-    
+
     date = "";
     if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(successFunction);
@@ -20,6 +20,7 @@ function successFunction(position) {
     latlng[0] = position.coords.latitude;
     latlng[1] = position.coords.longitude;
     console.log('Your latitude is :'+latlng[0]+' and longitude is '+latlng[1]);
+    return latlng;
 }
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
