@@ -51,7 +51,7 @@ else {
         geocodeAddress(geocoder, map);
     }
 })
-}
+};
 };
 
 
