@@ -119,7 +119,7 @@ function predictWeather(){
               // return data;
               currentContent += '<div class="row">';
               currentContent += '<div class="two columns">';
-              currentContent += '<i class="wi wi-forecast-io-' + data.currently.icon + '"></i>'
+              currentContent += '<i class="wi wi-forecast-io-' + data.currently.icon + '"></i></div>'
               currentContent += '<div class="ten columns">';
               currentContent += ' <h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1></div></div>';
 
