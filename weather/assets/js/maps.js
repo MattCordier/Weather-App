@@ -8,39 +8,23 @@ var date;
 function initMap() {
     latlng = [];
     date = "";
-    var mapOptions = {}
-    
-
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-        mapOptions = {
-        zoom: 13,
-        zoomControl: false,
-        streetViewControl: false,
-        center: {lat:position.coords.latitude, lng:position.coords.longitude},
-        scrollwheel: false,
-        mapTypeControl: false,
-        mapTypeId: google.maps.MapTypeId.SATELLITE
-       
-    };
-            
-        });
+        console.log('Geolocation is supported!');
     }
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
     }
-    
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
     // Set up basic map view
-    
-    var geocoder = new google.maps.Geocoder();
-
-    //run after user's location is determined
-    latlng.push(map.center.lat);
-    latlng.push(map.center.lng);
-    
-    predictWeather();
-
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 13,
+        zoomControl: false,
+        streetViewControl: false,
+        center: {lat: 43.0500, lng: -87.9500},
+        scrollwheel: false,
+        mapTypeControl: false,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
+       
+    });
     // Keep Map centered on resize
     google.maps.event.addDomListener(window, "resize", function() {
         var center = map.getCenter();
@@ -48,6 +32,14 @@ function initMap() {
         map.setCenter(center); 
     });
     
+    var geocoder = new google.maps.Geocoder();
+
+    //run after user's location is determined
+    latlng.push(map.center.lat());
+    latlng.push(map.center.lng());
+    
+    predictWeather();
+
     //run if user taps submit
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
@@ -62,28 +54,26 @@ function initMap() {
 }
 
 
-
-
 function geocodeAddress(geocoder, resultsMap) {
-	latlng = [];	
+    latlng = [];    
     date = document.getElementById('dp').value;
     var address = document.getElementById('address').value;
     console.log(date);
-	
+    
     geocoder.geocode({'address': address}, function(results, status) {
-	    if (status === google.maps.GeocoderStatus.OK) {
-	        resultsMap.setCenter(results[0].geometry.location);
-	        latlng.push(results[0].geometry.location.lat());
-	        latlng.push(results[0].geometry.location.lng()); 
-	    } else {
-	       alert('Geocode was not successful for the following reason: ' + status);
-	      }
-		predictWeather();		
+        if (status === google.maps.GeocoderStatus.OK) {
+            resultsMap.setCenter(results[0].geometry.location);
+            latlng.push(results[0].geometry.location.lat());
+            latlng.push(results[0].geometry.location.lng()); 
+        } else {
+           alert('Geocode was not successful for the following reason: ' + status);
+          }
+        predictWeather();       
     });
 }
 
 // function getWeather(){
-// 	var apiKey = '8951bee95458c4ab8a6121ec2452207a';
+//  var apiKey = '8951bee95458c4ab8a6121ec2452207a';
 //     var url = 'https://api.forecast.io/forecast/';
 //     var lati = latlng[0];
 //     var longi = latlng[1];
@@ -122,7 +112,7 @@ function geocodeAddress(geocoder, resultsMap) {
 // }
 
 function predictWeather(){
-	var apiKey = '8951bee95458c4ab8a6121ec2452207a';
+    var apiKey = '8951bee95458c4ab8a6121ec2452207a';
     var url = 'https://api.forecast.io/forecast/';
     var lati = latlng[0];
     var longi = latlng[1];
@@ -172,9 +162,3 @@ function predictWeather(){
             $('#weather-current').html(currentContent);
     });
 }
-
-
-  
-
-
- 
