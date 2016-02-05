@@ -117,7 +117,7 @@ function predictWeather(){
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
               console.log(data);
-              weatherHeader += '<div class="six columns weather-deets"><h5>' + selectedDate.toDateString() +'</h5>';
+              weatherHeader += '<div class="twelve columns weather-deets"><h5>' + selectedDate.toDateString() +'</h5>';
               // return data;
               currentContent += '<div class="six columns blah">';
               currentContent += ' <h1 class="weather-current"><i class="wi wi-forecast-io-' + data.currently.icon + '"></i>' + Math.round(data.currently.temperature) + '&deg;</h1></div>';
