@@ -35,6 +35,7 @@ function initMap() {
     //run after user's location is determined
     latlng.push(map.center.lat());
     latlng.push(map.center.lng());
+    date = "";
     predictWeather();
 
     //run if user taps submit
