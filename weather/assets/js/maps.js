@@ -5,7 +5,7 @@ $(document).ready(function(){
     } else{
         alert('');
     }
-
+});
 var latlng;
 var date;
 
@@ -150,7 +150,6 @@ function predictWeather(){
             $('#weather-current').html(currentContent);
     });
 }
-});
 
 
   
