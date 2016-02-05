@@ -1,12 +1,13 @@
 "use strict";
 
-var latlng;
-var date; 
+// var latlng;
+// var date; 
 
 
 
 function initMap() {
     latlng = [];
+    date = "";
     if (navigator.geolocation) {
         console.log('Geolocation is supported!');
     }
@@ -32,10 +33,11 @@ function initMap() {
     });
     
     var geocoder = new google.maps.Geocoder();
+
     //run after user's location is determined
     latlng.push(map.center.lat());
     latlng.push(map.center.lng());
-    date = "";
+    
     predictWeather();
 
     //run if user taps submit
@@ -54,8 +56,8 @@ function initMap() {
 
 function geocodeAddress(geocoder, resultsMap) {
 	latlng = [];	
-    var address = document.getElementById('address').value;
     date = document.getElementById('dp').value;
+    var address = document.getElementById('address').value;
     console.log(date);
 	
     geocoder.geocode({'address': address}, function(results, status) {
