@@ -21,7 +21,6 @@ function successFunction(position) {
     latlng.push(position.coords.latitude);
     latlng.push(position.coords.longitude);
     
-    return latlng;
 }
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
