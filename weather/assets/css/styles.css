@@ -190,14 +190,12 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 #datepicker {
  color: white;
  margin-right: 10px;
+ font-size: 2.5rem;
 }
 #datepicker:hover {
  color: rgb(176, 224, 246);
 }
-.fa-calendar {
-  font-size: 2rem;
-  
-}
+
 
 .weather-selector {
   font-size: 1rem;
