@@ -5,7 +5,7 @@ var date;
 
 function initMap() {
     if('geolocation' in navigator){
-        var b =navigator.geolocation.getCurrentPosition();
+        navigator.geolocation.getCurrentPosition();
         console.log(position.coords.longitude);
     } else{
         alert('');
