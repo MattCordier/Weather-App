@@ -5,18 +5,11 @@ var date;
 
 function initMap() {
     if (navigator.geolocation) {
-        console.log('yes');
-        var startPos;
-        var geoSuccess = (function(position) {
-            startPos = position;
-   
-            console.log(startPos.coords.latitude);
-            console.log(startPos.coords.longitude);
-            navigator.geolocation.getCurrentPosition(geoSuccess);
-        }());
-    } else {
-        console.log('Geolocation is not supported for this Browser/OS version yet.');
-      }   
+  console.log('Geolocation is supported!');
+}
+else {
+  console.log('Geolocation is not supported for this Browser/OS version yet.');
+}
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
@@ -48,7 +41,16 @@ function initMap() {
     }
 })
 }
-
+window.onload = function() {
+  var startPos;
+  var geoSuccess = function(position) {
+    startPos = position;
+   
+    console.log(startPos.coords.latitude);
+  console.log(startPos.coords.longitude);
+  };
+  navigator.geolocation.getCurrentPosition(geoSuccess);
+};
 
 function geocodeAddress(geocoder, resultsMap) {
 	latlng = [];	
