@@ -120,7 +120,7 @@ function predictWeather(){
               weatherHeader += '<div class="twelve columns weather-header-col"><h5>' + selectedDate.toDateString() +'</h5></div>';
               
               currentContent += '<div class="six columns">';
-              currentContent += '<p class="weather-summary">' + data.currently.summary  + '</p>'; 
+              currentContent += '<p class="weather-summary">' + data.currently.summary  + '&nbsp;&nbsp;Feels like' + Math.round(data.currently.apparentTemperature) +'&deg;</p>'; 
               currentContent += '<h1 class="weather-current"><i class="wi wi-forecast-io-' + data.currently.icon + '"></i>' + Math.round(data.currently.temperature) + '&deg;</h1>';
               currentContent += '<p class="p-hilo"><span class="label-hilo">High: </span>' + Math.round(data.daily.data[0].temperatureMax) + '&deg;';
               currentContent += '<span class="label-hilo">&nbsp;&nbsp;&nbsp;Low: </span>' + Math.round(data.daily.data[0].temperatureMin) + '&deg;</p></div>';
@@ -133,7 +133,7 @@ function predictWeather(){
 
 
               currentContent += '<div class="six columns weather-deets">';
-              currentContent += '<p><span class="label">Percipitation: </span>' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</p>';
+              // currentContent += '<p><span class="label">Percipitation: </span>' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</p>';
               currentContent += '<p><span class="label">Humidity: </span>' + (Math.floor(data.currently.humidity * 100)) + '&#37;</p>';
               currentContent += '<p><span class="label">Wind: </span>' + (Math.floor(data.currently.windSpeed * 100)) + '&nbsp;mph</p></div>';
               currentContent += '<p><span class="label">Percipitation: </span>' + (Math.round(data.currently.pressure * 100)) + '&nbsp;mb;</p></div>';
