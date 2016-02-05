@@ -133,6 +133,10 @@ border: 5px solid rgba(0,0,0,.1);
 box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 
 }
+
+#weather-header {
+  text-align: center;
+}
 .weather-footer{
   height: 60px;
 position: absolute;
