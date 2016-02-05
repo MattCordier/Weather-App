@@ -200,6 +200,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 .weather-selector {
   font-size: 1rem;
 }
+
 input.weather-selector {
   background-color: transparent;
   color: white;
@@ -207,19 +208,15 @@ input.weather-selector {
 
 input::-webkit-input-placeholder {
   color: rgba(255, 255, 255,.3);
-  text-transform: uppercase;
 }
 input::-moz-placeholder {
   color: rgba(255, 255, 255,.3);
-  text-transform: uppercase;
 }
 input:-moz-placeholder {   /* Older versions of Firefox */
   color: rgba(255, 255, 255,.3);
-  text-transform: uppercase;
 }
 input:-ms-input-placeholder { 
   color: rgba(255, 255, 255,.3);
-  text-transform: uppercase;
 }
 button.weather-selector {
   color: rgba(255, 255, 255,.3);
@@ -228,6 +225,7 @@ button.weather-selector {
 
 button.weather-selector:hover {
   background-color: rgba(255, 255, 255, .3);
+  
 }
 
 #ui-datepicker-div{
