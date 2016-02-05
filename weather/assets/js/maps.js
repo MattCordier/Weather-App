@@ -1,11 +1,11 @@
 "use strict";
 $(document).ready(function(){
     if('geolocation' in navigator){
-        alert('poop');
+        
     } else{
-        alert('derp!');
+        alert('');
     }
-});
+
 var latlng;
 var date;
 
@@ -150,6 +150,7 @@ function predictWeather(){
             $('#weather-current').html(currentContent);
     });
 }
+});
 
 
   
