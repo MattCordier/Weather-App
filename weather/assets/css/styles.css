@@ -201,6 +201,10 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
   font-size: 1rem;
 }
 
+button.weather-selector {
+  padding: 0px 10px;
+}
+
 #ui-datepicker-div{
   
 }
