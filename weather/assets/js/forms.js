@@ -16,10 +16,13 @@ $(document).ready(function() {
     });
 
     $(function() {
-        $( "#datepicker" ).datepicker();
+        $("#datepicker").on('click', function(e){
+        e.preventDefault();
+        datepicker();
     });
 
 });
+}    
 
 
 
