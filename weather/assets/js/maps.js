@@ -2,32 +2,24 @@
 
 var latlng;
 var date; 
-var initialLocation;
-// var siberia = new google.maps.LatLng(60, 105);
-// var newyork = new google.maps.LatLng(40.69847032728747, -73.9514422416687);
-var browserSupportFlag =  new Boolean();
+
 
 
 function initMap() {
     latlng = [];
     date = "";
-    // Try W3C Geolocation (Preferred)
-  if(navigator.geolocation) {
-    browserSupportFlag = true;
-    navigator.geolocation.getCurrentPosition(function(position) {
-      initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-      map.setCenter(initialLocation);
-      console.log(map.setCenter(initialLocation));
-    }, function() {
-      handleNoGeolocation(browserSupportFlag);
-    });
-  }
+    if (navigator.geolocation) {
+        console.log('Geolocation is supported!');
+    }
+    else {
+        console.log('Geolocation is not supported for this Browser/OS version yet.');
+    }
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         zoomControl: false,
         streetViewControl: false,
-        // center: {lat: 43.0500, lng: -87.9500},
+        center: {lat: 43.0500, lng: -87.9500},
         scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
