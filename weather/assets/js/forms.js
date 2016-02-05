@@ -15,14 +15,13 @@ $(document).ready(function() {
         });
     });
 
-    
-    $("#datepicker").on('click', function(e){
-        e.preventDefault();
-        datepicker();
+    $(function() {
+        $( "#datepicker" ).datepicker({
+            showOn: "both"
+        });
     });
 
 });
-    
 
 
 
