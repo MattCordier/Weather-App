@@ -8,14 +8,9 @@ var date;
 function initMap() {
     latlng = [];
     date = "";
-    if (navigator.geolocation) {
-        console.log('Geolocation is supported!');
-    }
-    else {
-        console.log('Geolocation is not supported for this Browser/OS version yet.');
-    }
-    // Set up basic map view
-    var map = new google.maps.Map(document.getElementById('map'), {
+    var initialLocation;
+    var browserSupportFlag =  new Boolean();
+    var mapOptions = {
         zoom: 13,
         zoomControl: false,
         streetViewControl: false,
@@ -24,13 +19,20 @@ function initMap() {
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
        
-    });
-    // Keep Map centered on resize
-    google.maps.event.addDomListener(window, "resize", function() {
-        var center = map.getCenter();
-        google.maps.event.trigger(map, "resize");
-        map.setCenter(center); 
-    });
+    };
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+    if (navigator.geolocation) {
+        browserSupportFlag = true;
+        navigator.geolocation.getCurrentPosition(function(position) {
+            initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+            map.setCenter(initialLocation);
+        }
+    }
+    else {
+        console.log('Geolocation is not supported for this Browser/OS version yet.');
+    }
+    // Set up basic map view
     
     var geocoder = new google.maps.Geocoder();
 
@@ -40,6 +42,13 @@ function initMap() {
     
     predictWeather();
 
+    // Keep Map centered on resize
+    google.maps.event.addDomListener(window, "resize", function() {
+        var center = map.getCenter();
+        google.maps.event.trigger(map, "resize");
+        map.setCenter(center); 
+    });
+    
     //run if user taps submit
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
