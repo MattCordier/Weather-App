@@ -4,12 +4,12 @@ var latlng;
 var date;
 
 function initMap() {
-    if('geolocation' in navigator){
-        Navigator.geolocation;
-        console.log(Navigator.geolocation);
-    } else{
-        alert('');
-    }
+    if (navigator.geolocation) {
+  console.log('Geolocation is supported!');
+}
+else {
+  console.log('Geolocation is not supported for this Browser/OS version yet.');
+}
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
