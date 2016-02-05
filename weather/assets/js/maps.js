@@ -18,8 +18,8 @@ function initMap() {
 }
 
 function successFunction(position) {
-    latlng[0] = position.coords.latitude;
-    latlng[1] = position.coords.longitude;
+    latlng.push(position.coords.latitude);
+    latlng.push(position.coords.longitude);
     
     return latlng;
 }
