@@ -144,6 +144,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 }
 .weather-current {
   font-size: 7rem;
+  margin-bottom: 0px;
 }
 
 .wi {
@@ -152,11 +153,12 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
   line-height: 5rem;
 }
 .weather-summary {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .weather-deets {
- text-align: left;
+  text-align: left;
+  font-size: 2rem;
 }
 
 .wi-big{
