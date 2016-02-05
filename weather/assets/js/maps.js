@@ -38,8 +38,8 @@ function initMap() {
     var geocoder = new google.maps.Geocoder();
 
     //run after user's location is determined
-    latlng.push(position.coords.latitude);
-    latlng.push(position.coords.longitude);
+    latlng.push(initialLocation.lat);
+    latlng.push(initialLocation.lng);
     
     predictWeather();
 
