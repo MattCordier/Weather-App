@@ -5,7 +5,7 @@ var date;
 
 function initMap() {
     if('geolocation' in navigator){
-        alert('pppp');
+        alert('pppp' + Navigator.geolocation);
     } else{
         alert('');
     }
