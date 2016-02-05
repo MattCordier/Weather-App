@@ -21,8 +21,8 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-        
+        var start = navigator.geolocation.getCurrentPosition(showPosition);
+        map.setCenter(start);        
     }
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
