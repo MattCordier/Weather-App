@@ -26,7 +26,7 @@ body {
 
  h1 {
   display: inline-block;
-  line-height: 5rem;
+  line-height: 7rem;
 
  }
 
@@ -158,7 +158,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 .weather-summary {
   font-size: 1.2rem;
   margin-top: -5px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .weather-deets {
