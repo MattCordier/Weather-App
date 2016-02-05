@@ -17,6 +17,9 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body>
+        <form name="clock" onSubmit="0">
+<INPUT TYPE="text" NAME="face" SIZE=11 VALUE ="....Initializing....">
+</form>
 
             <div id="map">
             </div>
