@@ -12,9 +12,9 @@ if (navigator.geolocation) {
 function successFunction(position) {
     latlng[0] = position.coords.latitude;
     latlng[1] = position.coords.longitude;
-    console.log('Your latitude is :'+latlng[0]+' and longitude is '+latlng[1]);
+    
 }
-
+console.log('Your latitude is :'+latlng[0]+' and longitude is '+latlng[1]);
 
 function initMap() {
     // latlng = [];
