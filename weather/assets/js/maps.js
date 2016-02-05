@@ -1,7 +1,7 @@
 "use strict";
 $(document).ready(function(){
     if('geolocation' in navigator){
-        
+        alert('pppp');
     } else{
         alert('');
     }
