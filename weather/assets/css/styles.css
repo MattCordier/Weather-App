@@ -159,6 +159,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 .weather-deets {
   text-align: left;
   font-size: 1.5rem;
+  line-height: 1rem;
 }
 
 .wi-big{
