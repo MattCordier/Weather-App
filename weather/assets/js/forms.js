@@ -15,6 +15,12 @@ $(document).ready(function() {
         });
     });
 
+    $("#dp").datepicker({
+        onSelect: function(dateText, inst) {
+            alert(dateText);
+        },
+    });
+
     $("#datepicker").click(function() {
         $("#dp").datepicker("show");
     });
