@@ -1,15 +1,14 @@
 "use strict";
-$(document).ready(function(){
+
+var latlng;
+var date;
+
+function initMap() {
     if('geolocation' in navigator){
         alert('pppp');
     } else{
         alert('');
     }
-});
-var latlng;
-var date;
-
-function initMap() {
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
