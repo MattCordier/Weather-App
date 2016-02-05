@@ -6,9 +6,16 @@ var date;
 
 
 function initMap() {
-    
+    latlng = [];
     date = "";
-    var mapOptions = {
+    if (navigator.geolocation) {
+        console.log('Geolocation is supported!');
+    }
+    else {
+        console.log('Geolocation is not supported for this Browser/OS version yet.');
+    }
+    // Set up basic map view
+    var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         zoomControl: false,
         streetViewControl: false,
@@ -17,29 +24,7 @@ function initMap() {
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
        
-    };
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-    // if (navigator.geolocation) {
-    //     navigator.geolocation.getCurrentPosition();
-    //     mapOptions.center = {};
-    //     mapOptions.center.lat = 20;
-    //     mapOptions.center.lng = 90;
-    //     console.log(mapOptions);
-        
-    // }
-    // else {
-    //     console.log('Geolocation is not supported for this Browser/OS version yet.');
-    // }
-    // Set up basic map view
-    
-    var geocoder = new google.maps.Geocoder();
-
-    //run after user's location is determined
-    
-    
-    predictWeather();
-
+    });
     // Keep Map centered on resize
     google.maps.event.addDomListener(window, "resize", function() {
         var center = map.getCenter();
@@ -47,6 +32,14 @@ function initMap() {
         map.setCenter(center); 
     });
     
+    var geocoder = new google.maps.Geocoder();
+
+    //run after user's location is determined
+    latlng.push(map.center.lat());
+    latlng.push(map.center.lng());
+    
+    predictWeather();
+
     //run if user taps submit
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
@@ -58,15 +51,6 @@ function initMap() {
         geocodeAddress(geocoder, map);
     }
 })
-}
-
-function showPosition(position) {
-    latlng = [];
-    console.log("Latitude: " + position.coords.latitude + 
-    " Longitude: " + position.coords.longitude);
-    latlng.push(position.coords.latitude);
-    latlng.push(position.coords.longitude); 
-    return latlng;
 }
 
 
