@@ -120,7 +120,7 @@ function predictWeather(){
               weatherHeader += '<div class="twelve columns weather-header-col"><p class="p-date">' + selectedDate.toDateString() +'</p></div>';
               
               currentContent += '<div class="six columns">';
-              currentContent += '<p class="weather-summary">' + data.currently.summary  + '&nbsp;&nbsp;Feels like &bullet; ' + Math.round(data.currently.apparentTemperature) +'&deg;</p>'; 
+              currentContent += '<p class="weather-summary">' + data.currently.summary  + '&nbsp;&nbsp;&bullet;&nbsp;&nbsp;Feels like  ' + Math.round(data.currently.apparentTemperature) +'&deg;</p>'; 
               currentContent += '<h1 class="weather-current"><i class="wi wi-forecast-io-' + data.currently.icon + '"></i>' + Math.round(data.currently.temperature) + '&deg;</h1>';
               currentContent += '<p class="p-hilo"><span class="label-hilo">High: </span>' + Math.round(data.daily.data[0].temperatureMax) + '&deg;';
               currentContent += '<span class="label-hilo">&nbsp;&nbsp;&nbsp;Low: </span>' + Math.round(data.daily.data[0].temperatureMin) + '&deg;</p></div>';
