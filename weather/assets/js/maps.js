@@ -32,8 +32,8 @@ else {
     
     var geocoder = new google.maps.Geocoder();
     //run after user's location is determined
-    geocodeAddress(geocoder, map);
-    
+    predictWeather();
+
     //run if user taps submit
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
