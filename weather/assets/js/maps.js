@@ -8,16 +8,7 @@ var date;
 function initMap() {
     latlng = [];
     date = "";
-    var mapOptions = {
-        zoom: 13,
-        zoomControl: false,
-        streetViewControl: false,
-        center: {},
-        scrollwheel: false,
-        mapTypeControl: false,
-        mapTypeId: google.maps.MapTypeId.SATELLITE
-       
-    };
+    
     
 
     if (navigator.geolocation) {
@@ -30,6 +21,16 @@ function initMap() {
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
     }
+    var mapOptions = {
+        zoom: 13,
+        zoomControl: false,
+        streetViewControl: false,
+        center: {lat:position.coords.latitude, lng:position.coords.longitude},
+        scrollwheel: false,
+        mapTypeControl: false,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
+       
+    };
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
     // Set up basic map view
     
