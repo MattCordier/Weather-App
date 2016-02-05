@@ -1,4 +1,11 @@
 "use strict";
+$(document).ready(function(){
+    if('geolocation' in navigator){
+        alert('poop');
+    } else{
+        alert('derp!');
+    }
+}
 var latlng;
 var date;
 
