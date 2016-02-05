@@ -1,20 +1,11 @@
 "use strict";
 
 var latlng;
-var date;
-
-window.onload = function() {
-  var startPos;
-  var geoSuccess = function(position) {
-    startPos = position;
-   
-    console.log(startPos.coords.latitude);
-  console.log(startPos.coords.longitude);
-  };
-  navigator.geolocation.getCurrentPosition(geoSuccess);
+var date; 
 
 
-var initMap= function() {
+
+function initMap() {
     if (navigator.geolocation) {
   console.log('Geolocation is supported!');
 }
@@ -26,7 +17,7 @@ else {
         zoom: 13,
         zoomControl: false,
         streetViewControl: false,
-        center: {lat: startPos.coords.latitude, lng: startPos.coords.longitude},
+        center: {lat: 43.0500, lng: -87.9500},
         scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
@@ -40,6 +31,9 @@ else {
     });
     
     var geocoder = new google.maps.Geocoder();
+    //run after user's location is determined
+    geocodeAddress(geocoder, map);
+    
     //run if user taps submit
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
@@ -51,8 +45,7 @@ else {
         geocodeAddress(geocoder, map);
     }
 })
-};
-};
+}
 
 
 function geocodeAddress(geocoder, resultsMap) {
