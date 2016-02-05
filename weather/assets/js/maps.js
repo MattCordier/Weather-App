@@ -23,8 +23,8 @@ function initMap() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
         mapOptions.center = {};
-        map.center.lat = 20;
-        map.center.lng = 90;
+        mapOptions.center.lat = 20;
+        mapOptions.center.lng = 90;
         
     }
     else {
