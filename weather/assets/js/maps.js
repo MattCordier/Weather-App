@@ -6,7 +6,7 @@ var date;
 
 
 function initMap() {
-    latlng = [];
+    
     date = "";
     var mapOptions = {
         zoom: 13,
@@ -22,8 +22,7 @@ function initMap() {
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
-        latlng.push(position.coords.latitude);
-        latlng.push(position.coords.longitude);
+        
     }
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
@@ -58,8 +57,11 @@ function initMap() {
 }
 
 function showPosition(position) {
+    latlng = [];
     console.log("Latitude: " + position.coords.latitude + 
-    " Longitude: " + position.coords.longitude); 
+    " Longitude: " + position.coords.longitude);
+    latlng.push(position.coords.latitude);
+        latlng.push(position.coords.longitude); 
 }
 
 
