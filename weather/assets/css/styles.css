@@ -204,6 +204,23 @@ input.weather-selector {
   background-color: transparent;
   color: white;
 }
+
+input::-webkit-input-placeholder {
+  color: rgba(0,5,143,.5);
+  text-transform: uppercase;
+}
+input::-moz-placeholder {
+  color: rgba(0,5,143,.5);
+  text-transform: uppercase;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+  color: rgba(0,5,143,.5);
+  text-transform: uppercase;
+}
+input:-ms-input-placeholder { 
+  color: rgba(0,5,143,.5);
+  text-transform: uppercase;
+}
 button.weather-selector {
   color: white;
   padding: 0px 10px;
