@@ -6,8 +6,8 @@
 
 
 function initMap() {
-    latlng = [];
-    date = "";
+    var latlng = [];
+    var date = "";
     if (navigator.geolocation) {
         console.log('Geolocation is supported!');
     }
