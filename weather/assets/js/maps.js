@@ -14,7 +14,7 @@ window.onload = function() {
   navigator.geolocation.getCurrentPosition(geoSuccess);
 
 
-function initMap() {
+var initMap= function() {
     if (navigator.geolocation) {
   console.log('Geolocation is supported!');
 }
