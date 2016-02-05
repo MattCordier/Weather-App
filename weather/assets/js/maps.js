@@ -61,7 +61,8 @@ function showPosition(position) {
     console.log("Latitude: " + position.coords.latitude + 
     " Longitude: " + position.coords.longitude);
     latlng.push(position.coords.latitude);
-        latlng.push(position.coords.longitude); 
+    latlng.push(position.coords.longitude); 
+    return latlng;
 }
 
 
