@@ -109,7 +109,7 @@ WEATHER DISPLAY STYLES
 #app-title {
   display: inline-block;
   font-size: 3.25rem;
-  color: white;
+  color: white; 
 }
 #weather {
 position: absolute;
