@@ -196,8 +196,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 #main-footer {
   text-align: center;
   background-color: rgb(33, 33, 33);
-  color: rgb(50, 50, 50);
-  height: 20px;
+  height: 25px;
   position: absolute;
   left: 0;
   bottom: 0;
