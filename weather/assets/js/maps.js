@@ -1,13 +1,13 @@
 "use strict";
 
-// var latlng;
-// var date; 
+var latlng;
+var date; 
 
 
 
 function initMap() {
-    var latlng = [];
-    var date = "";
+    latlng = [];
+    date = "";
     if (navigator.geolocation) {
         console.log('Geolocation is supported!');
     }
