@@ -16,12 +16,11 @@ function initMap() {
     latlng.push(position.coords.longitude);
     });
     
-    console.log('Your latitude is :'+latlng[0]+' and longitude is '+latlng[1]);
 } else {
     alert('It seems like Geolocation, which is required for this page, is not enabled in your browser. Please use a browser which supports it.');
 }
 
-
+console.log('TESTER' +latlng);
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
