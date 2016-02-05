@@ -25,6 +25,7 @@ function initMap() {
         mapOptions.center = {};
         mapOptions.center.lat = 20;
         mapOptions.center.lng = 90;
+        console.log(mapOptions);
         
     }
     else {
