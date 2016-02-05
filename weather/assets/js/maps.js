@@ -54,12 +54,9 @@ function geocodeAddress(geocoder, resultsMap) {
 	           alert('Geocode was not successful for the following reason: ' + status);
 	      }
 
-	    if (date === ""){
-            date = 	
-			getWeather();  
-		} else if (date !== ""){
+	    
 			predictWeather();
-		}
+		
     });
 }
 
@@ -123,7 +120,7 @@ function predictWeather(){
     
     //convert selectedDate to Unix code
     
-    
+    console.log(selectedDate);
     console.log(time);
     var data;
 
