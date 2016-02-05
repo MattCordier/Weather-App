@@ -7,13 +7,13 @@ function initMap() {
     if (navigator.geolocation) {
         console.log('yes');
         var startPos;
-        var geoSuccess = function(position) {
+        var geoSuccess = (function(position) {
             startPos = position;
    
             console.log(startPos.coords.latitude);
             console.log(startPos.coords.longitude);
             navigator.geolocation.getCurrentPosition(geoSuccess);
-        };
+        }());
     } else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
       }   
