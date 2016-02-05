@@ -117,15 +117,14 @@ function predictWeather(){
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
               console.log(data);
               // return data;
-              currentContent += '<div class="six columns">';
-              currentContent += '<i class="wi wi-forecast-io-' + data.currently.icon + '"></i>'
-              currentContent += ' <h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1></div>';
+              currentContent += '<div class="six columns blah">';
+              currentContent += ' <h1 class="weather-current"><i class="wi wi-forecast-io-' + data.currently.icon + '"></i>' + Math.round(data.currently.temperature) + '&deg;</h1></div>';
 
               currentContent += '<div class="six columns"><h5>' + selectedDate.toDateString() +'</h5>';
               
-              currentContent += '<div>High: ' + data.daily.data[0].temperatureMax + '&deg;</div>';
-              currentContent += '<div>Low: ' + data.daily.data[0].temperatureMin + '&deg;</div>';
-              currentContent += '<div>Percipitation: ' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</div></div>';
+              currentContent += '<p> High: ' + data.daily.data[0].temperatureMax + '&deg;</p>';
+              currentContent += '<p> Low: ' + data.daily.data[0].temperatureMin + '&deg;</p>';
+              currentContent += '<p> Percipitation: ' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</p></div>';
             $('#weather-current').html(currentContent);
     });
 }
