@@ -46,7 +46,7 @@
             
                 <div class="row weather-footer">
                     <div class="twelve columns">  
-                        <i id="datepicker" class="fa fa-calendar"></i>
+                         <a href="#" id="datepicker" ><i class="fa fa-calendar"></i></a>
                         <input id="address" class="location-search" type="text" name="#"  placeholder="Where are you going?" >
                         <button id="submit" class="btn btn-default" type="button">Go!</button>
 
