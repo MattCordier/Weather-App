@@ -12,6 +12,7 @@ if (navigator.geolocation) {
 function successFunction(position) {
     latlng[0] = position.coords.latitude;
     latlng[1] = position.coords.longitude;
+    return latlng;
     
 }
 console.log('Your latitude is :'+latlng[0]+' and longitude is '+latlng[1]);
