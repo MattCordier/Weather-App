@@ -22,6 +22,7 @@ function initMap() {
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
+        console.log('MY TEST' +showPosition.position.coords.latitude);
         mapOptions.center = {};
         mapOptions.center.lat = 20;
         mapOptions.center.lng = 90;
@@ -38,7 +39,7 @@ function initMap() {
     //run after user's location is determined
     
     
-    // predictWeather();
+    predictWeather();
 
     // Keep Map centered on resize
     google.maps.event.addDomListener(window, "resize", function() {
