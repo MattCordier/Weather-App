@@ -173,6 +173,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 }
 .p-hilo {
   font-size: 1rem;
+  margin-top: -20px;
 }
 
 .label-hilo {
