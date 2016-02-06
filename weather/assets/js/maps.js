@@ -64,9 +64,9 @@ function success(position) {
                               state = addr.long_name + ", ";
                           else if (addr.types[0] == ['locality'])       // City
                               city = addr.long_name + ", ";
-                      }
+                      }}
 
-    $('#app-title').html('Hey!');
+    $('#app-title').html(city);
     predictWeather();
 
     //run if user taps submit
