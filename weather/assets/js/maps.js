@@ -77,45 +77,6 @@ function geocodeAddress(geocoder, resultsMap) {
     });
 }
 
-// function getWeather(){
-//  var apiKey = '8951bee95458c4ab8a6121ec2452207a';
-//     var url = 'https://api.forecast.io/forecast/';
-//     var lati = latlng[0];
-//     var longi = latlng[1];
-//     var currentContent = "";
-//     var hourlyContent = "";
-//     var dailyContent = "";
-//     var data;
-
-//     $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
-//               console.log(data);
-//               currentContent += '<div class="six columns">';
-//               currentContent += '<h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1></div>';
-//               currentContent += '<div class="six columns"><p> High: ' + data.daily.data[0].temperatureMax + '&deg;</p>';
-//               currentContent += '<p> Low: ' + data.daily.data[0].temperatureMin + '&deg;</p>';
-//               currentContent += '<p> Percipitation: ' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</p></div>';
-//             $('#weather-current').html(currentContent);
-                
-
-
-//                 // for (var i = 0; i < data.hourly.data.length; i++) {
-//                 //     console.log(i);
-//                 //     hourlyContent += '<h2>Temp: </h2>';
-//                 //     hourlyContent += '<span>' + Math.round(data.hourly.data[i].temperature) + '</span>';
-//                 //     hourlyContent += '<br/>';
-//                 // };
-//             $('#weather-hourly').html(hourlyContent);
-
-//                 // for (var i = 0; i < data.daily.data.length; i++) {
-//                 //     console.log("test " + dailyContent);
-//                 //      dailyContent += '<span>' + data.daily.data[i].icon + '</span>';
-//                 // }
-//             $('#weather-outlook').html(dailyContent);
-            
-
-//     });
-// }
-
 function predictWeather(){
     var apiKey = '8951bee95458c4ab8a6121ec2452207a';
     var url = 'https://api.forecast.io/forecast/';
