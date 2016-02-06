@@ -89,14 +89,6 @@ function geocodeAddress(geocoder, resultsMap) {
                           // check if this entry in address_components has a type of country
                           if (addr.types[0] == 'country')
                               country = addr.long_name;
-                          else if (addr.types[0] == 'street_address') // address 1
-                              address = address + addr.long_name;
-                          else if (addr.types[0] == 'establishment')
-                              address = address + addr.long_name;
-                          else if (addr.types[0] == 'route')  // address 2
-                              address = address + addr.long_name;
-                          else if (addr.types[0] == 'postal_code')       // Zip
-                              zip = addr.short_name;
                           else if (addr.types[0] == ['administrative_area_level_1'])       // State
                               state = addr.long_name;
                           else if (addr.types[0] == ['locality'])       // City
