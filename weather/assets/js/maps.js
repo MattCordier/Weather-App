@@ -63,6 +63,7 @@ function geocodeAddress(geocoder, resultsMap) {
     latlng = [];    
     date = document.getElementById('dp').value;
     var address = document.getElementById('address').value;
+    $('#alert').hide();
     console.log(date);
     
     geocoder.geocode({'address': address}, function(results, status) {
@@ -71,7 +72,7 @@ function geocodeAddress(geocoder, resultsMap) {
             latlng.push(results[0].geometry.location.lat());
             latlng.push(results[0].geometry.location.lng()); 
         } else {
-           $('#alert').html('please enter a location');
+           $('#alert').show().html('please enter a location');
            // 'Geocode was not successful for the following reason: ' + status
           }
         predictWeather();       
