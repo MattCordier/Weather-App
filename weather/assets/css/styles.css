@@ -242,7 +242,7 @@ button.weather-selector:hover {
   border-radius: 5px;
 }
 
-.pac-item {
+.pac-item-query {
   color: white;
 }
 
