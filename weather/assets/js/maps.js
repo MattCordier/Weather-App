@@ -21,14 +21,14 @@ function success(position) {
 function initMap() {
     // latlng = [];
     date = "";
-    var coords = new google.maps.LatLng(latlng[0], latlng[1]);
+   
     console.log(coords);
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         zoomControl: false,
         streetViewControl: false,
-        center: coords,
+        center: {lat: latlng[0], lng: latlng[1]},
         scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
