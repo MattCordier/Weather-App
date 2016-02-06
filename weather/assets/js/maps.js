@@ -34,22 +34,23 @@ function success(position) {
 
     //Autocomplete address input
     var input = (document.getElementById('address'));
-
     var autocomplete = new google.maps.places.Autocomplete(input);
         autocomplete.bindTo('bounds', map);
-    // Keep Map centered on resize
+
+
+    // Keep Map centered on window resize
     google.maps.event.addDomListener(window, "resize", function() {
         var center = map.getCenter();
         google.maps.event.trigger(map, "resize");
         map.setCenter(center); 
     });
     
-    var geocoder = new google.maps.Geocoder();
+    // var geocoder = new google.maps.Geocoder();
 
     //run after user's location is determined
     latlng.push(map.center.lat());
     latlng.push(map.center.lng());
-    
+
 
     $('#app-title').html('Hey!');
     predictWeather();
