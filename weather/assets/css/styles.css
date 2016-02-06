@@ -264,7 +264,7 @@ button.weather-selector:hover {
   text-align: center;
   background-color: rgb(33, 33, 33);
   height: 30px;
-  position: absolute;
+  /*position: absolute;*/
   left: 0;
   bottom: 0;
   width: 100%;
