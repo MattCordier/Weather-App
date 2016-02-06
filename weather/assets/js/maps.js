@@ -48,7 +48,7 @@ function success(position) {
     //run after user's location is determined
     latlng.push(map.center.lat());
     latlng.push(map.center.lng());
-    
+    $('#app-title').html('Hey!');
     predictWeather();
 
     //run if user taps submit
