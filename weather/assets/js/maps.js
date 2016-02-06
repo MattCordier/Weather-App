@@ -2,7 +2,7 @@
 
 var latlng = [];
 var date; 
-window.onload = function(){
+
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(success);
 } else {
@@ -11,15 +11,11 @@ if (navigator.geolocation) {
 
 
 function success(position) {
-     latlng.push(position.coords.latitude);
-     latlng.push(position.coords.longitude);
-     console.log(latlng);
-}
-};
+     var  lat  = position.coords.latitude;
+     var  lng =  position.coords.longitude;
+     var  myLocation =   new google.maps.LatLng(lat, lng);
 
-
-function initMap() {
-    // latlng = [];
+    latlng = [];
     date = "";
    
    
@@ -28,7 +24,7 @@ function initMap() {
         zoom: 13,
         zoomControl: false,
         streetViewControl: false,
-        center: {lat: 43, lng: -89},
+        center: new google.maps.LatLng(myLocation.lat(),myLocation.lng()),
         scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
@@ -58,8 +54,8 @@ function initMap() {
     if (event.which == 13) {
         event.preventDefault();
         geocodeAddress(geocoder, map);
-    }
-})
+    
+    })
 }
 
 
