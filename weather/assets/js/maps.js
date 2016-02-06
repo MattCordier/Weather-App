@@ -102,6 +102,7 @@ function geocodeAddress(geocoder, resultsMap) {
                           else if (addr.types[0] == ['locality'])       // City
                               city = addr.long_name;
                       }
+                      
                       $('#app-title').html(city + " " + state);
 
         } else {

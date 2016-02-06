@@ -112,7 +112,8 @@ WEATHER DISPLAY STYLES
 
 #app-title {
   display: inline-block;
-  font-size: 3.25rem;
+  font-size: 2rem;
+  font-weight: 700;
   color: white; 
 }
 #weather {
