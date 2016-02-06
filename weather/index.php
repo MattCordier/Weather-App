@@ -70,6 +70,6 @@
         <script src="assets/js/maps.js"></script>
         <script type="text/JavaScript" src="assets/js/sha512.js"></script> 
         <script type="text/JavaScript" src="assets/js/forms.js"></script> 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&callback=initMap"></script>   
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&libraries=places"></script>   
     </body>
 </html>
