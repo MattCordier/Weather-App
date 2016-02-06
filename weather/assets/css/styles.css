@@ -245,6 +245,9 @@ button.weather-selector:hover {
 .pac-item-query {
   color: white;
 }
+.pac-item:hover {
+  background-color: rgba(0, 0, 0, .9);
+}
 
 #ui-datepicker-div{
   
