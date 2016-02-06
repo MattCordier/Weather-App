@@ -9,7 +9,6 @@ if (navigator.geolocation) {
   error('Geo Location is not supported');
 }
 
-navigator.geolocation.getCurrentPosition(success);
 
 function success(position) {
      latlng.push(position.coords.latitude);
