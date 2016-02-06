@@ -90,7 +90,7 @@ function geocodeAddress(geocoder, resultsMap) {
                           if (addr.types[0] == 'country')
                               country = addr.long_name;
                           else if (addr.types[0] == ['administrative_area_level_1'])       // State
-                              state = addr.long_name;
+                              state = addr.long_name + ",";
                           else if (addr.types[0] == ['locality'])       // City
                               city = addr.long_name;
                       }
