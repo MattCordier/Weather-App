@@ -45,7 +45,7 @@ function success(position) {
         map.setCenter(center); 
     });
     
-    // var geocoder = new google.maps.Geocoder();
+    var geocoder = new google.maps.Geocoder();
 
     //run after user's location is determined
     latlng.push(map.center.lat());
