@@ -13,11 +13,11 @@ function success(pos) {
   latlng.push(crd.latitude);
   latlng.push(crd.longitude);
   console.log(latlng);
-};
+}
 
 function error(err) {
   console.warn('ERROR(' + err.code + '): ' + err.message);
-};
+}
 
 if (navigator.geolocation) {
         console.log('Geolocation is supported!');
