@@ -157,8 +157,11 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 
 .wi {
   font-size: 4rem;
-  margin-right: 10px;
   line-height: 5rem;
+}
+
+.wi-big{
+  font-size: 7.75rem;
 }
 .weather-summary {
   font-size: 1.2rem;
@@ -192,10 +195,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
   font-weight: 400;
 }
 
-.wi-big{
-  font-size: 7.75rem;
-  margin-top: 10px;
-}
+
 
 #datepicker {
  color: white;
