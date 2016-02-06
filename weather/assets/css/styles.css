@@ -242,6 +242,10 @@ button.weather-selector:hover {
   border-radius: 5px;
 }
 
+.pac-item {
+  color: white;
+}
+
 #ui-datepicker-div{
   
 }
