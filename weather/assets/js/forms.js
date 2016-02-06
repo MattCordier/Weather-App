@@ -28,9 +28,9 @@ $(document).ready(function() {
     $('#address[type=text]').focus(function(){
         $(this).val('');
     }).blur(function() {
-      var el = $(this);
-       if(el.val() == '')
-             el.val(el.attr('title'));
+      // var el = $(this);
+      //  if(el.val() == '')
+      //        el.val(el.attr('title'));
       });
 
 
