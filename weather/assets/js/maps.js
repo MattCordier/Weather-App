@@ -12,8 +12,8 @@ if (navigator.geolocation) {
 navigator.geolocation.getCurrentPosition(success);
 
 function success(position) {
-     var lat = position.coords.latitude;
-     var long = position.coords.longitude;
+     latlng.push(position.coords.latitude);
+     latlng.push(position.coords.longitude);
 }
 
 
@@ -21,7 +21,7 @@ function success(position) {
 function initMap() {
     // latlng = [];
     date = "";
-    var coords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    var coords = new google.maps.LatLng(latlng[0], latlng[1]);
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
