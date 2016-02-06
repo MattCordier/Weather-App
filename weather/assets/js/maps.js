@@ -103,7 +103,7 @@ function geocodeAddress(geocoder, resultsMap) {
                               city = addr.long_name;
                       }
                       
-                      $('#app-title').html(city + " " + state);
+                      $('#app-title').html(city + ", " + state + " " + country);
 
         } else {
            $('#alert').show().html('please enter a location');
