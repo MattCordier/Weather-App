@@ -21,7 +21,7 @@ function error(err) {
 
 if (navigator.geolocation) {
         console.log('Geolocation is supported!');
-        navigator.geolocation.getCurrentPostion(success, error);
+        navigator.geolocation.getCurrentPostion(success(), error());
         
     }
     else {
