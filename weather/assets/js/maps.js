@@ -140,7 +140,7 @@ function predictWeather(){
               // CONTENT FOR LEFT DIV, OVERVIEW
               // 
               currentContent += '<div class="six columns">';
-              currentContent += '<i class="wi wi-forecast-io-' + data.currently.icon + '" title="'+ data.currently.icon + '"></i>'
+              currentContent += '<i class="wi wi-forecast-io-' + data.currently.icon + ' wi-big" title="'+ data.currently.icon + '"></i>'
               currentContent += '<p class="weather-summary">' + data.currently.summary  + '&nbsp;&nbsp;|&nbsp;&nbsp;Feels like  ' + Math.round(data.currently.apparentTemperature) +'&deg;</p>'; 
               currentContent += '<h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1>';
               currentContent += '<p class="p-hilo"><span class="label-hilo">High: </span>' + Math.round(data.daily.data[0].temperatureMax) + '&deg;';
