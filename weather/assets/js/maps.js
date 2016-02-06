@@ -15,7 +15,7 @@ function success(position) {
      latlng.push(position.coords.longitude);
      console.log(latlng);
 }
-
+};
 
 
 function initMap() {
@@ -171,4 +171,3 @@ function predictWeather(){
             $('#weather-current').html(currentContent);
     });
 }
-};
