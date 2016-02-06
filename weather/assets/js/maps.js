@@ -2,7 +2,7 @@
 
 var latlng = [];
 var date; 
-
+window.onload = function(){
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(success);
 } else {
@@ -171,3 +171,4 @@ function predictWeather(){
             $('#weather-current').html(currentContent);
     });
 }
+};
