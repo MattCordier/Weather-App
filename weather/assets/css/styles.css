@@ -236,9 +236,9 @@ button.weather-selector:hover {
 }
 
 .pac-container {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .7);
   color: white;
-  border: 1px solid orange;
+  border: 1px solid rgb(176, 224, 246);
   border-radius: 5px;
 }
 
