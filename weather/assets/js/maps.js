@@ -49,24 +49,9 @@ function success(position) {
     //run after user's location is determined
     latlng.push(map.center.lat());
     latlng.push(map.center.lng());
-    if (results[0]) {
+    
 
-                      var address = "", city = "", state = "", zip = "", country = "", formattedAddress = "";
-                      var lat;
-                      var lng;
-
-                      for (var i = 0; i < results[0].address_components.length; i++) {
-                          var addr = results[0].address_components[i];
-                          // check if this entry in address_components has a type of country
-                          if (addr.types[0] == 'country')
-                              country = addr.long_name;
-                          else if (addr.types[0] == ['administrative_area_level_1'])       // State
-                              state = addr.long_name + ", ";
-                          else if (addr.types[0] == ['locality'])       // City
-                              city = addr.long_name + ", ";
-                      }}
-
-    $('#app-title').html(city);
+    $('#app-title').html('Hey!');
     predictWeather();
 
     //run if user taps submit
