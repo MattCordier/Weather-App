@@ -30,6 +30,12 @@ function success(position) {
         mapTypeId: google.maps.MapTypeId.SATELLITE
        
     });
+
+    //Autocomplete address input
+    var input = (document.getElementById('address'));
+
+    var autocomplete = new google.maps.places.Autocomplete(input);
+        autocomplete.bindTo('bounds', map);
     // Keep Map centered on resize
     google.maps.event.addDomListener(window, "resize", function() {
         var center = map.getCenter();
