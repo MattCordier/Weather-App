@@ -197,6 +197,10 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
  color: rgb(176, 224, 246);
 }
 
+#alert {
+  font-size: 1rem;
+  color: orange;
+}
 
 .weather-selector {
   font-size: 1rem;
