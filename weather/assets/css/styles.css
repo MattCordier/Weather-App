@@ -140,7 +140,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 }
 .weather-header-col {
   text-align: center;
-  margin: -10px 0px 15px 0px;
+  margin: -10px 0px 5px 0px;
 }
 .weather-footer{
   height: 60px;
