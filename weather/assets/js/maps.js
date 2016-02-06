@@ -71,7 +71,7 @@ function geocodeAddress(geocoder, resultsMap) {
             latlng.push(results[0].geometry.location.lat());
             latlng.push(results[0].geometry.location.lng()); 
         } else {
-           $('#alert').hide().html('please enter a location');
+           $('#alert').html('please enter a location');
            // 'Geocode was not successful for the following reason: ' + status
           }
         predictWeather();       
