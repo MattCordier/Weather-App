@@ -43,9 +43,9 @@
             
                 </div> -->
             
-            
+            <div id="alert"></div>
                 <div class="row weather-footer">
-                    <div id="alert"></div>
+                    
                     <div class="twelve columns"> 
 
                          <a href="#" id="datepicker" ><i class="fa fa-calendar"></i></a><input type="hidden" id="dp" />
