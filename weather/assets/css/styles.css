@@ -237,6 +237,9 @@ button.weather-selector:hover {
 
 .pac-container {
   background-color: rgba(0, 0, 0, .5);
+  color: white;
+  border: 1px solid orange;
+  border-radius: 5px;
 }
 
 #ui-datepicker-div{
