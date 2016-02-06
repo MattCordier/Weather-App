@@ -176,7 +176,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 }
 
 .weather-deets-summary {
-  text-align: center;
+  text-align: left;
   font-size: 1.2rem;
   line-height: 1.5rem;
   padding-top: 35px;
