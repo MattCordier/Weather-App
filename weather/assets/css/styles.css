@@ -165,15 +165,18 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
   margin-bottom: 10px;
 }
 
-.weather-deets, .weather-deets-summary {
+.weather-deets {
   text-align: left;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  padding-top: 32px;
+  padding-top: 10px;
 }
 
 .weather-deets-summary {
   text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding-top: 35px;
 }
 .p-hilo {
   font-size: 1rem;
