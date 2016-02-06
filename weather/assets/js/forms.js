@@ -26,11 +26,7 @@ $(document).ready(function() {
     });
 
     $('#address[type=text]').focus(function(){
-        if ($(this).val === "Select a destination"){
-            $(this).val('');
-        } else {
-            
-        }
+        $(this).val('');
     }).blur(function() {
       var el = $(this);
        if(el.val() == '')
