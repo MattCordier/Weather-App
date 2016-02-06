@@ -27,10 +27,10 @@ $(document).ready(function() {
 
     $('#address[type=text]').focus(function(){
         $(this).val('');
-    });
-     $('#address[type=text]').blur(function() {
-      $(this).val('defaultText');
-      echo 
+    }).blur(function() {
+      var el = $(this);
+       if(el.val() == '')
+             el.val(el.attr('title'));
       });
 
 
