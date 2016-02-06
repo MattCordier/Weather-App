@@ -10,7 +10,8 @@ function initMap() {
     date = "";
     if (navigator.geolocation) {
         console.log('Geolocation is supported!');
-        console.log(navigator);
+        var b = navigator.geolocation.getCurrentPostion();
+        console.log(b);
     }
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
