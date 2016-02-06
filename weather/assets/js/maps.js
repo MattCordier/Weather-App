@@ -67,11 +67,12 @@ function geocodeAddress(geocoder, resultsMap) {
     
     geocoder.geocode({'address': address}, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
+            $('#alert').hide();
             resultsMap.setCenter(results[0].geometry.location);
             latlng.push(results[0].geometry.location.lat());
             latlng.push(results[0].geometry.location.lng()); 
         } else {
-           $('#alert').html('please enter a location');
+           $('#alert').hide().html('please enter a location');
            // 'Geocode was not successful for the following reason: ' + status
           }
         predictWeather();       
