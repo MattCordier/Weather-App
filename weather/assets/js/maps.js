@@ -28,7 +28,7 @@ function initMap() {
         zoom: 13,
         zoomControl: false,
         streetViewControl: false,
-        center: {lat: latlng[0], lng: latlng[1]},
+        center: {lat: 90, lng: 76},
         scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
