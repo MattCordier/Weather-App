@@ -194,7 +194,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
  font-size: 2rem;
 }
 #datepicker:hover {
- color: rgb(176, 224, 246);
+ color: #009be8;
 }
 
 #alert {
@@ -238,7 +238,7 @@ button.weather-selector:hover {
 .pac-container {
   background-color: rgba(0, 0, 0, .7);
   color: white;
-  border: 1px solid rgb(176, 224, 246);
+  border: 1px solid #009be8;
   border-radius: 5px;
 }
 
