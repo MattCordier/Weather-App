@@ -25,9 +25,14 @@ $(document).ready(function() {
         $("#dp").datepicker("show");
     });
 
-    // $('#address[type=text]').focus(function(){
-    //     $(this).val('');
-    // });
+    $('#address[type=text]').focus(function(){
+        $(this).val('');
+    });
+     $('#address[type=text]').blur(function() {
+      $(this).val('defaultText');
+      echo 
+      });
+
 
 });
 
