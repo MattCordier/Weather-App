@@ -16,12 +16,12 @@ function success(position) {
      var long = position.coords.longitude;
 }
 
-var coords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
 
 function initMap() {
     // latlng = [];
     date = "";
-    
+    var coords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
