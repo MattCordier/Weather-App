@@ -55,7 +55,7 @@ function success(position) {
         event.preventDefault();
         geocodeAddress(geocoder, map);
     
-    })
+    }
 }
 
 
