@@ -77,6 +77,7 @@ function geocodeAddress(geocoder, resultsMap) {
             resultsMap.setCenter(results[0].geometry.location);
             latlng.push(results[0].geometry.location.lat());
             latlng.push(results[0].geometry.location.lng());
+
             if (results[0]) {
 
                       var address = "", city = "", state = "", zip = "", country = "", formattedAddress = "";
@@ -107,6 +108,7 @@ function geocodeAddress(geocoder, resultsMap) {
            $('#alert').show().html('please enter a location');
            // 'Geocode was not successful for the following reason: ' + status
           }
+        }  
         predictWeather();       
     });
 }
