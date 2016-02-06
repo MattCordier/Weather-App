@@ -3,13 +3,16 @@
 var latlng;
 var date; 
 
-
+function showPosition(position){
+    console.log(position.coords.latitude);
+}
 
 function initMap() {
     latlng = [];
     date = "";
     if (navigator.geolocation) {
         console.log('Geolocation is supported!');
+        showPosition();
     }
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
