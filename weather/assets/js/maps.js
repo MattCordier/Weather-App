@@ -51,13 +51,13 @@ function success(position) {
     });
     //run if user hits enter
     $("#address").keypress(function(event) {
-    if (event.which == 13) {
-        event.preventDefault();
-        geocodeAddress(geocoder, map);
+        if (event.which == 13) {
+            event.preventDefault();
+            geocodeAddress(geocoder, map);
     
-    }
+        }
+    });
 }
-
 
 function geocodeAddress(geocoder, resultsMap) {
     latlng = [];    
