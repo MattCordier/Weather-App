@@ -25,13 +25,13 @@ $(document).ready(function() {
         $("#dp").datepicker("show");
     });
 
-    $('#address[type=text]').focus(function(){
-        $(this).val('');
-    }).blur(function() {
-      // var el = $(this);
-      //  if(el.val() == '')
-      //        el.val(el.attr('title'));
-      });
+    // $('#address[type=text]').focus(function(){
+    //     $(this).val('');
+    // }).blur(function() {
+    //   // var el = $(this);
+    //   //  if(el.val() == '')
+    //   //        el.val(el.attr('title'));
+    //   });
 
 
 });
