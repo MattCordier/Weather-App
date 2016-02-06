@@ -1,21 +1,38 @@
 "use strict";
 
-var latlng;
+var latlng = [];
 var date; 
 
+function success(pos) {
+  var crd = pos.coords;
 
+  console.log('Your current position is:');
+  console.log('Latitude : ' + crd.latitude);
+  console.log('Longitude: ' + crd.longitude);
+  console.log('More or less ' + crd.accuracy + ' meters.');
+  latlng.push(crd.latitude);
+  latlng.push(crd.longitude);
+  console.log(latlng);
+};
 
-function initMap() {
-    latlng = [];
-    date = "";
-    if (navigator.geolocation) {
+function error(err) {
+  console.warn('ERROR(' + err.code + '): ' + err.message);
+};
+
+if (navigator.geolocation) {
         console.log('Geolocation is supported!');
-        var b = navigator.geolocation.getCurrentPostion();
-        console.log(b);
+        navigator.geolocation.getCurrentPostion(success, error);
+        
     }
     else {
         console.log('Geolocation is not supported for this Browser/OS version yet.');
     }
+
+
+function initMap() {
+    // latlng = [];
+    date = "";
+    
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
