@@ -22,6 +22,7 @@ function initMap() {
     // latlng = [];
     date = "";
     var coords = new google.maps.LatLng(latlng[0], latlng[1]);
+    console.log(coords);
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
