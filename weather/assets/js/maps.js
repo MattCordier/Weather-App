@@ -14,6 +14,7 @@ navigator.geolocation.getCurrentPosition(success);
 function success(position) {
      latlng.push(position.coords.latitude);
      latlng.push(position.coords.longitude);
+     console.log(latlng);
 }
 
 
