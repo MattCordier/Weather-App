@@ -4,12 +4,12 @@ var latlng = [];
 var date; 
 
 function success(pos) {
-  var crd = pos.coords;
+  // var crd = pos.coords;
 
   console.log('Your current position is:');
-  console.log('Latitude : ' + crd.latitude);
-  console.log('Longitude: ' + crd.longitude);
-  console.log('More or less ' + crd.accuracy + ' meters.');
+  console.log('Latitude : ' + pos.coords.latitude);
+  console.log('Longitude: ' + pos.coords.longitude);
+  console.log('More or less ' + pos.coords.accuracy + ' meters.');
   latlng.push(crd.latitude);
   latlng.push(crd.longitude);
   console.log(latlng);
