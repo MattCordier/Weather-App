@@ -32,11 +32,16 @@ function success(position) {
        
     });
 
+    var request = {
+      location: {lat: myLocation.lat(),lng: myLocation.lng()},
+      radius: 10
+    };
+
     var service = new google.maps.places.PlacesService(map);
 
    service.getDetails({placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'}, function(place, status){
       if (status === google.maps.places.PlacesServiceStatus.OK){
-        console.log(place);
+        console.log(place.place_id);
         $('#app-title').html(place.address_components[5].long_name);
       }
    });
