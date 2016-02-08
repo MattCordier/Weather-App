@@ -33,6 +33,7 @@ function success(position) {
     });
 
     var service = new google.maps.places.PlacesService(map);
+    console.log(service);
 
    service.getDetails({placeId: service.place_id}, function(place, status){
       if (status === google.maps.places.PlacesServiceStatus.OK){
