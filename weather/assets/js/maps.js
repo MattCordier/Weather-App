@@ -90,12 +90,13 @@ function geocodeAddress(geocoder, resultsMap) {
     var address = document.getElementById('address').value;
     $('#alert').hide();
     console.log(date);
+    latlng.push(results[0].geometry.location.lat());
+            latlng.push(results[0].geometry.location.lng());
     
     geocoder.geocode({'address': address}, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
             resultsMap.setCenter(results[0].geometry.location);
-            latlng.push(results[0].geometry.location.lat());
-            latlng.push(results[0].geometry.location.lng());
+            
 
             if (results[0]) {
 
