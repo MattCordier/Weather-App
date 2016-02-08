@@ -89,7 +89,7 @@ function geocodeAddress(geocoder, resultsMap) {
     date = document.getElementById('dp').value;
     var address = document.getElementById('address').value;
     $('#alert').hide();
-    console.log(date);
+    console.log(address);
     
     geocoder.geocode({'address': address}, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
