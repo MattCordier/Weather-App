@@ -51,7 +51,10 @@ function success(position) {
         });
         console.log(placeId);
         $('#app-title').html(results[0].place_id);
-      };
+      } else {
+          $('#app-title').html('boo');
+        }
+      ;
     }  
 
    // service.getDetails({placeId: service.place_ids}, function(place, status){
