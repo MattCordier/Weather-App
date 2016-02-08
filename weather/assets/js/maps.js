@@ -6,7 +6,7 @@ var date;
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(success);
 } else {
-    alert("Enable location services.")
+    alert("Enable location services.");
   error('Geo Location is not supported');
 }
 
