@@ -40,17 +40,17 @@ function success(position) {
     console.log(service);
 
     function callback(results, status) {
-  if (status == google.maps.places.PlacesServiceStatus.OK) {
-    var marker = new google.maps.Marker({
-      map: map,
-      place: {
-        placeId: results[0].place_id,
-        location: results[0].geometry.location
-      }
-
-    });
-    console.log(placeId);
-  }
+      if (status == google.maps.places.PlacesServiceStatus.OK) {
+        var marker = new google.maps.Marker({
+          map: map,
+          place: {
+            placeId: results[0].place_id,
+            location: results[0].geometry.location
+          }
+        });
+        console.log(placeId);
+      };
+    }  
 
    // service.getDetails({placeId: service.place_ids}, function(place, status){
    //    if (status === google.maps.places.PlacesServiceStatus.OK){
