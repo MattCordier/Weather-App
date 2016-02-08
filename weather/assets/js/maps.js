@@ -34,7 +34,7 @@ function success(position) {
 
     var service = new google.maps.places.PlacesService(map);
 
-   service.getDetails({placeId: place.place_id}, function(place, status){
+   service.getDetails({placeId: service.place_id}, function(place, status){
       if (status === google.maps.places.PlacesServiceStatus.OK){
         console.log(place);
         $('#app-title').html(place.address_components[5].long_name);
