@@ -121,8 +121,9 @@ function geocodeAddress(geocoder, resultsMap) {
            // 'Geocode was not successful for the following reason: ' + status
           }
         }  
-        predictWeather();       
+               
     });
+    predictWeather();
 }
 
 function predictWeather(){
