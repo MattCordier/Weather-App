@@ -38,7 +38,7 @@ function success(position) {
 
     var service = new google.maps.places.PlacesService(map);
     service.textSearch(request, callback);
-    console.log(service);
+    
 
     function callback(results, status) {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
@@ -50,7 +50,7 @@ function success(position) {
           }
         });
         console.log(placeId);
-        $('#app-title').html(place.address_components[5].long_name);
+        $('#app-title').html(results[0].place_id);
       };
     }  
 
