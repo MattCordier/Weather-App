@@ -33,7 +33,7 @@ function success(position) {
     });
     var request = {
     location: map.getCenter(),
-    query: ""
+    query: 'Google World'
   };
 
     var service = new google.maps.places.PlacesService(map);
