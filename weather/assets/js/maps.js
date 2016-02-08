@@ -31,20 +31,20 @@ function success(position) {
        
     });
 
-    var request = {
-      location: {lat: myLocation.lat(),lng: myLocation.lng()},
-      radius: 10
-    };
+   //  var request = {
+   //    location: {lat: myLocation.lat(),lng: myLocation.lng()},
+   //    radius: 10
+   //  };
 
-    var service = new google.maps.places.PlacesService(map);
-    console.log(service);
+   //  var service = new google.maps.places.PlacesService(map);
+   //  console.log(service);
 
-   service.getDetails({placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'}, function(place, status){
-      if (status === google.maps.places.PlacesServiceStatus.OK){
-        console.log(place.place_id);
-        $('#app-title').html(place.address_components[5].long_name);
-      }
-   });
+   // service.getDetails({placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'}, function(place, status){
+   //    if (status === google.maps.places.PlacesServiceStatus.OK){
+   //      console.log(place.place_id);
+   //      $('#app-title').html(place.address_components[5].long_name);
+   //    }
+   // });
 
     //Autocomplete address input
     var input = (document.getElementById('address'));
@@ -59,12 +59,45 @@ function success(position) {
         map.setCenter(center); 
     });
     
-    var geocoder = new google.maps.Geocoder();
+
     
 
     //run after user's location is determined
     latlng.push(map.center.lat());
     latlng.push(map.center.lng());
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({'location': latlng}, function(results, status) {
+        if (status === google.maps.GeocoderStatus.OK) {
+            resultsMap.setCenter(results[0].geometry.location);
+            latlng.push(results[0].geometry.location.lat());
+            latlng.push(results[0].geometry.location.lng());
+
+            if (results[0]) {
+
+                      var address = "", city = "", state = "", country = "";
+                      var lat;
+                      var lng;
+
+                      for (var i = 0; i < results[0].address_components.length; i++) {
+                          var addr = results[0].address_components[i];
+                          // check if this entry in address_components has a type of country
+                          if (addr.types[0] == 'country')
+                              country = addr.long_name;
+                          else if (addr.types[0] == ['administrative_area_level_1'])       // State
+                              state = addr.long_name + ", ";
+                          else if (addr.types[0] == ['locality'])       // City
+                              city = addr.long_name + ", ";
+                      }
+                      
+                      $('#app-title').html(city + "   " + state + "   " + '<span style="font-weight: 300"><i>' + country + '</i></span>');
+
+        } else {
+           $('#alert').show().html('please enter a location');
+           // 'Geocode was not successful for the following reason: ' + status
+          }
+        }  
+               
+    });
 
 
     // $('#app-title').html('Hey!');
