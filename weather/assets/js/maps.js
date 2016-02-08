@@ -33,7 +33,7 @@ function success(position) {
     });
     var request = {
     location: map.getCenter(),
-    query: 'Google USA'
+    query: 'Google Sydney'
   };
 
     var service = new google.maps.places.PlacesService(map);
