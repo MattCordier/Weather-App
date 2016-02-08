@@ -31,16 +31,32 @@ function success(position) {
         mapTypeId: google.maps.MapTypeId.SATELLITE
        
     });
+    var request = {
+    location: map.getCenter(),
+  };
 
     var service = new google.maps.places.PlacesService(map);
+    service.textSearch(request, callback);
     console.log(service);
 
-   service.getDetails({placeId: service.place_ids}, function(place, status){
-      if (status === google.maps.places.PlacesServiceStatus.OK){
-        console.log(place);
-        $('#app-title').html(place.address_components[5].long_name);
+    function callback(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    var marker = new google.maps.Marker({
+      map: map,
+      place: {
+        placeId: results[0].place_id,
+        location: results[0].geometry.location
       }
-   });
+      console.log(placeId)
+    });
+  }
+
+   // service.getDetails({placeId: service.place_ids}, function(place, status){
+   //    if (status === google.maps.places.PlacesServiceStatus.OK){
+   //      console.log(place);
+   //      $('#app-title').html(place.address_components[5].long_name);
+   //    }
+   // });
 
     //Autocomplete address input
     var input = (document.getElementById('address'));
