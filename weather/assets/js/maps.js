@@ -5,7 +5,7 @@ var date;
 
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(success);
-  console.log(navigator);
+
 } else {
     alert("Enable location services.");
   error('Geo Location is not supported');
@@ -13,6 +13,7 @@ if (navigator.geolocation) {
 
 
 function success(position) {
+    console.log(position);
      var  lat  = position.coords.latitude;
      var  lng =  position.coords.longitude;
      var  myLocation =   new google.maps.LatLng(lat, lng);
