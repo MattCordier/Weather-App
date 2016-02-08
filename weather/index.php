@@ -29,7 +29,7 @@
              
 
             <div id="weather" class="container">
-                <h1 id="app-title">Loading current conditions…</h1>
+                <h1 id="app-title">Fetching current conditions…</h1>
                 <div id="weather-header" class="row">
             
                 </div>
