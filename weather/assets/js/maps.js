@@ -36,6 +36,7 @@ function success(position) {
 
    service.getDetails({placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'}, function(place, status){
       if (status === google.maps.places.PlacesServiceStatus.OK){
+        console.log(place);
         $('#app-title').html(place.name);
       }
    });
@@ -93,7 +94,7 @@ function geocodeAddress(geocoder, resultsMap) {
 
             if (results[0]) {
 
-                      var address = "", city = "", state = "", zip = "", country = "", formattedAddress = "";
+                      var address = "", city = "", state = "", country = "";
                       var lat;
                       var lng;
 
