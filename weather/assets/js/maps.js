@@ -31,16 +31,10 @@ function success(position) {
         mapTypeId: google.maps.MapTypeId.SATELLITE
        
     });
-    var request = {
-    location: map.getCenter(),
-    radius: '500',
-    query: 'Google Sydney'
-  };
 
     var service = new google.maps.places.PlacesService(map);
-    console.log(service);
 
-   service.getDetails({placeId: service.place_ids}, function(place, status){
+   service.getDetails({placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'}, function(place, status){
       if (status === google.maps.places.PlacesServiceStatus.OK){
         console.log(place);
         $('#app-title').html(place.address_components[5].long_name);
