@@ -33,6 +33,7 @@ function success(position) {
     });
     var request = {
     location: map.getCenter(),
+    query: ""
   };
 
     var service = new google.maps.places.PlacesService(map);
