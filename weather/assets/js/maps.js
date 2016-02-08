@@ -90,41 +90,39 @@ function geocodeAddress(geocoder, resultsMap) {
     var address = document.getElementById('address').value;
     $('#alert').hide();
     console.log(date);
-    latlng.push(results[0].geometry.location.lat());
-            latlng.push(results[0].geometry.location.lng());
     
-    // geocoder.geocode({'address': address}, function(results, status) {
-    //     if (status === google.maps.GeocoderStatus.OK) {
-    //         resultsMap.setCenter(results[0].geometry.location);
-            
+    geocoder.geocode({'address': address}, function(results, status) {
+        if (status === google.maps.GeocoderStatus.OK) {
+            resultsMap.setCenter(results[0].geometry.location);
+            latlng.push(results[0].geometry.location.lat());
+            latlng.push(results[0].geometry.location.lng());
 
-    //         if (results[0]) {
+            if (results[0]) {
 
-    //                   var address = "", city = "", state = "", country = "";
-    //                   var lat;
-    //                   var lng;
+                      var address = "", city = "", state = "", country = "";
+                      var lat;
+                      var lng;
 
-    //                   for (var i = 0; i < results[0].address_components.length; i++) {
-    //                       var addr = results[0].address_components[i];
-    //                       // check if this entry in address_components has a type of country
-    //                       if (addr.types[0] == 'country')
-    //                           country = addr.long_name;
-    //                       else if (addr.types[0] == ['administrative_area_level_1'])       // State
-    //                           state = addr.long_name + ", ";
-    //                       else if (addr.types[0] == ['locality'])       // City
-    //                           city = addr.long_name + ", ";
-    //                   }
+                      for (var i = 0; i < results[0].address_components.length; i++) {
+                          var addr = results[0].address_components[i];
+                          // check if this entry in address_components has a type of country
+                          if (addr.types[0] == 'country')
+                              country = addr.long_name;
+                          else if (addr.types[0] == ['administrative_area_level_1'])       // State
+                              state = addr.long_name + ", ";
+                          else if (addr.types[0] == ['locality'])       // City
+                              city = addr.long_name + ", ";
+                      }
                       
-    //                   $('#app-title').html(city + "   " + state + "   " + '<span style="font-weight: 300"><i>' + country + '</i></span>');
+                      $('#app-title').html(city + "   " + state + "   " + '<span style="font-weight: 300"><i>' + country + '</i></span>');
 
-    //     } else {
-    //        $('#alert').show().html('please enter a location');
-    //        // 'Geocode was not successful for the following reason: ' + status
-    //       }
-    //     }  
-               
-    // });
-    predictWeather();
+        } else {
+           $('#alert').show().html('please enter a location');
+           // 'Geocode was not successful for the following reason: ' + status
+          }
+        }  
+        predictWeather();       
+    });
 }
 
 function predictWeather(){
