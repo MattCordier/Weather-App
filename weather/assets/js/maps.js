@@ -38,6 +38,7 @@ function success(position) {
     };
 
     var service = new google.maps.places.PlacesService(map);
+    console.log(service);
 
    service.getDetails({placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'}, function(place, status){
       if (status === google.maps.places.PlacesServiceStatus.OK){
@@ -69,7 +70,7 @@ function success(position) {
 
     // $('#app-title').html('Hey!');
     predictWeather();
-    geocodeAddress(geocoder, map);
+
 
     //run if user taps submit
     document.getElementById('submit').addEventListener('click', function() {
