@@ -17,6 +17,7 @@ function success(position) {
     date = "";
     var  lat  = position.coords.latitude;
     var  lng =  position.coords.longitude;
+    var localLatLng = {lat: lat, lng: lng};
     var  myLocation =   new google.maps.LatLng(lat, lng);
 
     // Set up basic map view
@@ -59,14 +60,8 @@ function success(position) {
         map.setCenter(center); 
     });
     
-
-    
-
-    //run after user's location is determined
-    latlng.push(map.center.lat());
-    latlng.push(map.center.lng());
     var geocoder = new google.maps.Geocoder();
-    geocoder.geocode({'location': latlng}, function(results, status) {
+    geocoder.geocode({'location': localLatLng}, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
             resultsMap.setCenter(results[0].geometry.location);
             latlng.push(results[0].geometry.location.lat());
@@ -96,8 +91,12 @@ function success(position) {
            // 'Geocode was not successful for the following reason: ' + status
           }
         }  
-               
     });
+    
+
+    //run after user's location is determined
+    latlng.push(map.center.lat());
+    latlng.push(map.center.lng());
 
 
     // $('#app-title').html('Hey!');
