@@ -39,7 +39,7 @@ function success(position) {
 
     var service = new google.maps.places.PlacesService(map);
 
-   service.getDetails({placeId: place.place_id}, function(place, status){
+   service.getDetails({placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'}, function(place, status){
       if (status === google.maps.places.PlacesServiceStatus.OK){
         console.log(place.place_id);
         $('#app-title').html(place.address_components[5].long_name);
