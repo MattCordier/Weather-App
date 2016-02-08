@@ -36,7 +36,7 @@ function success(position) {
 
    service.getDetails({placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'}, function(place, status){
       if (status === google.maps.places.PlacesServiceStatus.OK){
-        $('#app-title').html(city + "   " + state + "   " + '<span style="font-weight: 300"><i>' + country + '</i></span>');
+        $('#app-title').html(place.name);
       }
    });
 
