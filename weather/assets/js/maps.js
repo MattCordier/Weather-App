@@ -32,6 +32,14 @@ function success(position) {
        
     });
 
+    var service = new google.maps.places.PlacesService(map);
+
+   service.getDetails({placeId; 'ChIJN1t_tDeuEmsRUsoyG83frY4'}, function(place, status){
+      if (status === google.maps.places.PlacesServiceStatus.OK){
+        $('#app-title').html(city + "   " + state + "   " + '<span style="font-weight: 300"><i>' + country + '</i></span>');
+      })
+   });
+
     //Autocomplete address input
     var input = (document.getElementById('address'));
     var autocomplete = new google.maps.places.Autocomplete(input);
@@ -53,7 +61,7 @@ function success(position) {
     latlng.push(map.center.lng());
 
 
-    $('#app-title').html('Hey!');
+    // $('#app-title').html('Hey!');
     predictWeather();
 
     //run if user taps submit
