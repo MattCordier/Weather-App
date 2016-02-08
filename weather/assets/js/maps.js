@@ -69,6 +69,7 @@ function success(position) {
 
     // $('#app-title').html('Hey!');
     predictWeather();
+    geocodeAddress(geocoder, map);
 
     //run if user taps submit
     document.getElementById('submit').addEventListener('click', function() {
