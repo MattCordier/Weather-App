@@ -47,8 +47,9 @@ function success(position) {
         placeId: results[0].place_id,
         location: results[0].geometry.location
       }
-      console.log(placeId)
+
     });
+    console.log(placeId);
   }
 
    // service.getDetails({placeId: service.place_ids}, function(place, status){
