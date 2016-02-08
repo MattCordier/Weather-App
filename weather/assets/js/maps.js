@@ -50,6 +50,7 @@ function success(position) {
           }
         });
         console.log(placeId);
+        $('#app-title').html(place.address_components[5].long_name);
       };
     }  
 
