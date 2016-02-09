@@ -154,7 +154,7 @@ function geocodeAddress(geocoder, resultsMap) {
                           var addr = results[0].address_components[i];
                           // check if this entry in address_components has a type of country
                           if (addr.types[0] == 'country')
-                              country = addr.long_name + ", ";
+                              country = addr.long_name;
                           else if (addr.types[0] == ['administrative_area_level_1'])       // State
                               state = addr.long_name + ", ";
                           else if (addr.types[0] == ['locality'])       // City
