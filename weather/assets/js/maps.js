@@ -19,7 +19,7 @@ function success(position) {
     var  lng =  position.coords.longitude;
     var  myLocation = new google.maps.LatLng(lat, lng);
     console.log("-----");
-    console.log(position.coords.longitude);
+    console.log(position);
     console.log("-----");
 
     // Set up basic map view
