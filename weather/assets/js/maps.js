@@ -225,6 +225,7 @@ function predictWeather(){
                 currentContent += '<p><span class="label">Summary:</span></p>'
                 currentContent += '<p>' + data.hourly.summary + '</p></div>';
                 if (data.alerts){
+                  currentContent += '<p><span class="label label-alert">Alert:</span></p>'
                   currentContent += '<p><span class="label-alert">' + data.alerts[0].title + '</span></p></div>';
                 }
                 currentContent += '</div>';
