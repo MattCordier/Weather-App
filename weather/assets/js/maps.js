@@ -154,14 +154,14 @@ function geocodeAddress(geocoder, resultsMap) {
                           var addr = results[0].address_components[i];
                           // check if this entry in address_components has a type of country
                           if (addr.types[0] == 'country')
-                              country = addr.long_name;
+                              country = addr.long_name + ", ";
                           else if (addr.types[0] == ['administrative_area_level_1'])       // State
-                              state = addr.long_name;
+                              state = addr.long_name + ", ";
                           else if (addr.types[0] == ['locality'])       // City
-                              city = addr.long_name;
+                              city = addr.long_name + ", ";
                       }
                       
-                      $('#app-title').html(city + ",    " + state + ",    " + '<span style="font-weight: 300"><i>' + country + '</i></span>');
+                      $('#app-title').html(city + "    " + state + "    " + '<span style="font-weight: 300"><i>' + country + '</i></span>');
 
         } else {
            $('#alert').show().html('please enter a location');
