@@ -231,7 +231,7 @@ function predictWeather(){
                 } else {
                   currentContent += '<div class="weather-deets-summary">';
                 currentContent += '<p><span class="label">Next 24 Hours:</span></p>'
-                currentContent += '<p>' + data.daily[0].summary + '</p></div>';
+                currentContent += '<p>' + data.daily.data[0].summary + '</p></div>';
                 }
                 currentContent += '</div>';
             $('#weather-header').html(weatherHeader);
