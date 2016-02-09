@@ -203,6 +203,11 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
   font-weight: 400;
 }
 
+.material-icons {
+  font-size: 20px;
+  margin-right: 7px;
+}
+
 
 
 #datepicker {
