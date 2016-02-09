@@ -224,6 +224,9 @@ function predictWeather(){
                 currentContent += '<div class="weather-deets-summary">';
                 currentContent += '<p><span class="label">Summary:</span></p>'
                 currentContent += '<p>' + data.hourly.summary + '</p></div>';
+                if (data.alerts !== null){
+                  currentContent += '<p>' + data.alerts[0].description + '</p></div>';
+                }
                 currentContent += '</div>';
             $('#weather-header').html(weatherHeader);
             $('#weather-current').html(currentContent);
