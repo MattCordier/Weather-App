@@ -137,7 +137,9 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 
 }
 .p-date {
+  font-size: 1.8rem;
   font-weight: 300;
+  margin-bottom: 5px;
 }
 .weather-header-col {
   text-align: center;
