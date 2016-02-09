@@ -223,7 +223,7 @@ function predictWeather(){
                 currentContent += '<p><span class="label">Pressure:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.round(data.currently.pressure * 100)) + '&nbsp;mb</p>';
                 currentContent += '<div class="weather-deets-summary">';
                 currentContent += '<p><span class="label">Next Hour:</span></p>'
-                currentContent += '<p>' + data.minutely.summary + '</p></div>';
+                currentContent += '<p>' + data.currently.summary + '</p></div>';
                 if (data.alerts){
                   currentContent += '<div class="weather-deets-summary">';
                   // currentContent += '<p><span class="label label-alert"></span></p>'
