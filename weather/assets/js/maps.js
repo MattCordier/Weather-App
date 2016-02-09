@@ -52,9 +52,8 @@ function success(position) {
 */
 
 
-$.getJSON( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng+"&sensor=false
-", function( data ) {
-  console.log(JSON.stringify(data))
+$.getJSON( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng, function( data ) {
+  console.log(JSON.stringify(data));
 });
 
 
