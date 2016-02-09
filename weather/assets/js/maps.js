@@ -224,7 +224,7 @@ function predictWeather(){
                 currentContent += '<div class="weather-deets-summary">';
                 currentContent += '<p><span class="label">Summary:</span></p>'
                 currentContent += '<p>' + data.hourly.summary + '</p></div>';
-                if (data.alerts !== null){
+                if (data.alerts){
                   currentContent += '<p>' + data.alerts[0].description + '</p></div>';
                 }
                 currentContent += '</div>';
