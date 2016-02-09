@@ -34,6 +34,7 @@ function success(position) {
        
     });
 
+/*
     var request = {
       location: {lat: myLocation.lat(),lng: myLocation.lng()},
       radius: 10
@@ -48,6 +49,14 @@ function success(position) {
         $('#app-title').html(place.address_components[5].long_name);
       }
    });
+*/
+
+
+$.getJSON( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng+"&sensor=false
+", function( data ) {
+  console.log(JSON.stringify(data))
+});
+
 
     //Autocomplete address input
     var input = (document.getElementById('address'));
