@@ -225,7 +225,7 @@ function predictWeather(){
                 currentContent += '<p><span class="label">Summary:</span></p>'
                 currentContent += '<p>' + data.hourly.summary + '</p></div>';
                 if (data.alerts){
-                  currentContent += '<p>' + data.alerts[0].description + '</p></div>';
+                  currentContent += '<p>' + data.alerts[0].title + '</p></div>';
                 }
                 currentContent += '</div>';
             $('#weather-header').html(weatherHeader);
