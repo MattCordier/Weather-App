@@ -222,12 +222,16 @@ function predictWeather(){
                 currentContent += '<p><span class="label">Humidity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.floor(data.currently.humidity * 100)) + '&#37;</p>';
                 currentContent += '<p><span class="label">Pressure:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.round(data.currently.pressure * 100)) + '&nbsp;mb</p>';
                 currentContent += '<div class="weather-deets-summary">';
-                currentContent += '<p><span class="label">Summary:</span></p>'
+                currentContent += '<p><span class="label">Next Hour:</span></p>'
                 currentContent += '<p>' + data.minutely.summary + '</p></div>';
                 if (data.alerts){
                   currentContent += '<div class="weather-deets-summary">';
                   // currentContent += '<p><span class="label label-alert"></span></p>'
                   currentContent += '<p><span class="label label-alert"><i class="material-icons">warning</i>' + data.alerts[0].title + '</span></p></div>';
+                } else {
+                  currentContent += '<div class="weather-deets-summary">';
+                currentContent += '<p><span class="label">Next 24 Hours:</span></p>'
+                currentContent += '<p>' + data.daily[0].summary + '</p></div>';
                 }
                 currentContent += '</div>';
             $('#weather-header').html(weatherHeader);
