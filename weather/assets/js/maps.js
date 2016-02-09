@@ -226,8 +226,8 @@ function predictWeather(){
                 currentContent += '<p>' + data.hourly.summary + '</p></div>';
                 if (data.alerts){
                   currentContent += '<div class="weather-deets-summary">';
-                  currentContent += '<p><span class="label label-alert">Alert:</span></p>'
-                  currentContent += '<p><span class="label label-alert">' + data.alerts[0].title + '</span></p></div>';
+                  // currentContent += '<p><span class="label label-alert"></span></p>'
+                  currentContent += '<p><span class="label label-alert"><i class="material-icons">warning</i>' + data.alerts[0].title + '</span></p></div>';
                 }
                 currentContent += '</div>';
             $('#weather-header').html(weatherHeader);
