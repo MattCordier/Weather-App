@@ -209,7 +209,8 @@ function predictWeather(){
               currentContent += '<i class="wi wi-forecast-io-' + data.currently.icon + ' wi-big" title="'+ data.currently.icon + '"></i>'
               currentContent += '<h1 class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1>';
               currentContent += '<p class="p-hilo"><span class="label-hilo">High: </span>' + Math.round(data.daily.data[0].temperatureMax) + '&deg;';
-              currentContent += '<span class="label-hilo">&nbsp;&nbsp;&nbsp;Low: </span>' + Math.round(data.daily.data[0].temperatureMin) + '&deg;</p></div>';
+              currentContent += '<span class="label-hilo">&nbsp;&nbsp;&nbsp;Low: </span>' + Math.round(data.daily.data[0].temperatureMin) + '&deg;</p>';
+              currentContent += 'Feels like  ' + Math.round(data.currently.apparentTemperature) +'&deg;</p></div>';
               
               //
               // CONTENT FOR RIGHT DIV, DETAILS
