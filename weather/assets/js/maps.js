@@ -53,7 +53,7 @@ function success(position) {
 
 
 $.getJSON( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng, function( data ) {
-  console.log(JSON.stringify(data));
+  console.log(JSON.stringify(data.results[0].address_components));
 });
 
 
