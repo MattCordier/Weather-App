@@ -184,6 +184,7 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 }
 .p-hilo {
   font-size: 1rem;
+  line-height: 2.4rem;
   margin-top: -20px;
 }
 
