@@ -198,7 +198,7 @@ function predictWeather(){
     // console.log(selectedDate);
     // console.log(time);
 
-    $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + ",?extend=hourly?callback=?", function(data) {
+    $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "extend=hourly?callback=?", function(data) {
               console.log(data);
               weatherHeader += '<div class="twelve columns weather-header-col"><p class="p-date">' + selectedDate.toDateString() +'</p></div>';
               
