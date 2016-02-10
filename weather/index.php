@@ -28,7 +28,7 @@
 
 
         <div class="wrapper"> 
-            <button style="float:right;"type="button">Go!</button>
+            <button class="login-btn" type="button">Go!</button>
 
 
             <div id="weather" class="container">
