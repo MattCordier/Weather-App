@@ -25,12 +25,13 @@
             </div>
             
             <div class="map-overlay">
-                                <button id="submit" class="weather-selector" type="button">Go!</button>
 
             </div>
 
 
         <div class="wrapper"> 
+                            <button id="submit" class="weather-selector" type="button">Go!</button>
+
              
 
             <div id="weather" class="container">
