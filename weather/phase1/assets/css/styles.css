@@ -1,0 +1,312 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  width: 100%;	
+  font-family: "Lato", sans-serif;
+  background-color: lightgrey;
+  color: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+a {
+  text-decoration: none;
+}
+
+
+ p{
+  font-weight: 300;
+  margin-bottom: 0px;
+ }
+
+
+
+ h1 {
+  display: inline-block;
+
+ }
+
+ h5 {
+  margin-bottom: 0px;
+ }
+
+.header {
+	position: relative;
+  margin: 0px;
+	background-color: rgb(175, 187, 165);
+	padding: 25px 0px;
+	text-align: center;
+}
+.location-search {
+	text-align: center;
+}
+
+input::-webkit-input-placeholder {
+   color: rgba(0,0,0,.2);
+}
+
+#login-modal {
+	display: block;
+	position:absolute;
+  margin-top: 7px;
+  padding: 20px;
+	text-align: center;
+	background-color: silver;
+	border: 1px solid white;
+  border-radius: 10px;
+	z-index: 9;
+}	
+
+.login-input {
+}
+
+.login-link {
+  float: right;
+  font-size: 1rem;
+  text-transform: none;
+  margin-right: 20px;
+  color: white;
+  border: none;
+}
+
+.login-link:hover {
+  color: orange;
+}
+
+.map-overlay {
+  width: 100%;
+  height : 100%;
+  position: absolute;
+  top: 0px; 
+  left: 0px;
+  background-color: rgba(0, 0, 0, .35);
+  
+}
+
+#map {
+  height: 100%;
+  width: 100%;  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0px;
+
+}
+
+input{
+  color: #3d3d3d;
+}
+/*//////////////////////
+
+WEATHER DISPLAY STYLES
+
+///////////////////////*/
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+
+
+
+#app-title {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0px;
+  color: white; 
+}
+#weather {
+position: absolute;
+left: 50%;
+top: 50%;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+z-index: 1;
+max-width: 680px;
+min-height:80%;
+margin-bottom: -60px;
+padding: 20px;
+text-align: center; 
+background: rgba(0,0,0,.65);
+border-radius: 15px;
+border: 5px solid rgba(0,0,0,.1);
+box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
+
+}
+.p-date {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.weather-header-col {
+  text-align: center;
+  margin: -10px 0px 5px 0px;
+}
+.weather-footer{
+  height: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.weather-current {
+  font-size: 7rem;
+  margin-top: -5px;
+  margin-bottom: 0px;
+}
+
+.wi {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+.wi-big{
+  font-size: 7.75rem;
+}
+.weather-summary {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.weather-deets {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding-top: 10px;
+}
+
+.weather-deets-summary {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding-top: 35px;
+}
+.p-hilo {
+  font-size: 1rem;
+  line-height: 2.4rem;
+  margin-top: -20px;
+}
+
+.label-hilo {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.label-alert {
+  color: rgb(204, 35, 40);
+}
+
+.label {
+  font-weight: 400;
+}
+
+.material-icons {
+  font-size: 20px;
+  margin-right: 7px;
+}
+
+
+
+#datepicker {
+ color: white;
+ margin-right: 10px;
+ font-size: 2rem;
+}
+#datepicker:hover {
+ color: #009be8;
+}
+
+#alert {
+  font-size: 1rem;
+  margin-top: -20px;
+  color: orange;
+  background-color: rgba(0,0,0,.3)
+}
+
+.weather-selector {
+  font-size: 1rem;
+}
+
+input.weather-selector {
+  background-color: transparent;
+  color: white;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255,.3);
+}
+input::-moz-placeholder {
+  color: rgba(255, 255, 255,.3);
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+  color: rgba(255, 255, 255,.3);
+}
+input:-ms-input-placeholder { 
+  color: rgba(255, 255, 255,.3);
+}
+button.weather-selector {
+  color: rgba(255, 255, 255,.3);
+  padding: 0px 10px;
+}
+
+button.weather-selector:hover {
+  background-color: rgba(255, 255, 255, .3);
+  color: white;
+}
+
+.pac-container {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid #009be8;
+  border-radius: 5px;
+  margin-top: -215px;
+}
+
+.pac-item {
+  border-bottom: #009be8;
+}
+
+.pac-item-query {
+  color: white;
+}
+.pac-item:hover {
+  background-color: #404040;
+}
+
+#ui-datepicker-div{
+  
+}
+#main-header {
+  text-align: center;
+  background-color: rgb(33, 33, 33);
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+#main-footer {
+  text-align: center;
+  background-color: rgb(33, 33, 33);
+  height: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.foot-deets {
+  margin-top: 7px;
+  font-size: .6rem;
+}
+
