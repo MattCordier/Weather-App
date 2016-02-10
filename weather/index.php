@@ -28,7 +28,7 @@
 
 
         <div class="wrapper"> 
-            <button class="login-btn" type="button">Go!</button>
+            <button class="login-btn" type="button">login</button>
 
 
             <div id="weather" class="container">
