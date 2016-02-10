@@ -1,8 +1,8 @@
 <?php
 ini_set('error_reporting', E_ALL);
 
-include_once 'db_connect.php';
-include_once 'functions.php';
+include_once 'includes/db_connect.php';
+include_once 'includes/functions.php';
 
 sec_session_start(); 
 if (login_check($mysqli) == true) {
@@ -19,15 +19,15 @@ if (login_check($mysqli) == true) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Matt Cordier">
         <meta name="description" content="A smart weather app for planning your travels.">
-        <link rel="stylesheet" href="../assets/css/skeleton.css">
-        <link rel="stylesheet" href="../assets/css/jquery-ui.theme.min.css">
-        <link rel="stylesheet" href="../assets/css/jquery-ui.structure.css">
+        <link rel="stylesheet" href="assets/css/skeleton.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui.structure.css">
         <link rel="stylesheet" type="text/styles" href="../assets/css/styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
 
-        <link rel="stylesheet" type="text/styles" href="../assets/css/weather-icons.min.css">
-        <link rel="stylesheet" type="text/styles" href="../assets/css/weather-icons-wind.min.css">
+        <link rel="stylesheet" type="text/styles" href="assets/css/weather-icons.min.css">
+        <link rel="stylesheet" type="text/styles" href="assets/css/weather-icons-wind.min.css">
 
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
@@ -39,7 +39,7 @@ if (login_check($mysqli) == true) {
         }
         ?> 
             <div > 
-                <form action="process_login.php" method="post" name="login_form">                      
+                <form action="includes/process_login.php" method="post" name="login_form">                      
                     Email: <input type="text" name="email" />
                     <br/>
                     Password: <input type="password"  name="password" id="password"/>
