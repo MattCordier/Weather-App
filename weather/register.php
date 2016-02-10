@@ -8,8 +8,8 @@ include_once 'includes/functions.php';
     <head>
         <meta charset="UTF-8">
         <title>Secure Login: Registration Form</title>
-        <script type="text/JavaScript" src="js/sha512.js"></script> 
-        <script type="text/JavaScript" src="js/forms.js"></script>
+        <script type="text/JavaScript" src="includes/js/sha512.js"></script> 
+        <script type="text/JavaScript" src="includes/js/forms.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/styles.css" />
