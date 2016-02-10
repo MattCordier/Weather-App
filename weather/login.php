@@ -61,17 +61,17 @@ if (login_check($mysqli) == true) {
 
 ?>
 
-<footer id="main-footer">
+        <footer id="main-footer">
             <p class="foot-deets">Weather App developed by <a href="http://mattcordier.github.io" target="_blank">Matt Cordier.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Powered by <a href="http://forecast.io" target="_blank">Forecast.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matt Cordier &copy; 2016</p>
         </footer>
            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="../assets/js/jquery-ui.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-        <script src="../assets/js/app.js"></script>
-        <script src="../assets/js/maps.js"></script>
-        <script type="text/JavaScript" src="../assets/js/sha512.js"></script> 
-        <script type="text/JavaScript" src="../assets/js/forms.js"></script> 
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/maps.js"></script>
+        <script type="text/JavaScript" src="assets/js/sha512.js"></script> 
+        <script type="text/JavaScript" src="assets/js/forms.js"></script> 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&libraries=places"></script>   
     </body>
 </html>
