@@ -68,6 +68,8 @@ input::-webkit-input-placeholder {
 }
 
 .login-btn {
+  float: right;
+  margin: 20px 20px;
 }
 
 .map-overlay {
