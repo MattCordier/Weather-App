@@ -29,7 +29,7 @@
             </div>
 
 
-        <div class="container wrapper"> 
+        <div class="container"> 
                             <button id="submit" class="weather-selector" type="button">Go!</button>
 
              
