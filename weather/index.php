@@ -21,20 +21,16 @@
     <body>
 
             <div id="map">
-
             </div>
             
             <div class="map-overlay">
-
             </div>
 
-        <div class="container">    
-        <div class="wrapper"> 
-                            <button id="submit" class="weather-selector" type="button">Go!</button>
 
+        <div class="wrapper"> 
              
 
-            <div id="weather" >
+            <div id="weather" class="container">
                 <h1 id="app-title">Fetching current conditions…</h1>
                 <div id="weather-header" class="row">
             
@@ -65,7 +61,6 @@
                 </div>
             
             </div>
-        </div>
         </div>
         <footer id="main-footer">
             <p class="foot-deets">Weather App developed by <a href="http://mattcordier.github.io" target="_blank">Matt Cordier.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Powered by <a href="http://forecast.io" target="_blank">Forecast.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matt Cordier &copy; 2016</p>
