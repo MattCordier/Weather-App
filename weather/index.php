@@ -43,7 +43,16 @@ if (login_check($mysqli) == true) {
 
         <div class="wrapper"> 
             <header id="main-header">
-              
+        <?php 
+            if (login_check($mysqli) == true) {
+                echo '<p>Currently logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . '.</p>';
+                echo '<p>Do you want to change user? <a href="includes/logout.php">Log out</a>.</p>';
+            } else {
+                echo '<p>Currently logged ' . $logged . '.</p>';
+                echo "<p>Don't have an account? <a id='register' href='register.php'>Register here</a></p>";
+              }
+        ?>   
+                <a href="login.php" class="login-link">login</a>         
             </header>
 
 
