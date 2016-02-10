@@ -70,6 +70,8 @@ input::-webkit-input-placeholder {
 .login-btn {
   float: right;
   margin: 20px 20px;
+  border: none;
+  color: #009be8;
 }
 
 .map-overlay {
