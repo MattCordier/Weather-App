@@ -27,10 +27,10 @@
             </div>
 
 
-        <div class="container wrapper"> 
+        <div class="wrapper"> 
              
 
-            <div id="weather" >
+            <div id="weather" class="container">
                 <h1 id="app-title">Fetching current conditions…</h1>
                 <div id="weather-header" class="row">
             
