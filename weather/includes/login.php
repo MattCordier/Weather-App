@@ -1,8 +1,8 @@
 <?php
 ini_set('error_reporting', E_ALL);
 
-include_once 'db_connect.php';
-include_once 'functions.php';
+include_once 'includes/db_connect.php';
+include_once 'includes/functions.php';
 
 sec_session_start(); 
 if (login_check($mysqli) == true) {
