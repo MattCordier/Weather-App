@@ -62,6 +62,7 @@ if (login_check($mysqli) == true) {
 ?>
 
         <footer id="main-footer">
+        	<a id='register' href='register.php'>Register here</a>
             <p class="foot-deets">Weather App developed by <a href="http://mattcordier.github.io" target="_blank">Matt Cordier.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Powered by <a href="http://forecast.io" target="_blank">Forecast.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matt Cordier &copy; 2016</p>
         </footer>
            
