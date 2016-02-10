@@ -19,15 +19,15 @@ if (login_check($mysqli) == true) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Matt Cordier">
         <meta name="description" content="A smart weather app for planning your travels.">
-        <link rel="stylesheet" href="assets/css/skeleton.css">
-        <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css">
-        <link rel="stylesheet" href="assets/css/jquery-ui.structure.css">
-        <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/skeleton.css">
+        <link rel="stylesheet" href="../assets/css/jquery-ui.theme.min.css">
+        <link rel="stylesheet" href="../assets/css/jquery-ui.structure.css">
+        <link rel="stylesheet" type="text/styles" href="../assets/css/styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
 
-        <link rel="stylesheet" type="text/styles" href="assets/css/weather-icons.min.css">
-        <link rel="stylesheet" type="text/styles" href="assets/css/weather-icons-wind.min.css">
+        <link rel="stylesheet" type="text/styles" href="../assets/css/weather-icons.min.css">
+        <link rel="stylesheet" type="text/styles" href="../assets/css/weather-icons-wind.min.css">
 
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
@@ -66,12 +66,12 @@ if (login_check($mysqli) == true) {
         </footer>
            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="assets/js/jquery-ui.min.js"></script>
+        <script src="../assets/js/jquery-ui.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-        <script src="assets/js/app.js"></script>
-        <script src="assets/js/maps.js"></script>
-        <script type="text/JavaScript" src="assets/js/sha512.js"></script> 
-        <script type="text/JavaScript" src="assets/js/forms.js"></script> 
+        <script src="../assets/js/app.js"></script>
+        <script src="../assets/js/maps.js"></script>
+        <script type="text/JavaScript" src="../assets/js/sha512.js"></script> 
+        <script type="text/JavaScript" src="../assets/js/forms.js"></script> 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&libraries=places"></script>   
     </body>
 </html>
