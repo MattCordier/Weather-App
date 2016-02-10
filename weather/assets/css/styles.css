@@ -67,13 +67,12 @@ input::-webkit-input-placeholder {
 .login-input {
 }
 
-.login-btn {
+.login-link {
   float: right;
   font-size: 1rem;
   text-transform: none;
   margin-right: 20px;
   border: none;
-  color: rgb(39,63,77);
 }
 
 .map-overlay {

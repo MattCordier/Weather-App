@@ -30,7 +30,7 @@
 
         <div class="wrapper"> 
             <header id="main-header">
-                <a href="#">login</a>         
+                <a href="#" class="login-link">login</a>         
             </header>
 
 
