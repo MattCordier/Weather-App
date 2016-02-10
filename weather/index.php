@@ -30,7 +30,7 @@
 
         <div class="wrapper"> 
             <header id="main-header">
-                <a href="includes/login.php" class="login-link">login</a>         
+                <a href="login.php" class="login-link">login</a>         
             </header>
 
 
