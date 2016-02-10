@@ -105,9 +105,9 @@ WEATHER DISPLAY STYLES
 
 }
 
-.container {
+/*.container {
   position: relative;
-}
+}*/
 
 #app-title {
   display: inline-block;
