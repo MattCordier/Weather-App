@@ -22,7 +22,7 @@ if (login_check($mysqli) == true) {
         <link rel="stylesheet" href="assets/css/skeleton.css">
         <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css">
         <link rel="stylesheet" href="assets/css/jquery-ui.structure.css">
-        <link rel="stylesheet" type="text/styles" href="../assets/css/styles.css">
+        <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
 
