@@ -281,6 +281,15 @@ button.weather-selector:hover {
 #ui-datepicker-div{
   
 }
+#main-header {
+  text-align: center;
+  background-color: rgb(33, 33, 33);
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
 
 #main-footer {
   text-align: center;
