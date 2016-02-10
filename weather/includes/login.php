@@ -1,7 +1,7 @@
 <?php
 ini_set('error_reporting', E_ALL);
 
-include_once 'db_connect.php';
+include_once 'asss/db_connect.php';
 include_once 'functions.php';
 
 sec_session_start(); 
