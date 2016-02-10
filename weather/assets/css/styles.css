@@ -73,7 +73,7 @@ input::-webkit-input-placeholder {
   text-transform: none;
   margin-right: 20px;
   border: none;
-  color: #009be8;
+  color: rgb(39,63,77);
 }
 
 .map-overlay {
