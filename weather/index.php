@@ -28,7 +28,8 @@
 
 
         <div class="wrapper"> 
-             
+            <button type="button">Go!</button>
+
 
             <div id="weather" class="container">
                 <h1 id="app-title">Fetching current conditions…</h1>

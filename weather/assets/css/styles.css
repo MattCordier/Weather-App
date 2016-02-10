@@ -101,8 +101,6 @@ WEATHER DISPLAY STYLES
 .wrapper {
   position: relative;
   height: 100%;
- /* text-align: center;*/
-
 }
 
 #app-title {
