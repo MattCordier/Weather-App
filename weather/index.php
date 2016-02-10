@@ -21,6 +21,8 @@
     <body>
 
             <div id="map">
+                <button id="submit" class="weather-selector" type="button">Go!</button>
+
             </div>
             
             <div class="map-overlay">
