@@ -75,6 +75,10 @@ input::-webkit-input-placeholder {
   border: none;
 }
 
+.login-link:hover {
+  color: orange;
+}
+
 .map-overlay {
   width: 100%;
   height : 100%;
