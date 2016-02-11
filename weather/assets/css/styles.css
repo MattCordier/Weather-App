@@ -46,7 +46,8 @@ a {
 }
 
 .user-stats {
-  display: inline-block;
+  display: inline;
+  font-size: 1rem;
 }
 .location-search {
 	text-align: center;
