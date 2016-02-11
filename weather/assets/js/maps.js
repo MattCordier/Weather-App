@@ -149,7 +149,7 @@ function geocodeAddress(geocoder, resultsMap) {
               city = addr.long_name + ", ";
           }
           
-          $('#app-title').html(city + "    " + state + "    " + '<span style="font-weight: 300"><i>' + country + '</i></span>');
+          $('#app-title').html(city + "  " + state + "  " + '<span style="font-weight: 300"><i>' + country + '</i></span>');
 
         } else {
           $('#alert').show().html('please enter a location');
