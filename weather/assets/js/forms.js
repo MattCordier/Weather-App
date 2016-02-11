@@ -15,7 +15,20 @@ $(document).ready(function() {
             alert('please select a date and location to add to your favorite\'s list');
     } else {
        
-        alert($( '#dp' ).val() + " " + $( '#address' ).val() + " "  + $( '#hi-temp' ).text() + " " + $( '#lo-temp' ).text() + " " + $( '#summary' ).text());
+        var dpick = $( '#dp' ).val();
+        var addy = $( '#address' ).val();
+        var hi = $( '#hi-temp' ).text();
+        var lw = $( '#lo-temp' ).text();
+        var smry = $( '#summary' ).text());
+
+        var report = {
+            "dpick" : dpick,
+            "addy" : addy,
+            "hi" : hi,
+            "lw" :lw,
+            "smry" : smry
+        }
+        cosole.log(report);
     }
     });
 });
