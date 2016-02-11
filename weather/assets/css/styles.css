@@ -172,10 +172,14 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 .wi-big{
   font-size: 7.75rem;
 }
+.fa {
+  font-size: 2.4rem;
+}
 
 .fa-star {
   color: white;
   font-size: 4rem;
+  margin-left: 7px;
 }
 .weather-summary {
   font-size: 1.2rem;
