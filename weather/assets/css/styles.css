@@ -46,7 +46,7 @@ a {
 }
 
 .user-stats {
-  display: relative;
+  position: relative;
   font-size: 1rem;
   margin-top: -10px;
 }
