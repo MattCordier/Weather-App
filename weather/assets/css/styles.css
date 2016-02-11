@@ -181,6 +181,10 @@ box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
   font-size: 4rem;
   margin-left: 7px;
 }
+
+a.fa-star:hover {
+  color: orange;
+}
 .weather-summary {
   font-size: 1.2rem;
   margin-bottom: 10px;
