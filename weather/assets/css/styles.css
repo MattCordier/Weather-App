@@ -46,7 +46,7 @@ a {
 }
 
 .user-stats {
-  display: inline;
+  display: relative;
   font-size: 1rem;
   margin-top: -10px;
 }
@@ -304,6 +304,9 @@ button.weather-selector:hover {
 #ui-datepicker-div{
   
 }
+
+
+
 #main-header {
   text-align: center;
   background-color: rgb(33, 33, 33);
