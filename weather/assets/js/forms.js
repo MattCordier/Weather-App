@@ -29,6 +29,12 @@ $(document).ready(function() {
             "smry" : smry
         }
         console.log(report);
+        $.ajax({
+            type : "POST",
+            url : "dashboard.php",
+            data : report,
+            success : alert('yeah!');
+        });
     }
     });
 });
