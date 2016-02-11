@@ -1,7 +1,7 @@
 "use strict";
 
 var latlng = [];
-var date; 
+
 
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(success);
@@ -88,7 +88,7 @@ function getUserLocal(lat, lng){
 
 function geocodeAddress(geocoder, resultsMap) {
     latlng = [];    
-    date = document.getElementById('dp').value;
+    
 
     var address = document.getElementById('address').value;
     $('#alert').hide();
@@ -128,11 +128,16 @@ function geocodeAddress(geocoder, resultsMap) {
     });
 }
 
+/*
+CALL TO FORECAST.IO API, FORMAT AND POPULATE PAGE WITH DATA FROM API
+*/
+
 function predictWeather(){
     var apiKey = '8951bee95458c4ab8a6121ec2452207a';
     var url = 'https://api.forecast.io/forecast/';
     var lati = latlng[0];
     var longi = latlng[1];
+    var date = document.getElementById('dp').value;
     var weatherHeader = "";
     var currentContent = "";
     var hourlyContent = "";
@@ -169,13 +174,11 @@ function predictWeather(){
       // CONTENT FOR RIGHT DIV, DETAILS
       //         
       currentContent += '<div class="six columns weather-deets">';
-      // currentContent += '<p><span class="label">Percipitation: </span>' + (Math.floor(data.daily.data[0].precipProbability * 100)) + '&#37;</p>';
-        // currentContent += '<p class="weather-summary">' + data.currently.summary  + '&nbsp;&nbsp;|&nbsp;&nbsp;'; 
-        currentContent += '<p><span class="label">Wind:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.round(data.currently.windSpeed)) + '&nbsp;mph</p>';
-        currentContent += '<p><span class="label">Humidity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.floor(data.currently.humidity * 100)) + '&#37;</p>';
-        currentContent += '<p><span class="label">Pressure:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.round(data.currently.pressure * 100)) + '&nbsp;mb</p>';
-        currentContent += '<div class="weather-deets-summary">';
-        currentContent += '<p><span class="label">Next Hour:</span></p>'
+      currentContent += '<p><span class="label">Wind:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.round(data.currently.windSpeed)) + '&nbsp;mph</p>';
+      currentContent += '<p><span class="label">Humidity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.floor(data.currently.humidity * 100)) + '&#37;</p>';
+      currentContent += '<p><span class="label">Pressure:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.round(data.currently.pressure * 100)) + '&nbsp;mb</p>';
+      currentContent += '<div class="weather-deets-summary">';
+      currentContent += '<p><span class="label">Next Hour:</span></p>'
         if (data.minutely){
           currentContent += '<p>' + data.minutely.summary + '</p></div>';
         } else {
@@ -187,10 +190,10 @@ function predictWeather(){
           currentContent += '<p><span class="label label-alert"><i class="material-icons">warning</i>' + data.alerts[0].title + '</span></p></div>';
         } else {
           currentContent += '<div class="weather-deets-summary">';
-        currentContent += '<p><span class="label">Next 24 Hours:</span></p>'
-        currentContent += '<p>' + data.daily.data[0].summary + '</p></div>';
+          currentContent += '<p><span class="label">Next 24 Hours:</span></p>'
+          currentContent += '<p>' + data.daily.data[0].summary + '</p></div>';
         }
-        currentContent += '</div>';
+      currentContent += '</div>';
       $('#weather-header').html(weatherHeader);
       $('#weather-current').html(currentContent);
     });
