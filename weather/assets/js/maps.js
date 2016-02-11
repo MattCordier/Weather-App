@@ -74,7 +74,6 @@ function getUserLocal(lat, lng){
     var x = document.getElementById("app-title").value;
     console.log(x);
     });
-
 }
 
 function geocodeAddress(geocoder, resultsMap) {
