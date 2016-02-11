@@ -62,6 +62,8 @@ function success(position) {
             geocodeAddress(geocoder, map);
         }
     });
+    var x = document.getElementById("app-title").value;
+    console.log(x);
 }
 
 function getUserLocal(lat, lng){
@@ -71,8 +73,6 @@ function getUserLocal(lat, lng){
       var st = mylocale.address_components[5].long_name;
       var ctry = mylocale.address_components[6].long_name;
       $('#app-title').html(cit + ",   " + st + ",   " + '<span style="font-weight: 300"><i>' + ctry + '</i></span>');
-    var x = document.getElementById("app-title").value;
-    console.log(x);
     });
 }
 
@@ -80,8 +80,7 @@ function geocodeAddress(geocoder, resultsMap) {
     latlng = [];    
     
     var address = document.getElementById('address').value;
-    console.log(address);
-    
+    console.log(address);  
     geocoder.geocode({'address': address}, function(results, status) {
       if (status === google.maps.GeocoderStatus.OK) {
         resultsMap.setCenter(results[0].geometry.location);
