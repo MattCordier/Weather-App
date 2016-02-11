@@ -13,7 +13,7 @@ $(document).ready(function() {
         $("#dp").datepicker("show");
 
     });
-    console.log(datepicker.val());
+   
 });
 
 
