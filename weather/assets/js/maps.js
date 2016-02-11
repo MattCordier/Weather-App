@@ -14,9 +14,6 @@ function success(position) {
     var  lat  = position.coords.latitude;
     var  lng =  position.coords.longitude;
     var  myLocation = new google.maps.LatLng(lat, lng);
-    console.log("-----");
-    console.log(position);
-    console.log("-----");
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,

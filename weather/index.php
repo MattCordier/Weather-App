@@ -81,6 +81,7 @@ if (login_check($mysqli) == true) {
        
                         <input id="address" class="location-search weather-selector" type="text" name="#"  placeholder="Select a destination" >
                         <button id="submit" class="weather-selector" type="button">Go!</button>
+                        <a href="#" id="favorite" ><i class="fa fa-star"></i></a>
                         <div id="alert"></div>
 
                     </div>
