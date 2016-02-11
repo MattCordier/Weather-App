@@ -33,7 +33,7 @@ $(document).ready(function() {
             type : "POST",
             url : "dashboard.php",
             data : report,
-            success : alert('yeah!');
+            success : alert('yeah!')
         });
     }
     });
