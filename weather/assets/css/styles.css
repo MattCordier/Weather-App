@@ -44,6 +44,10 @@ a {
 	padding: 25px 0px;
 	text-align: center;
 }
+
+.user-stats {
+  display: inline-block;
+}
 .location-search {
 	text-align: center;
 }
