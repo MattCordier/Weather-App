@@ -72,8 +72,8 @@ function getUserLocal(lat, lng){
       var st = mylocale.address_components[5].long_name;
       var ctry = mylocale.address_components[6].long_name;
       $('#app-title').html(cit + ",   " + st + ",   " + '<span style="font-weight: 300"><i>' + ctry + '</i></span>');
+    console.log($("#app-title").text());
     });
-  console.log($("#app-title").text())
 }
 
 function geocodeAddress(geocoder, resultsMap) {
