@@ -159,7 +159,6 @@ function predictWeather() {
       currentContent += '<div class="six columns weather-deets">';
       currentContent += '<p><span class="label">Wind:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.round(data.currently.windSpeed)) + '&nbsp;mph</p>';
       currentContent += '<p><span class="label">Humidity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.floor(data.currently.humidity * 100)) + '&#37;</p>';
-      currentContent += '<p><span class="label">Pressure:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.round(data.currently.pressure * 100)) + '&nbsp;mb</p>';
       currentContent += '<div class="weather-deets-summary">';
       currentContent += '<p><span class="label">Next Hour:</span></p>'
         if (data.minutely){
