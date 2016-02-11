@@ -174,23 +174,19 @@ function predictWeather(){
       //Check if datepicker(dp) has user input value 
       if (date !== ""){
           var selectedDate = new Date(date); 
-          console.log(selectedDate);
       } else if (date === "") {
-          var selectedDate = new Date();
-          console.log(selectedDate);
-          
+          var selectedDate = new Date();      
       }
 
       //convert selectedDate to Unix code
       var time = Math.floor(selectedDate.getTime()/1000);
 
-    // console.log(selectedDate);
-    // console.log(time);
+    console.log(selectedDate);
+    console.log(time);
 
     $.getJSON(url + apiKey + "/" + lati + "," + longi + "," + time + "?callback=?", function(data) {
       console.log(data);
       weatherHeader += '<div class="twelve columns weather-header-col"><p class="p-date">' + selectedDate.toDateString() +'</p></div>';
-      
       // 
       // CONTENT FOR LEFT DIV, OVERVIEW
       // 
