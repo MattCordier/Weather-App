@@ -33,15 +33,9 @@ function success(position) {
         mapTypeId: google.maps.MapTypeId.SATELLITE
        
     });
-
+    getUserLocal();
     //Get initial location of user
-    $.getJSON( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng, function( data ) {
-      var mylocale = data.results[0];
-      var cit = mylocale.address_components[3].long_name;
-      var st = mylocale.address_components[5].long_name;
-      var ctry = mylocale.address_components[6].long_name;
-      $('#app-title').html(cit + ",   " + st + ",   " + '<span style="font-weight: 300"><i>' + ctry + '</i></span>');
-    });
+    
 
 
     //Autocomplete address input
@@ -111,6 +105,16 @@ function success(position) {
             geocodeAddress(geocoder, map);
     
         }
+    });
+}
+
+function getUserLocal(){
+  $.getJSON( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng, function( data ) {
+      var mylocale = data.results[0];
+      var cit = mylocale.address_components[3].long_name;
+      var st = mylocale.address_components[5].long_name;
+      var ctry = mylocale.address_components[6].long_name;
+      $('#app-title').html(cit + ",   " + st + ",   " + '<span style="font-weight: 300"><i>' + ctry + '</i></span>');
     });
 }
 
