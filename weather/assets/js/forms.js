@@ -14,8 +14,8 @@ $(document).ready(function() {
         if ($( '#dp' ).val() === "" || $( '#address' ).val() === ""){
             alert('please select a date and location to add to your favorite\'s list');
     } else {
-        console.log('currently' + $( '#weather-current' ).text());
-        alert($( '#dp' ).val() + " " + $( '#address' ).val() + " " + $( '#weather-current' ).text())  ;
+        console.log('currently' + $( '#current' ).text());
+        alert($( '#dp' ).val() + " " + $( '#address' ).val() + " " + $( '#current' ).text())  ;
     }
     });
 });
