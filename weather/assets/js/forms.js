@@ -28,7 +28,7 @@ $(document).ready(function() {
             "lw" :lw,
             "smry" : smry
         }
-        cosole.log(report);
+        console.log(report);
     }
     });
 });
