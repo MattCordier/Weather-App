@@ -14,8 +14,8 @@ $(document).ready(function() {
         if ($( '#dp' ).val() === "" || $( '#address' ).val() === ""){
             alert('please select a date and location to add to your favorite\'s list');
     } else {
-        console.log('currently' + $( '#current' ).text());
-        alert($( '#dp' ).val() + " " + $( '#address' ).val() + " " + $( '#current' ).text())  ;
+       
+        alert($( '#dp' ).val() + " " + $( '#address' ).val() + " " + $( '#wi-current' ).text()) + $( '#hi-temp' ).text()) + $( '#lo-temp' ).text()) + $( '#summary' ).text());
     }
     });
 });

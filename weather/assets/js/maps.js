@@ -147,10 +147,10 @@ function predictWeather() {
       // CONTENT FOR LEFT DIV, OVERVIEW
       // 
       currentContent += '<div class="six columns">';
-      currentContent += '<i class="wi wi-forecast-io-' + data.currently.icon + ' wi-big" title="'+ data.currently.icon + '"></i>'
-      currentContent += '<h1 id="current" class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1>';
-      currentContent += '<p class="p-hilo"><span class="label-hilo">High: </span>' + Math.round(data.daily.data[0].temperatureMax) + '&deg;';
-      currentContent += '<span class="label-hilo">&nbsp;&nbsp;&nbsp;Low: </span>' + Math.round(data.daily.data[0].temperatureMin) + '&deg;</p>';
+      currentContent += '<i id="wi-current" class="wi wi-forecast-io-' + data.currently.icon + ' wi-big" title="'+ data.currently.icon + '"></i>'
+      currentContent += '<h1  class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1>';
+      currentContent += '<p id="hi-temp" class="p-hilo"><span class="label-hilo">High: </span>' + Math.round(data.daily.data[0].temperatureMax) + '&deg;';
+      currentContent += '<span "low-temp" class="label-hilo">&nbsp;&nbsp;&nbsp;Low: </span>' + Math.round(data.daily.data[0].temperatureMin) + '&deg;</p>';
       currentContent += '<p class="p-hilo"><span class="label-hilo">Feels like: </span>' + Math.round(data.currently.apparentTemperature) +'&deg;</p></div>';
       
       //
@@ -173,7 +173,7 @@ function predictWeather() {
         } else {
           currentContent += '<div class="weather-deets-summary">';
           currentContent += '<p><span class="label">Next 24 Hours:</span></p>'
-          currentContent += '<p>' + data.daily.data[0].summary + '</p></div>';
+          currentContent += '<p id="summary">' + data.daily.data[0].summary + '</p></div>';
         }
       currentContent += '</div>';
       $('#weather-header').html(weatherHeader);
