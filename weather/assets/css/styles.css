@@ -46,7 +46,7 @@ a {
 }
 
 .user-stats {
-  display: inline-block;
+  display: inline;
   font-size: 1rem;
   margin-top: -10px;
 }
