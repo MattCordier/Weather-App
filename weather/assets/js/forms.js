@@ -10,6 +10,10 @@ $(document).ready(function() {
         $("#dp").datepicker("show");
 
     });
+
+    $('#favorite').on(click, function(){
+        alert('please select a date and location to add to your favorite\'s list');
+    })
 });
 
 function formhash(form, password) {
