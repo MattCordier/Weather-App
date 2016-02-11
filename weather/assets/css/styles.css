@@ -208,6 +208,10 @@ a > .fa-star:hover {
   line-height: 1rem;
 }
 
+#lo-temp {
+  display: inline-block;
+}
+
 .label-hilo {
   font-size: 1rem;
   font-weight: 400;
