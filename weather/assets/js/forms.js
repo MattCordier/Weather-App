@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    
-
-    
 
     $("#dp").datepicker({
         onSelect: function(dateText, inst) {
@@ -13,13 +10,7 @@ $(document).ready(function() {
         $("#dp").datepicker("show");
 
     });
-    var x = document.getElementById("app-title").value;
-    console.log(x);
-
 });
-
-
-
 
 function formhash(form, password) {
     // Create a new element input, this will be our hashed password field. 
