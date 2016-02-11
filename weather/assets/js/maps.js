@@ -167,19 +167,19 @@ function predictWeather(){
     var dailyContent = "";
     var data;
 
-        //Check if datepicker(dp) has user input value 
-        if (date !== ""){
-            var selectedDate = new Date(date); 
-            console.log(selectedDate);
-        } else if (date === "") {
-            var selectedDate = new Date();
-            console.log(selectedDate);
-        }
+      //Check if datepicker(dp) has user input value 
+      if (date !== ""){
+          var selectedDate = new Date(date); 
+          console.log(selectedDate);
+      } else if (date === "") {
+          var selectedDate = new Date();
+          console.log(selectedDate);
+          
+      }
 
-        //convert selectedDate to Unix code
-        var time = Math.floor(selectedDate.getTime()/1000);
-    
-    
+      //convert selectedDate to Unix code
+      var time = Math.floor(selectedDate.getTime()/1000);
+
     // console.log(selectedDate);
     // console.log(time);
 
