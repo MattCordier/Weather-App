@@ -117,7 +117,7 @@ function success(position) {
 function geocodeAddress(geocoder, resultsMap) {
     latlng = [];    
     date = document.getElementById('dp').value;
-    console.log(date);
+
     var address = document.getElementById('address').value;
     $('#alert').hide();
     console.log(address);
@@ -170,9 +170,10 @@ function predictWeather(){
         //Check if datepicker(dp) has user input value 
         if (date !== ""){
             var selectedDate = new Date(date); 
-            
+            console.log(selectedDate);
         } else if (date === "") {
             var selectedDate = new Date();
+            console.log(selectedDate);
         }
 
         //convert selectedDate to Unix code
