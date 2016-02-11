@@ -11,8 +11,9 @@ $(document).ready(function() {
 
     $("#datepicker").click(function() {
         $("#dp").datepicker("show");
-    });
 
+    });
+    console.log(datepicker.val());
 });
 
 
