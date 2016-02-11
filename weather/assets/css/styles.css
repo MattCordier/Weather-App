@@ -47,6 +47,7 @@ a {
 
 .user-stats {
   position: relative;
+  display: inline-block;
   font-size: 1rem;
   margin-top: -10px;
 }
