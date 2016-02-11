@@ -12,8 +12,12 @@ $(document).ready(function() {
     });
 
     $('#favorite').on('click', function(){
-        alert('please select a date and location to add to your favorite\'s list');
-    })
+        if ($( '#dp' ).val( text ) === "" || $( '#address' ).val( text ) === "")
+            alert('please select a date and location to add to your favorite\'s list');
+    } else {
+        alert($( '#dp' ).val( text ) + $( '#address' ).val( text ));
+    }
+    });
 });
 
 function formhash(form, password) {
