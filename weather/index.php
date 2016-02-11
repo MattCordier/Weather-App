@@ -45,10 +45,10 @@ if (login_check($mysqli) == true) {
             <header id="main-header">
         <?php 
             if (login_check($mysqli) == true) {
-                echo '<p class="user-stats">Currently logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . '.</p>';
+                echo '<p class="user-stats">Currently logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . '.  </p>';
                 echo '<p class="user-stats">Do you want to change user? <a href="includes/logout.php">Log out</a>.</p>';
             } else {
-                echo '<p class="user-stats">Currently logged ' . $logged . '.</p>';
+                echo '<p class="user-stats">Currently logged ' . $logged . '.  </p>';
                 echo "<p class='user-stats'>Don't have an account? <a id='register' href='register.php'>Register here</a></p>";
               }
         ?>   
