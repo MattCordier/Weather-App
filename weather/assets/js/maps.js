@@ -33,7 +33,7 @@ function success(position) {
         mapTypeId: google.maps.MapTypeId.SATELLITE
        
     });
-    getUserLocal();
+    getUserLocal(lat, lng);
     //Get initial location of user
     
 
@@ -108,7 +108,7 @@ function success(position) {
     });
 }
 
-function getUserLocal(){
+function getUserLocal(lat, lng){
   $.getJSON( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng, function( data ) {
       var mylocale = data.results[0];
       var cit = mylocale.address_components[3].long_name;
