@@ -19,7 +19,7 @@ $(document).ready(function() {
         var addy = $( '#address' ).val();
         var hi = $( '#hi-temp' ).text();
         var lw = $( '#lo-temp' ).text();
-        var smry = $( '#summary' ).text());
+        var smry = $( '#summary' ).text();
 
         var report = {
             "dpick" : dpick,
