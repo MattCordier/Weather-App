@@ -1,27 +1,22 @@
 "use strict";
-
 var latlng = [];
 
-
 if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(success);
+    navigator.geolocation.getCurrentPosition(success);
 
 } else {
     alert("Enable location services.");
   error('Geo Location is not supported');
 }
 
-
 function success(position) {
     latlng = [];
-    
     var  lat  = position.coords.latitude;
     var  lng =  position.coords.longitude;
     var  myLocation = new google.maps.LatLng(lat, lng);
     console.log("-----");
     console.log(position);
     console.log("-----");
-
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
@@ -33,16 +28,13 @@ function success(position) {
         mapTypeId: google.maps.MapTypeId.SATELLITE
        
     });
-    getUserLocal(lat, lng);
     //Get initial location of user
+    getUserLocal(lat, lng);
     
-
-
     //Autocomplete address input
     var input = (document.getElementById('address'));
     var autocomplete = new google.maps.places.Autocomplete(input);
         autocomplete.bindTo('bounds', map);
-
 
     // Keep Map centered on window resize
     google.maps.event.addDomListener(window, "resize", function() {
@@ -57,10 +49,7 @@ function success(position) {
     latlng.push(map.center.lat());
     latlng.push(map.center.lng());
 
-
-    // $('#app-title').html('Hey!');
     predictWeather();
-
 
     //run if user taps submit
     document.getElementById('submit').addEventListener('click', function() {
@@ -71,7 +60,6 @@ function success(position) {
         if (event.which == 13) {
             event.preventDefault();
             geocodeAddress(geocoder, map);
-    
         }
     });
 }
@@ -89,9 +77,8 @@ function getUserLocal(lat, lng){
 function geocodeAddress(geocoder, resultsMap) {
     latlng = [];    
     
-
     var address = document.getElementById('address').value;
-    $('#alert').hide();
+    // $('#alert').hide();
     console.log(address);
     
     geocoder.geocode({'address': address}, function(results, status) {
@@ -132,7 +119,7 @@ function geocodeAddress(geocoder, resultsMap) {
 CALL TO FORECAST.IO API, FORMAT AND POPULATE PAGE WITH DATA FROM API
 */
 
-function predictWeather(){
+function predictWeather() {
     var apiKey = '8951bee95458c4ab8a6121ec2452207a';
     var url = 'https://api.forecast.io/forecast/';
     var lati = latlng[0];
@@ -186,7 +173,6 @@ function predictWeather(){
         }  
         if (data.alerts){
           currentContent += '<div class="weather-deets-summary">';
-          // currentContent += '<p><span class="label label-alert"></span></p>'
           currentContent += '<p><span class="label label-alert"><i class="material-icons">warning</i>' + data.alerts[0].title + '</span></p></div>';
         } else {
           currentContent += '<div class="weather-deets-summary">';
