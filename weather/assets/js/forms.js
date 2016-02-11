@@ -15,7 +15,7 @@ $(document).ready(function() {
             alert('please select a date and location to add to your favorite\'s list');
     } else {
        
-        alert($( '#dp' ).val() + " " + $( '#address' ).val() + " " + $( '#wi-current' ).html() + $( '#hi-temp' ).text() + $( '#lo-temp' ).text() + $( '#summary' ).text());
+        alert($( '#dp' ).val() + " " + $( '#address' ).val() + " "  + $( '#hi-temp' ).text() + " " + $( '#lo-temp' ).text() + " " + $( '#summary' ).text());
     }
     });
 });
