@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     });
 
-    $('#favorite').on(click, function(){
+    $('#favorite').on('click', function(){
         alert('please select a date and location to add to your favorite\'s list');
     })
 });
