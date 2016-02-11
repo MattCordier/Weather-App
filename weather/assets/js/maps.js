@@ -78,7 +78,7 @@ function geocodeAddress(geocoder, resultsMap) {
     latlng = [];    
     
     var address = document.getElementById('address').value;
-    // console.log(address);
+    console.log(address);
     
     geocoder.geocode({'address': address}, function(results, status) {
       if (status === google.maps.GeocoderStatus.OK) {
