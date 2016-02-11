@@ -62,7 +62,7 @@ function success(position) {
             geocodeAddress(geocoder, map);
         }
     });
-    
+
 }
 
 function getUserLocal(lat, lng){
@@ -73,6 +73,7 @@ function getUserLocal(lat, lng){
       var ctry = mylocale.address_components[6].long_name;
       $('#app-title').html(cit + ",   " + st + ",   " + '<span style="font-weight: 300"><i>' + ctry + '</i></span>');
     });
+  console.log($("#app-title").text())
 }
 
 function geocodeAddress(geocoder, resultsMap) {
