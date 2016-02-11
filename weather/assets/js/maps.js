@@ -62,8 +62,7 @@ function success(position) {
             geocodeAddress(geocoder, map);
         }
     });
-    var x = document.getElementById("app-title").value;
-    console.log(x);
+    
 }
 
 function getUserLocal(lat, lng){

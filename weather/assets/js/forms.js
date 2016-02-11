@@ -13,7 +13,9 @@ $(document).ready(function() {
         $("#dp").datepicker("show");
 
     });
-   
+    var x = document.getElementById("app-title").value;
+    console.log(x);
+
 });
 
 
