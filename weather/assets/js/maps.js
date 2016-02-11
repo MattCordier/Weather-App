@@ -78,8 +78,7 @@ function geocodeAddress(geocoder, resultsMap) {
     latlng = [];    
     
     var address = document.getElementById('address').value;
-    // $('#alert').hide();
-    console.log(address);
+    // console.log(address);
     
     geocoder.geocode({'address': address}, function(results, status) {
       if (status === google.maps.GeocoderStatus.OK) {
@@ -88,7 +87,6 @@ function geocodeAddress(geocoder, resultsMap) {
         latlng.push(results[0].geometry.location.lng());
 
         if (results[0]) {
-
           var address = "", city = "", state = "", country = "";
           var lat;
           var lng;
