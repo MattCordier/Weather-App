@@ -14,7 +14,7 @@ if (navigator.geolocation) {
 
 function success(position) {
     latlng = [];
-    date = "";
+    
     var  lat  = position.coords.latitude;
     var  lng =  position.coords.longitude;
     var  myLocation = new google.maps.LatLng(lat, lng);
