@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
 
     $('#favorite').on('click', function(){
-        if ($( '#dp' ).val( text ) === "" || $( '#address' ).val( text ) === "")
+        if ($( '#dp' ).val( text ) === "" || $( '#address' ).val( text ) === ""){
             alert('please select a date and location to add to your favorite\'s list');
     } else {
         alert($( '#dp' ).val( text ) + $( '#address' ).val( text ));
