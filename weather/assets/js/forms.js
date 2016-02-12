@@ -16,7 +16,7 @@ $(document).ready(function() {
     } else {
        
         var dpick = $( '#dp' ).val();
-        var addy = $( '#app-title' ).val();
+        var addy = $( '#address' ).val();
         var hi = $( '#hi-temp' ).text();
         var lw = $( '#lo-temp' ).text();
         var smry = $( '#summary' ).text();
