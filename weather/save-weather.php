@@ -2,7 +2,6 @@
 ini_set('error_reporting', E_ALL);
 
 include_once 'includes/db_connect.php';
-include_once 'psl-config.php';
 
 $error_msg = ""; 
 $high = $_POST['hi'];
