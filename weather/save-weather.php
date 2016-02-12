@@ -19,5 +19,5 @@ include_once 'includes/functions.php';
 // $insert_stmt = $mysqli->prepare("INSERT INTO locations (address, date, high, low, summary) VALUES (?, ?, ?, ?, ?)")
 // $insert_stmt->bind_param($address, $date, $high, $low, $summary);
 // $insert_stmt->execute();
-// header('Location: index.php');
+header('Location: login.php');
 ?>
