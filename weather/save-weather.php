@@ -10,7 +10,7 @@ $high = $_POST['hi'];
 $low = $_POST['lw'];
 $summary = $_POST['smry']; 
 
-echo $summary + $date;
+echo $summary + $address;
 
 // if (isset($_POST['dpick'], $_POST['addy'])) {
 
