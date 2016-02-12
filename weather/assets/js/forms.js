@@ -34,7 +34,7 @@ $(document).ready(function() {
             url : "../../index.php",
             data : report,
             success : function(data){
-                alert
+                alert('yeah');
             }
         });
     }
