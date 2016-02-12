@@ -9,12 +9,12 @@ $high = $_POST['hi'];
 $low = $_POST['lw'];
 $summary = $_POST['smry']; 
 
-// if (isset($_POST['dpick'], $_POST['addy'])) {
-// 	$date = filter_input(INPUT_POST, 'dpick', FILTER_SANITIZE_STRING);
-// 	$address = filter_input(INPUT_POST, 'addy', FILTER_SANITIZE_STRING);
-// } else {
-// 	$error_msg .= '<p class="error">The date or address entered is not vaild</p>'
-// }
+if (isset($_POST['dpick'], $_POST['addy'])) {
+	$date = filter_input(INPUT_POST, 'dpick', FILTER_SANITIZE_STRING);
+	$address = filter_input(INPUT_POST, 'addy', FILTER_SANITIZE_STRING);
+} else {
+	$error_msg .= '<p class="error">The date or address entered is not vaild</p>'
+}
 	
 
 // $insert_stmt = $mysqli->prepare("INSERT INTO locations (address, date, high, low, summary) VALUES (?, ?, ?, ?, ?)")
