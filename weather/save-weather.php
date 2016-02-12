@@ -2,7 +2,7 @@
 ini_set('error_reporting', E_ALL);
 
 include_once 'includes/db_connect.php';
-include_once 'includes/functions.php';
+include_once 'psl-config.php';
 
 $error_msg = ""; 
 $high = $_POST['hi'];
@@ -20,5 +20,5 @@ if (isset($_POST['dpick'], $_POST['addy'])) {
 // $insert_stmt = $mysqli->prepare("INSERT INTO locations (address, date, high, low, summary) VALUES (?, ?, ?, ?, ?)")
 // $insert_stmt->bind_param($address, $date, $high, $low, $summary);
 // $insert_stmt->execute();
-header('Location: login.php');
+// header('Location: login.php');
 ?>
