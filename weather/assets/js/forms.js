@@ -31,7 +31,7 @@ $(document).ready(function() {
         console.log(report);
         $.ajax({
             type : "POST",
-            url : "../../index.php",
+            url : "../../save-weather.php",
             data : report,
             success : function(data){
                 alert('yeah');
