@@ -4,6 +4,8 @@ ini_set('error_reporting', E_ALL);
 include_once 'includes/db_connect.php';
 
 $error_msg = ""; 
+$date = filter_input(INPUT_POST, 'dpick', FILTER_SANITIZE_STRING);
+$address = filter_input(INPUT_POST, 'addy', FILTER_SANITIZE_STRING);
 $high = $_POST['hi'];
 $low = $_POST['lw'];
 $summary = $_POST['smry']; 
@@ -11,6 +13,7 @@ $summary = $_POST['smry'];
 echo $summary;
 
 // if (isset($_POST['dpick'], $_POST['addy'])) {
+
 // 	$date = filter_input(INPUT_POST, 'dpick', FILTER_SANITIZE_STRING);
 // 	$address = filter_input(INPUT_POST, 'addy', FILTER_SANITIZE_STRING);
 // } else {
