@@ -33,7 +33,9 @@ $(document).ready(function() {
             type : "POST",
             url : "save-weather.php",
             data : report,
-            success : alert('yeah!')
+            success : function(data){
+                alert
+            }
         });
     }
     });
