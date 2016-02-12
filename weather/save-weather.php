@@ -8,7 +8,7 @@ $high = $_POST['hi'];
 $low = $_POST['lw'];
 $summary = $_POST['smry']; 
 
-echo "this is happening";
+echo $summary;
 
 // if (isset($_POST['dpick'], $_POST['addy'])) {
 // 	$date = filter_input(INPUT_POST, 'dpick', FILTER_SANITIZE_STRING);
