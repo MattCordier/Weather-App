@@ -5,7 +5,7 @@ include_once 'includes/db_connect.php';
 
 $error_msg = ""; 
 $date = $_POST['dpick'];
-$address = $_POST['addy']
+$address = $_POST['addy'];
 $high = $_POST['hi'];
 $low = $_POST['lw'];
 $summary = $_POST['smry']; 
