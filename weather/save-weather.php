@@ -10,7 +10,8 @@ $high = $_POST['hi'];
 $low = $_POST['lw'];
 $summary = $_POST['smry']; 
 
-echo json_encode(array("a" => $date, "b" => $address));
+echo $date . $address;
+
 
 // if (isset($_POST['dpick'], $_POST['addy'])) {
 

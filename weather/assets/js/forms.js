@@ -32,9 +32,9 @@ $(document).ready(function() {
         $.ajax({
             type : "POST",
             url : 'save-weather.php',
-            dataType : 'json',
+            data : report,
             success : function(data){
-                alert(data.a +data.b);
+                alert(data);
             }
         });
     }
