@@ -10,7 +10,7 @@ $high = $_POST['hi'];
 $low = $_POST['lw'];
 $summary = $_POST['smry']; 
 
-echo $date . " " . $address ." ". $summary . 'added to favorites';
+echo $date . " " . $address ." ". $summary . ' added to favorites';
 
 
 // if (isset($_POST['dpick'], $_POST['addy'])) {
