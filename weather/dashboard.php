@@ -72,11 +72,11 @@ if (login_check($mysqli) == true) {
 
                    $result = $stmt->get_result();
 
-                   while($row = $result->fetch_object()) {
+                   while($row = mysql_fetch_array($result, MYSQLI_ASSOC) {
 
-                        $results[] = $row;
+                        // $results[] = $row;
                             // echo '<td>'. $results['date'] . '</td>';
-                            // echo '<td>'. $results['address'] . '</td>';
+                            echo '<td>'. $results['address'] . '</td>';
                             // echo '<td>'. $results['high'] . '</td>';
                             // echo '<td>'. $results['low'] . '</td>';
                             // echo '<td>'. $results['summary'] . '</td>';
