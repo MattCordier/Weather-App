@@ -49,6 +49,7 @@ if (login_check($mysqli) == true) {
         <div id="weather" class="container">    
             <div class="row">
                 <div class="twelve columns">
+                    <table>
                     <thead>
                     <tr>
                       <th>Date</th>
@@ -64,13 +65,13 @@ if (login_check($mysqli) == true) {
                     include_once 'includes/psl-config.php';
                    $stmt = $mysqli->prepare("SELECT * FROM locations ORDER BY ID DESC");
 
-                   $stmt->bind_param();
+                   $stmt->bind_param($address, $date, $high, $low, $summary);
 
                    $stmt->execute();
 
                    $result = $stmt->get_result();
 
-                   while($row = $result->fetch_object()) {
+                   while($row = $result->mysql_fetch_assoc($res)) {
 
                         $results[] = $row;
 
@@ -91,7 +92,7 @@ if (login_check($mysqli) == true) {
                             // echo '</tr>';
                    }
                    // $result->close();
-                   echo $results[0][0];
+
                     // print_r($results);                  ?>
                   </tbody>
             </table>
