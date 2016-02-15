@@ -91,7 +91,7 @@ if (login_check($mysqli) == true) {
                             // echo '</tr>';
                    }
                    // $result->close();
-                   echo $results[0];
+                   echo $results[0][0];
                     // print_r($results);                  ?>
                   </tbody>
             </table>
