@@ -73,11 +73,11 @@ if (login_check($mysqli) == true) {
                    while($row = $result->fetch_object()) {
 
                         $results[] = $row;
-                            echo '<td>'. $results['date'] . '</td>';
-                            echo '<td>'. $results['address'] . '</td>';
-                            echo '<td>'. $results['high'] . '</td>';
-                            echo '<td>'. $results['low'] . '</td>';
-                            echo '<td>'. $results['summary'] . '</td>';
+                            echo '<td>'. $results[0] . '</td>';
+                            echo '<td>'. $results[1] . '</td>';
+                            echo '<td>'. $results[2] . '</td>';
+                            echo '<td>'. $results[3] . '</td>';
+                            echo '<td>'. $results[4] . '</td>';
                             
                             // echo '<td width=250>';
                             //     echo '<a class="btn" href="trip_read.php?id='.$row['id'].'">Read</a>';
