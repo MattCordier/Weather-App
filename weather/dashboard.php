@@ -72,11 +72,11 @@ if (login_check($mysqli) == true) {
 
                    $result = $stmt->get_result();
 
-                   while($row = mysqli_fetch_array($stmt) {
+                   while($row = mysqli_fetch_array(MYSQLI_ASSOC) {
 
-                        // $results[] = $row;
+                        $results[] = $row;
                             // echo '<td>'. $results['date'] . '</td>';
-                            echo '<td>'. $row['address'] . '</td>';
+                            // echo '<td>'. $row['address'] . '</td>';
                             // echo '<td>'. $results['high'] . '</td>';
                             // echo '<td>'. $results['low'] . '</td>';
                             // echo '<td>'. $results['summary'] . '</td>';
@@ -90,8 +90,8 @@ if (login_check($mysqli) == true) {
                             //     echo '</td>';
                             // echo '</tr>';
                    }
-                   // $result->close();
-                    // print_r($results);                  
+                   $result->close();
+                    print_r($results);                  
                     ?>
                   </tbody>
             </table>
