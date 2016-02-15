@@ -64,12 +64,12 @@ if (login_check($mysqli) == true) {
                     include_once 'includes/psl-config.php';
                    $result = $mysqli->query("SELECT * locations ORDER BY ID DESC"); 
                                      
-                   while($row = $result->fetch_object()) {
-                            echo '<td>'. $row['date'] . '</td>';
-                            echo '<td>'. $row['address'] . '</td>';
-                            echo '<td>'. $row['high'] . '</td>';
-                            echo '<td>'. $row['low'] . '</td>';
-                            echo '<td>'. $row['summary'] . '</td>';
+                   // while($row = $result->fetch_object()) {
+                   //          echo '<td>'. $row['date'] . '</td>';
+                   //          echo '<td>'. $row['address'] . '</td>';
+                   //          echo '<td>'. $row['high'] . '</td>';
+                   //          echo '<td>'. $row['low'] . '</td>';
+                   //          echo '<td>'. $row['summary'] . '</td>';
                             
                             // echo '<td width=250>';
                             //     echo '<a class="btn" href="trip_read.php?id='.$row['id'].'">Read</a>';
@@ -79,8 +79,8 @@ if (login_check($mysqli) == true) {
                             //     echo '<a class="btn btn-danger" href="trip_delete.php?id='.$row['id'].'">Delete</a>';
                             //     echo '</td>';
                             // echo '</tr>';
-                   }
-                   $result->close();
+                   // }
+                   // $result->close();
                    
                   ?>
                   </tbody>
