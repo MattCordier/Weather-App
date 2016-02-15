@@ -70,7 +70,7 @@ if (login_check($mysqli) == true) {
 
                    $stmt->execute();
 
-                   $result = $stmt->get_result();
+                   // $result = $stmt->get_result();
 
                    while($row = mysql_fetch_array($result, MYSQLI_ASSOC) {
 
