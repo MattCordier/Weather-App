@@ -48,7 +48,7 @@ if (login_check($mysqli) == true) {
 
         <div id="weather" class="container">    
             <div class="row">
-                <div class="six columns">
+                <div class="twelve columns">
                     <thead>
                     <tr>
                       <th>Date</th>
@@ -62,7 +62,7 @@ if (login_check($mysqli) == true) {
                   </thead>
 
                 </div>
-                <div class="six columns">beautiful</div>
+                <!-- <div class="six columns">beautiful</div> -->
             </div>
         </div>
 
