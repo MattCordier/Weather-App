@@ -70,9 +70,9 @@ if (login_check($mysqli) == true) {
 
                    $stmt->execute();
 
-                   $result = $stmt->get_result();
+                   // $result = $stmt->get_result();
 
-                   while($row = mysqli_fetch_assoc($result, MYSQLI_ASSOC) {
+                   while($row = mysqli_fetch_array($result, MYSQLI_ASSOC) {
 
                         // $results[] = $row;
                             // echo '<td>'. $results['date'] . '</td>';
@@ -91,7 +91,8 @@ if (login_check($mysqli) == true) {
                             // echo '</tr>';
                    }
                    // $result->close();
-                    print_r($results);                  ?>
+                    // print_r($results);                  
+                    ?>
                   </tbody>
             </table>
 
