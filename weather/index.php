@@ -45,8 +45,8 @@ if (login_check($mysqli) == true) {
             <header id="main-header">
         <?php 
             if (login_check($mysqli) == true) {
-                echo '<p class="user-stats">Currently logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . '.&nbsp</p>';
-                echo '<p class="user-stats">Do you want to change user? <a href="includes/logout.php">Log out</a>.&nbsp</p>';
+                echo '<p class="user-stats">Logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . '.&nbsp</p>';
+                echo '<p class="user-stats">Change user? <a href="includes/logout.php">Log out</a>.&nbsp</p>';
             } else {
                 echo '<p class="user-stats">Currently logged ' . $logged . '.&nbsp</p>';
                 echo "<p class='user-stats'>Don't have an account? <a id='register' href='register.php'>Register here</a>&nbsp</p>";
