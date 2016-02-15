@@ -76,7 +76,7 @@ if (login_check($mysqli) == true) {
 
                         // $results[] = $row;
                             // echo '<td>'. $results['date'] . '</td>';
-                            echo '<td>'. $results['address'] . '</td>';
+                            echo '<td>'. $row['address'] . '</td>';
                             // echo '<td>'. $results['high'] . '</td>';
                             // echo '<td>'. $results['low'] . '</td>';
                             // echo '<td>'. $results['summary'] . '</td>';
