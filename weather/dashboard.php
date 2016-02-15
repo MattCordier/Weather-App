@@ -49,8 +49,6 @@ if (login_check($mysqli) == true) {
         <div id="weather" class="container">    
             <div class="row">
                 <div class="twelve columns">
-                                        <table>
-
                     <thead>
                     <tr>
                       <th>Date</th>
@@ -64,22 +62,26 @@ if (login_check($mysqli) == true) {
                   <?php
                     include_once 'includes/db_connect.php';
                     include_once 'includes/psl-config.php';
-                   $stmt = $mysqli->prepare("SELECT * FROM locations ORDER BY ID DESC");
+                   $stmt = $mysqli->prepare("SELECT * FROM locations");
 
-                   // $stmt->bind_param();
+                   $stmt->bind_param();
 
                    $stmt->execute();
 
                    $result = $stmt->get_result();
 
-                   while($row = mysqli_fetch_array(MYSQLI_ASSOC) {
 
-                        $results[] = $row;
-                            // echo '<td>'. $results['date'] . '</td>';
+
+
+                                     
+                   while($row = $result->fetch_object()) {
+
+                        $results = $row;
+                            // echo '<td>'. $row['date'] . '</td>';
                             // echo '<td>'. $row['address'] . '</td>';
-                            // echo '<td>'. $results['high'] . '</td>';
-                            // echo '<td>'. $results['low'] . '</td>';
-                            // echo '<td>'. $results['summary'] . '</td>';
+                            // echo '<td>'. $row['high'] . '</td>';
+                            // echo '<td>'. $row['low'] . '</td>';
+                            // echo '<td>'. $row['summary'] . '</td>';
                             
                             // echo '<td width=250>';
                             //     echo '<a class="btn" href="trip_read.php?id='.$row['id'].'">Read</a>';
@@ -90,9 +92,8 @@ if (login_check($mysqli) == true) {
                             //     echo '</td>';
                             // echo '</tr>';
                    }
-                   $result->close();
-                    print_r($results);                  
-                    ?>
+                   // $result->close();
+                    print_r($results);                  ?>
                   </tbody>
             </table>
 
