@@ -73,7 +73,7 @@ if (login_check($mysqli) == true) {
                    while($row = $result->fetch_object()) {
 
                         $results[] = $row;
-                        echo $results[];
+
 
                             // echo '<td>'. $results['date'] . '</td>';
                             // echo '<td>'. $results['address'] . '</td>';
@@ -91,6 +91,7 @@ if (login_check($mysqli) == true) {
                             // echo '</tr>';
                    }
                    // $result->close();
+                   echo $results[0];
                     // print_r($results);                  ?>
                   </tbody>
             </table>
