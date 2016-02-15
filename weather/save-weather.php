@@ -28,5 +28,5 @@ $insert_stmt = $mysqli->prepare($prep_stmt);
 $insert_stmt->bind_param('sssss', $address, $date, $high, $low, $summary);
 $insert_stmt->execute();
 $insert_stmt->store_result();
-header('Location: index.php');
+
 ?>
