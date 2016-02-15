@@ -29,6 +29,6 @@ $insert_stmt->execute();
 $insert_stmt->store_result();
 
 
-return "added to favorites";
+echo "added to favorites";
 
 ?>
