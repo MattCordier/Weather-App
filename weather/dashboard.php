@@ -33,11 +33,12 @@
                 <a href="login.php" class="login-link">login</a>         
             </header>
 
-        </div>    
+
         
     <footer id="main-footer">
             <p class="foot-deets">Weather App developed by <a href="http://mattcordier.github.io" target="_blank">Matt Cordier.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Powered by <a href="http://forecast.io" target="_blank">Forecast.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matt Cordier &copy; 2016</p>
         </footer>
+        </div>
            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="assets/js/jquery-ui.min.js"></script>
