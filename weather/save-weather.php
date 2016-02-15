@@ -11,7 +11,6 @@ $high = $_POST['hi'];
 $low = $_POST['lw'];
 $summary = $_POST['smry']; 
 
-echo $date . " " . $address ." ". $summary . ' added to favorites';
 
 
 // if (isset($_POST['dpick'], $_POST['addy'])) {
@@ -28,5 +27,8 @@ $insert_stmt = $mysqli->prepare($prep_stmt);
 $insert_stmt->bind_param('sssss', $address, $date, $high, $low, $summary);
 $insert_stmt->execute();
 $insert_stmt->store_result();
+
+
+return "added to favorites";
 
 ?>
