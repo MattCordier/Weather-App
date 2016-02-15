@@ -48,7 +48,20 @@ if (login_check($mysqli) == true) {
 
         <div id="weather" class="container">    
             <div class="row">
-                <div class="six columns">hello</div>
+                <div class="six columns">
+                    <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Location</th>
+                      <th>High</th>
+                      <th>Low</th>
+                      <th>Summary</th>
+
+                      
+                    </tr>
+                  </thead>
+
+                </div>
                 <div class="six columns">beautiful</div>
             </div>
         </div>
