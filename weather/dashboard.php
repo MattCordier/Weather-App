@@ -46,12 +46,12 @@ if (login_check($mysqli) == true) {
                 <a href="login.php" class="login-link">login</a>         
             </header>
 
-
-        <div class="row">
-            <div class="six columns">hello</div>
-            <div class="six columns">beautiful</div>
+        <div id="weather" class="container">    
+            <div class="row">
+                <div class="six columns">hello</div>
+                <div class="six columns">beautiful</div>
+            </div>
         </div>
-
 
         
     <footer id="main-footer">
