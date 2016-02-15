@@ -62,8 +62,8 @@ if (login_check($mysqli) == true) {
                   <?php
                     include_once 'includes/db_connect.php';
                     include_once 'includes/psl-config.php';
-                   $result = $mysqli->query("SELECT * locations ORDER BY ID DESC"); 
-                   echo "HELLO";
+                   $result = $mysqli->query("SELECT * FROM locations"); 
+                   echo $result;
                                      
                    // while($row = $result->fetch_object()) {
                    //          echo '<td>'. $row['date'] . '</td>';
