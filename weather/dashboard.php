@@ -70,13 +70,9 @@ if (login_check($mysqli) == true) {
 
                    $result = $stmt->get_result();
 
-
-
-
-                                     
                    while($row = $result->fetch_object()) {
 
-                        $results = $row;
+                        $results += $row;
                             echo '<td>'. $row['date'] . '</td>';
                             echo '<td>'. $row['address'] . '</td>';
                             echo '<td>'. $row['high'] . '</td>';
