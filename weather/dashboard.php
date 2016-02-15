@@ -55,11 +55,13 @@ if (login_check($mysqli) == true) {
                       <th>Location</th>
                       <th>High</th>
                       <th>Low</th>
-                      <th>Summary</th>
-
-                      
+                      <th>Summary</th> 
                     </tr>
                   </thead>
+                  <tbody>
+                 
+                  </tbody>
+            </table>
 
                 </div>
                 <!-- <div class="six columns">beautiful</div> -->
