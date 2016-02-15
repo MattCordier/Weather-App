@@ -59,7 +59,31 @@ if (login_check($mysqli) == true) {
                     </tr>
                   </thead>
                   <tbody>
-                 
+                  <?php
+                    include_once 'includes/db_connect.php';
+                    include_once 'includes/psl-config.php';
+                   $prep_stmt = "SELECT * locations ORDER BY ID DESC"; 
+                   $insert_stmt = $mysqli->prepare($prep_stmt);
+                   $insert_stmt->execute();
+                    $insert_stmt->store_result();                  
+                   foreach ($mysqli->query($prep_stmt) as $row) {
+                            echo '<td>'. $row['date'] . '</td>';
+                            echo '<td>'. $row['address'] . '</td>';
+                            echo '<td>'. $row['high'] . '</td>';
+                            echo '<td>'. $row['low'] . '</td>';
+                            echo '<td>'. $row['summary'] . '</td>';
+                            
+                            // echo '<td width=250>';
+                            //     echo '<a class="btn" href="trip_read.php?id='.$row['id'].'">Read</a>';
+                            //     echo ' ';
+                            //     echo '<a class="btn btn-success" href="trip_update.php?id='.$row['id'].'">Update</a>';
+                            //     echo ' ';
+                            //     echo '<a class="btn btn-danger" href="trip_delete.php?id='.$row['id'].'">Delete</a>';
+                            //     echo '</td>';
+                            // echo '</tr>';
+                   }
+                   
+                  ?>
                   </tbody>
             </table>
 
