@@ -23,7 +23,7 @@ echo $date . " " . $address ." ". $summary . ' added to favorites';
 	
 
 $insert_stmt = $mysqli->prepare("INSERT INTO locations (address, date, high, low, summary) VALUES (?, ?, ?, ?, ?)")
-$insert_stmt->bind_param($address, $date, $high, $low, $summary);
+$insert_stmt->bind_param('sssss', $address, $date, $high, $low, $summary);
 $insert_stmt->execute();
 header('Location: login.php');
 ?>
