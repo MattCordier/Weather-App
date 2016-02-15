@@ -35,7 +35,7 @@ $(document).ready(function() {
             data : report,
             success : function(data){
                 $('#alert').html(data);
-                console.log(data);
+                alert(data);
             }
         });
     }
