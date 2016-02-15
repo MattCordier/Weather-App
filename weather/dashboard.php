@@ -72,7 +72,7 @@ if (login_check($mysqli) == true) {
 
                    // $result = $stmt->get_result();
 
-                   while($row = mysql_fetch_array($result, MYSQLI_ASSOC) {
+                   while($row = mysqli_fetch_array($result, MYSQLI_ASSOC) {
 
                         // $results[] = $row;
                             // echo '<td>'. $results['date'] . '</td>';
