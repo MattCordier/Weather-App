@@ -34,7 +34,7 @@ $(document).ready(function() {
             url : 'save-weather.php',
             data : report,
             success : function(data){
-                $('#app-title').html(data);
+                $('#alert').html(data);
             }
         });
     }
