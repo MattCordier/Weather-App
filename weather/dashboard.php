@@ -19,5 +19,33 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body>
+        <div class="wrapper"> 
+            <header id="main-header">
+        <?php 
+            if (login_check($mysqli) == true) {
+                echo '<p class="user-stats">Currently logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . '.&nbsp</p>';
+                echo '<p class="user-stats">Do you want to change user? <a href="includes/logout.php">Log out</a>.&nbsp</p>';
+            } else {
+                echo '<p class="user-stats">Currently logged ' . $logged . '.&nbsp</p>';
+                echo "<p class='user-stats'>Don't have an account? <a id='register' href='register.php'>Register here</a>&nbsp</p>";
+              }
+        ?>   
+                <a href="login.php" class="login-link">login</a>         
+            </header>
+
+        </div>    
         
-    </body>    
+    <footer id="main-footer">
+            <p class="foot-deets">Weather App developed by <a href="http://mattcordier.github.io" target="_blank">Matt Cordier.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Powered by <a href="http://forecast.io" target="_blank">Forecast.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matt Cordier &copy; 2016</p>
+        </footer>
+           
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/maps.js"></script>
+        <script type="text/JavaScript" src="assets/js/sha512.js"></script> 
+        <script type="text/JavaScript" src="assets/js/forms.js"></script> 
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&libraries=places"></script>   
+    </body>
+</html>   
