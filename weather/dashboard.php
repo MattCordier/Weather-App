@@ -59,6 +59,7 @@ if (login_check($mysqli) == true) {
                                 <th>High</th>
                                 <th>Low</th>
                                 <th>Summary</th> 
+                                <th>Remove</th>
                             </tr>
                         </thead>
                         <tbody>
