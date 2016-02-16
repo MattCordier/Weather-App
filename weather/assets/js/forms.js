@@ -43,9 +43,9 @@ $(document).ready(function() {
         $.ajax({
             type : "POST",
             url : 'remove-forecast.php',
-            data : $(this).attr("value"),
+            data : $('.btn-remove').attr("value"),
             success : function(data){
-                alert($(this).attr("value"));
+                alert($('.btn-remove').attr("value"));
             }
         });
     })
