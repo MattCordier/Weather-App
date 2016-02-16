@@ -8,9 +8,9 @@ $id = $_POST['id'];
 
 $prep_stmt = "DELETE FROM locations WHERE ID = ?";
 $delete_stmt = $mysqli->prepare($prep_stmt);
-$insert_stmt->bind_param('i', $id);
-$insert_stmt->execute();
-$insert_stmt->store_result();
+$delete_stmt->bind_param('i', $id);
+$delete_stmt->execute();
+$delete_stmt->store_result();
 
 echo "removed";
 ?>
