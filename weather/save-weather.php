@@ -3,8 +3,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', 'on');
 include_once 'includes/db_connect.php';
 include_once 'includes/psl-config.php';
- 
+include_once 'includes/functions.php'; 
 
+sec_session_start();
 $error_msg = ""; 
 $id = $_SESSION['id'];
 $date = $_POST['dpick'];
