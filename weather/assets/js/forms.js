@@ -40,12 +40,12 @@ $(document).ready(function() {
     }
     });
     $('.btn-remove').on('click', function(){
-        var id = $(".btn-remove").attr('id');
+        // var id = $(".btn-remove").attr('id');
         // alert(this.id);
         $.ajax({
             type : "POST",
             url : 'remove-forecast.php',
-            data : this.id,
+            data : $(".btn-remove").attr('id'),
             success : function(data){
                 console.log(id);
             }
