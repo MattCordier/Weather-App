@@ -33,6 +33,8 @@ if (login_check($mysqli) == true) {
     </head>
     <body>
         <div class="wrapper">
+            <header id="main-header">
+            </header>    
 
 <?php
         if (isset($_GET['error'])) {
