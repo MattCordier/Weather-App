@@ -43,7 +43,7 @@ $(document).ready(function() {
         $.ajax({
             type : "POST",
             url : 'remove-forecast.php',
-            data : $('.btn-remove').attr("value"),
+            data : $(this).attr("value"),
             success : function(data){
                 alert($('.btn-remove').attr("value"));
             }
