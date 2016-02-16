@@ -61,9 +61,10 @@ if (login_check($mysqli) == true) {
                         </thead>
                     <tbody>
                 <?php
-                    include_once 'includes/db_connect.php';
-                    include_once 'includes/psl-config.php';
-                    $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = $_SESSION['user_id'] ORDER BY ID DESC");
+                    $id = $_SESSION['user_id'];
+                    
+                    $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ? ORDER BY ID DESC");
+                    $stmt->bind_param('i', $id )
                     $stmt->execute();
                     $result = $stmt->get_result();
 
