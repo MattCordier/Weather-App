@@ -275,8 +275,7 @@ a > .fa-star:hover {
 #alert {
   font-size: 1rem;
   margin-top: -20px;
-  color: orange;
-  background-color: rgba(0,0,0,.3)
+  
 }
 
 .weather-selector {
