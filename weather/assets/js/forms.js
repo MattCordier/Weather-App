@@ -51,7 +51,7 @@ $(document).ready(function() {
                 $(tr).find('td').fadeOut(1500, function(){
                     $(tr).remove();
                 });
-                alert(data);
+                
             }
         });
     })
