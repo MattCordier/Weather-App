@@ -55,14 +55,14 @@ th {
  button.btn-remove {  
   height: 2em;
   border: none;
-  color: red;
+  color: grey;
   font-size: 18px;
   padding: 0px auto 0px auto ;
   margin-bottom: 0px;
  }
 
  button.btn-remove:hover {
-  color: grey; 
+  color: red; 
  }
 
 .header {
