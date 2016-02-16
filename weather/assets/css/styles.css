@@ -75,6 +75,7 @@ th {
 
 .user-stats {
   display: inline-block;
+  position: absolute;
   top: 0px;
   font-size: .9rem;
   
