@@ -12,5 +12,5 @@ $delete_stmt->bind_param('i', $id);
 $delete_stmt->execute();
 $delete_stmt->store_result();
 
-echo "removed";
+echo "Forecast Removed";
 ?>
