@@ -53,6 +53,7 @@ th {
  }
 
  #weather.dashboard-container {
+  background: rgba(0,0,0,.8);
   border: 1px solid white;
  }
 
