@@ -41,15 +41,15 @@ $(document).ready(function() {
     });
     $('.btn-remove').on('click', function(){
         var id = $(".btn-remove").attr('id');
-        alert(this.id);
-        // $.ajax({
-        //     type : "POST",
-        //     url : 'remove-forecast.php',
-        //     data : $(this).attr("value"),
-        //     success : function(data){
-                
-        //     }
-        // });
+        // alert(this.id);
+        $.ajax({
+            type : "POST",
+            url : 'remove-forecast.php',
+            data : id,
+            success : function(data){
+                console.log(id);
+            }
+        });
     })
 });
 
