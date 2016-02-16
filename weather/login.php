@@ -35,6 +35,7 @@ if (login_check($mysqli) == true) {
         <div class="wrapper">
             <header id="main-header">
             </header>    
+            <div id="weather" class="container">
 
 <?php
         if (isset($_GET['error'])) {
@@ -63,6 +64,7 @@ if (login_check($mysqli) == true) {
                 }
 
 ?>
+        </div>
         </div>
         <footer id="main-footer">
             <p class="foot-deets">Weather App developed by <a href="http://mattcordier.github.io" target="_blank">Matt Cordier.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Powered by <a href="http://forecast.io" target="_blank">Forecast.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matt Cordier &copy; 2016</p>
