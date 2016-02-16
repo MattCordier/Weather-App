@@ -50,7 +50,7 @@ $(document).ready(function() {
             success : function(data){
                 $(tr).find('td').fadeOut(1000, function(){
                     $(tr).remove();
-                    alert("Forecast Removed");
+                    
                 });
                 
             }
