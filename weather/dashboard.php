@@ -74,7 +74,7 @@ if (login_check($mysqli) == true) {
 
 
                                      
-                   while($row = $result->fetch_object()) {
+                   while($row = $result->fetch_all()) {
 
                         $results[] = $row;
                             // echo '<td>'. $row['date'] . '</td>';
