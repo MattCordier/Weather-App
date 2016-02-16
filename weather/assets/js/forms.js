@@ -45,7 +45,7 @@ $(document).ready(function() {
             url : 'remove-forecast.php',
             data : $(this).attr("value"),
             success : function(data){
-                alert($(this.attr("value"));
+                alert($(this).attr("value"));
             }
         });
     })
