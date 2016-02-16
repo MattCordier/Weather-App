@@ -17,7 +17,7 @@ $summary = $_POST['smry'];
 
 $prep_stmt = "INSERT INTO locations (address, date, high, low, summary) VALUES (?, ?, ?, ?, ?, ?)";
 $insert_stmt = $mysqli->prepare($prep_stmt);
-$insert_stmt->bind_param('sssss', $address, $date, $high, $low, $summary, $id);
+$insert_stmt->bind_param('sssssd', $address, $date, $high, $low, $summary, $id);
 $insert_stmt->execute();
 $insert_stmt->store_result();
 
