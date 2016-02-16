@@ -51,6 +51,7 @@ if (login_check($mysqli) == true) {
         <div id="weather" class="container">    
             <div class="row">
                 <div class="twelve columns">
+                    <table>
                     <thead>
                     <tr>
                       <th>Date</th>
