@@ -73,7 +73,7 @@ if (login_check($mysqli) == true) {
                    $result = $stmt->get_result();
 
                    while($row = $result->fetch_all()) {
-                        print_r($row);
+                        // print_r($row);
                         // $results[] = $row;
                             echo '<td>'. $row[0][3] . '</td>';
                             // echo '<td>'. $row['address'] . '</td>';
