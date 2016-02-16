@@ -79,7 +79,7 @@ if (login_check($mysqli) == true) {
                             echo '<td>'. $row['high'] . '</td>';
                             echo '<td>'. $row['low'] . '</td>';
                             echo '<td>'. $row['summary'] . '</td>';
-                            echo '<td><button class="btn-remove">X</button></td>';
+                            echo '<td><button class="btn-remove" value='. $row['ID'] .'>X</button></td>';
                             echo '</tr>';
 
                             
