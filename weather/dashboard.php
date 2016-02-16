@@ -93,6 +93,7 @@ if (login_check($mysqli) == true) {
                         
 
                     </div>
+                    <div id="alert"></div>
                 </div>
         </div><!--end container-->
 
