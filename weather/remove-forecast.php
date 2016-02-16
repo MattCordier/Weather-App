@@ -1,5 +1,5 @@
 <?php
-
+sec_session_start(); 
 include_once 'includes/db_connect.php';
 include_once 'includes/psl-config.php';
 
