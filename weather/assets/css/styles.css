@@ -52,7 +52,7 @@ th {
   background-size: cover; 
  }
 
- .dashboard-container {
+ #weather.dashboard-container {
   border: 1px solid white;
  }
 
