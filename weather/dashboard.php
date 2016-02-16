@@ -85,6 +85,14 @@ if (login_check($mysqli) == true) {
 
                 </div><!--end column-->
             </div><!--end row-->
+            <div class="row weather-footer">
+
+                    <div class="twelve columns"> 
+
+                        yep
+
+                    </div>
+                </div>
         </div><!--end container-->
 
         
