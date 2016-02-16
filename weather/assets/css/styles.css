@@ -47,6 +47,10 @@ th {
   overflow: none;
  }
 
+ .btn-remove {
+  font-size: 12px;
+ }
+
 .header {
 	position: relative;
   margin: 0px;
