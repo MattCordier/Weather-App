@@ -76,7 +76,7 @@ if (login_check($mysqli) == true) {
                         // print_r($row);
                         // $results[] = $row;
                             echo '<td>'. $row[0][3] . '</td>';
-                            // echo '<td>'. $row['address'] . '</td>';
+                            echo '<td>'. $row[0][4] . '</td>';
                             // echo '<td>'. $row['high'] . '</td>';
                             // echo '<td>'. $row['low'] . '</td>';
                             // echo '<td>'. $row['summary'] . '</td>';
