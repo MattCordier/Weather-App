@@ -51,12 +51,12 @@ if (login_check($mysqli) == true) {
  
 <?php
         if (login_check($mysqli) == true) {
-                        echo '<p>Currently logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . '.</p>';
+                        echo '<p>Currently logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . '.';
  
-            echo '<p>Do you want to change user? <a href="includes/logout.php">Log out</a>.</p>';
+            echo 'Do you want to change user? <a href="includes/logout.php">Log out</a>.</p>';
         } else {
-                        echo '<p>Currently logged ' . $logged . '.</p>';
-                        echo "<p>Don't have an account? <a id='register' href='register.php'>Register here</a></p>";
+                        echo '<p>Currently logged ' . $logged . '.';
+                        echo "Don't have an account? <a id='register' href='register.php'>Register here</a></p>";
                 }
 
 ?>
