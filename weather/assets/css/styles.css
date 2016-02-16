@@ -48,7 +48,7 @@ th {
  }
 
  .btn-remove {
-  width: 3px;  
+  width: 3px !important;  
   height: 2em;
  }
 
