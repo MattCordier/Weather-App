@@ -15,7 +15,7 @@ include_once 'includes/functions.php';
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
-    <body>
+    <body class="register-bg">
         <div class="wrapper">
             <header id="main-header">
                 <a href="index.php" class="login-link">view map</a>
