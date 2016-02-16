@@ -44,6 +44,9 @@ th {
   font-size: 12px;
   padding: 0px;
  }
+ .register-heading {
+  font-size: 2.5rem;
+ }
 
  .dashboard-bg {
   background: url(../img/earth-space.jpg) no-repeat center center fixed;
