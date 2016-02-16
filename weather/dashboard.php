@@ -81,7 +81,7 @@ if (login_check($mysqli) == true) {
                             echo '<td>'. $row['high'] . '</td>';
                             echo '<td>'. $row['low'] . '</td>';
                             echo '<td>'. $row['summary'] . '</td>';
-                            echo '<br/>';
+                            echo '<br>';
                             
                             // echo '<td width=250>';
                             //     echo '<a class="btn" href="trip_read.php?id='.$row['id'].'">Read</a>';
