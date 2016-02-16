@@ -45,7 +45,7 @@ th {
  }
 
  .weather-table{
-  overflow: none;
+  overflow-y: auto;
  }
 
  .table-date {
