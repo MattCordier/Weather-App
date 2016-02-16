@@ -41,13 +41,14 @@ $(document).ready(function() {
     });
     $('.btn-remove').on('click', function(){
         var id = this.id;
+        var tr = $(this).closest('tr');
         // alert(this.id);
         $.ajax({
             type : "POST",
             url : 'remove-forecast.php',
             data : { id : id },
             success : function(data){
-                $().closest('tr').remove();
+                $tr.find('td').remove();
                 alert(data);
             }
         });
