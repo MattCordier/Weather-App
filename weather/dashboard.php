@@ -69,6 +69,7 @@ if (login_check($mysqli) == true) {
                    $stmt->execute();
 
                    $result = $stmt->get_result();
+                   echo $result;
 
 
 
