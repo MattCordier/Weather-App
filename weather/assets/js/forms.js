@@ -54,8 +54,9 @@ $(document).ready(function() {
                 });
                 
             }
-            alert("Forecast Removed");
+
         });
+        alert("Forecast Removed");
     })
 });
 
