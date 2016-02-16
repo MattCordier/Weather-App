@@ -53,6 +53,14 @@ th {
   background-size: cover; 
  }
 
+ .login-bg {
+  background: url(../img/earth-space.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+ }
+
  #weather.dashboard-container {
   background: rgba(0,0,0,.8);
   border: 1px solid white;
