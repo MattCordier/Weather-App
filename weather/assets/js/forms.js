@@ -40,7 +40,7 @@ $(document).ready(function() {
     }
     });
     $('.btn-remove').on('click', function(){
-        var id = $(".btn-remove").attr('id');
+        var id = this.id;
         // alert(this.id);
         $.ajax({
             type : "POST",
