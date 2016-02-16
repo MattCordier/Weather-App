@@ -41,7 +41,7 @@ $(document).ready(function() {
     });
     $('.btn-remove').on('click', function(){
         var id = $(".btn-remove").attr('id');
-        alert(id);
+        alert(this.id);
         // $.ajax({
         //     type : "POST",
         //     url : 'remove-forecast.php',
