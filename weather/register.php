@@ -70,7 +70,7 @@ include_once 'includes/functions.php';
                                    this.form.password,
                                    this.form.confirmpwd);" /> 
         </form>
-        <p>Return to the <a href="index.php">login page</a>.</p>
+        <p>Return to the <a href="login.php">login page</a>.</p>
         </div>
         </div>
         <footer id="main-footer">
