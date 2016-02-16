@@ -52,12 +52,12 @@ th {
   padding-right: 5px;
  }
 
- .btn-remove {  
+ button.btn-remove {  
   height: 2em;
   border: none;
   color: red;
   font-size: 18px;
-  padding: 0px auto 0px auto;
+  padding: 10px auto 0px auto;
  }
 
 .header {
