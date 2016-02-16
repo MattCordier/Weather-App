@@ -73,10 +73,9 @@ if (login_check($mysqli) == true) {
                    $result = $stmt->get_result();
 
                    while($row = $result->fetch_assoc()) {
-                        // print_r($row);
+                        print_r($row);
                         // $results[] = $row;
-                            echo '<td>'. $row[0]['date'] . '</td>';
-                            echo '<td>'. $row[0]['address'] . '</td>';
+                            // echo '<td>'. $row[0]['date'] . '</td>';
                             // echo '<td>'. $row['high'] . '</td>';
                             // echo '<td>'. $row['low'] . '</td>';
                             // echo '<td>'. $row['summary'] . '</td>';
