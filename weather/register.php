@@ -36,7 +36,7 @@ include_once 'includes/functions.php';
             echo $error_msg;
         }
         ?>
-        <ul>
+       <!--  <ul>
             <li>Usernames may contain only digits, upper and lowercase letters and underscores</li>
             <li>Emails must have a valid email format</li>
             <li>Passwords must be at least 6 characters long</li>
@@ -48,7 +48,7 @@ include_once 'includes/functions.php';
                 </ul>
             </li>
             <li>Your password and confirmation must match exactly</li>
-        </ul>
+        </ul> -->
         <form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" 
                 method="post" 
                 name="registration_form">
