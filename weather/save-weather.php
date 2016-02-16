@@ -7,7 +7,7 @@ include_once 'includes/functions.php';
 
 sec_session_start();
 $error_msg = ""; 
-$id = $_SESSION['id'];
+$id = $_SESSION['ID'];
 $date = $_POST['dpick'];
 $address = $_POST['addy'];
 $high = $_POST['hi'];
