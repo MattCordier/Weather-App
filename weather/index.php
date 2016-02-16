@@ -46,7 +46,7 @@ if (login_check($mysqli) == true) {
             <header id="main-header">
         <?php 
             if (login_check($mysqli) == true) {
-                echo '<p class="user-stats">Logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . ($_SESSION['id']) .'.&nbsp&nbsp&nbsp&nbsp';
+                echo '<p class="user-stats">Logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . $_SESSION['id'].'.&nbsp&nbsp&nbsp&nbsp';
                 echo '<a href="includes/logout.php">Log out</a>&nbsp';
                 echo '<a href="dashboard.php" class="login-link">my maps</a></p>';
             } else {
