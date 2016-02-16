@@ -34,12 +34,21 @@ $(document).ready(function() {
             url : 'save-weather.php',
             data : report,
             success : function(data){
-                $('#alert').html(data).show().delay(1750).fadeOut();
-               
+                $('#alert').html(data).show().delay(1750).fadeOut(); 
             }
         });
     }
     });
+    $('.btn-remove').on('click', function(){
+        $.ajax({
+            type : "POST",
+            url : 'remove-forecast.php',
+            data : $('.btn-remove').attr("value"),
+            success : function(data){
+                alert($('.btn-remove').attr("value"));
+            }
+        });
+    })
 });
 
 function formhash(form, password) {
