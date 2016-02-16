@@ -77,7 +77,7 @@ if (login_check($mysqli) == true) {
                    while($row = $result->fetch_all()) {
 
                         $results[] = $row;
-                            // echo '<td>'. $row['date'] . '</td>';
+                            echo '<td>'. $row['date'] . '</td>';
                             // echo '<td>'. $row['address'] . '</td>';
                             // echo '<td>'. $row['high'] . '</td>';
                             // echo '<td>'. $row['low'] . '</td>';
@@ -92,8 +92,9 @@ if (login_check($mysqli) == true) {
                             //     echo '</td>';
                             // echo '</tr>';
                    }
-                   // $result->close();
-                    print_r($results);                  ?>
+                   $result->close();
+                    // print_r($results);                  
+                    ?>
                   </tbody>
             </table>
 
