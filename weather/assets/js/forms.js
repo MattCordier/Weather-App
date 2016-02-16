@@ -47,7 +47,7 @@ $(document).ready(function() {
             url : 'remove-forecast.php',
             data : { id : id },
             success : function(data){
-                $(this).closest('tr').remove();
+                $().closest('tr').remove();
                 alert(data);
             }
         });
