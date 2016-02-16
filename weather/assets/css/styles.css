@@ -48,6 +48,10 @@ th {
   overflow: none;
  }
 
+ .table-date {
+  padding-right: 5px;
+ }
+
  .btn-remove {  
   height: 2em;
   border: none;
