@@ -72,7 +72,7 @@ if (login_check($mysqli) == true) {
 
                    $result = $stmt->get_result();
 
-                   while($row = $result->fetch_all()) {
+                   while($row = $result->fetch_assoc()) {
                         // print_r($row);
                         // $results[] = $row;
                             echo '<td>'. $row[0][3] . '</td>';
