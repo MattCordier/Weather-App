@@ -53,7 +53,7 @@ th {
   border: none;
   color: red;
   font-size: 18px;
-  padding: 0px;
+  padding: 0px auto ;
  }
 
 .header {
