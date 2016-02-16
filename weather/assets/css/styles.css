@@ -57,7 +57,8 @@ th {
   border: none;
   color: red;
   font-size: 18px;
-  padding: 10px auto 0px auto !important;
+  padding: 0px auto 0px auto ;
+  margin-bottom: 0px;
  }
 
 .header {
