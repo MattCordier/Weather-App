@@ -37,6 +37,10 @@ a {
   margin-bottom: 0px;
  }
 
+ td {
+  font-size: 12px;
+ }
+
 .header {
 	position: relative;
   margin: 0px;
