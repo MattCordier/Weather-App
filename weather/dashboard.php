@@ -49,7 +49,7 @@ if (login_check($mysqli) == true) {
             </header>
 
         <div id="weather" class="container">    
-            <div class="row">
+            <div class="row weather-table">
                 <div class="twelve columns">
                     <table>
                         <thead>

@@ -41,6 +41,10 @@ a {
   font-size: 12px;
  }
 
+ .weather-table{
+  overflow: hidden;
+ }
+
 .header {
 	position: relative;
   margin: 0px;
