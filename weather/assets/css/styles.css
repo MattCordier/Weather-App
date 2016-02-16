@@ -52,6 +52,10 @@ th {
   background-size: cover; 
  }
 
+ .dashboard-container {
+  border: 1px solid white;
+ }
+
  .table-date {
   padding-right: 5px;
  }
