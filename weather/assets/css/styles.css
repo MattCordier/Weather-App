@@ -49,6 +49,8 @@ th {
 
  .btn-remove {  
   height: 2em;
+  border: none;
+  color: red;
  }
 
 .header {
