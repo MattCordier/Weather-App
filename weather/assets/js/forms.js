@@ -45,7 +45,7 @@ $(document).ready(function() {
         $.ajax({
             type : "POST",
             url : 'remove-forecast.php',
-            data : id,
+            data : this.id,
             success : function(data){
                 console.log(id);
             }
