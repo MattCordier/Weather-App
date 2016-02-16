@@ -26,21 +26,17 @@ if (login_check($mysqli) == true) {
         <link rel="stylesheet" type="text/styles" href="assets/css/styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
-
         <link rel="stylesheet" type="text/styles" href="assets/css/weather-icons.min.css">
         <link rel="stylesheet" type="text/styles" href="assets/css/weather-icons-wind.min.css">
-
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body>
+
+        <div id="map">
+        </div>
         
-
-            <div id="map">
-            </div>
-            
-            <div class="map-overlay">
-            </div>
-
+        <div class="map-overlay">
+        </div>
 
         <div class="wrapper"> 
             <header id="main-header">
@@ -55,34 +51,20 @@ if (login_check($mysqli) == true) {
                 echo '<a href="login.php" class="login-link">login</a></p>';
 
               }
-        ?>   
-                         
+        ?>                
             </header>
-
 
             <div id="weather" class="container">
                 <h1 id="app-title">Fetching current conditions…</h1>
-                <div id="weather-header" class="row">
-            
-                </div>
+                <div id="weather-header" class="row"></div>
           
-                <div id="weather-current" class="row">
-            
-                </div>
-                <!-- <div id="weather-hourly" >
-          
-                </div>
-                <div id="weather-outlook" >
-            
-                </div> -->
-            
+                <div id="weather-current" class="row"></div>
             
                 <div class="row weather-footer">
 
                     <div class="twelve columns"> 
 
-                         <a href="#" id="datepicker" ><i class="fa fa-calendar"></i></a><input type="hidden" id="dp" />
-       
+                        <a href="#" id="datepicker" ><i class="fa fa-calendar"></i></a><input type="hidden" id="dp" />
                         <input id="address" class="location-search weather-selector" type="text" name="#"  placeholder="Select a destination" >
                         <button id="submit" class="weather-selector" type="button">Go!</button>
                         <?php
@@ -91,10 +73,8 @@ if (login_check($mysqli) == true) {
                             } 
                         ?>
                         <div id="alert"></div>
-
                     </div>
                 </div>
-            
             </div>
         </div>
         <footer id="main-footer">

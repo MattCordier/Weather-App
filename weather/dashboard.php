@@ -26,7 +26,8 @@ if (login_check($mysqli) == true) {
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">       
 
-        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>        
+        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body class="dashboard-bg">  
         <div class="wrapper"> 
@@ -89,7 +90,7 @@ if (login_check($mysqli) == true) {
 
                     <div class="twelve columns"> 
 
-                        yep
+                        
 
                     </div>
                 </div>
