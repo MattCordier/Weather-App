@@ -1,6 +1,4 @@
 <?php
-ini_set('error_reporting', E_ALL);
-
 include_once 'includes/db_connect.php';
 include_once 'includes/psl-config.php';
 

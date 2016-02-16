@@ -1,5 +1,6 @@
 <?php
-ini_set('error_reporting', E_ALL);
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
 
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
