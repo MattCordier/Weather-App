@@ -77,7 +77,7 @@ if (login_check($mysqli) == true) {
             
             
                 <div class="row weather-footer">
-                    <div id="alert"></div>
+
                     <div class="twelve columns"> 
 
                          <a href="#" id="datepicker" ><i class="fa fa-calendar"></i></a><input type="hidden" id="dp" />
@@ -89,7 +89,7 @@ if (login_check($mysqli) == true) {
                                 echo '<a href="#" id="favorite" ><i class="fa fa-star"></i></a>';
                             } 
                         ?>
-                        
+                        <div id="alert"></div>
 
                     </div>
                 </div>
