@@ -16,6 +16,11 @@ include_once 'includes/functions.php';
         <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
     <body>
+        <div class="wrapper">
+            <header id="main-header">
+                <a href="index.php" class="login-link">view map</a>
+            </header>    
+            <div id="weather" class="container">
         <!-- Registration form to be output if the POST variables are not
         set or if the registration script caused an error. -->
         <h1>Register with us</h1>
@@ -59,5 +64,18 @@ include_once 'includes/functions.php';
                                    this.form.confirmpwd);" /> 
         </form>
         <p>Return to the <a href="index.php">login page</a>.</p>
+        </div>
+        </div>
+        <footer id="main-footer">
+            <p class="foot-deets">Weather App developed by <a href="http://mattcordier.github.io" target="_blank">Matt Cordier.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Powered by <a href="http://forecast.io" target="_blank">Forecast.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matt Cordier &copy; 2016</p>
+        </footer>
+           
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="assets/js/app.js"></script>
+       <!-- <script src="assets/js/maps.js"></script> -->
+        <script type="text/JavaScript" src="assets/js/sha512.js"></script> 
+        <script type="text/JavaScript" src="assets/js/forms.js"></script> 
     </body>
 </html>
