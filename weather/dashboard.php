@@ -66,7 +66,7 @@ if (login_check($mysqli) == true) {
                     include_once 'includes/psl-config.php';
                    $stmt = $mysqli->prepare("SELECT * FROM locations");
 
-                   $stmt->bind_param();
+                   // $stmt->bind_param();
 
                    $stmt->execute();
 
