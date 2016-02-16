@@ -62,23 +62,22 @@ if (login_check($mysqli) == true) {
                   <?php
                     include_once 'includes/db_connect.php';
                     include_once 'includes/psl-config.php';
-                   $stmt = $mysqli->prepare("SELECT * FROM locations ORDER BY ID DESC");
+                   $stmt = $mysqli->prepare("SELECT * FROM locations");
 
                    $stmt->bind_param();
 
                    $stmt->execute();
 
                    $result = $stmt->get_result();
-                   echo $result;
 
 
 
 
                                      
-                   while($row = $result->fetch_all($result,MYSQLI_ASSOC)) {
+                   while($row = $result->fetch_all()) {
 
-                        echo $row;
-                            // echo '<td>'. $row['date'] . '</td>';
+                        $results[] = $row;
+                            // echo '<td>'. $results['date'] . '</td>';
                             // echo '<td>'. $row['address'] . '</td>';
                             // echo '<td>'. $row['high'] . '</td>';
                             // echo '<td>'. $row['low'] . '</td>';
@@ -94,7 +93,7 @@ if (login_check($mysqli) == true) {
                             // echo '</tr>';
                    }
                    $result->close();
-                    // print_r($results);                  
+                    print_r($results);                  
                     ?>
                   </tbody>
             </table>
