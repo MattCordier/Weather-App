@@ -63,8 +63,8 @@ if (login_check($mysqli) == true) {
                 <?php
                     $id = $_SESSION['user_id'];
                     
-                    $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ? ORDER BY ID DESC ");
-                    $stmt->bind_param('i', $id );
+                    $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
+                    $stmt->bind_param('i', $id);
                     $stmt->execute();
                     $result = $stmt->get_result();
 
