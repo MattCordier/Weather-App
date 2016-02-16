@@ -36,7 +36,9 @@ a {
  h5 {
   margin-bottom: 0px;
  }
-
+th {
+  font-size: 14px;
+}
  td {
   font-size: 12px;
  }
