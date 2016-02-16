@@ -52,36 +52,32 @@ if (login_check($mysqli) == true) {
             <div class="row">
                 <div class="twelve columns">
                     <table>
-                    <thead>
-                    <tr>
-                      <th>Date</th>
-                      <th>Location</th>
-                      <th>High</th>
-                      <th>Low</th>
-                      <th>Summary</th> 
-                    </tr>
-                  </thead>
-                  <tbody>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Location</th>
+                                <th>High</th>
+                                <th>Low</th>
+                                <th>Summary</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
                   <?php
                     include_once 'includes/db_connect.php';
                     include_once 'includes/psl-config.php';
                    $stmt = $mysqli->prepare("SELECT * FROM locations ORDER BY ID DESC");
-
-                   // $stmt->bind_param();
-
                    $stmt->execute();
-
                    $result = $stmt->get_result();
 
                    while($row = $result->fetch_assoc()) {
-                        // print_r($row);
-                        // $results[] = $row;
+                            echo '<tr>';                        
                             echo '<td>'. $row['date'] . '</td>';
                             echo '<td>'. $row['address'] . '</td>';
                             echo '<td>'. $row['high'] . '</td>';
                             echo '<td>'. $row['low'] . '</td>';
                             echo '<td>'. $row['summary'] . '</td>';
-                            echo '<br>';
+                            echo '</tr>';
+
                             
                             // echo '<td width=250>';
                             //     echo '<a class="btn" href="trip_read.php?id='.$row['id'].'">Read</a>';
