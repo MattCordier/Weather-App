@@ -45,7 +45,7 @@ th {
  }
 
  .weather-table{
-  max-height: 500px;
+  max-height: 50px;
   overflow-y: scroll;
  }
 
