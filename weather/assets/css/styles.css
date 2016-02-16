@@ -42,7 +42,7 @@ a {
  }
 
  .weather-table{
-  overflow: hidden;
+  overflow: none;
  }
 
 .header {
