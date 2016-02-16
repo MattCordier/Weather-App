@@ -52,11 +52,11 @@ $(document).ready(function() {
                     $(tr).remove();
 
                 });
-                
+                alert("Forecast Removed");
             }
 
         });
-        alert("Forecast Removed");
+        
     })
 });
 
