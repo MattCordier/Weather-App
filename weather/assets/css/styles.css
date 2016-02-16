@@ -44,6 +44,14 @@ th {
   padding: 0px;
  }
 
+ .dashboard-bg {
+  background: url(../img/globe.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+ }
+
  .table-date {
   padding-right: 5px;
  }

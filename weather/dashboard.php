@@ -34,7 +34,7 @@ if (login_check($mysqli) == true) {
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body>
-        <div id="map">
+        <div id="map" class="dashboard-bg">
             </div>
             
             <div class="map-overlay">
