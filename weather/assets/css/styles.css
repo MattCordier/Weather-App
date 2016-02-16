@@ -48,7 +48,8 @@ th {
  }
 
  .btn-remove {
-  font-size: 12px;
+  width: 10em;  
+  height: 1em;
  }
 
 .header {
