@@ -40,14 +40,16 @@ $(document).ready(function() {
     }
     });
     $('.btn-remove').on('click', function(){
-        $.ajax({
-            type : "POST",
-            url : 'remove-forecast.php',
-            data : $(this).attr("value"),
-            success : function(data){
-                alert($('.btn-remove').attr("value"));
-            }
-        });
+        var id = $(".btn-remove").attr('id');
+        alert(id);
+        // $.ajax({
+        //     type : "POST",
+        //     url : 'remove-forecast.php',
+        //     data : $(this).attr("value"),
+        //     success : function(data){
+                
+        //     }
+        // });
     })
 });
 
