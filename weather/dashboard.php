@@ -81,7 +81,7 @@ if (login_check($mysqli) == true) {
                     //     echo '<td><button class="btn-remove" id='. $row['ID'] .'>X</button></td>';
                     //     echo '</tr>';    
                     // }
-                    echo $row[1];
+                    print_r $row;
                     // $result->close();
                 ?>
                     </tbody>
