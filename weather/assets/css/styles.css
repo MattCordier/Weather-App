@@ -160,6 +160,10 @@ input[type="submit"]:active {
   position: relative;
 }
 
+.input-group input {
+  padding: 15px 0px;
+}
+
 
 .login-link {
   float: right;
