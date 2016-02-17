@@ -133,6 +133,7 @@ INPUT FORM STYLES
 input {
   background-color: transparent;
   border: 2px solid white;
+  display: inline-block;
 }
 
 
