@@ -64,7 +64,9 @@ $(document).ready(function() {
         });
 
     })
-    $('.app-form .input-group input').focusout(function(){
+    $(function(){
+  
+  $('.awesome-form .input-group input').focusout(function(){
     
     var text_val = $(this).val();
     
@@ -79,6 +81,8 @@ $(document).ready(function() {
     }
     
   });
+  
+});
 });
 
 function formhash(form, password) {
