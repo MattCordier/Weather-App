@@ -144,8 +144,8 @@ input:focus, input:active {
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
-  border: none;
-  border-bottom: solid 2px #21a1e1;
+  border: none!important;
+  border-bottom: solid 2px #21a1e1!important;
 }
 
 
