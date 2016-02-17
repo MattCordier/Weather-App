@@ -64,7 +64,10 @@ $(document).ready(function() {
         });
 
     })
-    $(function(){
+    
+});
+
+$(function(){
   
   $('.app-form .input-group input').focusout(function(){
     
@@ -82,7 +85,6 @@ $(document).ready(function() {
     
   });
   
-});
 });
 
 function formhash(form, password) {
