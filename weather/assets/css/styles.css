@@ -204,6 +204,10 @@ input[type="submit"]:active {
   margin-top: 30px;
 }
 
+.form-btn:hover {
+  background-color: rgba(255, 255, 255, .4);
+}
+
 
 .login-link {
   float: right;
