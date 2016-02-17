@@ -71,7 +71,7 @@ include_once 'includes/functions.php';
                 <label for="email">Confirm password</lable>
             </div> 
             <br/>                           
-            <input class="btn btn-default" type="button" 
+            <input class="btn btn-default form-btn" type="button" 
                    value="Register" 
                    onclick="return regformhash(this.form,
                                    this.form.username,
