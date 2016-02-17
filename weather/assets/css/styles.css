@@ -131,7 +131,7 @@ INPUT FORM STYLES
 ///////////////////////*/
 
 input {
-  background-color: none;
+  background-color: transparent;
   border: 2px solid white;
 }
 
