@@ -68,7 +68,7 @@ if (login_check($mysqli) == true) {
                     $count->execute();
                     $count_result = $count->get_result();
                     $data = $count_result->fetch_assoc();
-                    echo $data['members_id'];
+                    echo $data['members_id'][0];
                     
 
                     $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
