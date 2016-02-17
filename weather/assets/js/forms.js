@@ -48,12 +48,12 @@ $(document).ready(function() {
             url : 'remove-forecast.php',
             data : { id : id },
             success : function(data){
-                $('#alert').html(data).show().delay(1000).fadeOut().then(function(){
+                $('#alert').html(data).show().delay(1000).fadeOut().done(function() {
                     $(tr).find('td').fadeOut(1000, function(){
                     $(tr).remove();
 
                 });
-                    
+
                 });
                 
                 
