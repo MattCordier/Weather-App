@@ -69,30 +69,24 @@ if (login_check($mysqli) == true) {
                     $count_result = $count->get_result();
                     $data = $count_result->fetch_assoc();
                     print_r($data);
-
-                    // while($count_row = $count_result->fetch_assoc()){
-                    //     print_r($count_row);
-                    //     echo $count_row[COUNT('members_id')][1];
-                    // }
                     
 
-                    // $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
-                    // $stmt->bind_param('i', $id);
-                    // $stmt->execute();
-                    // $result = $stmt->get_result();
+                    $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
+                    $stmt->bind_param('i', $id);
+                    $stmt->execute();
+                    $result = $stmt->get_result();
 
-                    // while($row = $result->fetch_assoc()) {
-                    //     echo '<tr>';                        
-                    //     echo '<td class="table-date">'. $row['date'] . '</td>';
-                    //     echo '<td>'. $row['address'] . '</td>';
-                    //     echo '<td>'. $row['high'] . '</td>';
-                    //     echo '<td>'. $row['low'] . '</td>';
-                    //     echo '<td>'. $row['summary'] . '</td>';
-                    //     echo '<td><button class="btn-remove" id='. $row['ID'] .'>X</button></td>';
-                    //     echo '</tr>';    
-                    // }
-                    // print_r($count);
-                    // $result->close();
+                    while($row = $result->fetch_assoc()) {
+                        echo '<tr>';                        
+                        echo '<td class="table-date">'. $row['date'] . '</td>';
+                        echo '<td>'. $row['address'] . '</td>';
+                        echo '<td>'. $row['high'] . '</td>';
+                        echo '<td>'. $row['low'] . '</td>';
+                        echo '<td>'. $row['summary'] . '</td>';
+                        echo '<td><button class="btn-remove" id='. $row['ID'] .'>X</button></td>';
+                        echo '</tr>';    
+                    }
+                    $result->close();
                 ?>
                     </tbody>
                     </table>
