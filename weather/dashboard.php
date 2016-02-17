@@ -64,6 +64,7 @@ if (login_check($mysqli) == true) {
                 <?php
                     $id = $_SESSION['user_id'];
                     $count = mysqli_query($mysqli, "SELECT COUNT(members_id) FROM locations WHERE members_id = 5");
+                    $row = mysqli_fetch_assoc($count);
 
                     // $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
                     // $stmt->bind_param('i', $id);
@@ -80,7 +81,7 @@ if (login_check($mysqli) == true) {
                     //     echo '<td><button class="btn-remove" id='. $row['ID'] .'>X</button></td>';
                     //     echo '</tr>';    
                     // }
-                    echo $count;
+                    echo $row;
                     // $result->close();
                 ?>
                     </tbody>
