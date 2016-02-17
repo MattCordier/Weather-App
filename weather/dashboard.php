@@ -63,7 +63,14 @@ if (login_check($mysqli) == true) {
                     <tbody>
                 <?php
                     $id = $_SESSION['user_id'];
-                    $count = mysqli_query($mysqli, "SELECT COUNT(members_id) FROM locations WHERE members_id = 5");
+                    $count = $mysqli->prepare("SELECT COUNT(members_id) FROM locations WHERE members_id = ?");
+                    $count->mysqli_bind_param('i', $id);
+                    $count->execute();
+                    $count_result = $count->get_result();
+
+                    while($count_row = $count_result->fetch_assoc()){
+                        echo $count_row;
+                    }
                     
 
                     // $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
@@ -81,7 +88,7 @@ if (login_check($mysqli) == true) {
                     //     echo '<td><button class="btn-remove" id='. $row['ID'] .'>X</button></td>';
                     //     echo '</tr>';    
                     // }
-                    print_r($count);
+                    // print_r($count);
                     // $result->close();
                 ?>
                     </tbody>
