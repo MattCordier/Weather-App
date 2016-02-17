@@ -38,6 +38,7 @@ if (login_check($mysqli) == true) {
                 <a href="index.php" class="login-link">view map</a>
             </header>    
             <div id="weather" class="container login-container">
+                <h1 class="register-heading">Login to your account</h1>
 
 <?php
         if (isset($_GET['error'])) {
