@@ -40,7 +40,7 @@ $(document).ready(function() {
     }
     });
 
-    $('table').fadeIn();
+    $('table').hide().fadeIn();
     $('.btn-remove').on('click', function(){
         var id = this.id;
         var tr = $(this).closest('tr');
