@@ -69,7 +69,7 @@ if (login_check($mysqli) == true) {
                     $count_result = $count->get_result();
 
                     while($count_row = $count_result->fetch_assoc()){
-                        $count_row['members_id'];
+                        $count_row;
                     }
                     
 
