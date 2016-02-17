@@ -68,7 +68,7 @@ if (login_check($mysqli) == true) {
                     $count->execute();
                     $count_result = $count->get_result();
                     $data = $count_result->fetch_assoc();
-                    echo $data['members_id'];
+                    print_r($data);
 
                     // while($count_row = $count_result->fetch_assoc()){
                     //     print_r($count_row);
