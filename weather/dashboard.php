@@ -81,7 +81,7 @@ if (login_check($mysqli) == true) {
                     //     echo '</tr>';    
                     // }
                     echo $count;
-                    $result->close();
+                    // $result->close();
                 ?>
                     </tbody>
                     </table>
