@@ -64,7 +64,7 @@ if (login_check($mysqli) == true) {
                 <?php
                     $id = $_SESSION['user_id'];
                     $count = $mysqli->prepare("SELECT COUNT(members_id) FROM locations WHERE members_id = ?");
-                    $count->mysqli_bind_param('i', $id);
+                    $count->bind_param('i', $id);
                     $count->execute();
                     $count_result = $count->get_result();
 
