@@ -69,7 +69,7 @@ $(document).ready(function() {
 
 $(function(){
   
-  $('.app-form .input-group input').focusout(function(){
+  $('.app-form > .input-group > input').focusout(function(){
     
     var text_val = $(this).val();
     
