@@ -27,7 +27,7 @@ include_once 'includes/functions.php';
             <header id="main-header">
                 <a href="index.php" class="login-link">view map</a>
             </header>    
-            <div id="weather" class="container">
+            <div id="weather" class="container register-container">
         <!-- Registration form to be output if the POST variables are not
         set or if the registration script caused an error. -->
         <h1 class="register-heading">Register with us</h1>
