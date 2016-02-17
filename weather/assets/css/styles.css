@@ -175,7 +175,6 @@ input[type="submit"]:active {
   left: 0px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-style: italic;
   font-size: 18px;
   color: #999;
