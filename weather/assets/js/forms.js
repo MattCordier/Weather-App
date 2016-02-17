@@ -59,7 +59,7 @@ $(document).ready(function() {
         });
     })
 
-    $('.app-form .input-group input').on('blur', function(){
+    $('.app-form .input-group input').on('blur', 'input', function(){
     
             var text_val = $(this).val();
             console.log(text_val);
