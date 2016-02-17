@@ -35,7 +35,7 @@ if (login_check($mysqli) == true) {
         <?php 
             if (login_check($mysqli) == true) {
                 echo '<p class="user-stats">Logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) . '.&nbsp';
-                echo 'Change user? <a href="includes/logout.php">Log out</a>.&nbsp';
+                echo 'Change user? <a href="includes/logout.php">Log out</a>&nbsp';
                 echo '<a href="index.php" class="login-link">view map</a></p>';
             } else {
                 echo '<p class="user-stats">Currently logged ' . $logged . '.&nbsp';
