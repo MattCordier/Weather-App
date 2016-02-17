@@ -124,7 +124,7 @@ input::-webkit-input-placeholder {
    color: rgba(0,0,0,.2);
 }
 
-#login-modal {
+/*#login-modal {
 	display: block;
 	position:absolute;
   margin-top: 7px;
@@ -134,7 +134,7 @@ input::-webkit-input-placeholder {
 	border: 1px solid white;
   border-radius: 10px;
 	z-index: 9;
-}	
+}	*/
 
 
 
