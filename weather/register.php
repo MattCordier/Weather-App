@@ -70,7 +70,7 @@ include_once 'includes/functions.php';
                 <input class="form-control" type="password" name="confirmpwd" id="confirmpwd" />
                 <label for="email">Confirm password</lable>
             </div> 
-                                       
+            <br/>                           
             <input class="btn btn-default" type="button" 
                    value="Register" 
                    onclick="return regformhash(this.form,
