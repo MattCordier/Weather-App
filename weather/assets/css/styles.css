@@ -143,6 +143,10 @@ input:focus, input:active {
   outline: none;
 }
 
+input[type="text"], input[type="email"], input[type="password"] {
+  border: none;
+  border-bottom: solid 2px #21a1e1;
+
 
 
 .login-link {
