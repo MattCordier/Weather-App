@@ -52,24 +52,14 @@ $(document).ready(function() {
             success : function(data){
                 $.when($('#alert').html(data).show().delay(900).fadeOut()).done(function() {
                     $(tr).find('td').fadeOut(1000, function(){
-                    $(tr).remove();
-
-                });
-
-                });
-                
-                
+                        $(tr).remove();
+                    });
+                });   
             }
-
         });
-
     })
-    
-});
 
-$(function(){
-  
-  $('.app-form .input-group input').focusout(function(){
+    $('.app-form .input-group input').focusout(function(){
     
     var text_val = $(this).val();
     console.log(text_val);
@@ -85,8 +75,10 @@ $(function(){
     }
     
   });
-  
+    
 });
+
+
 
 function formhash(form, password) {
     // Create a new element input, this will be our hashed password field. 
