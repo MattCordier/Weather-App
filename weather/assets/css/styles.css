@@ -124,7 +124,16 @@ input::-webkit-input-placeholder {
    color: rgba(0,0,0,.2);
 }
 
+/*//////////////////////
 
+INPUT FORM STYLES
+
+///////////////////////*/
+
+input {
+  background: none;
+  border: 2px solid 
+}
 
 
 
