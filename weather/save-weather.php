@@ -19,7 +19,6 @@ $count->bind_param('i', $id);
 $count->execute();
 $count_result = $count->get_result();
 $r = mysqli_num_rows($count_result);
-echo $r;
 
 if ($r <= 9){
 	$prep_stmt = "INSERT INTO locations (address, date, high, low, summary, members_id) VALUES (?, ?, ?, ?, ?, ?)";
