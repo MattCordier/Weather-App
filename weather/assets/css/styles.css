@@ -132,7 +132,7 @@ INPUT FORM STYLES
 
 input {
   background: none;
-  border: solid 2px #21a1e1;
+  border: solid 10px pink;
   color: #21a1e1;
   padding: 15px 40px;
   font-size: 18px;
