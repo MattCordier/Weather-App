@@ -136,7 +136,7 @@ form {
 
 input {
   background: none!important;
-  border: solid 2px #21a1e1!important;
+  border: solid 2px white!important;
   color: white!important;
   padding: 15px 40px;
   font-size: 18px;
@@ -151,7 +151,7 @@ input[type="text"], input[type="email"], input[type="password"] {
   border: none!important;
   border-radius: 0px !important;
   margin-bottom: 0px !important;
-  border-bottom: solid 2px #21a1e1!important;
+  border-bottom: solid 2px white!important;
 }
 
 input[type="submit"]:active {
