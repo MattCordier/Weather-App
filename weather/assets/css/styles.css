@@ -133,7 +133,7 @@ INPUT FORM STYLES
 input {
   background: none!important;
   border: solid 2px #21a1e1!important;
-  color: #21a1e1;
+  color: white;
   padding: 15px 40px;
   font-size: 18px;
   display: inline-block;
