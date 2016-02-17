@@ -68,7 +68,7 @@ if (login_check($mysqli) == true) {
                     $count->execute();
                     $count_result = $count->get_result();
                     // $data = $count_result->fetch_assoc();
-                    $r = mysqli_num_rows($count_result);
+                    $r = mysqli_num_rows($count);
                     echo $r;
                     
 
