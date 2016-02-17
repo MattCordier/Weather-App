@@ -60,19 +60,19 @@ $(document).ready(function() {
     })
 
     $('.app-form .input-group input').focusout(function(){
-    
-            var text_val = $(this).val();
-            console.log(text_val);
+    alert("yep");
+            // var text_val = $(this).val();
+            // console.log(text_val);
         
-        if(text_val === "") {
+        // if(text_val === "") {
           
-          $(this).removeClass('has-value');
+        //   $(this).removeClass('has-value');
           
-        } else {
+        // } else {
           
-          $(this).addClass('has-value');
+        //   $(this).addClass('has-value');
           
-        }
+        // }
     
     });
     
