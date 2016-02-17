@@ -131,8 +131,11 @@ INPUT FORM STYLES
 ///////////////////////*/
 
 input {
-  background-color: transparent;
-  border: 2px solid white;
+  background: none;
+  border: solid 2px #21a1e1;
+  color: #21a1e1;
+  padding: 15px 40px;
+  font-size: 18px;
   display: inline-block;
 }
 
