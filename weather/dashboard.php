@@ -63,15 +63,8 @@ if (login_check($mysqli) == true) {
                     <tbody>
                 <?php
                     $id = $_SESSION['user_id'];
-                    $count = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
-                    $count->bind_param('i', $id);
-                    $count->execute();
-                    $count_result = $count->get_result();
-                    // $data = $count_result->fetch_assoc();
-                    $r = mysqli_num_rows($count_result);
-                    echo $r;
                     
-
+                    
                     $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
                     $stmt->bind_param('i', $id);
                     $stmt->execute();
