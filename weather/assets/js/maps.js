@@ -7,6 +7,7 @@ if (navigator.geolocation) {
 } else {
     alert("Enable location services.");
   error('Geo Location is not supported');
+
 }
 
 function success(position) {

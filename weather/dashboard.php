@@ -63,7 +63,8 @@ if (login_check($mysqli) == true) {
                     <tbody>
                 <?php
                     $id = $_SESSION['user_id'];
-                    
+                    $count = mysqli_query($mysqli, "SELECT COUNT (members_id) FROM locations WHERE members_id = 4");
+                    echo $count;
                     $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
                     $stmt->bind_param('i', $id);
                     $stmt->execute();
