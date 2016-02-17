@@ -67,11 +67,13 @@ if (login_check($mysqli) == true) {
                     $count->bind_param('i', $id);
                     $count->execute();
                     $count_result = $count->get_result();
+                    $data = $count_result->fetch_assoc($count_result);
+                    echo $data['members_id'];
 
-                    while($count_row = $count_result->fetch_assoc()){
-                        print_r($count_row);
-                        echo $count_row[COUNT('members_id')][1];
-                    }
+                    // while($count_row = $count_result->fetch_assoc()){
+                    //     print_r($count_row);
+                    //     echo $count_row[COUNT('members_id')][1];
+                    // }
                     
 
                     // $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
