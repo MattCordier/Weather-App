@@ -49,32 +49,28 @@ include_once 'includes/functions.php';
             </li>
             <li>Your password and confirmation must match exactly</li>
         </ul> -->
-        <form class="app-form" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" 
-                method="post" 
-                name="registration_form">
+        <form class="app-form" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
+            
             <div class="input-group">    
-            <input class="form-control" type='text' 
-                name='username' 
-                id='username' />
+                <input class="form-control" type='text' name='username' id='username' />
                 <label for="email">Username</lable>
-                    </div>
+            </div>
 
             <div class="input-group">         
-            <input class="form-control" type="text" name="email" id="email" />
-            <label for="email">Email</lable>
+                <input class="form-control" type="text" name="email" id="email" />
+                <label for="email">Email</lable>
             </div>
+
             <div class="input-group">     
-            <input class="form-control" type="password"
-                             name="password" 
-                             id="password"/>
-                             <label for="email">Password</lable>
-            </div>                    
+                <input class="form-control" type="password" name="password" id="password"/>
+                <label for="email">Password</lable>
+            </div>   
+
             <div class="input-group">                     
-            <input class="form-control" type="password" 
-                                     name="confirmpwd" 
-                                     id="confirmpwd" />
-                                     <label for="email">Confirm password</lable>
-            </div>                            
+                <input class="form-control" type="password" name="confirmpwd" id="confirmpwd" />
+                <label for="email">Confirm password</lable>
+            </div> 
+                                       
             <input class="btn btn-default" type="button" 
                    value="Register" 
                    onclick="return regformhash(this.form,
