@@ -39,6 +39,8 @@ $(document).ready(function() {
         });
     }
     });
+
+    $('table').fadeIn();
     $('.btn-remove').on('click', function(){
         var id = this.id;
         var tr = $(this).closest('tr');
