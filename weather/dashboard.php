@@ -65,21 +65,21 @@ if (login_check($mysqli) == true) {
                     $id = $_SESSION['user_id'];
                     $count = mysqli_query($mysqli, "SELECT COUNT (members_id) FROM locations WHERE members_id = 4");
 
-                    $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
-                    $stmt->bind_param('i', $id);
-                    $stmt->execute();
-                    $result = $stmt->get_result();
+                    // $stmt = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
+                    // $stmt->bind_param('i', $id);
+                    // $stmt->execute();
+                    // $result = $stmt->get_result();
 
-                    while($row = $result->fetch_assoc()) {
-                        echo '<tr>';                        
-                        echo '<td class="table-date">'. $row['date'] . '</td>';
-                        echo '<td>'. $row['address'] . '</td>';
-                        echo '<td>'. $row['high'] . '</td>';
-                        echo '<td>'. $row['low'] . '</td>';
-                        echo '<td>'. $row['summary'] . '</td>';
-                        echo '<td><button class="btn-remove" id='. $row['ID'] .'>X</button></td>';
-                        echo '</tr>';    
-                    }
+                    // while($row = $result->fetch_assoc()) {
+                    //     echo '<tr>';                        
+                    //     echo '<td class="table-date">'. $row['date'] . '</td>';
+                    //     echo '<td>'. $row['address'] . '</td>';
+                    //     echo '<td>'. $row['high'] . '</td>';
+                    //     echo '<td>'. $row['low'] . '</td>';
+                    //     echo '<td>'. $row['summary'] . '</td>';
+                    //     echo '<td><button class="btn-remove" id='. $row['ID'] .'>X</button></td>';
+                    //     echo '</tr>';    
+                    // }
                     echo $count;
                     $result->close();
                 ?>
