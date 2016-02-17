@@ -150,6 +150,7 @@ input:focus, input:active {
 input[type="text"], input[type="email"], input[type="password"] {
   border: none!important;
   border-radius: 0px !important;
+  margin-bottom: 0px !important;
   border-bottom: solid 2px #21a1e1!important;
 }
 
