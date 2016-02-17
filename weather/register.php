@@ -49,7 +49,7 @@ include_once 'includes/functions.php';
             </li>
             <li>Your password and confirmation must match exactly</li>
         </ul> -->
-        <form class="app-form" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
+        <form class="app-form reg-form" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
             
             <div class="input-group reg-group">    
                 <input class="form-control" type='text' name='username' id='username' />

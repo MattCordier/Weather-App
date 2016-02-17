@@ -192,6 +192,10 @@ input[type="submit"]:active {
   color: #aaa;
 }
 
+.reg-form {
+  margin-top: 50px;
+}
+
 .reg-group {
   margin-top: 20px;
 }
