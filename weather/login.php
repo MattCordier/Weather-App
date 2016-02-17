@@ -57,7 +57,7 @@ if (login_check($mysqli) == true) {
                         <label for="password">Password</lable>
                     </div>
 
-                    <input class="btn btn-default login-btn" type="button" value="Login" onclick="formhash(this.form, this.form.password);" /> 
+                    <input class="btn btn-default login-btn" type="sumbit" value="Login" onclick="formhash(this.form, this.form.password);" /> 
                 </form>
             </div>
            

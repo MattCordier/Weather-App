@@ -149,6 +149,17 @@ input[type="text"], input[type="email"], input[type="password"] {
   border-bottom: solid 2px #21a1e1!important;
 }
 
+input[type="submit"]:active {
+  color: white;
+  background: #21a1e1;
+}
+
+.input-group {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
 
 .login-link {
   float: right;
