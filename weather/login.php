@@ -37,7 +37,7 @@ if (login_check($mysqli) == true) {
             <header id="main-header">
                 <a href="index.php" class="login-link">view map</a>
             </header>    
-            <div id="weather" class="container">
+            <div id="weather" class="container login-container">
 
 <?php
         if (isset($_GET['error'])) {
