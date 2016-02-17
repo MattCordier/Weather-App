@@ -59,22 +59,22 @@ $(document).ready(function() {
         });
     })
 
-    $('.app-form .input-group input').on('focusout', function(){
+    $('.app-form .input-group input').on('blur', function(){
     
-    var text_val = $(this).val();
-    console.log(text_val);
+            var text_val = $(this).val();
+            console.log(text_val);
+        
+        if(text_val === "") {
+          
+          $(this).removeClass('has-value');
+          
+        } else {
+          
+          $(this).addClass('has-value');
+          
+        }
     
-    if(text_val === "") {
-      
-      $(this).removeClass('has-value');
-      
-    } else {
-      
-      $(this).addClass('has-value');
-      
-    }
-    
-  });
+    });
     
 });
 
