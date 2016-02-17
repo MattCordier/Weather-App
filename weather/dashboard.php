@@ -70,6 +70,7 @@ if (login_check($mysqli) == true) {
 
                     while($count_row = $count_result->fetch_assoc()){
                         print_r($count_row);
+                        echo $count_row[COUNT('members_id')][0];
                     }
                     
 
