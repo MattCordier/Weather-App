@@ -84,6 +84,7 @@ if (login_check($mysqli) == true) {
         <script src="assets/js/jquery-ui.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
         <script src="assets/js/app.js"></script>
+        <script src="assets/js/forms.js"></script>
        <!-- <script src="assets/js/maps.js"></script> -->
         <script type="text/JavaScript" src="assets/js/sha512.js"></script> 
         <script type="text/JavaScript" src="assets/js/forms.js"></script> 
