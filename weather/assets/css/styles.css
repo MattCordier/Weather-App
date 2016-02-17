@@ -175,8 +175,10 @@ input[type="submit"]:active {
   left: 0px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  font-weight: 300;
   font-style: italic;
   font-size: 18px;
+
   pointer-events: none;
   -webkit-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
