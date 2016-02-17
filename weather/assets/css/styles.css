@@ -139,6 +139,10 @@ input {
   display: inline-block;
 }
 
+input:focus, input:active {
+  outline: none;
+}
+
 
 
 .login-link {
