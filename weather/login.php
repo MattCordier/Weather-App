@@ -129,11 +129,7 @@ if (login_check($mysqli) == true) {
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
 
-<div id="status">
-</div>
 
 <?php
         if (isset($_GET['error'])) {
@@ -155,6 +151,11 @@ if (login_check($mysqli) == true) {
                     <br/>
                     <input class="btn btn-default login-btn form-btn" type="submit" value="Login" onclick="formhash(this.form, this.form.password);" /> 
                 </form>
+                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+<div id="status">
+</div>
             </div>
            
  
