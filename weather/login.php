@@ -39,6 +39,9 @@ if (login_check($mysqli) == true) {
                 <a href="index.php" class="login-link">view map</a>
             </header>    
             <div id="weather" class="container login-container">
+
+                <h1 class="register-heading">Login to your account</h1>
+                
                 <script>
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
@@ -71,7 +74,10 @@ if (login_check($mysqli) == true) {
       statusChangeCallback(response);
     });
   }
-    appId      : '{1688543628082268}',
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1688543628082268',
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
@@ -128,7 +134,6 @@ if (login_check($mysqli) == true) {
 
 <div id="status">
 </div>
-                <h1 class="register-heading">Login to your account</h1>
 
 <?php
         if (isset($_GET['error'])) {
