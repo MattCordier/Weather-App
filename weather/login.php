@@ -33,7 +33,13 @@ if (login_check($mysqli) == true) {
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body class="login-bg">
-        <script>
+
+        <div class="wrapper">
+            <header id="main-header">
+                <a href="index.php" class="login-link">view map</a>
+            </header>    
+            <div id="weather" class="container login-container">
+                <script>
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -68,7 +74,7 @@ if (login_check($mysqli) == true) {
 
   window.fbAsyncInit = function() {
   FB.init({
-    appId      : '{1688543628082268}',
+    appId      : '{your-app-id}',
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
@@ -125,12 +131,6 @@ if (login_check($mysqli) == true) {
 
 <div id="status">
 </div>
-        <div class="wrapper">
-            <header id="main-header">
-
-                <a href="index.php" class="login-link">view map</a>
-            </header>    
-            <div id="weather" class="container login-container">
                 <h1 class="register-heading">Login to your account</h1>
 
 <?php
@@ -153,8 +153,6 @@ if (login_check($mysqli) == true) {
                     <br/>
                     <input class="btn btn-default login-btn form-btn" type="submit" value="Login" onclick="formhash(this.form, this.form.password);" /> 
                 </form>
-    
-</div>
             </div>
            
  
