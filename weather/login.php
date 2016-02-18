@@ -52,12 +52,7 @@ if (login_check($mysqli) == true) {
 </script>
         <div class="wrapper">
             <header id="main-header">
-                <div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
+
                 <a href="index.php" class="login-link">view map</a>
             </header>    
             <div id="weather" class="container login-container">
@@ -83,6 +78,12 @@ if (login_check($mysqli) == true) {
                     <br/>
                     <input class="btn btn-default login-btn form-btn" type="submit" value="Login" onclick="formhash(this.form, this.form.password);" /> 
                 </form>
+                <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
             </div>
            
  
