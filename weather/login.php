@@ -71,9 +71,6 @@ if (login_check($mysqli) == true) {
       statusChangeCallback(response);
     });
   }
-
-  window.fbAsyncInit = function() {
-  FB.init({
     appId      : '{1688543628082268}',
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
