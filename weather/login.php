@@ -150,6 +150,7 @@ if (login_check($mysqli) == true) {
                     </div>
                     <br/>
                     <input class="btn btn-default login-btn form-btn" type="submit" value="Login" onclick="formhash(this.form, this.form.password);" /> 
+                    <br/>
                     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
                     </fb:login-button>
                 </form>
