@@ -33,8 +33,31 @@ if (login_check($mysqli) == true) {
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>        <!-- <link rel="icon" type="image/png" href="assets/img/favicon.ico"> -->    
     </head>
     <body class="login-bg">
+        <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1688543628082268',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
         <div class="wrapper">
             <header id="main-header">
+                <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
                 <a href="index.php" class="login-link">view map</a>
             </header>    
             <div id="weather" class="container login-container">
