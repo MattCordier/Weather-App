@@ -45,7 +45,7 @@ if (login_check($mysqli) == true) {
               }
         ?>    
             </header>
-           
+
 
         <div id="weather" class="container dashboard-container">    
             <div class="row weather-table">
@@ -72,9 +72,11 @@ if (login_check($mysqli) == true) {
                     $result = $stmt->get_result();
 
                     while($row = $result->fetch_assoc()) {
+                        $newAdrress = explode(",", $row['address']);
+
                         echo '<tr>';                        
                         echo '<td class="table-date">'. $row['date'] . '</td>';
-                        echo '<td>'. $row['address'] . '</td>';
+                        echo '<td>'. $newAdrress[0] . " ,". $newAdrress[1] . '</td>';
                         echo '<td>'. $row['high'] . '</td>';
                         echo '<td>'. $row['low'] . '</td>';
                         echo '<td>'. $row['summary'] . '</td>';
