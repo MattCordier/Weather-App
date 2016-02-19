@@ -2,10 +2,10 @@
 var latlng = [];
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(mapHandler);
-        $('#alert').html("Geolocation is supported by this browser.");
+        
 
 } else {
-    alert("Enable location services.");
+    $('#app-title').html("Geolocation is supported by this browser.").fadeOut();
   
 
 }
