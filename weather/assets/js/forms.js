@@ -23,7 +23,7 @@ $(document).ready(function() {
         var feel = $( '#feel').text();
         var wind = $( '#wind' ).text();
         var humid = $( '#humid' ).text();
-        var weather-alert = $( '#weather-alert' ).text();
+        var weather_alert = $( '#weather-alert' ).text();
         var hr = $( '#next-hour' ).text();
         var smry = $( '#summary' ).text();
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
             "feel" : feel,
             "wind" : wind,
             "humid" : humid;
-            "alert" : weather-alert,
+            "alert" : weather_alert,
             "hr" : hr,
             "smry" : smry
         }
