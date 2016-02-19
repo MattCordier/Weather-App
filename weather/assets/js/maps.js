@@ -10,6 +10,8 @@ if (navigator.geolocation) {
 function userLocal(position) {
   var lat = position.coords.latitude;
   var lng = position.coords.longitude;
+
+  alert(lat + " " + lng);
   mapHandler(lat, lng);
 }
 
