@@ -76,6 +76,8 @@ th {
 
  #weather.dashboard-container {
   background: rgba(0,0,0,.8);
+  min-width: 320px;
+  max-width: 100%;
   border: 1px solid white;
  }
 
@@ -291,6 +293,8 @@ border: 5px solid rgba(0,0,0,.1);
 box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
 
 }
+
+
 .p-date {
   font-size: 1.8rem;
   font-weight: 300;
