@@ -5,7 +5,7 @@ if (navigator.geolocation) {
         
 
 } else {
-    $('#app-title').html("Geolocation is supported by this browser.").fadeOut();
+    $('#app-title').html("Geolocation is supported by this browser.");
   
 
 }
