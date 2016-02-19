@@ -39,6 +39,7 @@ if (login_check($mysqli) == true) {
 
         <div class="wrapper"> 
             <header id="main-header">
+
         <?php 
             if (login_check($mysqli) == true) {
                 echo '<p class="user-stats">Logged ' . $logged . ' as ' . htmlentities($_SESSION['username']) .'.&nbsp&nbsp&nbsp&nbsp';
@@ -52,6 +53,8 @@ if (login_check($mysqli) == true) {
               }
         ?>                
             </header>
+
+            <div height="400px" width="200px">GAHHHHH!</div>
 
             <div id="weather" class="container">
                 <h1 id="app-title">Fetching current conditions…</h1>
