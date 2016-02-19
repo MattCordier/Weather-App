@@ -38,15 +38,18 @@ a {
  }
 table {
   width: 100%;
+  white-space: nowrap;
 }
 
 th {
   font-size: 16px;
   padding-bottom: 0px;
+  white-space: nowrap;
 }
  td {
   font-size: 14px;
   padding: 0px;
+  white-space: nowrap;
  }
  .register-heading {
   font-size: 2.5rem;
