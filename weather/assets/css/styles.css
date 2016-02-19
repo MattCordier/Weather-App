@@ -36,6 +36,10 @@ a {
  h5 {
   margin-bottom: 0px;
  }
+table {
+  width: 100%;
+}
+
 th {
   font-size: 16px;
   padding-bottom: 0px;
