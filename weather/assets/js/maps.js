@@ -2,7 +2,7 @@
 var latlng = [];
 
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(success);
+    navigator.geolocation.getCurrentPosition(mapHandler);
 
 } else {
     alert("Enable location services.");
@@ -10,7 +10,7 @@ if (navigator.geolocation) {
 
 }
 
-function success(position) {
+function mapHandler(position) {
     latlng = [];
     var  lat  = position.coords.latitude;
     var  lng =  position.coords.longitude;
