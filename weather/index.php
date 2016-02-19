@@ -54,7 +54,6 @@ if (login_check($mysqli) == true) {
         ?>                
             </header>
 
-            <div height="400px" width="200px">GAHHHHH!</div>
 
             <div id="weather" class="container">
                 <h1 id="app-title">Fetching current conditions…</h1>
@@ -84,12 +83,12 @@ if (login_check($mysqli) == true) {
         </footer>
            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&libraries=places"></script>   
         <script src="assets/js/jquery-ui.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
         <script src="assets/js/app.js"></script>
         <script src="assets/js/maps.js"></script>
         <script type="text/JavaScript" src="assets/js/sha512.js"></script> 
         <script type="text/JavaScript" src="assets/js/forms.js"></script> 
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBWIEjUkuuJx_OrEqaswU4SEYqaSl13Pek&libraries=places"></script>   
     </body>
 </html>
