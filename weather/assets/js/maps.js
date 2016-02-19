@@ -1,7 +1,7 @@
 "use strict";
 var latlng = [];
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(userLocal);
+    navigator.geolocation.getCurrentPosition(userLocal, defaultLocal);
        
 } else {
     alert("Browser does not support geolocation.");
@@ -16,6 +16,12 @@ function userLocal(position) {
 
   
   mapHandler(lat, lng);
+}
+
+function defaultLocal() {
+    var lat = 43.0500;
+    var lng = -87.9500;
+    mapHandler(lat, lng);
 }
 
 function mapHandler(lat, lng) {
