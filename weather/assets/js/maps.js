@@ -5,13 +5,16 @@ if (navigator.geolocation) {
        
 } else {
     alert("Browser does not support geolocation.");
+    var lat = 43.0500;
+    var lng = -87.9500;
+    mapHandler(lat, lng);
 }
 
 function userLocal(position) {
   var lat = position.coords.latitude;
   var lng = position.coords.longitude;
 
-  alert(lat + " " + lng);
+  
   mapHandler(lat, lng);
 }
 
