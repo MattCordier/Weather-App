@@ -14,6 +14,8 @@ $high = $_POST['hi'];
 $low = $_POST['lw'];
 $summary = $_POST['smry']; 
 
+
+//check db to see how many entries a user has stored
 $count = $mysqli->prepare("SELECT * FROM locations WHERE members_id = ?");
 $count->bind_param('i', $id);
 $count->execute();

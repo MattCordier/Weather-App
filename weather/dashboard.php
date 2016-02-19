@@ -45,7 +45,7 @@ if (login_check($mysqli) == true) {
               }
         ?>    
             </header>
-            <div height="400px" width="200px">GAHHHHH!</div>
+           
 
         <div id="weather" class="container dashboard-container">    
             <div class="row weather-table">
