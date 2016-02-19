@@ -1,13 +1,13 @@
 "use strict";
 var latlng = [];
-
+var x = document.getElementById("map");
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(mapHandler);
-    alert('Geolocation active!');
+        x.innerHTML = "Geolocation is supported by this browser.";
 
 } else {
     alert("Enable location services.");
-  error('Geo Location is not supported');
+  
 
 }
 
