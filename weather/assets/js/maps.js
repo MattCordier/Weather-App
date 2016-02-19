@@ -1,6 +1,6 @@
 "use strict";
 var latlng = [];
-var x = document.getElementById("map");
+var x = document.getElementById("geo");
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(mapHandler);
         x.innerHTML = "Geolocation is supported by this browser.";
