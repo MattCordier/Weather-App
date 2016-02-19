@@ -34,7 +34,7 @@ $count_result = $count->get_result();
 $r = mysqli_num_rows($count_result);
 
 if ($r <= 9){
-	$prep_stmt = "INSERT INTO locations (address, date, high, low, summary, members_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+	$prep_stmt = "INSERT INTO locations (address, date, current, high, low, feel, wind, humidity, alert, hour, summary, members_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 	$insert_stmt = $mysqli->prepare($prep_stmt);
 	$insert_stmt->bind_param('sssssssssssi', $address, $date, $current, $high, $low, $feel, $wind, $humidity, $alert, $hour, $summary, $id);
 	$insert_stmt->execute();
