@@ -5,7 +5,7 @@ if (navigator.geolocation) {
         
 
 } else {
-    $('#app-title').html("Geolocation is not supported by this browser.");
+    alert("no geo!");
   
 
 }
