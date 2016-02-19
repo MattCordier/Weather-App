@@ -32,13 +32,9 @@ function defaultLocal() {
 }
 
 function mapHandler(lat, lng) {
-  // console.log(lat + " " + lng);
     latlng = [];
-    
-    // create object from LatLng class  
-    // var  myLocation = new google.maps.LatLng(lat, lng);
 
-    // Set up basic map view
+    // Set up basic map view, use LatLng class to set center
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         zoomControl: false,
@@ -53,7 +49,7 @@ function mapHandler(lat, lng) {
     //Get initial name of user's location and display as heading 
     showUserLocal(lat, lng);
     
-    //Autocomplete address input
+    //Autocomplete address input(USES GOOGLE "places" LIBRARY)
     var input = (document.getElementById('address'));
     var autocomplete = new google.maps.places.Autocomplete(input);
         autocomplete.bindTo('bounds', map);
