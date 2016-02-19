@@ -1,9 +1,8 @@
 "use strict";
 var latlng = [];
-var x = document.getElementById("geo");
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(mapHandler);
-        x.innerHTML = "Geolocation is supported by this browser.";
+        $('#alert').html("Geolocation is supported by this browser.");
 
 } else {
     alert("Enable location services.");
