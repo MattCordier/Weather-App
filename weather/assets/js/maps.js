@@ -16,6 +16,7 @@ function userLocal(position) {
 }
 
 function mapHandler(lat, lng) {
+  console.log(lat + " " + lng);
     latlng = [];
     
     var  myLocation = new google.maps.LatLng(lat, lng);
