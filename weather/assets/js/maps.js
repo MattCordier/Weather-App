@@ -1,10 +1,19 @@
 "use strict";
 var latlng = [];
+
+/*/////
+
+Check to see if browser supports geoloction.
+if yes but not enabled, use Default.
+if no, use secondary Default.
+/////*/
+
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(userLocal, defaultLocal);
        
 } else {
     alert("Browser does not support geolocation.");
+    //secondary default location
     var lat = 43.0500;
     var lng = -87.9500;
     mapHandler(lat, lng);
@@ -13,8 +22,6 @@ if (navigator.geolocation) {
 function userLocal(position) {
   var lat = position.coords.latitude;
   var lng = position.coords.longitude;
-
-  
   mapHandler(lat, lng);
 }
 
@@ -25,22 +32,25 @@ function defaultLocal() {
 }
 
 function mapHandler(lat, lng) {
-  console.log(lat + " " + lng);
+  // console.log(lat + " " + lng);
     latlng = [];
     
-    var  myLocation = new google.maps.LatLng(lat, lng);
+    // create object from LatLng class  
+    // var  myLocation = new google.maps.LatLng(lat, lng);
+
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         zoomControl: false,
         streetViewControl: false,
-        center: new google.maps.LatLng(myLocation.lat(),myLocation.lng()),
+        center: new google.maps.LatLng(lat,lng),
         scrollwheel: false,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.SATELLITE
        
     });
-    //Get initial location of user
+
+    //Get initial name of user's location and display as heading 
     showUserLocal(lat, lng);
     
     //Autocomplete address input
@@ -77,6 +87,11 @@ function mapHandler(lat, lng) {
 
 }
 
+/*/////
+
+Use Google's Geocoding to fetch name of user's actual location 
+
+/////*/
 function showUserLocal(lat, lng){
   $.getJSON( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng, function( data ) {
       var mylocale = data.results[0];
