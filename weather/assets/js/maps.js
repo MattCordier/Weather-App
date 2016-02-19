@@ -1,19 +1,21 @@
 "use strict";
 var latlng = [];
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(mapHandler);
-        
-
+    navigator.geolocation.getCurrentPosition(userLocal);
+       
 } else {
-    alert("no geo!");
-  
-
+    alert("Browser does not support geolocation.");
 }
 
-function mapHandler(position) {
+function userLocal(position) {
+  var lat = position.coords.latitude;
+  var lng = position.coords.longitude;
+  mapHandler(lat, lng);
+}
+
+function mapHandler(lat, lng) {
     latlng = [];
-    var  lat  = position.coords.latitude;
-    var  lng =  position.coords.longitude;
+    
     var  myLocation = new google.maps.LatLng(lat, lng);
     // Set up basic map view
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -27,7 +29,7 @@ function mapHandler(position) {
        
     });
     //Get initial location of user
-    getUserLocal(lat, lng);
+    showUserLocal(lat, lng);
     
     //Autocomplete address input
     var input = (document.getElementById('address'));
@@ -63,7 +65,7 @@ function mapHandler(position) {
 
 }
 
-function getUserLocal(lat, lng){
+function showUserLocal(lat, lng){
   $.getJSON( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng, function( data ) {
       var mylocale = data.results[0];
       var cit = mylocale.address_components[3].long_name;
