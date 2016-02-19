@@ -19,8 +19,8 @@ function userLocal(position) {
 }
 
 function defaultLocal() {
-    var lat = 43.0500;
-    var lng = -87.9500;
+    var lat = 40.7127;
+    var lng = -74.0059;
     mapHandler(lat, lng);
 }
 
