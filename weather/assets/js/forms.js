@@ -17,15 +17,27 @@ $(document).ready(function() {
        
         var dpick = $( '#dp' ).val();
         var addy = $( '#address' ).val();
+        var current = $( '#current').text();
         var hi = $( '#hi-temp' ).text();
         var lw = $( '#lo-temp' ).text();
+        var feel = $( '#feel').text();
+        var wind = $( '#wind' ).text();
+        var humid = $( '#humid' ).text();
+        var weather-alert = $( '#weather-alert' ).text();
+        var hr = $( '#next-hour' ).text();
         var smry = $( '#summary' ).text();
 
         var report = {
             "dpick" : dpick,
             "addy" : addy,
+            "cur" : current,
             "hi" : hi,
             "lw" :lw,
+            "feel" : feel,
+            "wind" : wind,
+            "humid" : humid;
+            "alert" : weather-alert,
+            "hr" : hr,
             "smry" : smry
         }
         console.log(report);

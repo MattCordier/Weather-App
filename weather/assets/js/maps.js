@@ -174,27 +174,27 @@ function predictWeather() {
       // 
       currentContent += '<div class="six columns">';
       currentContent += '<i id="wi-current" class="wi wi-forecast-io-' + data.currently.icon + ' wi-big" title="'+ data.currently.icon + '"></i>'
-      currentContent += '<h1  class="weather-current">' + Math.round(data.currently.temperature) + '&deg;</h1>';
-      currentContent += '<p id="hi-temp" class="p-hilo"><span class="label-hilo">High: </span>' + Math.round(data.daily.data[0].temperatureMax) + '&deg;</p>';
-      currentContent += '<p id="lo-temp" class="p-hilo"><span class="label-hilo">Low: </span>' + Math.round(data.daily.data[0].temperatureMin) + '&deg;</p>';
-      currentContent += '<p class="p-hilo"><span class="label-hilo">Feels like: </span>' + Math.round(data.currently.apparentTemperature) +'&deg;</p></div>';
+      currentContent += '<h1  class="weather-current"><span id="current">' + Math.round(data.currently.temperature) + '&deg;</span></h1>';
+      currentContent += '<p class="p-hilo"><span class="label-hilo">High: </span><span id="hi-temp">' + Math.round(data.daily.data[0].temperatureMax) + '&deg;</span></p>';
+      currentContent += '<p class="p-hilo"><span class="label-hilo">Low: </span><span id="lo-temp">' + Math.round(data.daily.data[0].temperatureMin) + '&deg;</span></p>';
+      currentContent += '<p class="p-hilo"><span class="label-hilo">Feels like: </span><span id="feel">' + Math.round(data.currently.apparentTemperature) +'&deg;</span></p></div>';
       
       //
       // CONTENT FOR RIGHT DIV, DETAILS
       //         
       currentContent += '<div class="six columns weather-deets">';
-      currentContent += '<p><span class="label">Wind:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.round(data.currently.windSpeed)) + '&nbsp;mph</p>';
-      currentContent += '<p><span class="label">Humidity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>' + (Math.floor(data.currently.humidity * 100)) + '&#37;</p>';
+      currentContent += '<p><span class="label">Wind:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="wind">' + (Math.round(data.currently.windSpeed)) + '&nbsp;mph</span></p>';
+      currentContent += '<p><span class="label">Humidity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="humid">' + (Math.floor(data.currently.humidity * 100)) + '&#37;</span></p>';
       currentContent += '<div class="weather-deets-summary">';
       currentContent += '<p><span class="label">Next Hour:</span></p>'
         if (data.minutely){
-          currentContent += '<p>' + data.minutely.summary + '</p></div>';
+          currentContent += '<p id="next-hour">' + data.minutely.summary + '</p></div>';
         } else {
-          currentContent += '<p>' + data.currently.summary + '</p></div>';
+          currentContent += '<p id="next-hour">' + data.currently.summary + '</p></div>';
         }  
         if (data.alerts){
           currentContent += '<div class="weather-deets-summary">';
-          currentContent += '<p><span class="label label-alert"><i class="material-icons">warning</i>' + data.alerts[0].title + '</span></p></div>';
+          currentContent += '<p><span id="weather-alert" class="label label-alert"><i class="material-icons">warning</i>' + data.alerts[0].title + '</span></p></div>';
         } else {
           currentContent += '<div class="weather-deets-summary">';
           currentContent += '<p><span class="label">Next 24 Hours:</span></p>'
