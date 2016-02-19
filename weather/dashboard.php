@@ -73,10 +73,16 @@ if (login_check($mysqli) == true) {
 
                     while($row = $result->fetch_assoc()) {
                         $newAdrress = explode(",", $row['address']);
+                        
+                        if (count($newAdrress) === 3){
+                            $addy = $newAdrress[0] . " ,". $newAdrress[1];
+                        } elseif ( count($newAdrress) <=2 ){
+                            $addy = $newAdrress[0];
+                        }
 
                         echo '<tr>';                        
                         echo '<td class="table-date">'. $row['date'] . '</td>';
-                        echo '<td>'. $newAdrress[0] . " ,". $newAdrress[1] . '</td>';
+                        echo '<td>'. $addy . '</td>';
                         echo '<td>'. $row['high'] . '</td>';
                         echo '<td>'. $row['low'] . '</td>';
                         echo '<td>'. $row['summary'] . '</td>';
