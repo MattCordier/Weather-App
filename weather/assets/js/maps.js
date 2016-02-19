@@ -3,6 +3,7 @@ var latlng = [];
 
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(mapHandler);
+    alert('Geolocation active!');
 
 } else {
     alert("Enable location services.");
