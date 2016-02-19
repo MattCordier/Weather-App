@@ -17,7 +17,7 @@ $feel = $_POST['feel'];
 $wind = $_POST['wind'];
 $humidity = $_POST['humid'];
 $alert = $_POST['alert'];
-$hour = $_POST['hour']; 
+$hour = $_POST['hr']; 
 $summary = $_POST['smry'];
 
 
