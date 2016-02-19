@@ -35,7 +35,7 @@ $(document).ready(function() {
             "lw" :lw,
             "feel" : feel,
             "wind" : wind,
-            "humid" : humid;
+            "humid" : humid,
             "alert" : weather_alert,
             "hr" : hr,
             "smry" : smry
