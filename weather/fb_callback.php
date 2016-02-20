@@ -76,6 +76,8 @@ $_SESSION['fb_access_token'] = (string) $accessToken;
 // You can redirect them to a members-only page.
 header('Location: index.php');
 
+echo "yesah";
+
 
 
 
