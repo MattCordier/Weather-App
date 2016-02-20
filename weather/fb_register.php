@@ -6,7 +6,7 @@ ini_set('display_errors', 'on');
 
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
-require __DIR__ . '/vendo/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 echo "Yesah";
 
 
