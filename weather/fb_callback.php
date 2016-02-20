@@ -16,9 +16,7 @@ $fb = new Facebook\Facebook([
 
 
 
-$user = $response->getGraphUser();
 
-echo 'Name: ' . $user['name'];
 
 $helper = $fb->getRedirectLoginHelper();
 
@@ -91,6 +89,10 @@ try {
   echo 'Facebook SDK returned an error: ' . $e->getMessage();
   exit;
 }
+
+$user = $response->getGraphUser();
+
+echo 'Name: ' . $user['name'];
 
 // User is logged in with a long-lived access token.
 // You can redirect them to a members-only page.
