@@ -1,4 +1,6 @@
 <?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
 
 $fb = new Facebook\Facebook([
   'app_id' => '1688543628082268', // Replace {app-id} with your app id
