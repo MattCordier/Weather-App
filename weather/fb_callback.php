@@ -93,6 +93,7 @@ try {
 $user = $response->getGraphUser();
 
 echo 'Name: ' . $user['name'];
+echo 'Email' . $user['email'];
 
 // User is logged in with a long-lived access token.
 // You can redirect them to a members-only page.
