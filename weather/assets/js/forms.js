@@ -39,7 +39,7 @@ $(document).ready(function() {
             "alert" : weather_alert,
             "hr" : hr,
             "smry" : smry
-        }
+        };
         console.log(report);
         $.ajax({
             type : "POST",

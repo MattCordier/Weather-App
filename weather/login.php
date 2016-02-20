@@ -99,7 +99,19 @@ if (login_check($mysqli) == true) {
                     function testAPI() {
                       console.log('Welcome!  Fetching your information.... ');
                       FB.api('/me', function(response) {
-                        console.log('Successful login for: ' + response.name + response.authResponse.userId);
+                        var fb_data = {
+                          "fb_name" : response.name, 
+                          "fb_id" : response.authResponse.userId
+                        };
+
+                        $.ajax({
+                          type : "POST",
+                          url : 'includes/process_login.php',
+                          data : fb_data,
+                          success : function(data){
+                            alert("yep");
+                          }
+                        });
                         document.getElementById('status').innerHTML =
                           '<p>Thanks for logging in, ' + response.name + '!</p>';
 
