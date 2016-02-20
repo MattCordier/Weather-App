@@ -18,7 +18,7 @@ if (isset($_POST['email'], $_POST['p'])) {
         // Login failed 
         header('Location: ../login.php?error=1');
     }
-} elseif ($fb_name){
+} elseif ($fb_name && $fb_id){
     return true;
 } else {
     // The correct POST variables were not sent to this page. 
