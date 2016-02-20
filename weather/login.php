@@ -101,7 +101,7 @@ if (login_check($mysqli) == true) {
                       FB.api('/me', function(response) {
                         var fb_data = {
                           "fb_name" : response.name, 
-                          "fb_id" : response.authResponse.userId
+                          "fb_id" : 10207332389006087
                         };
 
                         $.ajax({
