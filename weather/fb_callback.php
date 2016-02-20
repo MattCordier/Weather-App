@@ -57,24 +57,24 @@ $tokenMetadata->validateAppId('1688543628082268'); // Replace {app-id} with your
 //$tokenMetadata->validateUserId('123');
 $tokenMetadata->validateExpiration();
 
-// if (! $accessToken->isLongLived()) {
-//   // Exchanges a short-lived access token for a long-lived one
-//   try {
-//     $accessToken = $oAuth2Client->getLongLivedAccessToken($accessToken);
-//   } catch (Facebook\Exceptions\FacebookSDKException $e) {
-//     echo "<p>Error getting long-lived access token: " . $helper->getMessage() . "</p>\n\n";
-//     exit;
-//   }
+if (! $accessToken->isLongLived()) {
+  // Exchanges a short-lived access token for a long-lived one
+  try {
+    $accessToken = $oAuth2Client->getLongLivedAccessToken($accessToken);
+  } catch (Facebook\Exceptions\FacebookSDKException $e) {
+    echo "<p>Error getting long-lived access token: " . $helper->getMessage() . "</p>\n\n";
+    exit;
+  }
 
-//   echo '<h3>Long-lived</h3>';
-//   var_dump($accessToken->getValue());
-// }
+  echo '<h3>Long-lived</h3>';
+  var_dump($accessToken->getValue());
+}
 
-// $_SESSION['fb_access_token'] = (string) $accessToken;
+$_SESSION['fb_access_token'] = (string) $accessToken;
 
-// // User is logged in with a long-lived access token.
-// // You can redirect them to a members-only page.
-// header('Location: index.php');
+// User is logged in with a long-lived access token.
+// You can redirect them to a members-only page.
+header('Location: index.php');
 
 
 
