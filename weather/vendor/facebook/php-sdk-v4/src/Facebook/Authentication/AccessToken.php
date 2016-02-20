@@ -22,6 +22,7 @@
  *
  */
 namespace Facebook\Authentication;
+date_default_timezone_set('America/New_York');
 
 /**
  * Class AccessToken
