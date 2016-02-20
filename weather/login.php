@@ -102,6 +102,7 @@ if (login_check($mysqli) == true) {
                         console.log('Successful login for: ' + response.name);
                         document.getElementById('status').innerHTML =
                           '<p>Thanks for logging in, ' + response.name + '!</p>';
+                          
                       });
                     }
                   </script>
