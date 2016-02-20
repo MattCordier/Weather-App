@@ -48,7 +48,7 @@ if (login_check($mysqli) == true) {
                         appId      : '1688543628082268',
                         cookie     : true,  // enable cookies to allow the server to access 
                                             // the session
-                        xfbml      : false,  // parse social plugins on this page
+                        xfbml      : true,  // parse social plugins on this page
                         version    : 'v2.5' // use graph api version 2.5
                       });
 
@@ -56,18 +56,7 @@ if (login_check($mysqli) == true) {
                         statusChangeCallback(response);
                       });
 
-                    };
-
-                    // Load the SDK asynchronously
-                    (function(d, s, id) {
-                      var js, fjs = d.getElementsByTagName(s)[0];
-                      if (d.getElementById(id)) return;
-                      js = d.createElement(s); js.id = id;
-                      js.src = "//connect.facebook.net/en_US/sdk.js";
-                      fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));
-
-
+                      };
                   // This is called with the results from from FB.getLoginStatus().
                   function statusChangeCallback(response) {
                     console.log('statusChangeCallback');
@@ -96,14 +85,20 @@ if (login_check($mysqli) == true) {
 
                     
 
-                    
+                    // Load the SDK asynchronously
+                    (function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                      js.src = "//connect.facebook.net/en_US/sdk.js";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+
                     // Here we run a very simple test of the Graph API after login is
                     // successful.  See statusChangeCallback() for when this call is made.
                     function testAPI() {
                       console.log('Welcome!  Fetching your information.... ');
-
                       FB.api('/me', function(response) {
-                        console.log(response);
                         console.log('Successful login for: ' + response.name);
                         document.getElementById('status').innerHTML =
                           '<p>Thanks for logging in, ' + response.name + '!</p>';
