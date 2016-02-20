@@ -99,10 +99,9 @@ if (login_check($mysqli) == true) {
                     function testAPI() {
                       console.log('Welcome!  Fetching your information.... ');
                       FB.api('/me', function(response) {
-                        console.log(authResponse.userId);
                         var fb_data = {
                           "fb_name" : response.name, 
-                          // "fb_id" : response.authResponse.userId
+                          "fb_id" : response.authResponse.userID
                         };
 
                         $.ajax({
