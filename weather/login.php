@@ -109,7 +109,7 @@ if (login_check($mysqli) == true) {
                           url : 'includes/process_login.php',
                           data : fb_data,
                           success : function(data){
-                            alert("yep");
+                            alert(data);
                           }
                         });
                         document.getElementById('status').innerHTML =
