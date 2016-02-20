@@ -99,9 +99,10 @@ if (login_check($mysqli) == true) {
                     function testAPI() {
                       console.log('Welcome!  Fetching your information.... ');
                       FB.api('/me', function(response) {
+                        console.log(response.authResponse.userId);
                         var fb_data = {
                           "fb_name" : response.name, 
-                          "fb_id" : 10207332389006087
+                          // "fb_id" : response.authResponse.userId
                         };
 
                         $.ajax({
@@ -109,7 +110,7 @@ if (login_check($mysqli) == true) {
                           url : 'includes/process_login.php',
                           data : fb_data,
                           success : function(data){
-                            alert(data);
+                            alert("yep");
                           }
                         });
                         document.getElementById('status').innerHTML =
