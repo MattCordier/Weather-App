@@ -1,3 +1,3 @@
 # Weather App
-final project for DevCodeCamp
-someday I will deploy this again and laugh
+devCodeCamp capstone project
+integrating Google Geolocation, Google Maps, and forecast.io weather api
