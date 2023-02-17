@@ -1,91 +1,488 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
 body {
-	background-color: rgb(88, 67, 50);
-	font-size: 18px;
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  width: 100%;	
+  font-family: "Lato", sans-serif;
+  background-color: lightgrey;
+  color: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+a {
+  text-decoration: none;
 }
 
-.container {
-	padding: 0px !important;
+
+ p{
+  font-weight: 300;
+  margin-bottom: 0;
+ }
+
+
+
+ h1 {
+  display: inline-block;
+
+ }
+
+ h5 {
+  margin-bottom: 0;
+ }
+table {
+  width: 100%;
+  white-space: nowrap;
 }
 
-.main-bg {
-	min-height: 660px;
-	background-color: rgb(144, 110, 85);
-	color: #3d3d3d;
+th {
+  font-size: 16px;
+  padding-bottom: 0;
+  white-space: nowrap;
+}
+ td {
+  font-size: 14px;
+  padding: 0;
+  
+ }
+ .register-heading {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+ }
+
+ .dashboard-bg {
+  background: url(../img/earth-space.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+ }
+
+ .login-bg {
+  background: url(../img/rain-on-window.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+ }
+
+ .register-bg {
+  background: url(../img/sun.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+
+ }
+
+ #weather.dashboard-container {
+  background: rgba(0,0,0,.8);
+  min-width: 320px;
+  max-width: 100%;
+  border: 1px solid white;
+ }
+
+ #weather.login-container {
+    border: 1px solid rgb(47, 58, 58);
+ }
+
+ #weather.register-container {
+    border: 1px solid rgb(110, 55, 116);
+ }
+
+ 
+
+ .table-date {
+  padding-right: 5px;
+ }
+
+ button.btn-remove {  
+  height: 2em;
+  border: none;
+  color: #666;
+  font-size: 18px;
+  padding: 0 auto;
+  margin-bottom: 0;
+ }
+
+ button.btn-remove:hover {
+  color: red; 
+ }
+
+.header {
+	position: relative;
+  margin: 0px;
+	background-color: rgb(175, 187, 165);
+	padding: 25px 0;
 	text-align: center;
 }
 
-nav.navbar.navbar-default{
-	background-color: #3d3d3d;
-	border: none;
-	border-radius: 0px;
-	margin-bottom: 0px !important;
-	z-index: 99;
-	height:140px;
+.user-stats {
+  font-size: .9rem;
+  
 }
-nav.navbar.navbar-default li  {
-    color: #FFFFFF;
-}
-nav.navbar.navbar-default li a {
-    color: #FFFFFF;
-    margin-top: 45px;
+.location-search {
 }
 
-nav.navbar.navbar-default li a:hover {
-    color: #E16E28;
+input::-webkit-input-placeholder {
+   color: rgba(0,0,0,.2);
 }
 
-.main-title {
-	font-size: 3em;
+/*//////////////////////
+
+INPUT FORM STYLES
+
+///////////////////////*/
+
+form {
+  margin-top: 75px;
 }
 
-.status {
-	font-size: 12px;
-	margin-top: 50px;
+input {
+  background: none!important;
+  border: solid 2px white!important;
+  color: white!important;
+  padding: 15px 40px;
+  font-size: 18px;
+  display: inline-block;
 }
 
-.search {
-	margin-top: 50px;
-	margin-right: 20px;
-	
+input:focus, input:active {
+  outline: none;
 }
 
-.form-control {
-	background-color: #3D3D3D;
-	color: #FFFFFF;
+input[type="text"], input[type="email"], input[type="password"] {
+  border: none!important;
+  border-radius: 0 !important;
+  margin-bottom: 0 !important;
+  border-bottom: solid 2px white!important;
 }
 
-.form-control:focus {
-	border: 1px solid #E16E28;
-	box-shadow: 0px 0px 5px #E16E28;
+input[type="submit"]:active {
+  color: white;
+  background: #21a1e1;
 }
 
-.logo {
-
-	max-height: 125px;
-	margin-top: -5px;
-	margin-left: 20px;
+.input-group {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
 }
 
-.trip{
-	margin-left: 0px;
-	margin-right: 0px;
+.input-group input {
+  padding: 15px 0;
 }
 
-.trip-card {
-	background-color: rgb(240, 205, 55); 
-	margin: 20px 10px;
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px solid black;
-	padding: 20px;
-	
-	
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+  pointer-events: none;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
 }
 
-.trip-img {
-	width: 100%;
-	height: auto;
-	display: block;
+
+.input-group input:focus + label,
+.input-group input.has-value + label {
+  top: -10px;
+  font-size: 12px;
+  color: #aaa;
 }
 
+.reg-form {
+  margin-top: 50px;
+}
+
+.reg-group {
+  margin-top: 20px;
+}
+
+
+.form-btn {
+  margin-top: 30px;
+}
+
+.form-btn:hover, .form-btn:active {
+  background-color: rgba(255, 255, 255, .2)!important;
+}
+
+
+.login-link {
+  float: right;
+  font-size: 1rem;
+  text-transform: none;
+  margin-right: 20px;
+  color: white;
+  border: none;
+}
+
+.login-link:hover {
+  color: orange;
+}
+
+.login-btn {
+  margin-bottom: 0;
+}
+
+
+
+.map-overlay {
+  width: 100%;
+  height : 100%;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  background-color: rgba(0, 0, 0, .35);
+  
+}
+
+#map {
+  height: 100%;
+  width: 100%;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+}
+
+input{
+  color: #3d3d3d;
+}
+/*//////////////////////
+
+WEATHER DISPLAY STYLES
+
+///////////////////////*/
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+
+
+
+#app-title {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: white; 
+}
+#weather {
+position: absolute;
+left: 50%;
+top: 50%;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+z-index: 1;
+max-width: 680px;
+min-height:80%;
+margin-bottom: -60px;
+padding: 20px;
+text-align: center; 
+background: rgba(0,0,0,.65);
+border-radius: 15px;
+border: 5px solid rgba(0,0,0,.1);
+box-shadow: 0 0 1.5em 1.7em rgba(10,10,10,.2);
+
+}
+
+
+.p-date {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.weather-header-col {
+  text-align: center;
+  margin: -10px 0 5px 0;
+}
+.weather-footer{
+  height: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.weather-current {
+  font-size: 7rem;
+  margin-top: -15px;
+  margin-bottom: 0;
+}
+
+.wi {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+.wi-big{
+  margin-right: 10px;
+  font-size: 7.75rem;
+}
+i.fa {
+  font-size: 2.4rem;
+}
+
+.fa-star {
+  color: white;
+  font-size: 4rem;
+  margin-left: 7px;
+}
+
+a > .fa-star:hover {
+  color: orange;
+}
+.weather-summary {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.weather-deets {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding-top: 10px;
+}
+
+.weather-deets-summary {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding-top: 15px;
+}
+.p-hilo {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+
+.label-hilo {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.label-alert {
+  color: rgb(204, 35, 40);
+}
+
+.label {
+  font-weight: 400;
+}
+
+.material-icons {
+  font-size: 20px;
+  margin-right: 7px;
+}
+
+
+
+#datepicker {
+ color: white;
+ margin-right: 10px;
+ font-size: 2rem;
+}
+#datepicker:hover {
+ color: #009be8;
+}
+
+#alert {
+  font-size: 1rem;
+  margin-top: -20px;
+  
+}
+
+.weather-selector {
+  font-size: 1rem;
+}
+
+input.weather-selector {
+  background-color: transparent;
+  color: white;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255,.3);
+}
+input::-moz-placeholder {
+  color: rgba(255, 255, 255,.3);
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+  color: rgba(255, 255, 255,.3);
+}
+input:-ms-input-placeholder { 
+  color: rgba(255, 255, 255,.3);
+}
+button.weather-selector {
+  color: rgba(255, 255, 255,.3);
+  padding: 0 10px;
+}
+
+button.weather-selector:hover {
+  background-color: rgba(255, 255, 255, .3);
+  color: white;
+}
+
+.pac-container {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid #009be8;
+  border-radius: 5px;
+  margin-top: -215px;
+}
+
+.pac-item {
+  border-bottom: #009be8;
+}
+
+.pac-item-query {
+  color: white;
+}
+.pac-item:hover {
+  background-color: #404040;
+}
+
+#ui-datepicker-div{
+  
+}
+
+
+
+#main-header {
+  text-align: center;
+  background-color: rgb(33, 33, 33);
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+#main-footer {
+  text-align: center;
+  background-color: rgb(33, 33, 33);
+  height: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.foot-deets {
+  margin-top: 7px;
+  font-size: .6rem;
+}
 
